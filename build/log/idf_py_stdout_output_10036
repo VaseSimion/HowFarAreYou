@@ -1,0 +1,61 @@
+[1/15] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\sular\OneDrive\Documents\Arduino\ESP32MoistureSensor\VariousStuff\build\bootloader\esp-idf\esptool_py && C:\Users\sular\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/sular/esp/v5.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5180 bytes. 0x2e80 bytes (36%) free.
+[2/13] Building CXX object esp-idf/CommonLibrary-C3/CMakeFiles/__idf_CommonLibrary-C3.dir/SoilMoistureSensorSpecific.cpp.obj
+[3/13] Building CXX object esp-idf/CommonLibrary-C3/CMakeFiles/__idf_CommonLibrary-C3.dir/AirHumiditySensorSpecific.cpp.obj
+[4/13] Building CXX object esp-idf/CommonLibrary-C3/CMakeFiles/__idf_CommonLibrary-C3.dir/RelaySpecific.cpp.obj
+[5/13] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/SupportScreen.cpp.obj
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/main/SupportScreen.cpp:10: warning: "I2C_MASTER_SCL_IO" redefined
+   10 | #define I2C_MASTER_SCL_IO           GPIO_NUM_0      // GPIO number for I2C master clock
+      | 
+In file included from C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/main/SupportScreen.h:6,
+                 from C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/main/SupportScreen.cpp:5:
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.h:61: note: this is the location of the previous definition
+   61 | #define I2C_MASTER_SCL_IO           GPIO_NUM_4      // GPIO number for I2C master clock
+      | 
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/main/SupportScreen.cpp:11: warning: "I2C_MASTER_SDA_IO" redefined
+   11 | #define I2C_MASTER_SDA_IO           GPIO_NUM_2      // GPIO number for I2C master data
+      | 
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.h:62: note: this is the location of the previous definition
+   62 | #define I2C_MASTER_SDA_IO           GPIO_NUM_5      // GPIO number for I2C master data
+      | 
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/main/SupportScreen.cpp: In function 'esp_err_t i2c_local_master_init()':
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/main/SupportScreen.cpp:34:5: warning: missing initializer for member 'i2c_master_bus_config_t::trans_queue_depth' [-Wmissing-field-initializers]
+   34 |     };
+      |     ^
+[6/13] Building CXX object esp-idf/CommonLibrary-C3/CMakeFiles/__idf_CommonLibrary-C3.dir/GenericFunctions.cpp.obj
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp: In function 'void init_littlefs()':
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp:41:5: warning: missing initializer for member 'esp_vfs_littlefs_conf_t::partition' [-Wmissing-field-initializers]
+   41 |     };
+      |     ^
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp:41:5: warning: missing initializer for member 'esp_vfs_littlefs_conf_t::read_only' [-Wmissing-field-initializers]
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp:41:5: warning: missing initializer for member 'esp_vfs_littlefs_conf_t::grow_on_mount' [-Wmissing-field-initializers]
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp: In function 'void uart_init()':
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp:181:5: warning: missing initializer for member 'uart_config_t::rx_flow_ctrl_thresh' [-Wmissing-field-initializers]
+  181 |     };
+      |     ^
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp: In function 'esp_err_t i2c_master_init(i2c_master_bus_t**)':
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp:200:5: warning: missing initializer for member 'i2c_master_bus_config_t::trans_queue_depth' [-Wmissing-field-initializers]
+  200 |     };
+      |     ^
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp: In function 'void init_adc(adc_oneshot_unit_ctx_t**)':
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp:241:5: warning: missing initializer for member 'adc_oneshot_unit_init_cfg_t::clk_src' [-Wmissing-field-initializers]
+  241 |     };
+      |     ^
+[7/13] Linking C static library esp-idf\CommonLibrary-C3\libCommonLibrary-C3.a
+[8/13] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/main/main.cpp: In function 'void display_lora_task(void*)':
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/main/main.cpp:127:16: warning: unused variable 'i' [-Wunused-variable]
+  127 |     static int i=0;
+      |                ^
+[9/13] Linking C static library esp-idf\main\libmain.a
+[10/13] Generating ld/sections.ld
+[11/13] Linking CXX executable VariousStuff.elf
+[12/13] Generating binary image from built executable
+esptool.py v4.8.dev4
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/build/VariousStuff.bin
+[13/13] cmd.exe /C "cd /D C:\Users\sular\OneDrive\Documents\Arduino\ESP32MoistureSensor\VariousStuff\build\esp-idf\esptool_py && C:\Users\sular\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/sular/esp/v5.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/build/partition_table/partition-table.bin C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/build/VariousStuff.bin"
+VariousStuff.bin binary size 0xd7a60 bytes. Smallest app partition is 0x1e0000 bytes. 0x1085a0 bytes (55%) free.

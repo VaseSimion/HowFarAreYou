@@ -1,0 +1,140 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x5 (DOWNLOAD(USB/UART0/1))
+Saved PC:0x400462e2
+waiting for download
+(332) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (339) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (346) spi_flash: detected chip: generic[0m
+[0;32mI (350) spi_flash: flash io: dio[0m
+[0;32mI (354) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (360) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (368) main_task: Started on CPU0[0m
+[0;32mI (368) main_task: Calling app_main()[0m
+[0;31mE (378) esp_littlefs: ./components/esp_littlefs/src/littlefs/lfs.c:1369:error: Corrupted dir pair at {0x0, 0x1}
+[0m
+[0;33mW (378) esp_littlefs: mount failed,  (-84). formatting...[0m
+[0;32mI (468) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (468) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (468) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (488) main: Frequency is 433MHz[0m
+[0;32mI (488) main: coding_rate=1[0m
+[0;32mI (488) main: bandwidth=7[0m
+[0;32mI (488) main: spreading_factor=9[0m
+[0;32mI (1498) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1708) General: Internal temperature: 27.50[0m
+[0;32mI (1708) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1708) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2128) lora_task: Received packet length: 31[0m
+[0;32mI (2128) lora_task: 3 byte packet received:[ 38][0m
+[0;32mI (2168) main_task: Returned from app_main()[0m
+[0;32mI (2408) lora_task: 31 byte packet sent...[0m
+[0;32mI (4408) lora_task: Received packet length: 31[0m
+[0;32mI (4408) lora_task: 3 byte packet received:[ 39][0m
+[0;32mI (4688) lora_task: 31 byte packet sent...[0m
+[0;32mI (6688) lora_task: Received packet length: 31[0m
+[0;32mI (6688) lora_task: 3 byte packet received:[ 40][0m
+[0;32mI (6968) lora_task: 31 byte packet sent...[0m
+[0;32mI (8968) lora_task: Received packet length: 31[0m
+[0;32mI (8968) lora_task: 3 byte packet received:[ 41][0m
+[0;32mI (9248) lora_task: 31 byte packet sent...[0m
+[0;32mI (11248) lora_task: Received packet length: 31[0m
+[0;32mI (11248) lora_task: 3 byte packet received:[ 42][0m
+[0;32mI (11528) lora_task: 31 byte packet sent...[0m
+[0;32mI (13528) lora_task: Received packet length: 31[0m
+[0;32mI (13528) lora_task: 3 byte packet received:[ 43][0m
+[0;32mI (13808) lora_task: 31 byte packet sent...[0m
+[0;32mI (16068) lora_task: 31 byte packet sent...[0m
+[0;32mI (18068) lora_task: Received packet length: 31[0m
+[0;32mI (18068) lora_task: 3 byte packet received:[ 45][0m
+[0;32mI (18338) lora_task: 31 byte packet sent...[0m
+[0;32mI (20338) lora_task: Received packet length: 31[0m
+[0;32mI (20338) lora_task: 3 byte packet received:[ 46][0m
+[0;32mI (20618) lora_task: 31 byte packet sent...[0m
+[0;32mI (22618) lora_task: Received packet length: 31[0m
+[0;32mI (22618) lora_task: 3 byte packet received:[ 47][0m
+[0;32mI (22898) lora_task: 31 byte packet sent...[0m
+[0;32mI (24898) lora_task: Received packet length: 31[0m
+[0;32mI (24898) lora_task: 3 byte packet received:[ 48][0m
+[0;32mI (25178) lora_task: 31 byte packet sent...[0m
+[0;32mI (27178) lora_task: Received packet length: 31[0m
+[0;32mI (27178) lora_task: 3 byte packet received:[ 49][0m
+[0;32mI (27458) lora_task: 31 byte packet sent...[0m
+[0;32mI (29458) lora_task: Received packet length: 31[0m
+[0;32mI (29458) lora_task: 3 byte packet received:[ 50][0m
+[0;32mI (29728) lora_task: 31 byte packet sent...[0m
+[0;32mI (31728) lora_task: Received packet length: 31[0m
+[0;32mI (31728) lora_task: 3 byte packet received:[ 51][0m
+[0;32mI (32008) lora_task: 31 byte packet sent...[0m
+[0;32mI (34008) lora_task: Received packet length: 31[0m
+[0;32mI (34008) lora_task: 3 byte packet received:[ 52][0m
+[0;32mI (34288) lora_task: 31 byte packet sent...[0m
+[0;32mI (36288) lora_task: Received packet length: 31[0m
+[0;32mI (36288) lora_task: 3 byte packet received:[ 53][0m
+[0;32mI (36568) lora_task: 31 byte packet sent...[0m
+[0;32mI (38568) lora_task: Received packet length: 31[0m
+[0;32mI (38568) lora_task: 3 byte packet received:[ 54][0m
+[0;32mI (38838) lora_task: 31 byte packet sent...[0m
+[0;32mI (40838) lora_task: Received packet length: 31[0m
+[0;32mI (40838) lora_task: 3 byte packet received:[ 55][0m
+[0;32mI (41118) lora_task: 31 byte packet sent...[0m
+[0;32mI (43118) lora_task: Received packet length: 31[0m
+[0;32mI (43118) lora_task: 3 byte packet received:[ 56][0m
+[0;32mI (43398) lora_task: 31 byte packet sent...[0m
+[0;32mI (45398) lora_task: Received packet length: 31[0m
+[0;32mI (45398) lora_task: 3 byte packet received:[ 57][0m
+[0;32mI (45678) lora_task: 31 byte packet sent...[0m
+[0;32mI (47678) lora_task: Received packet length: 31[0m
+[0;32mI (47678) lora_task: 3 byte packet received:[ 58][0m
+[0;32mI (47948) lora_task: 31 byte packet sent...[0m
+[0;32mI (49948) lora_task: Received packet length: 31[0m
+[0;32mI (49948) lora_task: 3 byte packet received:[ 59][0m
+[0;32mI (50228) lora_task: 31 byte packet sent...[0m
+[0;32mI (52228) lora_task: Received packet length: 31[0m
+[0;32mI (52228) lora_task: 3 byte packet received:[ 60][0m
+[0;32mI (52498) lora_task: 31 byte packet sent...[0m
+[0;32mI (54498) lora_task: Received packet length: 31[0m
+[0;32mI (54498) lora_task: 3 byte packet received:[ 61][0m
+[0;32mI (54768) lora_task: 31 byte packet sent...[0m
+[0;32mI (56768) lora_task: Received packet length: 31[0m
+[0;32mI (56768) lora_task: 3 byte packet received:[ 62][0m
+[0;32mI (57048) lora_task: 31 byte packet sent...[0m
+[0;32mI (59048) lora_task: Received packet length: 31[0m
+[0;32mI (59048) lora_task: 3 byte packet received:[ 63][0m
+[0;32mI (59328) lora_task: 31 byte packet sent...[0m
+[0;32mI (61328) lora_task: Received packet length: 31[0m
+[0;32mI (61328) lora_task: 3 byte packet received:[ 64][0m
+[0;32mI (61608) lora_task: 31 byte packet sent...[0m
+[0;32mI (63608) lora_task: Received packet length: 31[0m
+[0;32mI (63608) lora_task: 3 byte packet received:[ 65][0m
+[0;32mI (63888) lora_task: 31 byte packet sent...[0m
+[0;32mI (65888) lora_task: Received packet length: 31[0m
+[0;32mI (65888) lora_task: 3 byte packet received:[ 66][0m
+[0;32mI (66158) lora_task: 31 byte packet sent...[0m
+[0;32mI (68158) lora_task: Received packet length: 31[0m
+[0;32mI (68158) lora_task: 3 byte packet received:[ 67][0m
+[0;32mI (68438) lora_task: 31 byte packet sent...[0m
+[0;32mI (70438) lora_task: Received packet length: 31[0m
+[0;32mI (70438) lora_task: 3 byte packet received:[ 68][0m
+[0;32mI (70708) lora_task: 31 byte packet sent...[0m
+[0;32mI (72708) lora_task: Received packet length: 31[0m
+[0;32mI (72708) lora_task: 3 byte packet received:[ 69][0m
+[0;32mI (72988) lora_task: 31 byte packet sent...[0m
+[0;32mI (74988) lora_task: Received packet length: 31[0m
+[0;32mI (74988) lora_task: 3 byte packet received:[ 70][0m
+[0;32mI (75268) lora_task: 31 byte packet sent...[0m
+[0;32mI (77268) lora_task: Received packet length: 31[0m
+[0;32mI (77268) lora_task: 3 byte packet received:[ 71][0m
+[0;32mI (77548) lora_task: 31 byte packet sent...[0m
+[0;32mI (79548) lora_task: Received packet length: 31[0m
+[0;32mI (79548) lora_task: 3 byte packet received:[ 72][0m
+[0;32mI (79818) lora_task: 31 byte packet sent...[0m
+[0;32mI (81818) lora_task: Received packet length: 31[0m
+[0;32mI (81818) lora_task: 3 byte packet received:[ 73][0m
+[0;32mI (82098) lora_task: 31 byte packet sent...[0m
+[0;32mI (84098) lora_task: Received packet length: 31[0m
+[0;32mI (84098) lora_task: 3 byte packet received:[ 74][0m
+[0;32mI (84378) lora_task: 31 byte packet sent...[0m
+[0;32mI (86378) lora_task: Received packet length: 31[0m
+[0;32mI (86378) lora_task: 3 byte packet received:[ 75][0m
+[0;32mI (86658) lora_task: 31 byte packet sent...[0m

@@ -1,0 +1,33 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\sular\OneDrive\Documents\Arduino\ESP32MoistureSensor\VariousStuff\build\bootloader\esp-idf\esptool_py && C:\Users\sular\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/sular/esp/v5.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5180 bytes. 0x2e80 bytes (36%) free.
+[2/7] Building CXX object esp-idf/CommonLibrary-C3/CMakeFiles/__idf_CommonLibrary-C3.dir/GenericFunctions.cpp.obj
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp: In function 'void init_littlefs()':
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp:41:5: warning: missing initializer for member 'esp_vfs_littlefs_conf_t::partition' [-Wmissing-field-initializers]
+   41 |     };
+      |     ^
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp:41:5: warning: missing initializer for member 'esp_vfs_littlefs_conf_t::read_only' [-Wmissing-field-initializers]
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp:41:5: warning: missing initializer for member 'esp_vfs_littlefs_conf_t::grow_on_mount' [-Wmissing-field-initializers]
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp: In function 'void uart_init()':
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp:181:5: warning: missing initializer for member 'uart_config_t::rx_flow_ctrl_thresh' [-Wmissing-field-initializers]
+  181 |     };
+      |     ^
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp: In function 'esp_err_t i2c_master_init(i2c_master_bus_t**)':
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp:200:5: warning: missing initializer for member 'i2c_master_bus_config_t::trans_queue_depth' [-Wmissing-field-initializers]
+  200 |     };
+      |     ^
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp: In function 'void init_adc(adc_oneshot_unit_ctx_t**)':
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/CommonLibrary-C3/GenericFunctions.cpp:241:5: warning: missing initializer for member 'adc_oneshot_unit_init_cfg_t::clk_src' [-Wmissing-field-initializers]
+  241 |     };
+      |     ^
+[3/7] Linking C static library esp-idf\CommonLibrary-C3\libCommonLibrary-C3.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable VariousStuff.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.8.dev4
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/build/VariousStuff.bin
+[7/7] cmd.exe /C "cd /D C:\Users\sular\OneDrive\Documents\Arduino\ESP32MoistureSensor\VariousStuff\build\esp-idf\esptool_py && C:\Users\sular\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/sular/esp/v5.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/build/partition_table/partition-table.bin C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/build/VariousStuff.bin"
+VariousStuff.bin binary size 0xd7a60 bytes. Smallest app partition is 0x1e0000 bytes. 0x1085a0 bytes (55%) free.

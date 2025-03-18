@@ -1,0 +1,1746 @@
+[0;32mI (95) boot:  5 storage          Unknown data     01 82 0ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400462dc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (88) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (95) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (107) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=23d54h (146772) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00043d7c vaddr=3fc95600 size=02e50h ( 11856) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=00046bd4 vaddr=40380000 size=09444h ( 37956) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=9d784h (644996) map[0m
+[0;32mI (253) esp_image: segment 4: paddr=000ed7ac vaddr=40389444 size=0c050h ( 49232) load[0m
+[0;32mI (269) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (270) boot: Disabling RNG early entropy source...[0m
+[0;32mI (281) cpu_start: Unicore app[0m
+[0;32mI (290) cpu_start: Pro cpu start user code[0m
+[0;32mI (290) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (290) app_init: Application information:[0m
+[0;32mI (293) app_init: Project name:     VariousStuff[0m
+[0;32mI (298) app_init: App version:      FS1.0-13-gbbeeebf-dirty[0m
+[0;32mI (304) app_init: Compile time:     Mar 18 2025 19:27:32[0m
+[0;32mI (310) app_init: ELF file SHA256:  93b5ed29c...[0m
+[0;32mI (316) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (320) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (325) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (330) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (335) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (342) heap_init: At 3FC9CA10 len 000235F0 (141 KiB): RAM[0m
+[0;32mI (348) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (355) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (362) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (369) spi_flash: detected chip: generic[0m
+[0;32mI (373) spi_flash: flash io: dio[0m
+[0;32mI (378) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (384) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (391) main_task: Started on CPU0[0m
+[0;32mI (391) main_task: Calling app_main()[0m
+[0;32mI (411) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (411) General: MAC address: 9C:9E:6E:02:E4:1C[0m
+[0;32mI (411) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (421) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2441) main: Does not recognize the module[0m
+[0;32mI (2441) pp: pp rom version: 9387209[0m
+[0;32mI (2441) net80211: net80211 rom version: 9387209[0m
+I (2451) wifi:wifi driver task: 3fca6034, prio:23, stack:6656, core=0
+I (2451) wifi:wifi firmware version: 0caa81945
+I (2451) wifi:wifi certification version: v7.0
+I (2451) wifi:config NVS flash: enabled
+I (2461) wifi:config nano formating: disabled
+I (2461) wifi:Init data frame dynamic rx buffer num: 32
+I (2471) wifi:Init static rx mgmt buffer num: 5
+I (2471) wifi:Init management short buffer num: 32
+I (2471) wifi:Init dynamic tx buffer num: 32
+I (2481) wifi:Init static tx FG buffer num: 2
+I (2481) wifi:Init static rx buffer size: 1600
+I (2491) wifi:Init static rx buffer num: 10
+I (2491) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2501) wifi_init: rx ba win: 6[0m
+[0;32mI (2501) wifi_init: accept mbox: 6[0m
+[0;32mI (2501) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2511) wifi_init: udp mbox: 6[0m
+[0;32mI (2511) wifi_init: tcp mbox: 6[0m
+[0;32mI (2511) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2521) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2521) wifi_init: tcp mss: 1440[0m
+[0;32mI (2531) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2531) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2541) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+I (2581) wifi:mode : sta (9c:9e:6e:02:e4:1c)
+I (2581) wifi:enable tsf
+I (2581) ESPNOW: espnow [version: 1.0] init
+[0;31mE (2581) General: Lora module not recognized[0m
+[0;32mI (2591) General: Sent data:   0[0m
+[0;32mI (2591) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (2601) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (2601) main_task: Returned from app_main()[0m
+[0;32mI (4621) General: Sent data:   1[0m
+[0;32mI (4621) General: Line: u�192344.00,5529.61261,N,00927.94227,E,1,05,3.34,21.5,M,43.8,M,,*62[0m
+[0;32mI (4621) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.03,3.34,2.25*0D[0m
+[0;32mI (4621) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (4631) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (4641) General: Line: $GPGSV,4,1,14,01,73,140,,02,50,137,13,03,72,249,30,04,19,189,32*7E[0m
+[0;32mI (4651) General: Line: $GPGSV,4,2,14,08,00,175,,12,01,007,,16,,,14,17,45,283,34*4F[0m
+[0;32mI (4661) General: Line: $GPGSV,4,3,14,19,26,313,24,21,,,16,22,11,277,29,28,21,084,*48[0m
+[0;32mI (4661) General: Line: $GPGSV,4,4,14,31,12,109,25,32,25,047,*77[0m
+[0;32mI (4671) General: Line: $GPGLL,5529.61261,N,00927.94227,E,192344.00,A,A*6F[0m
+[0;32mI (4681) General: Line: $GPRMC,192345.00,A,5529.61260,N,00927.94220,E,0.091,,180325,,,A*74[0m
+[0;32mI (4691) General: Line: $GPVTG,,T,,M,0.091,N,0.169,K,A*25[0m
+[0;32mI (4691) General: Line: $GPGGA,192345.00,5529.61260,N,00927.94220,E,1,05,3.34,21.6,M,43.8,M,,*66[0m
+[0;32mI (4701) General: UTC Time: 192345.00[0m
+[0;32mI (4711) General: Raw coordinates: 5529.61260N, 00927.94220E[0m
+[0;32mI (4711) General: Decimal degrees: 55.493546, 9.465703 (Fix quality: 1)[0m
+[0;32mI (4721) General: Satellites in use: 05[0m
+[0;32mI (4721) General: Altitude: 21.6 meters[0m
+[0;32mI (4731) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.03,3.34,2.25*0D[0m
+[0;32mI (4741) General: Line: $GPGSV,4,1,14,01,73,140,,02,50,137,12,03,72,249,31,04,19,189,35*79[0m
+[0;32mI (4751) General: Line: $GPGSV,4,2,14,08,00,175,,12,01,007,,16,,,14,17,45,283,36*4D[0m
+[0;32mI (4751) General: Line: $GPGSV,4,3,14,19,26,313,25,21,,,15,22,11,277,29,28,21,084,*4A[0m
+[0;32mI (4761) General: Line: $GPGSV,4,4,14,31,12,109,26,32,25,047,*74[0m
+[0;32mI (4771) General: Line: $GPGLL,5529.61260,N,00927.94220,E,192345.00,A,A*68[0m
+[0;32mI (4781) General: Line: $GPRMC,192346.00,A,5529.61256,N,00927.94205,E,0.043,,180325,,,A*7A[0m
+[0;32mI (4791) General: Line: $GPVTG,,T,,M,0.043,N,0.080,K,A[0m
+[0;32mI (6791) General: Sent data:   2[0m
+[0;32mI (6791) General: Line: *2C[0m
+[0;32mI (6791) General: Line: $GPGGA,192346.00,5529.61256,N,00927.94205,E,1,05,3.34,21.8,M,43.8,M,,*69[0m
+[0;32mI (6791) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (6801) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (6801) General: UTC Time: 192346.00[0m
+[0;32mI (6811) General: Raw coordinates: 5529.61256N, 00927.94205E[0m
+[0;32mI (6811) General: Decimal degrees: 55.493546, 9.465701 (Fix quality: 1)[0m
+[0;32mI (6821) General: Satellites in use: 05[0m
+[0;32mI (6831) General: Altitude: 21.8 meters[0m
+[0;32mI (6831) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.03,3.34,2.25*0D[0m
+[0;32mI (6841) General: Line: $GPGSV,4,1,14,01,73,140,,02,50,137,12,03,72,249,31,04,19,189,34*78[0m
+[0;32mI (6851) General: Line: $GPGSV,4,2,14,08,00,175,,12,01,007,,16,,,13,17,45,283,35*49[0m
+[0;32mI (6861) General: Line: $GPGSV,4,3,14,19,26,313,25,21,,,25,22,11,277,29,28,21,084,*49[0m
+[0;32mI (6861) General: Line: $GPGSV,4,4,14,31,12,109,25,32,25,047,*77[0m
+[0;32mI (6871) General: Line: $GPGLL,5529.61256,N,00927.94205,E,192346.00,A,A*69[0m
+[0;32mI (6881) General: Line: $GPRMC,192347.00,A,5529.61256,N,00927.94198,E,0.049,,180325,,,A*76[0m
+[0;32mI (6891) General: Line: $GPVTG,,T,,M,0.049,N,0.091,K,A*26[0m
+[0;32mI (6891) General: Line: $GPGGA,192347.00,5529.61256,N,00927.94198,E,1,05,3.34,21.8,M,43.8,M,,*6F[0m
+[0;32mI (6901) General: UTC Time: 192347.00[0m
+[0;32mI (6911) General: Raw coordinates: 5529.61256N, 00927.94198E[0m
+[0;32mI (6911) General: Decimal degrees: 55.493546, 9.465699 (Fix quality: 1)[0m
+[0;32mI (6921) General: Satellites in use: 05[0m
+[0;32mI (6931) General: Altitude: 21.8 meters[0m
+[0;32mI (6931) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.03,3.34,2.25*0D[0m
+[0;32mI (6941) General: Line: $GPGSV,4,1,13,01,73,140,,02,50,137,13,03,72,249,31,04,19,189,33*79[0m
+[0;32mI (6951) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,17,45,283,35,19,26,313,26*72[0m
+[0;32mI (6961) General: Line: $GPGSV,4,3,13,21,,,23,22,10,276,29,28,21,084,,31,12,109,26*4F[0m
+[0;32mI (6961) General: Line: $GPGSV,4,4,13,32,25,047,*4E[0m
+[0;32mI (6971) General: Line: $GPGLL,5529.61256,N,00927.94198,E,192347.00,A,A*6F[0m
+[0;32mI (6981) General: Line: $GPRMC,192348.00,A,5529.61253,N,00927.94183,E,0.033,,180325,,,A*7B[0m
+[0;32mI (6991) General: Line: $GPVTG,,T,,M,0.033,N,0.060,K,A*[0m
+[0;32mI (8991) General: Sent data:   3[0m
+[0;32mI (8991) General: Line: 25[0m
+[0;32mI (8991) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (8991) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (8991) General: Line: $GPGGA,192348.00,5529.61253,N,00927.94183,E,1,05,3.34,21.9,M,43.8,M,,*6E[0m
+[0;32mI (9001) General: UTC Time: 192348.00[0m
+[0;32mI (9011) General: Raw coordinates: 5529.61253N, 00927.94183E[0m
+[0;32mI (9011) General: Decimal degrees: 55.493538, 9.465697 (Fix quality: 1)[0m
+[0;32mI (9021) General: Satellites in use: 05[0m
+[0;32mI (9031) General: Altitude: 21.9 meters[0m
+[0;32mI (9031) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.03,3.34,2.25*0D[0m
+[0;32mI (9041) General: Line: $GPGSV,4,1,13,01,73,140,,02,50,137,12,03,72,249,31,04,19,189,33*78[0m
+[0;32mI (9051) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,17,45,283,35,19,26,313,25*71[0m
+[0;32mI (9061) General: Line: $GPGSV,4,3,13,21,,,21,22,10,276,29,28,21,084,,31,12,109,26*4D[0m
+[0;32mI (9061) General: Line: $GPGSV,4,4,13,32,25,047,*4E[0m
+[0;32mI (9071) General: Line: $GPGLL,5529.61253,N,00927.94183,E,192348.00,A,A*6F[0m
+[0;32mI (9081) General: Line: $GPRMC,192349.00,A,5529.61248,N,00927.94172,E,0.105,,180325,,,A*7A[0m
+[0;32mI (9091) General: Line: $GPVTG,,T,,M,0.105,N,0.194,K,A*2B[0m
+[0;32mI (9091) General: Line: $GPGGA,192349.00,5529.61248,N,00927.94172,E,1,05,3.34,22.1,M,43.8,M,,*60[0m
+[0;32mI (9101) General: UTC Time: 192349.00[0m
+[0;32mI (9111) General: Raw coordinates: 5529.61248N, 00927.94172E[0m
+[0;32mI (9111) General: Decimal degrees: 55.493538, 9.465695 (Fix quality: 1)[0m
+[0;32mI (9121) General: Satellites in use: 05[0m
+[0;32mI (9121) General: Altitude: 22.1 meters[0m
+[0;32mI (9131) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.03,3.34,2.25*0D[0m
+[0;32mI (9141) General: Line: $GPGSV,4,1,13,01,73,140,,02,50,137,11,03,72,249,31,04,19,189,33*7B[0m
+[0;32mI (9151) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,17,45,283,34,19,26,313,25*70[0m
+[0;32mI (9151) General: Line: $GPGSV,4,3,13,21,,,18,22,10,276,29,28,21,084,,31,12,109,25*44[0m
+[0;32mI (9161) General: Line: $GPGSV,4,4,13,32,25,047,*4E[0m
+[0;32mI (9171) General: Line: $GPGLL,5529.61248,N,00927.94172,E,192349.00,A,A*6A[0m
+[0;32mI (9181) General: Line: $GPRMC,192350.00,A,5529.61241,N,00927.94153,E,0.063,,180325,,,A*79[0m
+[0;32mI (9191) General: Line: $GPVTG,,T,,M,0.063,N,0.117,K,A*21[0m
+[0;32mI (9191) General: Line: $GPGG[0m
+[0;32mI (11191) General: Sent data:   4[0m
+[0;32mI (11191) General: Line: A,192350.00,5529.61241,N,00927.94153,E,1,05,3.34,22.1,M,43.8,M,,*62[0m
+[0;32mI (11191) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (11191) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (11201) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.03,3.34,2.25*0D[0m
+[0;32mI (11211) General: Line: $GPGSV,4,1,13,01,73,140,,02,50,137,11,03,72,249,30,04,19,189,32*7B[0m
+[0;32mI (11221) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,17,45,283,31,19,26,313,24*74[0m
+[0;32mI (11231) General: Line: $GPGSV,4,3,13,21,,,16,22,10,276,28,28,21,084,,31,12,109,24*4A[0m
+[0;32mI (11231) General: Line: $GPGSV,4,4,13,32,25,047,*4E[0m
+[0;32mI (11241) General: Line: $GPGLL,5529.61241,N,00927.94153,E,192350.00,A,A*68[0m
+[0;32mI (11251) General: Line: $GPRMC,192351.00,A,5529.61239,N,00927.94142,E,0.053,,180325,,,A*74[0m
+[0;32mI (11261) General: Line: $GPVTG,,T,,M,0.053,N,0.097,K,A*2B[0m
+[0;32mI (11261) General: Line: $GPGGA,192351.00,5529.61239,N,00927.94142,E,1,05,3.34,22.2,M,43.8,M,,*6F[0m
+[0;32mI (11271) General: UTC Time: 192351.00[0m
+[0;32mI (11281) General: Raw coordinates: 5529.61239N, 00927.94142E[0m
+[0;32mI (11281) General: Decimal degrees: 55.493538, 9.465690 (Fix quality: 1)[0m
+[0;32mI (11291) General: Satellites in use: 05[0m
+[0;32mI (11301) General: Altitude: 22.2 meters[0m
+[0;32mI (11301) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.03,3.34,2.26*0E[0m
+[0;32mI (11311) General: Line: $GPGSV,4,1,13,01,73,140,,02,50,137,11,03,72,249,30,04,19,189,31*78[0m
+[0;32mI (11321) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,17,45,283,32,19,26,313,24*77[0m
+[0;32mI (11331) General: Line: $GPGSV,4,3,13,21,,,14,22,10,276,27,28,21,084,,31,12,109,23*40[0m
+[0;32mI (11331) General: Line: $GPGSV,4,4,13,32,25,047,*4E[0m
+[0;32mI (11341) General: Line: $GPGLL,5529.61239,N,00927.94142,E,192351.00,A,A*66[0m
+[0;32mI (11351) General: Line: $GPRMC,192352.00,A,5529.61231,N,00927.94113,E,0.010,,180325,,,A*7C[0m
+[0;32mI (11361) General: Line: $GPVTG,,T,,M,0.010,N,0.018,K,A*2B[0m
+[0;32mI (11361) General: Line: $GPGGA,192352.[0m
+[0;32mI (11371) General: UTC Time: 192352.[0m
+[0;32mI (11371) General: No valid position fix obtained[0m
+[0;32mI (13381) General: Sent data:   5[0m
+[0;32mI (13381) General: Line: 00,5529.61231,N,00927.94113,E,1,05,3.34,22.3,M,43.8,M,,*61[0m
+[0;32mI (13381) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.03,3.34,2.26*0E[0m
+[0;32mI (13381) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (13391) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (13401) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,11,03,72,249,30,04,19,189,32*7D[0m
+[0;32mI (13411) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,33,19,26,313,24*70[0m
+[0;32mI (13421) General: Line: $GPGSV,3,3,12,22,10,276,28,28,21,084,,31,12,109,22,32,25,047,*7B[0m
+[0;32mI (13421) General: Line: $GPGLL,5529.61231,N,00927.94113,E,192352.00,A,A*69[0m
+[0;32mI (13431) General: Line: $GPRMC,192353.00,A,5529.61220,N,00927.94096,E,0.143,,180325,,,A*76[0m
+[0;32mI (13441) General: Line: $GPVTG,,T,,M,0.143,N,0.265,K,A*24[0m
+[0;32mI (13451) General: Line: $GPGGA,192353.00,5529.61220,N,00927.94096,E,1,05,3.34,22.6,M,43.8,M,,*69[0m
+[0;32mI (13461) General: UTC Time: 192353.00[0m
+[0;32mI (13461) General: Raw coordinates: 5529.61220N, 00927.94096E[0m
+[0;32mI (13471) General: Decimal degrees: 55.493538, 9.465683 (Fix quality: 1)[0m
+[0;32mI (13471) General: Satellites in use: 05[0m
+[0;32mI (13481) General: Altitude: 22.6 meters[0m
+[0;32mI (13481) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.03,3.34,2.26*0E[0m
+[0;32mI (13491) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,08,03,72,249,31,04,19,189,32*74[0m
+[0;32mI (13501) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,33,19,26,313,24*70[0m
+[0;32mI (13511) General: Line: $GPGSV,3,3,12,22,10,276,28,28,21,083,,31,12,109,22,32,25,047,*7C[0m
+[0;32mI (13521) General: Line: $GPGLL,5529.61220,N,00927.94096,E,192353.00,A,A*64[0m
+[0;32mI (13531) General: Line: $GPRMC,192354.00,A,5529.61214,N,00927.94078,E,0.077,,180325,,,A*70[0m
+[0;32mI (13531) General: Line: $GPVTG,,T,,M,0.077,N,0.143,K,A*25[0m
+[0;32mI (13541) General: Line: $GPGGA,192354.00,5529.61214,N,00927.94078,E,1,05,3.34,22.8,M,43.8,M,,*67[0m
+[0;32mI (13551) General: UTC Time: 192354.00[0m
+[0;32mI (13551) General: Raw coordinates: 5529.61214N, 00927.94078E[0m
+[0;32mI (13561) General: Decimal degrees: 55.493538, 9.465680 (Fix quality: 1)[0m
+[0;32mI (13571) General: Satellites in use: 05[0m
+[0;32mI (13571) General: Altitude: 22.8 meters[0m
+[0;32mI (13581) General: Line: $[0m
+[0;32mI (15581) General: Sent data:   6[0m
+[0;32mI (15581) General: Line: GPGSA,A,3,17,22,03,04,19,,,,,,,,4.03,3.34,2.26*0E[0m
+[0;32mI (15581) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,08,03,72,249,31,04,19,189,32*74[0m
+[0;32mI (15581) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (15591) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (15601) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,33,19,26,313,24*70[0m
+[0;32mI (15611) General: Line: $GPGSV,3,3,12,22,10,276,28,28,21,083,,31,12,109,22,32,25,047,*7C[0m
+[0;32mI (15621) General: Line: $GPGLL,5529.61214,N,00927.94078,E,192354.00,A,A*64[0m
+[0;32mI (15621) General: Line: $GPRMC,192355.00,A,5529.61203,N,00927.94042,E,0.020,,180325,,,A*7C[0m
+[0;32mI (15631) General: Line: $GPVTG,,T,,M,0.020,N,0.037,K,A*25[0m
+[0;32mI (15641) General: Line: $GPGGA,192355.00,5529.61203,N,00927.94042,E,1,05,3.34,23.0,M,43.8,M,,*60[0m
+[0;32mI (15651) General: UTC Time: 192355.00[0m
+[0;32mI (15651) General: Raw coordinates: 5529.61203N, 00927.94042E[0m
+[0;32mI (15661) General: Decimal degrees: 55.493530, 9.465673 (Fix quality: 1)[0m
+[0;32mI (15671) General: Satellites in use: 05[0m
+[0;32mI (15671) General: Altitude: 23.0 meters[0m
+[0;32mI (15681) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.03,3.34,2.26*0E[0m
+[0;32mI (15681) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,08,03,72,249,31,04,19,189,33*75[0m
+[0;32mI (15691) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,34,19,26,313,25*76[0m
+[0;32mI (15701) General: Line: $GPGSV,3,3,12,22,10,276,29,28,21,083,,31,12,109,23,32,25,047,*7C[0m
+[0;32mI (15711) General: Line: $GPGLL,5529.61203,N,00927.94042,E,192355.00,A,A*6A[0m
+[0;32mI (15721) General: Line: $GPRMC,192356.00,A,5529.61204,N,00927.94038,E,0.130,,180325,,,A*75[0m
+[0;32mI (15731) General: Line: $GPVTG,,T,,M,0.130,N,0.240,K,A*27[0m
+[0;32mI (15731) General: Line: $GPGGA,192356.00,5529.61204,N,00927.94038,E,1,05,3.34,23.1,M,43.8,M,,*68[0m
+[0;32mI (15741) General: UTC Time: 192356.00[0m
+[0;32mI (15751) General: Raw coordinates: 5529.61204N, 00927.94038E[0m
+[0;32mI (15751) General: Decimal degrees: 55.493530, 9.465672 (Fix quality: 1)[0m
+[0;32mI (15761) General: Satellites in use: 05[0m
+[0;32mI (15761) General: Altitude: 23.1 meters[0m
+[0;32mI (15771) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.03,3.34,2.26*0E[0m
+[0;32mI (15781) General: Line: $GPGSV,3,1[0m
+[0;32mI (17781) General: Sent data:   7[0m
+[0;32mI (17781) General: Line: ,12,01,73,140,,02,50,137,08,03,72,249,31,04,19,189,32*74[0m
+[0;32mI (17781) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (17781) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (17791) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,34,19,26,313,24*77[0m
+[0;32mI (17801) General: Line: $GPGSV,3,3,12,22,10,276,29,28,21,083,,31,12,108,23,32,25,047,*7D[0m
+[0;32mI (17811) General: Line: $GPGLL,5529.61204,N,00927.94038,E,192356.00,A,A*63[0m
+[0;32mI (17811) General: Line: $GPRMC,192357.00,A,5529.61198,N,00927.94016,E,0.124,,180325,,,A*7B[0m
+[0;32mI (17821) General: Line: $GPVTG,,T,,M,0.124,N,0.230,K,A*25[0m
+[0;32mI (17831) General: Line: $GPGGA,192357.00,5529.61198,N,00927.94016,E,1,05,3.34,23.3,M,43.8,M,,*61[0m
+[0;32mI (17841) General: UTC Time: 192357.00[0m
+[0;32mI (17841) General: Raw coordinates: 5529.61198N, 00927.94016E[0m
+[0;32mI (17851) General: Decimal degrees: 55.493530, 9.465670 (Fix quality: 1)[0m
+[0;32mI (17861) General: Satellites in use: 05[0m
+[0;32mI (17861) General: Altitude: 23.3 meters[0m
+[0;32mI (17871) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.04,3.34,2.26*09[0m
+[0;32mI (17871) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,08,03,72,249,31,04,19,189,33*75[0m
+[0;32mI (17881) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,34,19,26,313,24*77[0m
+[0;32mI (17891) General: Line: $GPGSV,3,3,12,22,10,276,29,28,21,083,,31,12,108,23,32,24,046,*7D[0m
+[0;32mI (17901) General: Line: $GPGLL,5529.61198,N,00927.94016,E,192357.00,A,A*68[0m
+[0;32mI (17911) General: Line: $GPRMC,192358.00,A,5529.61196,N,00927.94006,E,0.081,,180325,,,A*75[0m
+[0;32mI (17921) General: Line: $GPVTG,,T,,M,0.081,N,0.150,K,A*2E[0m
+[0;32mI (17921) General: Line: $GPGGA,192358.00,5529.61196,N,00927.94006,E,1,05,3.34,23.4,M,43.8,M,,*66[0m
+[0;32mI (17931) General: UTC Time: 192358.00[0m
+[0;32mI (17941) General: Raw coordinates: 5529.61196N, 00927.94006E[0m
+[0;32mI (17941) General: Decimal degrees: 55.493530, 9.465668 (Fix quality: 1)[0m
+[0;32mI (17951) General: Satellites in use: 05[0m
+[0;32mI (17961) General: Altitude: 23.4 meters[0m
+[0;32mI (17961) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.04,3.34,2.26*09[0m
+[0;32mI (17971) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,08,03,72,249,30,04,19,189,32*75[0m
+[0;32mI (17981) General: Line: $GP[0m
+[0;32mI (19981) General: Sent data:   8[0m
+[0;32mI (19981) General: Line: GSV,3,2,12,08,00,175,,12,01,007,,17,45,283,34,19,26,313,23*70[0m
+[0;32mI (19981) General: Line: $GPGSV,3,3,12,22,10,276,28,28,21,083,,31,12,108,22,32,24,046,*7D[0m
+[0;32mI (19981) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (19991) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (20001) General: Line: $GPGLL,5529.61196,N,00927.94006,E,192358.00,A,A*68[0m
+[0;32mI (20011) General: Line: $GPRMC,192359.00,A,5529.61204,N,00927.94025,E,0.113,,180325,,,A*77[0m
+[0;32mI (20021) General: Line: $GPVTG,,T,,M,0.113,N,0.209,K,A*2B[0m
+[0;32mI (20021) General: Line: $GPGGA,192359.00,5529.61204,N,00927.94025,E,1,05,3.34,23.3,M,43.8,M,,*69[0m
+[0;32mI (20031) General: UTC Time: 192359.00[0m
+[0;32mI (20041) General: Raw coordinates: 5529.61204N, 00927.94025E[0m
+[0;32mI (20041) General: Decimal degrees: 55.493530, 9.465671 (Fix quality: 1)[0m
+[0;32mI (20051) General: Satellites in use: 05[0m
+[0;32mI (20051) General: Altitude: 23.3 meters[0m
+[0;32mI (20061) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.04,3.34,2.26*09[0m
+[0;32mI (20071) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,,03,72,249,29,04,19,189,31*76[0m
+[0;32mI (20081) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,33,19,26,313,23*77[0m
+[0;32mI (20081) General: Line: $GPGSV,3,3,12,22,10,276,27,28,21,083,,31,12,108,21,32,24,046,*71[0m
+[0;32mI (20091) General: Line: $GPGLL,5529.61204,N,00927.94025,E,192359.00,A,A*60[0m
+[0;32mI (20101) General: Line: $GPRMC,192400.00,A,5529.61220,N,00927.94068,E,0.280,,180325,,,A*7A[0m
+[0;32mI (20111) General: Line: $GPVTG,,T,,M,0.280,N,0.519,K,A*24[0m
+[0;32mI (20121) General: Line: $GPGGA,192400.00,5529.61220,N,00927.94068,E,1,05,3.34,23.1,M,43.8,M,,*6F[0m
+[0;32mI (20131) General: UTC Time: 192400.00[0m
+[0;32mI (20131) General: Raw coordinates: 5529.61220N, 00927.94068E[0m
+[0;32mI (20141) General: Decimal degrees: 55.493538, 9.465678 (Fix quality: 1)[0m
+[0;32mI (20141) General: Satellites in use: 05[0m
+[0;32mI (20151) General: Altitude: 23.1 meters[0m
+[0;32mI (20151) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.04,3.34,2.26*09[0m
+[0;32mI (20161) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,,03,72,249,28,04,19,189,29*7E[0m
+[0;32mI (20171) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,32,19,26,313,22*77[0m
+[0;32mI (20181) General: Line: $G[0m
+[0;32mI (22181) General: Sent data:   9[0m
+[0;32mI (22181) General: Line: PGSV,3,3,12,22,10,276,26,28,21,083,,31,12,108,20,32,24,046,*71[0m
+[0;32mI (22181) General: Line: $GPGLL,5529.61220,N,00927.94068,E,192400.00,A,A*64[0m
+[0;32mI (22181) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (22191) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (22201) General: Line: $GPRMC,192401.00,A,5529.61225,N,00927.94078,E,0.347,,180325,,,A*75[0m
+[0;32mI (22211) General: Line: $GPVTG,,T,,M,0.347,N,0.642,K,A*23[0m
+[0;32mI (22211) General: Line: $GPGGA,192401.00,5529.61225,N,00927.94078,E,1,05,3.35,23.1,M,43.8,M,,*6B[0m
+[0;32mI (22221) General: UTC Time: 192401.00[0m
+[0;32mI (22231) General: Raw coordinates: 5529.61225N, 00927.94078E[0m
+[0;32mI (22231) General: Decimal degrees: 55.493538, 9.465680 (Fix quality: 1)[0m
+[0;32mI (22241) General: Satellites in use: 05[0m
+[0;32mI (22251) General: Altitude: 23.1 meters[0m
+[0;32mI (22251) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.04,3.35,2.26*08[0m
+[0;32mI (22261) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,,03,72,249,27,04,19,189,28*70[0m
+[0;32mI (22271) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,31,19,26,313,20*76[0m
+[0;32mI (22281) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,,31,12,108,18,32,24,046,*79[0m
+[0;32mI (22281) General: Line: $GPGLL,5529.61225,N,00927.94078,E,192401.00,A,A*61[0m
+[0;32mI (22291) General: Line: $GPRMC,192402.00,A,5529.61229,N,00927.94089,E,0.387,,180325,,,A*78[0m
+[0;32mI (22301) General: Line: $GPVTG,,T,,M,0.387,N,0.717,K,A*2E[0m
+[0;32mI (22311) General: Line: $GPGGA,192402.00,5529.61229,N,00927.94089,E,1,05,3.35,23.1,M,43.8,M,,*6A[0m
+[0;32mI (22321) General: UTC Time: 192402.00[0m
+[0;32mI (22321) General: Raw coordinates: 5529.61229N, 00927.94089E[0m
+[0;32mI (22331) General: Decimal degrees: 55.493538, 9.465682 (Fix quality: 1)[0m
+[0;32mI (22331) General: Satellites in use: 05[0m
+[0;32mI (22341) General: Altitude: 23.1 meters[0m
+[0;32mI (22341) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.04,3.35,2.26*08[0m
+[0;32mI (22351) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,,03,72,249,27,04,19,189,28*70[0m
+[0;32mI (22361) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,31,19,26,313,20*76[0m
+[0;32mI (22371) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,,31,12,108,17,32,24,046,*76[0m
+[0;32mI (22381) General: Line: $[0m
+[0;32mI (24381) General: Sent data:  10[0m
+[0;32mI (24381) General: Line: GPGLL,5529.61229,N,00927.94089,E,192402.00,A,A*60[0m
+[0;32mI (24381) General: Line: $GPRMC,192403.00,A,5529.61228,N,00927.94082,E,0.287,,180325,,,A*72[0m
+[0;32mI (24381) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (24391) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (24401) General: Line: $GPVTG,,T,,M,0.287,N,0.531,K,A*29[0m
+[0;32mI (24401) General: Line: $GPGGA,192403.00,5529.61228,N,00927.94082,E,1,05,3.35,23.2,M,43.8,M,,*62[0m
+[0;32mI (24411) General: UTC Time: 192403.00[0m
+[0;32mI (24421) General: Raw coordinates: 5529.61228N, 00927.94082E[0m
+[0;32mI (24421) General: Decimal degrees: 55.493538, 9.465680 (Fix quality: 1)[0m
+[0;32mI (24431) General: Satellites in use: 05[0m
+[0;32mI (24441) General: Altitude: 23.2 meters[0m
+[0;32mI (24441) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.04,3.35,2.26*08[0m
+[0;32mI (24451) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,,03,72,249,28,04,19,189,29*7E[0m
+[0;32mI (24461) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,32,19,26,313,20*75[0m
+[0;32mI (24471) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,,31,12,108,17,32,24,046,*76[0m
+[0;32mI (24481) General: Line: $GPGLL,5529.61228,N,00927.94082,E,192403.00,A,A*6B[0m
+[0;32mI (24481) General: Line: $GPRMC,192404.00,A,5529.61253,N,00927.94136,E,0.476,,180325,,,A*7F[0m
+[0;32mI (24491) General: Line: $GPVTG,,T,,M,0.476,N,0.882,K,A*24[0m
+[0;32mI (24501) General: Line: $GPGGA,192404.00,5529.61253,N,00927.94136,E,1,05,3.35,23.1,M,43.8,M,,*64[0m
+[0;32mI (24511) General: UTC Time: 192404.00[0m
+[0;32mI (24511) General: Raw coordinates: 5529.61253N, 00927.94136E[0m
+[0;32mI (24521) General: Decimal degrees: 55.493538, 9.465689 (Fix quality: 1)[0m
+[0;32mI (24531) General: Satellites in use: 05[0m
+[0;32mI (24531) General: Altitude: 23.1 meters[0m
+[0;32mI (24531) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.04,3.35,2.26*08[0m
+[0;32mI (24541) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,,03,72,249,28,04,19,189,29*7E[0m
+[0;32mI (24551) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,32,19,26,313,20*75[0m
+[0;32mI (24561) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,,31,12,108,,32,24,046,*70[0m
+[0;32mI (24571) General: Line: $GPGLL,5529.61253,N,00927.94136,E,192404.00,A,A*6E[0m
+[0;32mI (24581) General: Line: $GPRMC,192405.00[0m
+[0;32mI (26581) General: Sent data:  11[0m
+[0;32mI (26581) General: Line: ,A,5529.61279,N,00927.94193,E,0.686,,180325,,,A*74[0m
+[0;32mI (26581) General: Line: $GPVTG,,T,,M,0.686,N,1.271,K,A*2E[0m
+[0;32mI (26581) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (26591) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (26601) General: Line: $GPGGA,192405.00,5529.61279,N,00927.94193,E,1,05,3.35,22.9,M,43.8,M,,*6B[0m
+[0;32mI (26601) General: UTC Time: 192405.00[0m
+[0;32mI (26611) General: Raw coordinates: 5529.61279N, 00927.94193E[0m
+[0;32mI (26621) General: Decimal degrees: 55.493546, 9.465699 (Fix quality: 1)[0m
+[0;32mI (26621) General: Satellites in use: 05[0m
+[0;32mI (26631) General: Altitude: 22.9 meters[0m
+[0;32mI (26631) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.04,3.35,2.26*08[0m
+[0;32mI (26641) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,,03,72,249,27,04,19,189,28*70[0m
+[0;32mI (26651) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,31,19,26,313,19*7C[0m
+[0;32mI (26661) General: Line: $GPGSV,3,3,12,22,10,276,24,28,21,083,,31,12,108,,32,24,046,*71[0m
+[0;32mI (26671) General: Line: $GPGLL,5529.61279,N,00927.94193,E,192405.00,A,A*68[0m
+[0;32mI (26671) General: Line: $GPRMC,192406.00,A,5529.61293,N,00927.94213,E,0.739,,180325,,,A*7D[0m
+[0;32mI (26681) General: Line: $GPVTG,,T,,M,0.739,N,1.368,K,A*22[0m
+[0;32mI (26691) General: Line: $GPGGA,192406.00,5529.61293,N,00927.94213,E,1,05,3.35,22.9,M,43.8,M,,*67[0m
+[0;32mI (26701) General: UTC Time: 192406.00[0m
+[0;32mI (26701) General: Raw coordinates: 5529.61293N, 00927.94213E[0m
+[0;32mI (26711) General: Decimal degrees: 55.493546, 9.465702 (Fix quality: 1)[0m
+[0;32mI (26721) General: Satellites in use: 05[0m
+[0;32mI (26721) General: Altitude: 22.9 meters[0m
+[0;32mI (26731) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.04,3.35,2.26*08[0m
+[0;32mI (26731) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,,03,72,249,26,04,19,189,28*71[0m
+[0;32mI (26741) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,30,19,26,313,19*7D[0m
+[0;32mI (26751) General: Line: $GPGSV,3,3,12,22,10,276,23,28,21,083,,31,12,108,,32,24,046,*76[0m
+[0;32mI (26761) General: Line: $GPGLL,5529.61293,N,00927.94213,E,192406.00,A,A*64[0m
+[0;32mI (26771) General: Line: $GPRMC,192407.00,A,5529.61272,N,00927.94155,E,0.294,,180325,,,A*70[0m
+[0;32mI (26781) General: Line: $GPVTG,,T,,M,0.29[0m
+[0;32mI (28781) General: Sent data:  12[0m
+[0;32mI (28781) General: Line: 4,N,0.544,K,A*29[0m
+[0;32mI (28781) General: Line: $GPGGA,192407.00,5529.61272,N,00927.94155,E,1,05,3.35,23.0,M,43.8,M,,*60[0m
+[0;32mI (28781) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (28791) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (28801) General: UTC Time: 192407.00[0m
+[0;32mI (28801) General: Raw coordinates: 5529.61272N, 00927.94155E[0m
+[0;32mI (28811) General: Decimal degrees: 55.493546, 9.465693 (Fix quality: 1)[0m
+[0;32mI (28811) General: Satellites in use: 05[0m
+[0;32mI (28821) General: Altitude: 23.0 meters[0m
+[0;32mI (28821) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.04,3.35,2.27*09[0m
+[0;32mI (28831) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,,03,72,249,26,04,19,189,27*7E[0m
+[0;32mI (28841) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,29,19,26,313,18*74[0m
+[0;32mI (28851) General: Line: $GPGSV,3,3,12,22,10,276,22,28,21,083,,31,12,108,,32,24,046,*77[0m
+[0;32mI (28861) General: Line: $GPGLL,5529.61272,N,00927.94155,E,192407.00,A,A*6B[0m
+[0;32mI (28861) General: Line: $GPRMC,192408.00,A,5529.61258,N,00927.94149,E,0.175,,180325,,,A*76[0m
+[0;32mI (28871) General: Line: $GPVTG,,T,,M,0.175,N,0.325,K,A*24[0m
+[0;32mI (28881) General: Line: $GPGGA,192408.00,5529.61258,N,00927.94149,E,1,05,3.35,23.1,M,43.8,M,,*6B[0m
+[0;32mI (28891) General: UTC Time: 192408.00[0m
+[0;32mI (28891) General: Raw coordinates: 5529.61258N, 00927.94149E[0m
+[0;32mI (28901) General: Decimal degrees: 55.493546, 9.465692 (Fix quality: 1)[0m
+[0;32mI (28911) General: Satellites in use: 05[0m
+[0;32mI (28911) General: Altitude: 23.1 meters[0m
+[0;32mI (28921) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.04,3.35,2.27*09[0m
+[0;32mI (28921) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,,03,72,249,26,04,19,189,28*71[0m
+[0;32mI (28931) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,30,19,26,313,19*7D[0m
+[0;32mI (28941) General: Line: $GPGSV,3,3,12,22,10,276,22,28,21,083,,31,12,108,,32,24,046,*77[0m
+[0;32mI (28951) General: Line: $GPGLL,5529.61258,N,00927.94149,E,192408.00,A,A*61[0m
+[0;32mI (28961) General: Line: $GPRMC,192409.00,A,5529.61255,N,00927.94132,E,0.055,,180325,,,A*75[0m
+[0;32mI (28971) General: Line: $GPVTG,,T,,M,0.055,N,0.102,K,A*20[0m
+[0;32mI (28971) General: Line: $GPGGA,192409.00,5529.61255,N,00927.94132,E,1,05,3.[0m
+[0;32mI (28981) General: UTC Time: 192409.00[0m
+[0;32mI (28991) General: Raw coordinates: 5529.61255N, 00927.94132E[0m
+[0;32mI (28991) General: Decimal degrees: 55.493546, 9.465689 (Fix quality: 1)[0m
+[0;32mI (29001) General: Satellites in use: 05[0m
+[0;32mI (31001) General: Sent data:  13[0m
+[0;32mI (31001) General: Line: 35,23.1,M,43.8,M,,*6B[0m
+[0;32mI (31001) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.04,3.35,2.27*09[0m
+[0;32mI (31001) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,,03,72,249,27,04,19,189,28*70[0m
+[0;32mI (31011) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (31021) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (31021) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,30,19,26,313,19*7D[0m
+[0;32mI (31031) General: Line: $GPGSV,3,3,12,22,10,276,22,28,21,083,,31,12,108,,32,24,046,*77[0m
+[0;32mI (31041) General: Line: $GPGLL,5529.61255,N,00927.94132,E,192409.00,A,A*61[0m
+[0;32mI (31051) General: Line: $GPRMC,192410.00,A,5529.61279,N,00927.94190,E,0.485,,180325,,,A*72[0m
+[0;32mI (31061) General: Line: $GPVTG,,T,,M,0.485,N,0.898,K,A*23[0m
+[0;32mI (31061) General: Line: $GPGGA,192410.00,5529.61279,N,00927.94190,E,1,05,3.35,23.1,M,43.8,M,,*65[0m
+[0;32mI (31071) General: UTC Time: 192410.00[0m
+[0;32mI (31081) General: Raw coordinates: 5529.61279N, 00927.94190E[0m
+[0;32mI (31081) General: Decimal degrees: 55.493546, 9.465698 (Fix quality: 1)[0m
+[0;32mI (31091) General: Satellites in use: 05[0m
+[0;32mI (31101) General: Altitude: 23.1 meters[0m
+[0;32mI (31101) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.04,3.35,2.27*09[0m
+[0;32mI (31111) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,,03,72,249,28,04,19,189,30*76[0m
+[0;32mI (31121) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,31,19,26,313,21*77[0m
+[0;32mI (31131) General: Line: $GPGSV,3,3,12,22,10,276,23,28,21,083,,31,12,108,,32,24,046,*76[0m
+[0;32mI (31131) General: Line: $GPGLL,5529.61279,N,00927.94190,E,192410.00,A,A*6F[0m
+[0;32mI (31141) General: Line: $GPRMC,192411.00,A,5529.61289,N,00927.94210,E,0.454,,180325,,,A*7B[0m
+[0;32mI (31151) General: Line: $GPVTG,,T,,M,0.454,N,0.841,K,A*2B[0m
+[0;32mI (31161) General: Line: $GPGGA,192411.00,5529.61289,N,00927.94210,E,1,05,3.35,23.0,M,43.8,M,,*61[0m
+[0;32mI (31171) General: UTC Time: 192411.00[0m
+[0;32mI (31171) General: Raw coordinates: 5529.61289N, 00927.94210E[0m
+[0;32mI (31181) General: Decimal degrees: 55.493546, 9.465701 (Fix quality: 1)[0m
+[0;32mI (31181) General: Satellites in use: 05[0m
+[0;32mI (31191) General: Altitude: 23.0 meters[0m
+[0;32mI (31191) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.04,3.35,2.2[0m
+[0;32mI (33201) General: Sent data:  14[0m
+[0;32mI (33201) General: Line: 7*09[0m
+[0;32mI (33201) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,,03,72,249,31,04,19,189,30*7E[0m
+[0;32mI (33201) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,30,19,26,313,21*76[0m
+[0;32mI (33201) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (33221) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (33221) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,,31,12,108,,32,24,046,*70[0m
+[0;32mI (33231) General: Line: $GPGLL,5529.61289,N,00927.94210,E,192411.00,A,A*6A[0m
+[0;32mI (33241) General: Line: $GPRMC,192412.00,A,5529.61306,N,00927.94245,E,0.494,,180325,,,A*72[0m
+[0;32mI (33251) General: Line: $GPVTG,,T,,M,0.494,N,0.914,K,A*26[0m
+[0;32mI (33251) General: Line: $GPGGA,192412.00,5529.61306,N,00927.94245,E,1,05,3.35,22.9,M,43.8,M,,*6C[0m
+[0;32mI (33261) General: UTC Time: 192412.00[0m
+[0;32mI (33271) General: Raw coordinates: 5529.61306N, 00927.94245E[0m
+[0;32mI (33271) General: Decimal degrees: 55.493553, 9.465708 (Fix quality: 1)[0m
+[0;32mI (33281) General: Satellites in use: 05[0m
+[0;32mI (33291) General: Altitude: 22.9 meters[0m
+[0;32mI (33291) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.05,3.35,2.27*08[0m
+[0;32mI (33301) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,,03,72,249,29,04,19,189,29*7F[0m
+[0;32mI (33311) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,32,19,26,313,20*75[0m
+[0;32mI (33321) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,,31,12,108,,32,24,046,*70[0m
+[0;32mI (33331) General: Line: $GPGLL,5529.61306,N,00927.94245,E,192412.00,A,A*6F[0m
+[0;32mI (33331) General: Line: $GPRMC,192413.00,A,5529.61281,N,00927.94144,E,0.158,,180325,,,A*7A[0m
+[0;32mI (33341) General: Line: $GPVTG,,T,,M,0.158,N,0.292,K,A*26[0m
+[0;32mI (33351) General: Line: $GPGGA,192413.00,5529.61281,N,00927.94144,E,1,05,3.35,22.9,M,43.8,M,,*61[0m
+[0;32mI (33361) General: UTC Time: 192413.00[0m
+[0;32mI (33361) General: Raw coordinates: 5529.61281N, 00927.94144E[0m
+[0;32mI (33371) General: Decimal degrees: 55.493546, 9.465692 (Fix quality: 1)[0m
+[0;32mI (33381) General: Satellites in use: 05[0m
+[0;32mI (33381) General: Altitude: 22.9 meters[0m
+[0;32mI (33381) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.05,3.35,2.27*08[0m
+[0;32mI (33391) General: Line: $GPGSV,3,1,12,01,73,140,,02,50,137,,03,72,249,28,04,19,189,30*7[0m
+[0;32mI (35401) General: Sent data:  15[0m
+[0;32mI (35401) General: Line: 6[0m
+[0;32mI (35401) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (35401) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (35401) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,31,19,26,313,20*76[0m
+[0;32mI (35411) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,,31,12,108,19,32,24,046,*78[0m
+[0;32mI (35421) General: Line: $GPGLL,5529.61281,N,00927.94144,E,192413.00,A,A*62[0m
+[0;32mI (35431) General: Line: $GPRMC,192414.00,A,5529.61308,N,00927.94209,E,0.333,,180325,,,A*78[0m
+[0;32mI (35441) General: Line: $GPVTG,,T,,M,0.333,N,0.616,K,A*21[0m
+[0;32mI (35451) General: Line: $GPGGA,192414.00,5529.61308,N,00927.94209,E,1,05,3.35,22.6,M,43.8,M,,*63[0m
+[0;32mI (35451) General: UTC Time: 192414.00[0m
+[0;32mI (35461) General: Raw coordinates: 5529.61308N, 00927.94209E[0m
+[0;32mI (35471) General: Decimal degrees: 55.493553, 9.465701 (Fix quality: 1)[0m
+[0;32mI (35471) General: Satellites in use: 05[0m
+[0;32mI (35481) General: Altitude: 22.6 meters[0m
+[0;32mI (35481) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.05,3.35,2.27*08[0m
+[0;32mI (35491) General: Line: $GPGSV,3,1,12,01,73,140,18,02,50,137,,03,72,249,28,04,19,189,29*77[0m
+[0;32mI (35501) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,31,19,26,313,19*7C[0m
+[0;32mI (35511) General: Line: $GPGSV,3,3,12,22,10,276,23,28,21,083,,31,12,108,18,32,24,046,*7F[0m
+[0;32mI (35521) General: Line: $GPGLL,5529.61308,N,00927.94209,E,192414.00,A,A*6F[0m
+[0;32mI (35521) General: Line: $GPRMC,192415.00,A,5529.61301,N,00927.94168,E,0.259,,180325,,,A*79[0m
+[0;32mI (35531) General: Line: $GPVTG,,T,,M,0.259,N,0.480,K,A*21[0m
+[0;32mI (35541) General: Line: $GPGGA,192415.00,5529.61301,N,00927.94168,E,1,05,3.35,22.7,M,43.8,M,,*6E[0m
+[0;32mI (35551) General: UTC Time: 192415.00[0m
+[0;32mI (35551) General: Raw coordinates: 5529.61301N, 00927.94168E[0m
+[0;32mI (35561) General: Decimal degrees: 55.493546, 9.465694 (Fix quality: 1)[0m
+[0;32mI (35571) General: Satellites in use: 05[0m
+[0;32mI (35571) General: Altitude: 22.7 meters[0m
+[0;32mI (35581) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.05,3.35,2.27*08[0m
+[0;32mI (35581) General: Line: $GPGSV,3,1,12,01,73,140,17,02,50,137,,03,72,249,27,04,19,189,28*76[0m
+[0;32mI (35591) General: Line: $GPGSV,3,2,12,08,00,175,,12,01,007,,17,45,283,31,19,26,313[0m
+[0;32mI (37601) General: Sent data:  16[0m
+[0;32mI (37601) General: Line: ,18*7D[0m
+[0;32mI (37601) General: Line: $GPGSV,3,3,12,22,10,276,23,28,21,083,,31,12,108,18,32,24,046,*7F[0m
+[0;32mI (37601) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (37611) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (37611) General: Line: $GPGLL,5529.61301,N,00927.94168,E,192415.00,A,A*63[0m
+[0;32mI (37621) General: Line: $GPRMC,192416.00,A,5529.61308,N,00927.94180,E,0.207,,180325,,,A*7E[0m
+[0;32mI (37631) General: Line: $GPVTG,,T,,M,0.207,N,0.383,K,A*2E[0m
+[0;32mI (37641) General: Line: $GPGGA,192416.00,5529.61308,N,00927.94180,E,1,05,3.35,22.6,M,43.8,M,,*63[0m
+[0;32mI (37651) General: UTC Time: 192416.00[0m
+[0;32mI (37651) General: Raw coordinates: 5529.61308N, 00927.94180E[0m
+[0;32mI (37661) General: Decimal degrees: 55.493553, 9.465696 (Fix quality: 1)[0m
+[0;32mI (37661) General: Satellites in use: 05[0m
+[0;32mI (37671) General: Altitude: 22.6 meters[0m
+[0;32mI (37671) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.05,3.35,2.27*08[0m
+[0;32mI (37681) General: Line: $GPGSV,4,1,13,01,73,140,17,02,50,137,,03,72,249,26,04,19,189,28*71[0m
+[0;32mI (37691) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,30*75[0m
+[0;32mI (37701) General: Line: $GPGSV,4,3,13,19,26,313,17,22,10,276,23,28,21,083,,31,12,108,18*77[0m
+[0;32mI (37711) General: Line: $GPGSV,4,4,13,32,24,046,*4E[0m
+[0;32mI (37711) General: Line: $GPGLL,5529.61308,N,00927.94180,E,192416.00,A,A*6F[0m
+[0;32mI (37721) General: Line: $GPRMC,192417.00,A,5529.61328,N,00927.94221,E,0.234,,180325,,,A*75[0m
+[0;32mI (37731) General: Line: $GPVTG,,T,,M,0.234,N,0.433,K,A*22[0m
+[0;32mI (37741) General: Line: $GPGGA,192417.00,5529.61328,N,00927.94221,E,1,05,3.35,22.3,M,43.8,M,,*6D[0m
+[0;32mI (37751) General: UTC Time: 192417.00[0m
+[0;32mI (37751) General: Raw coordinates: 5529.61328N, 00927.94221E[0m
+[0;32mI (37761) General: Decimal degrees: 55.493553, 9.465703 (Fix quality: 1)[0m
+[0;32mI (37761) General: Satellites in use: 05[0m
+[0;32mI (37771) General: Altitude: 22.3 meters[0m
+[0;32mI (37771) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.05,3.35,2.27*08[0m
+[0;32mI (37781) General: Line: $GPGSV,4,1,13,01,73,140,17,02,50,137,,03,72,249,26,04,19,189,28*71[0m
+[0;32mI (37791) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,31*74[0m
+[0;32mI (37801) General: Line: $GPGSV,4,3,13,19,26,313,16[0m
+[0;32mI (39801) General: Sent data:  17[0m
+[0;32mI (39801) General: Line: ,22,10,276,23,28,21,083,,31,12,108,18*76[0m
+[0;32mI (39801) General: Line: $GPGSV,4,4,13,32,24,046,*4E[0m
+[0;32mI (39801) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (39811) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (39811) General: Line: $GPGLL,5529.61328,N,00927.94221,E,192417.00,A,A*64[0m
+[0;32mI (39821) General: Line: $GPRMC,192418.00,A,5529.61335,N,00927.94238,E,0.273,,180325,,,A*7D[0m
+[0;32mI (39831) General: Line: $GPVTG,,T,,M,0.273,N,0.506,K,A*26[0m
+[0;32mI (39841) General: Line: $GPGGA,192418.00,5529.61335,N,00927.94238,E,1,05,3.35,22.1,M,43.8,M,,*64[0m
+[0;32mI (39851) General: UTC Time: 192418.00[0m
+[0;32mI (39851) General: Raw coordinates: 5529.61335N, 00927.94238E[0m
+[0;32mI (39861) General: Decimal degrees: 55.493553, 9.465707 (Fix quality: 1)[0m
+[0;32mI (39861) General: Satellites in use: 05[0m
+[0;32mI (39871) General: Altitude: 22.1 meters[0m
+[0;32mI (39871) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.05,3.35,2.27*08[0m
+[0;32mI (39881) General: Line: $GPGSV,4,1,13,01,73,140,17,02,50,137,,03,72,249,26,04,19,189,29*70[0m
+[0;32mI (39891) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,32*77[0m
+[0;32mI (39901) General: Line: $GPGSV,4,3,13,19,26,313,17,22,10,276,23,28,21,083,,31,12,108,19*76[0m
+[0;32mI (39911) General: Line: $GPGSV,4,4,13,32,24,046,*4E[0m
+[0;32mI (39911) General: Line: $GPGLL,5529.61335,N,00927.94238,E,192418.00,A,A*6F[0m
+[0;32mI (39921) General: Line: $GPRMC,192419.00,A,5529.61334,N,00927.94227,E,0.262,,180325,,,A*73[0m
+[0;32mI (39931) General: Line: $GPVTG,,T,,M,0.262,N,0.484,K,A*2D[0m
+[0;32mI (39941) General: Line: $GPGGA,192419.00,5529.61334,N,00927.94227,E,1,05,3.35,22.0,M,43.8,M,,*6B[0m
+[0;32mI (39951) General: UTC Time: 192419.00[0m
+[0;32mI (39951) General: Raw coordinates: 5529.61334N, 00927.94227E[0m
+[0;32mI (39961) General: Decimal degrees: 55.493553, 9.465704 (Fix quality: 1)[0m
+[0;32mI (39961) General: Satellites in use: 05[0m
+[0;32mI (39971) General: Altitude: 22.0 meters[0m
+[0;32mI (39971) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.05,3.35,2.27*08[0m
+[0;32mI (39981) General: Line: $GPGSV,4,1,13,01,73,140,19,02,50,137,,03,72,249,28,04,19,189,31*79[0m
+[0;32mI (39991) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,34*71[0m
+[0;32mI (40001) General: Line: $GPGSV,4,3,13,19,26,313,20,22[0m
+[0;32mI (42001) General: Sent data:  18[0m
+[0;32mI (42001) General: Line: ,10,276,25,28,21,083,,31,12,108,21*7F[0m
+[0;32mI (42001) General: Line: $GPGSV,4,4,13,32,24,046,*4E[0m
+[0;32mI (42001) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (42011) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (42011) General: Line: $GPGLL,5529.61334,N,00927.94227,E,192419.00,A,A*61[0m
+[0;32mI (42021) General: Line: $GPRMC,192420.00,A,5529.61339,N,00927.94243,E,0.207,,180325,,,A*75[0m
+[0;32mI (42031) General: Line: $GPVTG,,T,,M,0.207,N,0.383,K,A*2E[0m
+[0;32mI (42041) General: Line: $GPGGA,192420.00,5529.61339,N,00927.94243,E,1,05,3.35,21.8,M,43.8,M,,*65[0m
+[0;32mI (42051) General: UTC Time: 192420.00[0m
+[0;32mI (42051) General: Raw coordinates: 5529.61339N, 00927.94243E[0m
+[0;32mI (42061) General: Decimal degrees: 55.493553, 9.465708 (Fix quality: 1)[0m
+[0;32mI (42061) General: Satellites in use: 05[0m
+[0;32mI (42071) General: Altitude: 21.8 meters[0m
+[0;32mI (42071) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.05,3.35,2.27*08[0m
+[0;32mI (42081) General: Line: $GPGSV,4,1,13,01,73,140,20,02,50,137,,03,72,249,29,04,19,189,31*72[0m
+[0;32mI (42091) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,34*71[0m
+[0;32mI (42101) General: Line: $GPGSV,4,3,13,19,26,313,21,22,10,276,26,28,21,083,,31,12,108,21*7D[0m
+[0;32mI (42111) General: Line: $GPGSV,4,4,13,32,24,046,*4E[0m
+[0;32mI (42111) General: Line: $GPGLL,5529.61339,N,00927.94243,E,192420.00,A,A*64[0m
+[0;32mI (42121) General: Line: $GPRMC,192421.00,A,5529.61325,N,00927.94193,E,0.052,,180325,,,A*75[0m
+[0;32mI (42131) General: Line: $GPVTG,,T,,M,0.052,N,0.096,K,A*2B[0m
+[0;32mI (42141) General: Line: $GPGGA,192421.00,5529.61325,N,00927.94193,E,1,05,3.35,21.9,M,43.8,M,,*66[0m
+[0;32mI (42151) General: UTC Time: 192421.00[0m
+[0;32mI (42151) General: Raw coordinates: 5529.61325N, 00927.94193E[0m
+[0;32mI (42161) General: Decimal degrees: 55.493553, 9.465699 (Fix quality: 1)[0m
+[0;32mI (42161) General: Satellites in use: 05[0m
+[0;32mI (42171) General: Altitude: 21.9 meters[0m
+[0;32mI (42171) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.05,3.35,2.27*08[0m
+[0;32mI (42181) General: Line: $GPGSV,4,1,13,01,73,140,21,02,50,137,,03,72,249,29,04,19,189,32*70[0m
+[0;32mI (42191) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,34*71[0m
+[0;32mI (42201) General: Line: $GPGSV,4,3,13,19,26,313,23,22,10[0m
+[0;32mI (44201) General: Sent data:  19[0m
+[0;32mI (44201) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (44201) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (44211) General: Line: ,276,26,28,21,083,,31,12,108,22*7C[0m
+[0;32mI (44211) General: Line: $GPGSV,4,4,13,32,24,046,*4E[0m
+[0;32mI (44211) General: Line: $GPGLL,5529.61325,N,00927.94193,E,192421.00,A,A*66[0m
+[0;32mI (44221) General: Line: $GPRMC,192422.00,A,5529.61323,N,00927.94191,E,0.088,,180325,,,A*75[0m
+[0;32mI (44231) General: Line: $GPVTG,,T,,M,0.088,N,0.163,K,A*27[0m
+[0;32mI (44241) General: Line: $GPGGA,192422.00,5529.61323,N,00927.94191,E,1,05,3.35,21.9,M,43.8,M,,*61[0m
+[0;32mI (44251) General: UTC Time: 192422.00[0m
+[0;32mI (44251) General: Raw coordinates: 5529.61323N, 00927.94191E[0m
+[0;32mI (44261) General: Decimal degrees: 55.493553, 9.465698 (Fix quality: 1)[0m
+[0;32mI (44261) General: Satellites in use: 05[0m
+[0;32mI (44271) General: Altitude: 21.9 meters[0m
+[0;32mI (44271) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.05,3.35,2.27*08[0m
+[0;32mI (44281) General: Line: $GPGSV,4,1,13,01,73,140,22,02,50,137,,03,72,249,29,04,19,189,32*73[0m
+[0;32mI (44291) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,34*71[0m
+[0;32mI (44301) General: Line: $GPGSV,4,3,13,19,26,313,23,22,10,276,26,28,21,083,,31,12,108,22*7C[0m
+[0;32mI (44311) General: Line: $GPGSV,4,4,13,32,24,046,*4E[0m
+[0;32mI (44311) General: Line: $GPGLL,5529.61323,N,00927.94191,E,192422.00,A,A*61[0m
+[0;32mI (44321) General: Line: $GPRMC,192423.00,A,5529.61336,N,00927.94220,E,0.168,,180325,,,A*76[0m
+[0;32mI (44331) General: Line: $GPVTG,,T,,M,0.168,N,0.310,K,A*2E[0m
+[0;32mI (44341) General: Line: $GPGGA,192423.00,5529.61336,N,00927.94220,E,1,05,3.35,21.7,M,43.8,M,,*63[0m
+[0;32mI (44351) General: UTC Time: 192423.00[0m
+[0;32mI (44351) General: Raw coordinates: 5529.61336N, 00927.94220E[0m
+[0;32mI (44361) General: Decimal degrees: 55.493553, 9.465703 (Fix quality: 1)[0m
+[0;32mI (44361) General: Satellites in use: 05[0m
+[0;32mI (44371) General: Altitude: 21.7 meters[0m
+[0;32mI (44371) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.05,3.35,2.28*07[0m
+[0;32mI (44381) General: Line: $GPGSV,4,1,13,01,73,140,22,02,50,137,,03,72,249,29,04,19,189,32*73[0m
+[0;32mI (44391) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,34*71[0m
+[0;32mI (44401) General: Line: $GPGSV,4,3,13,19,26,313,24,22,10,27[0m
+[0;32mI (46401) General: Sent data:  20[0m
+[0;32mI (46401) General: Line: 6,26,28,21,083,,31,12,108,22*7B[0m
+[0;32mI (46401) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (46401) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (46411) General: Line: $GPGSV,4,4,13,32,24,046,*4E[0m
+[0;32mI (46411) General: Line: $GPGLL,5529.61336,N,00927.94220,E,192423.00,A,A*6D[0m
+[0;32mI (46421) General: Line: $GPRMC,192424.00,A,5529.61343,N,00927.94238,E,0.215,,180325,,,A*73[0m
+[0;32mI (46431) General: Line: $GPVTG,,T,,M,0.215,N,0.398,K,A*27[0m
+[0;32mI (46441) General: Line: $GPGGA,192424.00,5529.61343,N,00927.94238,E,1,05,3.35,21.6,M,43.8,M,,*6E[0m
+[0;32mI (46451) General: UTC Time: 192424.00[0m
+[0;32mI (46451) General: Raw coordinates: 5529.61343N, 00927.94238E[0m
+[0;32mI (46461) General: Decimal degrees: 55.493553, 9.465707 (Fix quality: 1)[0m
+[0;32mI (46461) General: Satellites in use: 05[0m
+[0;32mI (46471) General: Altitude: 21.6 meters[0m
+[0;32mI (46471) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.05,3.35,2.28*07[0m
+[0;32mI (46481) General: Line: $GPGSV,4,1,13,01,73,140,22,02,50,137,,03,72,249,30,04,19,189,32*7B[0m
+[0;32mI (46491) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,35*70[0m
+[0;32mI (46501) General: Line: $GPGSV,4,3,13,19,26,313,24,22,10,276,26,28,21,083,,31,12,108,23*7A[0m
+[0;32mI (46511) General: Line: $GPGSV,4,4,13,32,24,046,*4E[0m
+[0;32mI (46511) General: Line: $GPGLL,5529.61343,N,00927.94238,E,192424.00,A,A*61[0m
+[0;32mI (46521) General: Line: $GPRMC,192425.00,A,5529.61351,N,00927.94263,E,0.192,,180325,,,A*73[0m
+[0;32mI (46531) General: Line: $GPVTG,,T,,M,0.192,N,0.355,K,A*2A[0m
+[0;32mI (46541) General: Line: $GPGGA,192425.00,5529.61351,N,00927.94263,E,1,05,3.35,21.5,M,43.8,M,,*61[0m
+[0;32mI (46551) General: UTC Time: 192425.00[0m
+[0;32mI (46551) General: Raw coordinates: 5529.61351N, 00927.94263E[0m
+[0;32mI (46561) General: Decimal degrees: 55.493553, 9.465711 (Fix quality: 1)[0m
+[0;32mI (46561) General: Satellites in use: 05[0m
+[0;32mI (46571) General: Altitude: 21.5 meters[0m
+[0;32mI (46571) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.05,3.35,2.28*07[0m
+[0;32mI (46581) General: Line: $GPGSV,4,1,13,01,73,140,22,02,50,137,,03,72,249,29,04,19,189,32*73[0m
+[0;32mI (46591) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,35*70[0m
+[0;32mI (46601) General: Line: $GPGSV,4,3,13,19,26,313,25,22,10,276,2[0m
+[0;32mI (48601) General: Sent data:  21[0m
+[0;32mI (48601) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (48601) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (48611) General: Line: 6,28,21,083,,31,12,108,23*7B[0m
+[0;32mI (48611) General: Line: $GPGSV,4,4,13,32,24,046,*4E[0m
+[0;32mI (48611) General: Line: $GPGLL,5529.61351,N,00927.94263,E,192425.00,A,A*6D[0m
+[0;32mI (48621) General: Line: $GPRMC,192426.00,A,5529.61360,N,00927.94285,E,0.163,,180325,,,A*74[0m
+[0;32mI (48631) General: Line: $GPVTG,,T,,M,0.163,N,0.301,K,A*25[0m
+[0;32mI (48641) General: Line: $GPGGA,192426.00,5529.61360,N,00927.94285,E,1,05,3.35,21.4,M,43.8,M,,*69[0m
+[0;32mI (48651) General: UTC Time: 192426.00[0m
+[0;32mI (48651) General: Raw coordinates: 5529.61360N, 00927.94285E[0m
+[0;32mI (48661) General: Decimal degrees: 55.493565, 9.465714 (Fix quality: 1)[0m
+[0;32mI (48661) General: Satellites in use: 05[0m
+[0;32mI (48671) General: Altitude: 21.4 meters[0m
+[0;32mI (48671) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.05,3.35,2.28*07[0m
+[0;32mI (48681) General: Line: $GPGSV,4,1,13,01,73,140,22,02,50,137,,03,72,249,29,04,19,189,32*73[0m
+[0;32mI (48691) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,35*70[0m
+[0;32mI (48701) General: Line: $GPGSV,4,3,13,19,26,313,24,22,10,276,26,28,21,083,,31,12,108,24*7D[0m
+[0;32mI (48711) General: Line: $GPGSV,4,4,13,32,24,046,*4E[0m
+[0;32mI (48711) General: Line: $GPGLL,5529.61360,N,00927.94285,E,192426.00,A,A*64[0m
+[0;32mI (48721) General: Line: $GPRMC,192427.00,A,5529.61349,N,00927.94253,E,0.073,,180325,,,A*75[0m
+[0;32mI (48731) General: Line: $GPVTG,,T,,M,0.073,N,0.134,K,A*21[0m
+[0;32mI (48741) General: Line: $GPGGA,192427.00,5529.61349,N,00927.94253,E,1,05,3.35,21.6,M,43.8,M,,*6A[0m
+[0;32mI (48741) General: UTC Time: 192427.00[0m
+[0;32mI (48751) General: Raw coordinates: 5529.61349N, 00927.94253E[0m
+[0;32mI (48761) General: Decimal degrees: 55.493553, 9.465709 (Fix quality: 1)[0m
+[0;32mI (48761) General: Satellites in use: 05[0m
+[0;32mI (48771) General: Altitude: 21.6 meters[0m
+[0;32mI (48771) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.06,3.35,2.28*04[0m
+[0;32mI (48781) General: Line: $GPGSV,4,1,13,01,73,140,22,02,50,137,,03,72,249,29,04,19,189,32*73[0m
+[0;32mI (48791) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,35*70[0m
+[0;32mI (48801) General: Line: $GPGSV,4,3,13,19,26,313,23,22,10,276,26,2[0m
+[0;32mI (50801) General: Sent data:  22[0m
+[0;32mI (50801) General: Line: 8,21,083,,31,12,108,23*7D[0m
+[0;32mI (50801) General: Line: $GPGSV,4,4,13,32,24,046,*4E[0m
+[0;32mI (50801) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (50811) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (50811) General: Line: $GPGLL,5529.61349,N,00927.94253,E,192427.00,A,A*65[0m
+[0;32mI (50821) General: Line: $GPRMC,192428.00,A,5529.61352,N,00927.94269,E,0.172,,180325,,,A*79[0m
+[0;32mI (50831) General: Line: $GPVTG,,T,,M,0.172,N,0.319,K,A*2C[0m
+[0;32mI (50841) General: Line: $GPGGA,192428.00,5529.61352,N,00927.94269,E,1,05,3.36,21.5,M,43.8,M,,*66[0m
+[0;32mI (50841) General: UTC Time: 192428.00[0m
+[0;32mI (50851) General: Raw coordinates: 5529.61352N, 00927.94269E[0m
+[0;32mI (50861) General: Decimal degrees: 55.493553, 9.465712 (Fix quality: 1)[0m
+[0;32mI (50861) General: Satellites in use: 05[0m
+[0;32mI (50871) General: Altitude: 21.5 meters[0m
+[0;32mI (50871) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.06,3.36,2.28*07[0m
+[0;32mI (50881) General: Line: $GPGSV,4,1,13,01,73,140,21,02,50,137,,03,72,249,28,04,19,189,32*71[0m
+[0;32mI (50891) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,35*70[0m
+[0;32mI (50901) General: Line: $GPGSV,4,3,13,19,26,313,23,22,10,276,25,28,21,083,19,31,12,108,23*76[0m
+[0;32mI (50911) General: Line: $GPGSV,4,4,13,32,24,046,*4E[0m
+[0;32mI (50911) General: Line: $GPGLL,5529.61352,N,00927.94269,E,192428.00,A,A*69[0m
+[0;32mI (50921) General: Line: $GPRMC,192429.00,A,5529.61331,N,00927.94225,E,0.134,,180325,,,A*77[0m
+[0;32mI (50931) General: Line: $GPVTG,,T,,M,0.134,N,0.248,K,A*2B[0m
+[0;32mI (50941) General: Line: $GPGGA,192429.00,5529.61331,N,00927.94225,E,1,05,3.36,21.8,M,43.8,M,,*67[0m
+[0;32mI (50941) General: UTC Time: 192429.00[0m
+[0;32mI (50951) General: Raw coordinates: 5529.61331N, 00927.94225E[0m
+[0;32mI (50961) General: Decimal degrees: 55.493553, 9.465704 (Fix quality: 1)[0m
+[0;32mI (50961) General: Satellites in use: 05[0m
+[0;32mI (50971) General: Altitude: 21.8 meters[0m
+[0;32mI (50971) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.06,3.36,2.28*07[0m
+[0;32mI (50981) General: Line: $GPGSV,4,1,13,01,73,140,20,02,50,137,,03,72,249,27,04,19,189,31*7C[0m
+[0;32mI (50991) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,33*76[0m
+[0;32mI (51001) General: Line: $GPGSV,4,3,13,19,26,313,22,22,10,276,25,28[0m
+[0;32mI (53001) General: Sent data:  23[0m
+[0;32mI (53001) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (53001) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (53011) General: Line: ,21,083,17,31,12,108,22*78[0m
+[0;32mI (53011) General: Line: $GPGSV,4,4,13,32,24,046,16*49[0m
+[0;32mI (53011) General: Line: $GPGLL,5529.61331,K,A*24[0m
+[0;32mI (53021) General: Line: $GPGGA,192430.00,5529.61326,N,00927.94215,E,1,05,3.36,21.8,M,43.8,M,,*6A[0m
+[0;32mI (53031) General: UTC Time: 192430.00[0m
+[0;32mI (53031) General: Raw coordinates: 5529.61326N, 00927.94215E[0m
+[0;32mI (53041) General: Decimal degrees: 55.493553, 9.465702 (Fix quality: 1)[0m
+[0;32mI (53051) General: Satellites in use: 05[0m
+[0;32mI (53051) General: Altitude: 21.8 meters[0m
+[0;32mI (53061) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.06,3.36,2.28*07[0m
+[0;32mI (53061) General: Line: $GPGSV,4,1,13,01,73,140,21,02,50,137,,03,72,249,28,04,19,189,31*72[0m
+[0;32mI (53071) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,34*71[0m
+[0;32mI (53081) General: Line: $GPGSV,4,3,13,19,26,313,23,22,10,276,25,28,21,083,17,31,12,108,23*78[0m
+[0;32mI (53091) General: Line: $GPGSV,4,4,13,32,24,046,17*48[0m
+[0;32mI (53101) General: Line: $GPGLL,5529.61326,N,00927.94215,E,192430.00,A,A*68[0m
+[0;32mI (53101) General: Line: $GPRMC,192431.00,A,5529.61323,N,00927.94210,E,0.099,,180325,,,A*7D[0m
+[0;32mI (53111) General: Line: $GPVTG,,T,,M,0.099,N,0.183,K,A*29[0m
+[0;32mI (53121) General: Line: $GPGGA,192431.00,5529.61323,N,00927.94210,E,1,05,3.36,21.9,M,43.8,M,,*6A[0m
+[0;32mI (53131) General: UTC Time: 192431.00[0m
+[0;32mI (53131) General: Raw coordinates: 5529.61323N, 00927.94210E[0m
+[0;32mI (53141) General: Decimal degrees: 55.493553, 9.465701 (Fix quality: 1)[0m
+[0;32mI (53151) General: Satellites in use: 05[0m
+[0;32mI (53151) General: Altitude: 21.9 meters[0m
+[0;32mI (53161) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.06,3.36,2.28*07[0m
+[0;32mI (53161) General: Line: $GPGSV,4,1,13,01,73,140,21,02,50,137,,03,72,249,27,04,19,189,31*7D[0m
+[0;32mI (53171) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,34*71[0m
+[0;32mI (53181) General: Line: $GPGSV,4,3,13,19,26,313,22,22,10,276,25,28,21,083,17,31,12,108,22*78[0m
+[0;32mI (53191) General: Line: $GPGSV,4,4,13,32,24,046,15*4A[0m
+[0;32mI (53201) General: Line: $GPGLL,5529.61323,N,00927.94210,E,192431.00,A,A*69[0m
+[0;32mI (53201) General: Line: $GPRMC,192432[0m
+[0;32mI (55211) General: Sent data:  24[0m
+[0;32mI (55211) General: Line: .00,A,5529.61320,N,00927.94207,E,0.025,,180325,,,A*7C[0m
+[0;32mI (55211) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (55211) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (55221) General: Line: $GPVTG,,T,,M,0.025,N,0.047,K,A*27[0m
+[0;32mI (55231) General: Line: $GPGGA,192432.00,140,21,02,50,137,,03,72,249,27,04,19,189,31*7D[0m
+[0;32mI (55231) General: UTC Time: 192432.00[0m
+[0;32mI (55241) General: Raw coordinates: 1402, 025[0m
+[0;32mI (55241) General: Decimal degrees: 1.666667, 0.033333 (Fix quality: 137)[0m
+[0;32mI (55251) General: Satellites in use: 03[0m
+[0;32mI (55261) General: Altitude: 249 meters[0m
+[0;32mI (55261) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,34*71[0m
+[0;32mI (55271) General: Line: $GPGSV,4,3,13,19,26,313,22,22,10,276,25,28,21,083,17,31,12,108,22*78[0m
+[0;32mI (55281) General: Line: $GPGSV,4,4,13,32,24,046,15*4A[0m
+[0;32mI (55281) General: Line: $GPGLL,5529.61320,N,00927.94207,E,192432.00,A,A*6F[0m
+[0;32mI (55291) General: Line: $GPRMC,192433.00,A,5529.61325,N,00927.94222,E,0.075,,180325,,,A*7A[0m
+[0;32mI (55301) General: Line: $GPVTG,,T,,M,0.075,N,0.139,K,A*2A[0m
+[0;32mI (55311) General: Line: $GPGGA,192433.00,5529.61325,N,00927.94222,E,1,05,3.36,21.9,M,43.8,M,,*6F[0m
+[0;32mI (55321) General: UTC Time: 192433.00[0m
+[0;32mI (55321) General: Raw coordinates: 5529.61325N, 00927.94222E[0m
+[0;32mI (55331) General: Decimal degrees: 55.493553, 9.465703 (Fix quality: 1)[0m
+[0;32mI (55331) General: Satellites in use: 05[0m
+[0;32mI (55341) General: Altitude: 21.9 meters[0m
+[0;32mI (55341) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.06,3.36,2.28*07[0m
+[0;32mI (55351) General: Line: $GPGSV,4,1,13,01,73,140,20,02,50,137,,03,72,249,27,04,19,189,31*7C[0m
+[0;32mI (55361) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,34*71[0m
+[0;32mI (55371) General: Line: $GPGSV,4,3,13,19,26,313,22,22,10,276,24,28,21,083,17,31,12,108,22*79[0m
+[0;32mI (55381) General: Line: $GPGSV,4,4,13,32,24,046,16*49[0m
+[0;32mI (55381) General: Line: $GPGLL,5529.61325,N,00927.94222,E,192433.00,A,A*6C[0m
+[0;32mI (55391) General: Line: $GPRMC,192434.00,A,5529.61330,N,00927.94234,E,0.067,,180325,,,A*7D[0m
+[0;32mI (55401) General: Line: $GPVTG,,T,,M,0.067,N,0.124,K,A*25[0m
+[0;32mI (55411) General: Line: $GPGGA,192434.00,5529.61330,N,0092[0m
+[0;32mI (55411) General: UTC Time: 192434.00[0m
+[0;32mI (55421) General: No valid position fix obtained[0m
+[0;32mI (57421) General: Sent data:  25[0m
+[0;32mI (57421) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (57421) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (57431) General: Line: 7.94234,E,1,05,3.36,21.8,M,43.8,M,,*6A[0m
+[0;32mI (57431) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.06,3.36,2.28*07[0m
+[0;32mI (57441) General: Line: $GPGSV,4,1,2434.00,A,A*68[0m
+[0;32mI (57441) General: Line: $GPRMC,192435.00,A,5529.61322,N,00927.94215,E,0.048,,180325,,,A*71[0m
+[0;32mI (57451) General: Line: $GPVTG,,T,,M,0.048,N,0.088,K,A*2F[0m
+[0;32mI (57461) General: Line: $GPGGA,192435.00,5529.61322,N,00927.94215,E,1,05,3.36,21.8,M,43.8,M,,*6B[0m
+[0;32mI (57471) General: UTC Time: 192435.00[0m
+[0;32mI (57471) General: Raw coordinates: 5529.61322N, 00927.94215E[0m
+[0;32mI (57481) General: Decimal degrees: 55.493553, 9.465702 (Fix quality: 1)[0m
+[0;32mI (57481) General: Satellites in use: 05[0m
+[0;32mI (57491) General: Altitude: 21.8 meters[0m
+[0;32mI (57491) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.06,3.36,2.28*07[0m
+[0;32mI (57501) General: Line: $GPGSV,4,1,13,01,73,140,20,02,50,137,,03,72,249,27,04,19,189,31*7C[0m
+[0;32mI (57511) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,34*71[0m
+[0;32mI (57521) General: Line: $GPGSV,4,3,13,19,26,313,23,22,10,276,24,28,21,083,19,31,12,108,21*75[0m
+[0;32mI (57531) General: Line: $GPGSV,4,4,13,32,24,046,18*47[0m
+[0;32mI (57531) General: Line: $GPGLL,5529.61322,N,00927.94215,E,192435.00,A,A*69[0m
+[0;32mI (57541) General: Line: $GPRMC,192436.00,A,5529.61326,N,00927.94225,E,0.127,,180325,,,A*7D[0m
+[0;32mI (57551) General: Line: $GPVTG,,T,,M,0.127,N,0.234,K,A*22[0m
+[0;32mI (57561) General: Line: $GPGGA,192436.00,5529.61326,N,00927.94225,E,1,05,3.36,21.8,M,43.8,M,,*6F[0m
+[0;32mI (57571) General: UTC Time: 192436.00[0m
+[0;32mI (57571) General: Raw coordinates: 5529.61326N, 00927.94225E[0m
+[0;32mI (57581) General: Decimal degrees: 55.493553, 9.465704 (Fix quality: 1)[0m
+[0;32mI (57581) General: Satellites in use: 05[0m
+[0;32mI (57591) General: Altitude: 21.8 meters[0m
+[0;32mI (57591) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.06,3.36,2.28*07[0m
+[0;32mI (57601) General: Line: $GPGSV,4,1,13,01,73,140,20,02,50,137,,03,72,249,27,04,19,189,31*7C[0m
+[0;32mI (57611) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,33*76[0m
+[0;32mI (57621) General: Line: $GPGSV,4,3,13,19,26,313,22,22[0m
+[0;32mI (59621) General: Sent data:  26[0m
+[0;32mI (59621) General: Line: ,10,276,24,28,21,083,19,31,12,108,21*74[0m
+[0;32mI (59621) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (59621) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (59631) General: Line: $GPGSV,4,4,13,32,24,046,18*47[0m
+[0;32mI (59631) General: Line: $GPGLL,5529.61326,N,00927.94225,E,192436.00,A,A*6D[0m
+[0;32mI (59641) General: Line: $GPRMC,192437.00,A,5529.61321,N,00927.94216,E,0.105,,180325,,,A*7B[0m
+[0;32mI (59651) General: Line: $GPVTG,,T,,M,0.105,N,0.194,K,A*2B[0m
+[0;32mI (59661) General: Line: $GPGGA,192437.00,5529.61321,N,00927.94216,E,1,05,3.36,21.8,M,43.8,M,,*69[0m
+[0;32mI (59671) General: UTC Time: 192437.00[0m
+[0;32mI (59671) General: Raw coordinates: 5529.61321N, 00927.94216E[0m
+[0;32mI (59681) General: Decimal degrees: 55.493553, 9.465702 (Fix quality: 1)[0m
+[0;32mI (59681) General: Satellites in use: 05[0m
+[0;32mI (59691) General: Altitude: 21.8 meters[0m
+[0;32mI (59691) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.06,3.36,2.28*07[0m
+[0;32mI (59701) General: Line: $GPGSV,4,1,13,01,72,140,20,02,50,137,,03,72,249,28,04,19,189,32*71[0m
+[0;32mI (59711) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,34*71[0m
+[0;32mI (59721) General: Line: $GPGSV,4,3,13,19,26,313,24,22,10,276,24,28,21,083,18,31,12,108,21*73[0m
+[0;32mI (59731) General: Line: $GPGSV,4,4,13,32,24,046,19*46[0m
+[0;32mI (59731) General: Line: $GPGLL,5529.61321,N,00927.94216,E,192437.00,A,A*6B[0m
+[0;32mI (59741) General: Line: $GPRMC,192438.00,A,5529.61314,N,00927.94200,E,0.009,,180325,,,A*78[0m
+[0;32mI (59751) General: Line: $GPVTG,,T,,M,0.009,N,0.016,K,A*2D[0m
+[0;32mI (59761) General: Line: $GPGGA,192438.00,5529.61314,N,00927.94200,E,1,05,3.36,21.9,M,43.8,M,,*66[0m
+[0;32mI (59771) General: UTC Time: 192438.00[0m
+[0;32mI (59771) General: Raw coordinates: 5529.61314N, 00927.94200E[0m
+[0;32mI (59781) General: Decimal degrees: 55.493553, 9.465700 (Fix quality: 1)[0m
+[0;32mI (59781) General: Satellites in use: 05[0m
+[0;32mI (59791) General: Altitude: 21.9 meters[0m
+[0;32mI (59791) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.06,3.36,2.28*07[0m
+[0;32mI (59801) General: Line: $GPGSV,4,1,13,01,72,140,21,02,49,137,,03,72,249,28,04,19,189,32*78[0m
+[0;32mI (59811) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,34*71[0m
+[0;32mI (59821) General: Line: $GPGSV,4,3,13,19,26,313,[0m
+[0;32mI (61821) General: Sent data:  27[0m
+[0;32mI (61821) General: Line: 25,22,10,276,25,28,21,083,18,31,12,108,22*70[0m
+[0;32mI (61821) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (61821) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (61831) General: Line: $GPGSV,4,4,13,32,24,046,19*46[0m
+[0;32mI (61831) General: Line: $GPGLL,5529.61314,N,00927.94200,E,192438.00,A,A*65[0m
+[0;32mI (61841) General: Line: $GPRMC,192439.00,A,5529.61316,N,00927.94208,E,0.037,,180325,,,A*7E[0m
+[0;32mI (61851) General: Line: $GPVTG,,T,,M,0.037,N,0.068,K,A*29[0m
+[0;32mI (61861) General: Line: $GPGGA,192439.00,5529.61316,N,00927.94208,E,1,05,3.36,22.0,M,43.8,M,,*67[0m
+[0;32mI (61871) General: UTC Time: 192439.00[0m
+[0;32mI (61871) General: Raw coordinates: 5529.61316N, 00927.94208E[0m
+[0;32mI (61881) General: Decimal degrees: 55.493553, 9.465701 (Fix quality: 1)[0m
+[0;32mI (61881) General: Satellites in use: 05[0m
+[0;32mI (61891) General: Altitude: 22.0 meters[0m
+[0;32mI (61891) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.06,3.36,2.29*06[0m
+[0;32mI (61901) General: Line: $GPGSV,4,1,13,01,72,140,21,02,49,137,,03,73,249,27,04,19,189,32*76[0m
+[0;32mI (61911) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,34*71[0m
+[0;32mI (61921) General: Line: $GPGSV,4,3,13,19,26,313,25,22,10,276,25,28,21,083,18,31,12,108,21*73[0m
+[0;32mI (61931) General: Line: $GPGSV,4,4,13,32,24,046,20*4C[0m
+[0;32mI (61931) General: Line: $GPGLL,5529.61316,N,00927.94208,E,192439.00,A,A*6E[0m
+[0;32mI (61941) General: Line: $GPRMC,192440.00,A,5529.61315,N,00927.94207,E,0.157,,180325,,,A*7B[0m
+[0;32mI (61951) General: Line: $GPVTG,,T,,M,0.157,N,0.290,K,A*2B[0m
+[0;32mI (61961) General: Line: $GPGGA,192440.00,5529.61315,N,00927.94207,E,1,05,3.36,22.0,M,43.8,M,,*65[0m
+[0;32mI (61971) General: UTC Time: 192440.00[0m
+[0;32mI (61971) General: Raw coordinates: 5529.61315N, 00927.94207E[0m
+[0;32mI (61981) General: Decimal degrees: 55.493553, 9.465701 (Fix quality: 1)[0m
+[0;32mI (61981) General: Satellites in use: 05[0m
+[0;32mI (61991) General: Altitude: 22.0 meters[0m
+[0;32mI (61991) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.06,3.36,2.29*06[0m
+[0;32mI (62001) General: Line: $GPGSV,4,1,13,01,72,140,22,02,49,137,,03,73,249,28,04,19,189,33*7B[0m
+[0;32mI (62011) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,35*70[0m
+[0;32mI (62021) General: Line: $GPGSV,4,3,13,19,26[0m
+[0;32mI (64021) General: Sent data:  28[0m
+[0;32mI (64021) General: Line: ,313,25,22,10,276,25,28,21,083,19,31,12,108,22*71[0m
+[0;32mI (64021) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (64021) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (64031) General: Line: $GPGSV,4,4,13,32,24,046,21*4D[0m
+[0;32mI (64031) General: Line: $GPGLL,5529.61315,K,A*22[0m
+[0;32mI (64041) General: Line: $GPGGA,192441.00,5529.61309,N,00927.94193,E,1,05,3.36,22.2,M,43.8,M,,*65[0m
+[0;32mI (64051) General: UTC Time: 192441.00[0m
+[0;32mI (64051) General: Raw coordinates: 5529.61309N, 00927.94193E[0m
+[0;32mI (64061) General: Decimal degrees: 55.493553, 9.465699 (Fix quality: 1)[0m
+[0;32mI (64071) General: Satellites in use: 05[0m
+[0;32mI (64071) General: Altitude: 22.2 meters[0m
+[0;32mI (64081) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.06,3.36,2.29*06[0m
+[0;32mI (64081) General: Line: $GPGSV,4,1,13,01,72,140,22,02,49,137,,03,73,249,28,04,19,189,33*7B[0m
+[0;32mI (64091) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,34*71[0m
+[0;32mI (64101) General: Line: $GPGSV,4,3,13,19,26,313,26,22,10,276,25,28,21,083,20,31,12,108,22*78[0m
+[0;32mI (64111) General: Line: $GPGSV,4,4,13,32,24,046,20*4C[0m
+[0;32mI (64121) General: Line: $GPGLL,5529.61309,N,00927.94193,E,192441.00,A,A*6E[0m
+[0;32mI (64121) General: Line: $GPRMC,192442.00,A,5529.61300,N,00927.94170,E,0.166,,180325,,,A*7C[0m
+[0;32mI (64131) General: Line: $GPVTG,,T,,M,0.166,N,0.307,K,A*26[0m
+[0;32mI (64141) General: Line: $GPGGA,192442.00,5529.61300,N,00927.94170,E,1,05,3.36,22.3,M,43.8,M,,*63[0m
+[0;32mI (64151) General: UTC Time: 192442.00[0m
+[0;32mI (64151) General: Raw coordinates: 5529.61300N, 00927.94170E[0m
+[0;32mI (64161) General: Decimal degrees: 55.493546, 9.465695 (Fix quality: 1)[0m
+[0;32mI (64171) General: Satellites in use: 05[0m
+[0;32mI (64171) General: Altitude: 22.3 meters[0m
+[0;32mI (64181) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.06,3.36,2.29*06[0m
+[0;32mI (64181) General: Line: $GPGSV,4,1,13,01,72,140,22,02,49,137,,03,73,249,28,04,19,189,35*7D[0m
+[0;32mI (64191) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,35*70[0m
+[0;32mI (64201) General: Line: $GPGSV,4,3,13,19,26,313,26,22,10,276,25,28,21,083,19,31,12,108,22*72[0m
+[0;32mI (64211) General: Line: $GPGSV,4,4,13,32,24,046,21*4D[0m
+[0;32mI (64221) General: Line: $GPGLL,5529.61300,N,00927.94170,E,192442.0[0m
+[0;32mI (66221) General: Sent data:  29[0m
+[0;32mI (66221) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (66221) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (66231) General: Line: 0,A,A*69[0m
+[0;32mI (66231) General: Line: ,49,137,,03,73,249,28,04,19,189,33*7B[0m
+[0;32mI (66231) General: Line: $GPGSV,4,2,13,08,00,175,,12,01,007,,14,01,258,,17,45,283,34*71[0m
+[0;32mI (66241) General: Line: $GPGSV,4,3,13,19,26,313,25,22,10,276,24,28,21,083,19,31,12,108,21*73[0m
+[0;32mI (66251) General: Line: $GPGSV,4,4,13,32,24,046,20*4C[0m
+[0;32mI (66261) General: Line: $GPGLL,5529.61294,N,00927.94151,E,192443.00,A,A*67[0m
+[0;32mI (66261) General: Line: $GPRMC,192444.00,A,5529.61290,N,00927.94133,E,0.110,,180325,,,A*74[0m
+[0;32mI (66271) General: Line: $GPVTG,,T,,M,0.110,N,0.204,K,A*25[0m
+[0;32mI (66281) General: Line: $GPGGA,192444.00,5529.61290,N,00927.94133,E,1,05,3.36,22.6,M,43.8,M,,*6F[0m
+[0;32mI (66291) General: UTC Time: 192444.00[0m
+[0;32mI (66291) General: Raw coordinates: 5529.61290N, 00927.94133E[0m
+[0;32mI (66301) General: Decimal degrees: 55.493546, 9.465689 (Fix quality: 1)[0m
+[0;32mI (66311) General: Satellites in use: 05[0m
+[0;32mI (66311) General: Altitude: 22.6 meters[0m
+[0;32mI (66321) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.07,3.36,2.29*07[0m
+[0;32mI (66321) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,,03,73,249,28,04,19,189,33*7D[0m
+[0;32mI (66331) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,45,283,35,19,26,313,26*74[0m
+[0;32mI (66341) General: Line: $GPGSV,3,3,12,22,10,276,24,28,21,083,19,31,12,108,22,32,24,046,20*7B[0m
+[0;32mI (66351) General: Line: $GPGLL,5529.61290,N,00927.94133,E,192444.00,A,A*60[0m
+[0;32mI (66361) General: Line: $GPRMC,192445.00,A,5529.61289,N,00927.94128,E,0.230,,180325,,,A*76[0m
+[0;32mI (66371) General: Line: $GPVTG,,T,,M,0.230,N,0.426,K,A*22[0m
+[0;32mI (66371) General: Line: $GPGGA,192445.00,5529.61289,N,00927.94128,E,1,05,3.36,22.6,M,43.8,M,,*6C[0m
+[0;32mI (66381) General: UTC Time: 192445.00[0m
+[0;32mI (66391) General: Raw coordinates: 5529.61289N, 00927.94128E[0m
+[0;32mI (66391) General: Decimal degrees: 55.493546, 9.465688 (Fix quality: 1)[0m
+[0;32mI (66401) General: Satellites in use: 05[0m
+[0;32mI (66411) General: Altitude: 22.6 meters[0m
+[0;32mI (66411) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.07,3.36,2.29*07[0m
+[0;32mI (66421) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,,03,73[0m
+[0;32mI (68421) General: Sent data:  30[0m
+[0;32mI (68421) General: Line: ,249,28,04,19,189,34*7A[0m
+[0;32mI (68421) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,45,283,35,19,26,313,26*74[0m
+[0;32mI (68421) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (68431) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (68441) General: Line: $GPGSV,3,3,12,22,10,276,24,28,21,083,19,31,12,108,22,32,24,046,21*7A[0m
+[0;32mI (68441) General: Line: $GPGLL,5529.61289,N,00927.94128,E,192445.00,A,A*63[0m
+[0;32mI (68451) General: Line: $GPRMC,192446.00,A,5529.61276,N,00927.94091,E,0.147,,180325,,,A*75[0m
+[0;32mI (68461) General: Line: $GPVTG,,T,,M,0.147,N,0.272,K,A*26[0m
+[0;32mI (68471) General: Line: $GPGGA,192446.00,5529.61276,N,00927.94091,E,1,05,3.36,22.7,M,43.8,M,,*6D[0m
+[0;32mI (68481) General: UTC Time: 192446.00[0m
+[0;32mI (68481) General: Raw coordinates: 5529.61276N, 00927.94091E[0m
+[0;32mI (68491) General: Decimal degrees: 55.493546, 9.465682 (Fix quality: 1)[0m
+[0;32mI (68501) General: Satellites in use: 05[0m
+[0;32mI (68501) General: Altitude: 22.7 meters[0m
+[0;32mI (68501) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.07,3.36,2.29*07[0m
+[0;32mI (68511) General: Line: $GPGSV,3,1,12,01,72,140,21,02,49,137,,03,73,249,28,04,19,189,32*7F[0m
+[0;32mI (68521) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,45,283,32,19,26,313,26*73[0m
+[0;32mI (68531) General: Line: $GPGSV,3,3,12,22,10,276,23,28,21,083,19,31,12,108,22,32,24,046,19*76[0m
+[0;32mI (68541) General: Line: $GPGLL,5529.61276,N,00927.94091,E,192446.00,A,A*63[0m
+[0;32mI (68551) General: Line: $GPRMC,192447.00,A,5529.61269,N,00927.94072,E,0.022,,180325,,,A*75[0m
+[0;32mI (68561) General: Line: $GPVTG,,T,,M,0.022,N,0.041,K,A*26[0m
+[0;32mI (68561) General: Line: $GPGGA,192447.00,5529.61269,N,00927.94072,E,1,05,3.36,22.8,M,43.8,M,,*60[0m
+[0;32mI (68571) General: UTC Time: 192447.00[0m
+[0;32mI (68581) General: Raw coordinates: 5529.61269N, 00927.94072E[0m
+[0;32mI (68581) General: Decimal degrees: 55.493546, 9.465679 (Fix quality: 1)[0m
+[0;32mI (68591) General: Satellites in use: 05[0m
+[0;32mI (68591) General: Altitude: 22.8 meters[0m
+[0;32mI (68601) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.07,3.36,2.29*07[0m
+[0;32mI (68611) General: Line: $GPGSV,3,1,12,01,72,140,21,02,49,137,,03,73,249,28,04,19,189,31*7C[0m
+[0;32mI (68621) General: Line: $GPGSV,3,2,12,12,01,007,,14,[0m
+[0;32mI (70621) General: Sent data:  31[0m
+[0;32mI (70621) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (70621) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (70631) General: Line: 01,258,,17,45,283,33,19,26,313,25*71[0m
+[0;32mI (70631) General: Line: $GPGSV,3,3,12,22,10,276,22,28,21,083,18,31,12,108,21,32,24,046,19*75[0m
+[0;32mI (70641) General: Line: $GPGLL,5529.61269,N,00927.94072,E,192447.00,A,A*61[0m
+[0;32mI (70641) General: Line: $GPRMC,192448.00,A,5529.61283,N,00927.94116,E,0.229,,180325,,,A*74[0m
+[0;32mI (70651) General: Line: $GPVTG,,T,,M,0.229,N,0.424,K,A*28[0m
+[0;32mI (70661) General: Line: $GPGGA,192448.00,5529.61283,N,00927.94116,E,1,05,3.36,22.7,M,43.8,M,,*67[0m
+[0;32mI (70671) General: UTC Time: 192448.00[0m
+[0;32mI (70671) General: Raw coordinates: 5529.61283N, 00927.94116E[0m
+[0;32mI (70681) General: Decimal degrees: 55.493546, 9.465686 (Fix quality: 1)[0m
+[0;32mI (70691) General: Satellites in use: 05[0m
+[0;32mI (70691) General: Altitude: 22.7 meters[0m
+[0;32mI (70701) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.07,3.36,2.29*07[0m
+[0;32mI (70701) General: Line: $GPGSV,3,1,12,01,72,140,19,02,49,137,,03,73,249,27,04,19,189,30*79[0m
+[0;32mI (70711) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,45,283,32,19,26,313,24*71[0m
+[0;32mI (70721) General: Line: $GPGSV,3,3,12,22,10,276,21,28,21,083,17,31,12,108,19,32,24,046,18*73[0m
+[0;32mI (70731) General: Line: $GPGLL,5529.61283,N,00927.94116,E,192448.00,A,A*69[0m
+[0;32mI (70741) General: Line: $GPRMC,192449.00,A,5529.61278,N,00927.94099,E,0.303,,180325,,,A*7E[0m
+[0;32mI (70751) General: Line: $GPVTG,,T,,M,0.303,N,0.561,K,A*21[0m
+[0;32mI (70751) General: Line: $GPGGA,192449.00,5529.61278,N,00927.94099,E,1,05,3.36,22.7,M,43.8,M,,*64[0m
+[0;32mI (70761) General: UTC Time: 192449.00[0m
+[0;32mI (70771) General: Raw coordinates: 5529.61278N, 00927.94099E[0m
+[0;32mI (70771) General: Decimal degrees: 55.493546, 9.465683 (Fix quality: 1)[0m
+[0;32mI (70781) General: Satellites in use: 05[0m
+[0;32mI (70791) General: Altitude: 22.7 meters[0m
+[0;32mI (70791) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.07,3.36,2.29*07[0m
+[0;32mI (70801) General: Line: $GPGSV,3,1,12,01,72,140,20,02,49,137,,03,73,249,28,04,19,189,31*7D[0m
+[0;32mI (70811) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,45,283,34,19,26,313,24*77[0m
+[0;32mI (70821) General: Line: $GPGSV,3,3,12,2[0m
+[0;32mI (72821) General: Sent data:  32[0m
+[0;32mI (72821) General: Line: 2,10,276,21,28,21,083,17,31,12,108,19,32,24,046,18*73[0m
+[0;32mI (72821) General: Line: $GPGLL,5529.61278,N,00927.94099,E,192449.00,A,A*6A[0m
+[0;32mI (72821) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (72831) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (72841) General: Line: $GPRMC,192450.00,A,5529.61279,N,00927.94115,E,0.503,,180325,,,A*74[0m
+[0;32mI (72851) General: Line: $GPVTG,,T,,M,0.503,N,0.932,K,A*2D[0m
+[0;32mI (72851) General: Line: $GPGGA,192450.00,5529.61279,N,00927.94115,E,1,05,3.36,22.8,M,43.8,M,,*67[0m
+[0;32mI (72861) General: UTC Time: 192450.00[0m
+[0;32mI (72871) General: Raw coordinates: 5529.61279N, 00927.94115E[0m
+[0;32mI (72871) General: Decimal degrees: 55.493546, 9.465686 (Fix quality: 1)[0m
+[0;32mI (72881) General: Satellites in use: 05[0m
+[0;32mI (72881) General: Altitude: 22.8 meters[0m
+[0;32mI (72891) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.07,3.36,2.29*07[0m
+[0;32mI (72901) General: Line: $GPGSV,3,1,12,01,72,140,20,02,49,137,,03,73,249,28,04,19,189,31*7D[0m
+[0;32mI (72911) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,45,283,33,19,26,313,24*70[0m
+[0;32mI (72911) General: Line: $GPGSV,3,3,12,22,10,276,20,28,21,083,17,31,12,108,18,32,24,046,17*7C[0m
+[0;32mI (72921) General: Line: $GPGLL,5529.61279,N,00927.94115,E,192450.00,A,A*66[0m
+[0;32mI (72931) General: Line: $GPRMC,192451.00,A,5529.61270,N,00927.94085,E,0.316,,180325,,,A*76[0m
+[0;32mI (72941) General: Line: $GPVTG,,T,,M,0.316,N,0.586,K,A*2C[0m
+[0;32mI (72951) General: Line: $GPGGA,192451.00,5529.61270,N,00927.94085,E,1,05,3.36,22.8,M,43.8,M,,*67[0m
+[0;32mI (72961) General: UTC Time: 192451.00[0m
+[0;32mI (72961) General: Raw coordinates: 5529.61270N, 00927.94085E[0m
+[0;32mI (72971) General: Decimal degrees: 55.493546, 9.465681 (Fix quality: 1)[0m
+[0;32mI (72971) General: Satellites in use: 05[0m
+[0;32mI (72981) General: Altitude: 22.8 meters[0m
+[0;32mI (72981) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.07,3.36,2.29*07[0m
+[0;32mI (72991) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,,03,73,249,29,04,19,189,34*7B[0m
+[0;32mI (73001) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,20,17,45,283,35,19,26,313,25*75[0m
+[0;32mI (73011) General: Line: $GPGSV,3,3,12,22,10,276,22,28,21,083,18,31,12,108,21,32,24,046,18*[0m
+[0;32mI (75021) General: Sent data:  33[0m
+[0;32mI (75021) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (75021) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (75031) General: Line: 74[0m
+[0;32mI (75031) General: Line: $GPGLL,5529.61270,N,00927.94085,E,192451.00,A29.61269,N,00927.94086,E,1,05,3.36,22.8,M,43.8,M,,*6F[0m
+[0;32mI (75041) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.07,3.36,2.29*07[0m
+[0;32mI (75041) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,,03,73,249,29,04,19,189,31*7E[0m
+[0;32mI (75051) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,17,17,45,283,32,19,26,313,25*76[0m
+[0;32mI (75061) General: Line: $GPGSV,3,3,12,22,10,276,21,28,21,083,17,31,12,108,21,32,24,046,17*77[0m
+[0;32mI (75071) General: Line: $GPGLL,5529.61269,N,00927.94086,E,192452.00,A,A*6E[0m
+[0;32mI (75081) General: Line: $GPRMC,192453.00,A,5529.61255,N,00927.94034,E,0.237,,180325,,,A*7B[0m
+[0;32mI (75091) General: Line: $GPVTG,,T,,M,0.237,N,0.438,K,A*2A[0m
+[0;32mI (75091) General: Line: $GPGGA,192453.00,5529.61255,N,00927.94034,E,1,05,3.36,22.8,M,43.8,M,,*68[0m
+[0;32mI (75101) General: UTC Time: 192453.00[0m
+[0;32mI (75111) General: Raw coordinates: 5529.61255N, 00927.94034E[0m
+[0;32mI (75111) General: Decimal degrees: 55.493546, 9.465672 (Fix quality: 1)[0m
+[0;32mI (75121) General: Satellites in use: 05[0m
+[0;32mI (75131) General: Altitude: 22.8 meters[0m
+[0;32mI (75131) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.07,3.36,2.29*07[0m
+[0;32mI (75141) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,18,03,73,249,29,04,19,189,32*74[0m
+[0;32mI (75151) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,14,17,46,282,33,19,26,313,24*77[0m
+[0;32mI (75161) General: Line: $GPGSV,3,3,12,22,10,276,22,28,21,083,17,31,12,108,21,32,24,046,17*74[0m
+[0;32mI (75171) General: Line: $GPGLL,5529.61255,N,00927.94034,E,192453.00,A,A*69[0m
+[0;32mI (75171) General: Line: $GPRMC,192454.00,A,5529.61245,N,00927.93998,E,0.270,,180325,,,A*76[0m
+[0;32mI (75181) General: Line: $GPVTG,,T,,M,0.270,N,0.499,K,A*22[0m
+[0;32mI (75191) General: Line: $GPGGA,192454.00,[0m
+[0;32mI (75191) General: UTC Time: 192454.00[0m
+[0;32mI (75201) General: No valid position fix obtained[0m
+[0;32mI (77201) General: Sent data:  34[0m
+[0;32mI (77201) General: Line: 5529.61245,N,00927.93998,E,1,05,3.36,22.8,M,43.8,M,,*66[0m
+[0;32mI (77201) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.07,3.36,2.30*0F[0m
+[0;32mI (77201) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (77211) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (77221) General: Line: $GPGSV,3,1,12,01,72,140,21,02,49,137,16,03,73,249,28,04,19,189,31*7B[0m
+[0;32mI (77231) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,09,17,46,282,35,19,26,313,23*7A[0m
+[0;32mI (77241) General: Line: $GPGSV,3,3,12,22,10,276,21,28,21,083,15,31,12,108,20,32,24,046,17*74[0m
+[0;32mI (77241) General: Line: $GPGLL,5529.61245,N,00927.93998,E,192454.00,A,A*67[0m
+[0;32mI (77251) General: Line: $GPRMC,192455.00,A,5529.61239,N,00927.93983,E,0.246,,180325,,,A*73[0m
+[0;32mI (77261) General: Line: $GPVTG,,T,,M,0.246,N,0.456,K,A*24[0m
+[0;32mI (77271) General: Line: $GPGGA,192455.00,5529.61239,N,00927.93983,E,1,05,3.37,22.8,M,43.8,M,,*67[0m
+[0;32mI (77281) General: UTC Time: 192455.00[0m
+[0;32mI (77281) General: Raw coordinates: 5529.61239N, 00927.93983E[0m
+[0;32mI (77291) General: Decimal degrees: 55.493538, 9.465664 (Fix quality: 1)[0m
+[0;32mI (77291) General: Satellites in use: 05[0m
+[0;32mI (77301) General: Altitude: 22.8 meters[0m
+[0;32mI (77301) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.07,3.37,2.30*0E[0m
+[0;32mI (77311) General: Line: $GPGSV,3,1,12,01,72,140,21,02,49,137,17,03,73,249,29,04,19,189,32*78[0m
+[0;32mI (77321) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,10,17,46,282,33,19,27,313,25*73[0m
+[0;32mI (77331) General: Line: $GPGSV,3,3,12,22,10,276,22,28,21,083,15,31,12,108,20,32,24,046,18*78[0m
+[0;32mI (77341) General: Line: $GPGLL,5529.61239,N,00927.93983,E,192455.00,A,A*67[0m
+[0;32mI (77351) General: Line: $GPRMC,192456.00,A,5529.61251,N,00927.94027,E,0.415,,180325,,,A*7E[0m
+[0;32mI (77361) General: Line: $GPVTG,,T,,M,0.415,N,0.768,K,A*2A[0m
+[0;32mI (77361) General: Line: $GPGGA,192456.00,5529.61251,N,00927.94027,E,1,05,3.37,22.8,M,4[0m
+[0;32mI (77371) General: UTC Time: 192456.00[0m
+[0;32mI (77381) General: Raw coordinates: 5529.61251N, 00927.94027E[0m
+[0;32mI (77381) General: Decimal degrees: 55.493538, 9.465671 (Fix quality: 1)[0m
+[0;32mI (77391) General: Satellites in use: 05[0m
+[0;32mI (77391) General: Altitude: 22.8 meters[0m
+[0;32mI (79401) General: Sent data:  35[0m
+[0;32mI (79401) General: Line: 3.8,M,,*6A[0m
+[0;32mI (79401) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (79401) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (79411) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.07,3.37,2.30*0E[0m
+[0;32mI (79411) General: Line: $GPGSV,3,1,PGSV,3,3,12,22,10,276,22,28,21,083,16,31,12,108,21,32,24,046,18*7A[0m
+[0;32mI (79421) General: Line: $GPGLL,5529.61251,N,00927.94027,E,192456.00,A,A*6A[0m
+[0;32mI (79431) General: Line: $GPRMC,192457.00,A,5529.61249,N,00927.94012,E,0.355,,180325,,,A*73[0m
+[0;32mI (79441) General: Line: $GPVTG,,T,,M,0.355,N,0.658,K,A*2B[0m
+[0;32mI (79451) General: Line: $GPGGA,192457.00,5529.61249,N,00927.94012,E,1,05,3.37,22.8,M,43.8,M,,*64[0m
+[0;32mI (79461) General: UTC Time: 192457.00[0m
+[0;32mI (79461) General: Raw coordinates: 5529.61249N, 00927.94012E[0m
+[0;32mI (79471) General: Decimal degrees: 55.493538, 9.465669 (Fix quality: 1)[0m
+[0;32mI (79471) General: Satellites in use: 05[0m
+[0;32mI (79481) General: Altitude: 22.8 meters[0m
+[0;32mI (79481) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.08,3.37,2.30*01[0m
+[0;32mI (79491) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,19,03,73,249,29,04,19,189,33*74[0m
+[0;32mI (79501) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,09,17,46,282,35,19,27,313,27*7F[0m
+[0;32mI (79511) General: Line: $GPGSV,3,3,12,22,10,276,22,28,21,083,18,31,12,108,20,32,24,046,18*75[0m
+[0;32mI (79521) General: Line: $GPGLL,5529.61249,N,00927.94012,E,192457.00,A,A*64[0m
+[0;32mI (79531) General: Line: $GPRMC,192458.00,A,5529.61234,N,00927.93960,E,0.195,,180325,,,A*73[0m
+[0;32mI (79531) General: Line: $GPVTG,,T,,M,0.195,N,0.360,K,A*2B[0m
+[0;32mI (79541) General: Line: $GPGGA,192458.00,5529.61234,N,00927.93960,E,1,05,3.37,22.8,M,43.8,M,,*6A[0m
+[0;32mI (79551) General: UTC Time: 192458.00[0m
+[0;32mI (79551) General: Raw coordinates: 5529.61234N, 00927.93960E[0m
+[0;32mI (79561) General: Decimal degrees: 55.493538, 9.465659 (Fix quality: 1)[0m
+[0;32mI (79571) General: Satellites in use: 05[0m
+[0;32mI (79571) General: Altitude: 22.8 meters[0m
+[0;32mI (79581) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.08,3.37,2.30*01[0m
+[0;32mI (79591) General: Line: $GPGSV,3,1,12,01,72,140,20,02,49,137,18,03,73,249,27,04,19,189,30*7A[0m
+[0;32mI (79591) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,08,17[0m
+[0;32mI (81601) General: Sent data:  36[0m
+[0;32mI (81601) General: Line: ,46,282,31,19,27,313,$GPRMC,192459.00,A,5529.61220,N,00927.93913,E,0.078,,180325,,,A*71[0m
+[0;32mI (81601) General: Line: $GPVTG,,T,,M,0.078,N,0.144,K,A*2D[0m
+[0;32mI (81601) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (81611) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (81621) General: Line: $GPGGA,192459.00,5529.61220,N,00927.93913,E,1,05,3.37,23.0,M,43.8,M,,*63[0m
+[0;32mI (81631) General: UTC Time: 192459.00[0m
+[0;32mI (81631) General: Raw coordinates: 5529.61220N, 00927.93913E[0m
+[0;32mI (81641) General: Decimal degrees: 55.493538, 9.465652 (Fix quality: 1)[0m
+[0;32mI (81651) General: Satellites in use: 05[0m
+[0;32mI (81651) General: Altitude: 23.0 meters[0m
+[0;32mI (81661) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.08,3.37,2.30*01[0m
+[0;32mI (81661) General: Line: $GPGSV,3,1,12,01,72,140,20,02,49,137,18,03,73,249,27,04,19,189,30*7A[0m
+[0;32mI (81671) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,31,19,27,313,25*70[0m
+[0;32mI (81681) General: Line: $GPGSV,3,3,12,22,10,276,21,28,21,083,17,31,12,108,18,32,24,046,15*7F[0m
+[0;32mI (81691) General: Line: $GPGLL,5529.61220,N,00927.93913,E,192459.00,A,A*6A[0m
+[0;32mI (81701) General: Line: $GPRMC,192500.00,A,5529.61199,N,00927.93848,E,0.200,,180325,,,A*7F[0m
+[0;32mI (81711) General: Line: $GPVTG,,T,,M,0.200,N,0.370,K,A*25[0m
+[0;32mI (81711) General: Line: $GPGGA,192500.00,5529.61199,N,00927.93848,E,1,05,3.37,23.2,M,43.8,M,,*62[0m
+[0;32mI (81721) General: UTC Time: 192500.00[0m
+[0;32mI (81731) General: Raw coordinates: 5529.61199N, 00927.93848E[0m
+[0;32mI (81731) General: Decimal degrees: 55.493530, 9.465641 (Fix quality: 1)[0m
+[0;32mI (81741) General: Satellites in use: 05[0m
+[0;32mI (81751) General: Altitude: 23.2 meters[0m
+[0;32mI (81751) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.08,3.37,2.30*01[0m
+[0;32mI (81761) General: Line: $GPGSV,3,1,12,01,72,140,19,02,49,137,19,03,73,249,27,04,19,189,32*73[0m
+[0;32mI (81771) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,34,19,27,313,26*76[0m
+[0;32mI (81781) General: Line: $GPGSV,3,3,12,22,10,276,22,28,21,083,18,31,12,108,18,32,24,046,17*71[0m
+[0;32mI (81781) General: Line: $GPGLL,5529.61199,N,00927.93848,E,192500.00,A,A*69[0m
+[0;32mI (81791) General: Line: $GPRMC,192501.00,A,5529.6118[0m
+[0;32mI (83801) General: Sent data:  37[0m
+[0;32mI (83801) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (83801) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (83811) General: Line: 8,N,00927.93818,E,0.190,,180325,,,A*71[0m
+[0;32mI (83811) General: Line: $GPVTG,,T,,M,0.190,N,0.352,K,A*2F[0m
+[0;32mI (83811) General: Line: $GPGGA,192501.00,5529.61188,N,00927.93818,E,1,05,3.37,23.3,M,43.8,M,,*67[0m
+[0;32mI (83821) General: UTC Time: 192501.00[0m
+[0;32mI (83831) General: Raw coordinates: 5529.61188N, 00927.93818E[0m
+[0;32mI (83831) General: Decimal degrees: 55.493530, 9.465636 (Fix quality: 1)[0m
+[0;32mI (83841) General: Satellites in use: 05[0m
+[0;32mI (83851) General: Altitude: 23.3 meters[0m
+[0;32mI (83851) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.08,3.37,2.30*01[0m
+[0;32mI (83861) General: Line: $GPGSV,3,1,12,01,72,140,20,02,49,137,19,03,73,249,28,04,19,189,33*77[0m
+[0;32mI (83871) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,35,19,27,313,26*77[0m
+[0;32mI (83881) General: Line: $GPGSV,3,3,12,22,10,276,23,28,21,083,18,31,12,108,19,32,24,046,18*7E[0m
+[0;32mI (83891) General: Line: $GPGLL,5529.61188,N,00927.93818,E,192501.00,A,A*6D[0m
+[0;32mI (83891) General: Line: $GPRMC,192502.00,A,5529.61180,N,00927.93812,E,0.089,,180325,,,A*79[0m
+[0;32mI (83901) General: Line: $GPVTG,,T,,M,0.089,N,0.165,K,A*20[0m
+[0;32mI (83911) General: Line: $GPGGA,192502.00,5529.61180,N,00927.93812,E,1,05,3.37,23.6,M,43.8,M,,*63[0m
+[0;32mI (83921) General: UTC Time: 192502.00[0m
+[0;32mI (83921) General: Raw coordinates: 5529.61180N, 00927.93812E[0m
+[0;32mI (83931) General: Decimal degrees: 55.493530, 9.465635 (Fix quality: 1)[0m
+[0;32mI (83941) General: Satellites in use: 05[0m
+[0;32mI (83941) General: Altitude: 23.6 meters[0m
+[0;32mI (83951) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.08,3.37,2.30*01[0m
+[0;32mI (83951) General: Line: $GPGSV,3,1,12,01,72,140,21,02,49,137,18,03,73,249,28,04,19,189,33*77[0m
+[0;32mI (83961) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,35,19,27,313,27*76[0m
+[0;32mI (83971) General: Line: $GPGSV,3,3,12,22,10,276,23,28,21,083,18,31,12,108,19,32,24,046,19*7F[0m
+[0;32mI (83981) General: Line: $GPGLL,5529.61180,N,00927.93812,E,192502.00,A,A*6C[0m
+[0;32mI (83991) General: Line: $GPRMC,192503.00,A,5529.61164,N,00927.93783,E,0.167,,180325,,,A*74[0m
+[0;32mI (84001) General: Line: $GPVTG,,T[0m
+[0;32mI (86001) General: Sent data:  38[0m
+[0;32mI (86001) General: Line: ,,M,0.167,N,0.309,K,A*29[0m
+[0;32mI (86001) General: Line: $GPGGA,192503.00,5529.61164,N,00927.93783,E,1,05,3.37,23.9,M,43.8,M,,*60[0m
+[0;32mI (86001) General: UTC Time: 192503.00[0m
+[0;32mI (86011) General: Raw coordinates: 5529.61164N, 00927.93783E[0m
+[0;32mI (86011) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (86021) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (86031) General: Decimal degrees: 55.493530, 9.465631 (Fix quality: 1)[0m
+[0;32mI (86031) General: Satellites in use: 05[0m
+[0;32mI (86041) General: Altitude: 23.9 meters[0m
+[0;32mI (86041) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.08,3.37,2.30*01[0m
+[0;32mI (86051) General: Line: $GPGSV,3,1,12,01,72,140,20,02,49,137,18,03,73,249,28,04,19,189,33*76[0m
+[0;32mI (86061) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,35,19,27,313,27*76[0m
+[0;32mI (86071) General: Line: $GPGSV,3,3,12,22,10,276,24,28,21,083,18,31,12,108,18,32,24,046,19*79[0m
+[0;32mI (86081) General: Line: $GPGLL,5529.61164,N,00927.93783,E,192503.00,A,A*60[0m
+[0;32mI (86091) General: Line: $GPRMC,192504.00,A,5529.61149,N,00927.93747,E,0.009,,180325,,,A*7D[0m
+[0;32mI (86101) General: Line: $GPVTG,,T,,M,0.009,N,0.017,K,A*2C[0m
+[0;32mI (86101) General: Line: $GPGGA,192504.00,5529.61149,N,00927.93747,E,1,05,3.37,24.1,M,43.8,M,,*6F[0m
+[0;32mI (86111) General: UTC Time: 192504.00[0m
+[0;32mI (86121) General: Raw coordinates: 5529.61149N, 00927.93747E[0m
+[0;32mI (86121) General: Decimal degrees: 55.493523, 9.465625 (Fix quality: 1)[0m
+[0;32mI (86131) General: Satellites in use: 05[0m
+[0;32mI (86131) General: Altitude: 24.1 meters[0m
+[0;32mI (86141) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.08,3.37,2.30*01[0m
+[0;32mI (86151) General: Line: $GPGSV,3,1,12,01,72,140,20,02,49,137,19,03,73,249,29,04,19,189,33*76[0m
+[0;32mI (86161) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,35,19,27,313,29*78[0m
+[0;32mI (86161) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,19,31,12,108,20,32,24,046,19*72[0m
+[0;32mI (86171) General: Line: $GPGLL,5529.61149,N,00927.93747,E,192504.00,A,A*60[0m
+[0;32mI (86181) General: Line: $GPRMC,192505.00,A,5529.61142,N,00927.93738,E,0.016,,180325,,,A*71[0m
+[0;32mI (86191) General: Line: $GPVTG,,T,,M,0.016,N,0.029,K,A*2F[0m
+[0;32mI (86201) General: Line: $GPGGA,192505.00,5529.6[0m
+[0;32mI (86201) General: UTC Time: 192505.00[0m
+[0;32mI (86211) General: No valid position fix obtained[0m
+[0;32mI (88211) General: Sent data:  39[0m
+[0;32mI (88211) General: Line: 1142,N,00927.93738,E,1,05,3.37,24.2,M,43.8,M,,*6E[0m
+[0;32mI (88211) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.08,3.37,2.30*01[0m
+[0;32mI (88211) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (88221) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (88231) General: Line: $GPGSV,3,1,12,01,72,140,21,02,49,137,20,03,73,249,29,04,19,189,33*7D[0m
+[0;32mI (88241) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,35,19,27,313,29*78[0m
+[0;32mI (88241) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,20,31,12,108,20,32,24,046,19*78[0m
+[0;32mI (88251) General: Line: $GPGLL,5529.61142,N,00927.93738,E,192505.00,A,A*62[0m
+[0;32mI (88261) General: Line: $GPRMC,192506.00,A,5529.61134,N,00927.93712,E,0.027,,180325,,,A*79[0m
+[0;32mI (88271) General: Line: $GPVTG,,T,,M,0.027,N,0.051,K,A*22[0m
+[0;32mI (88281) General: Line: $GPGGA,192506.00,5529.61134,N,00927.93712,E,1,05,3.37,24.2,M,43.8,M,,*64[0m
+[0;32mI (88291) General: UTC Time: 192506.00[0m
+[0;32mI (88291) General: Raw coordinates: 5529.61134N, 00927.93712E[0m
+[0;32mI (88301) General: Decimal degrees: 55.493523, 9.465619 (Fix quality: 1)[0m
+[0;32mI (88301) General: Satellites in use: 05[0m
+[0;32mI (88311) General: Altitude: 24.2 meters[0m
+[0;32mI (88311) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.08,3.37,2.30*01[0m
+[0;32mI (88321) General: Line: $GPGSV,3,1,12,01,72,140,21,02,49,137,20,03,73,249,29,04,19,189,33*7D[0m
+[0;32mI (88331) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,35,19,27,313,29*78[0m
+[0;32mI (88341) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,18,31,12,108,20,32,24,046,19*73[0m
+[0;32mI (88351) General: Line: $GPGLL,5529.61134,N,00927.93712,E,192506.00,A,A*68[0m
+[0;32mI (88361) General: Line: $GPRMC,192507.00,A,5529.61123,N,00927.93688,E,0.078,,180325,,,A*76[0m
+[0;32mI (88371) General: Line: $GPVTG,,T,,M,0.078,N,0.145,K,A*2C[0m
+[0;32mI (88371) General: Line: $GPGGA,192507.00,5529.61123,N,00927.93688,E,1,05,3.37,24.4,M,43.8,M,,*67[0m
+[0;32mI (88381) General: UTC Time: 192507.00[0m
+[0;32mI (88391) General: Raw coordinates: 5529.61123N, 00927.93688E[0m
+[0;32mI (88391) General: Decimal degrees: 55.493523, 9.465615 (Fix quality: 1)[0m
+[0;32mI (88401) General: Satellites in use: 05[0m
+[0;32mI (88401) General: Altitude: 24.4 meters[0m
+[0;32mI (90411) General: Sent data:  40[0m
+[0;32mI (90411) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.08,3.37,2.30*01[0m
+[0;32mI (90411) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (90411) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (90421) General: Line: $GPGSV,3,1,SV,3,3,12,22,10,276,25,28,21,083,18,31,12,108,20,32,24,046,18*72[0m
+[0;32mI (90431) General: Line: $GPGLL,5529.61123,N,00927.93688,E,192507.00,A,A*6D[0m
+[0;32mI (90441) General: Line: $GPRMC,192508.00,A,5529.61108,N,00927.93643,E,0.059,,180325,,,A*74[0m
+[0;32mI (90451) General: Line: $GPVTG,,T,,M,0.059,N,0.109,K,A*27[0m
+[0;32mI (90451) General: Line: $GPGGA,192508.00,5529.61108,N,00927.93643,E,1,05,3.37,24.6,M,43.8,M,,*64[0m
+[0;32mI (90461) General: UTC Time: 192508.00[0m
+[0;32mI (90471) General: Raw coordinates: 5529.61108N, 00927.93643E[0m
+[0;32mI (90471) General: Decimal degrees: 55.493515, 9.465607 (Fix quality: 1)[0m
+[0;32mI (90481) General: Satellites in use: 05[0m
+[0;32mI (90481) General: Altitude: 24.6 meters[0m
+[0;32mI (90491) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.08,3.37,2.30*01[0m
+[0;32mI (90501) General: Line: $GPGSV,3,1,12,01,72,140,20,02,49,137,18,03,73,249,29,04,19,189,32*76[0m
+[0;32mI (90511) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,34,19,27,313,29*79[0m
+[0;32mI (90511) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,19,31,12,108,17,32,24,046,17*78[0m
+[0;32mI (90521) General: Line: $GPGLL,5529.61108,N,00927.93643,E,192508.00,A,A*6C[0m
+[0;32mI (90531) General: Line: $GPRMC,192509.00,A,5529.61099,N,00927.93622,E,0.135,,180325,,,A*70[0m
+[0;32mI (90541) General: Line: $GPVTG,,T,,M,0.135,N,0.251,K,A*22[0m
+[0;32mI (90551) General: Line: $GPGGA,192509.00,5529.61099,N,00927.93622,E,1,05,3.37,24.7,M,43.8,M,,*6A[0m
+[0;32mI (90561) General: UTC Time: 192509.00[0m
+[0;32mI (90561) General: Raw coordinates: 5529.61099N, 00927.93622E[0m
+[0;32mI (90571) General: Decimal degrees: 55.493515, 9.465604 (Fix quality: 1)[0m
+[0;32mI (90571) General: Satellites in use: 05[0m
+[0;32mI (90581) General: Altitude: 24.7 meters[0m
+[0;32mI (90581) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.08,3.37,2.30*01[0m
+[0;32mI (90591) General: Line: $GPGSV,3,1,12,01,72,140,18,02,49,137,16,03,73,249,28,04,19,189,31*71[0m
+[0;32mI (90601) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,33,19,27[0m
+[0;32mI (92611) General: Sent data:  41[0m
+[0;32mI (92611) General: Line: ,313,28*7F[0m
+[0;32mI (92611) General: Line: $GPGSV,3,3,12,22,10,276,24,28,21,083,19,31,12,108,17,32,24,046,16*78[0m
+[0;32mI (92611) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (92621) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (92621) General: Line: $GPGLL,5529.61099,N,00927.93622,E,192509.00,A,A*63[0m
+[0;32mI (92631) General: Line: $GPRMC,192510.00,A,5529.61094,N,00927.93613,E,0.060,,180325,,,A*76[0m
+[0;32mI (92641) General: Line: $GPVTG,,T,,M,0.060,N,0.110,K,A*25[0m
+[0;32mI (92651) General: Line: $GPGGA,192510.00,5529.61094,N,00927.93613,E,1,05,3.37,24.8,M,43.8,M,,*62[0m
+[0;32mI (92661) General: UTC Time: 192510.00[0m
+[0;32mI (92661) General: Raw coordinates: 5529.61094N, 00927.93613E[0m
+[0;32mI (92671) General: Decimal degrees: 55.493515, 9.465603 (Fix quality: 1)[0m
+[0;32mI (92681) General: Satellites in use: 05[0m
+[0;32mI (92681) General: Altitude: 24.8 meters[0m
+[0;32mI (92681) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.08,3.37,2.31*00[0m
+[0;32mI (92691) General: Line: $GPGSV,3,1,12,01,72,140,18,02,49,137,16,03,73,249,29,04,19,189,31*70[0m
+[0;32mI (92701) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,33,19,27,313,28*7F[0m
+[0;32mI (92711) General: Line: $GPGSV,3,3,12,22,10,276,24,28,21,083,19,31,12,108,18,32,24,046,16*77[0m
+[0;32mI (92721) General: Line: $GPGLL,5529.61094,N,00927.93613,E,192510.00,A,A*64[0m
+[0;32mI (92731) General: Line: $GPRMC,192511.00,A,5529.61086,N,00927.93593,E,0.049,,180325,,,A*74[0m
+[0;32mI (92741) General: Line: $GPVTG,,T,,M,0.049,N,0.091,K,A*26[0m
+[0;32mI (92741) General: Line: $GPGGA,192511.00,5529.61086,N,00927.93593,E,1,05,3.37,24.8,M,43.8,M,,*6B[0m
+[0;32mI (92751) General: UTC Time: 192511.00[0m
+[0;32mI (92761) General: Raw coordinates: 5529.61086N, 00927.93593E[0m
+[0;32mI (92761) General: Decimal degrees: 55.493515, 9.465598 (Fix quality: 1)[0m
+[0;32mI (92771) General: Satellites in use: 05[0m
+[0;32mI (92771) General: Altitude: 24.8 meters[0m
+[0;32mI (92781) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.08,3.37,2.31*00[0m
+[0;32mI (92791) General: Line: $GPGSV,3,1,12,01,72,140,19,02,49,137,16,03,73,249,29,04,19,189,32*72[0m
+[0;32mI (92801) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,34,19,27,313,28*78[0m
+[0;32mI (92801) General: Line: $GPGSV,3,3,12,22,10,276,24,28,21,083,[0m
+[0;32mI (94811) General: Sent data:  42[0m
+[0;32mI (94811) General: Line: 20,31,12,108,17,32,24,046,16*72[0m
+[0;32mI (94811) General: Line: $GPGLL,5529.61086,N,00927.93593,E,192511.00,A,A*6D[0m
+[0;32mI (94811) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (94821) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (94821) General: Line: $GPRMC,192512.00,A,5529.61075,N,00927.93562,E,0.045,,180325,,,A*79[0m
+[0;32mI (94831) General: Line: $GPVTG,,T,,M,0.045,N,0.083,K,A*29[0m
+[0;32mI (94841) General: Line: $GPGGA,192512.00,5529.61075,N,00927.93562,E,1,05,3.37,24.9,M,43.8,M,,*6B[0m
+[0;32mI (94851) General: UTC Time: 192512.00[0m
+[0;32mI (94851) General: Raw coordinates: 5529.61075N, 00927.93562E[0m
+[0;32mI (94861) General: Decimal degrees: 55.493515, 9.465593 (Fix quality: 1)[0m
+[0;32mI (94871) General: Satellites in use: 05[0m
+[0;32mI (94871) General: Altitude: 24.9 meters[0m
+[0;32mI (94881) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.09,3.37,2.31*01[0m
+[0;32mI (94881) General: Line: $GPGSV,3,1,12,01,72,140,20,02,49,137,15,03,73,249,29,04,19,189,32*7B[0m
+[0;32mI (94891) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,34,19,27,313,27*77[0m
+[0;32mI (94901) General: Line: $GPGSV,3,3,12,22,10,276,24,28,21,083,20,31,12,108,16,32,24,046,15*70[0m
+[0;32mI (94911) General: Line: $GPGLL,5529.61075,N,00927.93562,E,192512.00,A,A*6C[0m
+[0;32mI (94921) General: Line: $GPRMC,192513.00,A,5529.61067,N,00927.93538,E,0.113,,180325,,,A*76[0m
+[0;32mI (94931) General: Line: $GPVTG,,T,,M,0.113,N,0.209,K,A*2B[0m
+[0;32mI (94931) General: Line: $GPGGA,192513.00,5529.61067,N,00927.93538,E,1,05,3.37,24.9,M,43.8,M,,*66[0m
+[0;32mI (94941) General: UTC Time: 192513.00[0m
+[0;32mI (94951) General: Raw coordinates: 5529.61067N, 00927.93538E[0m
+[0;32mI (94961) General: Decimal degrees: 55.493515, 9.465590 (Fix quality: 1)[0m
+[0;32mI (94961) General: Satellites in use: 05[0m
+[0;32mI (94971) General: Altitude: 24.9 meters[0m
+[0;32mI (94971) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.09,3.37,2.31*01[0m
+[0;32mI (94981) General: Line: $GPGSV,3,1,12,01,72,140,21,02,49,137,15,03,73,249,29,04,19,189,31*79[0m
+[0;32mI (94991) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,33,19,27,313,27*70[0m
+[0;32mI (95001) General: Line: $GPGSV,3,3,12,22,10,276,24,28,21,083,21,31,12,108,14,32,24,046,16*70[0m
+[0;32mI (95011) General: Line: $GPGLL,5529.6106[0m
+[0;32mI (97011) General: Sent data:  43[0m
+[0;32mI (97011) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (97011) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (97021) General: Line: 7,N,00927.93538,E,192513.00,A29.61065,N,00927.93534,E,1,05,3.37,25.0,M,43.8,M,,*67[0m
+[0;32mI (97021) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.09,3.37,2.31*01[0m
+[0;32mI (97031) General: Line: $GPGSV,3,1,12,01,72,140,21,02,49,137,16,03,73,249,30,04,19,189,31*72[0m
+[0;32mI (97041) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,33,19,27,313,27*70[0m
+[0;32mI (97051) General: Line: $GPGSV,3,3,12,22,10,276,24,28,21,083,21,31,12,108,15,32,24,046,18*7F[0m
+[0;32mI (97061) General: Line: $GPGLL,5529.61065,N,00927.93534,E,192514.00,A,A*68[0m
+[0;32mI (97061) General: Line: $GPRMC,192515.00,A,5529.61061,N,00927.93525,E,0.099,,180325,,,A*79[0m
+[0;32mI (97071) General: Line: $GPVTG,,T,,M,0.099,N,0.184,K,A*2E[0m
+[0;32mI (97081) General: Line: $GPGGA,192515.00,5529.61061,N,00927.93525,E,1,05,3.37,25.1,M,43.8,M,,*63[0m
+[0;32mI (97091) General: UTC Time: 192515.00[0m
+[0;32mI (97091) General: Raw coordinates: 5529.61061N, 00927.93525E[0m
+[0;32mI (97101) General: Decimal degrees: 55.493515, 9.465588 (Fix quality: 1)[0m
+[0;32mI (97111) General: Satellites in use: 05[0m
+[0;32mI (97111) General: Altitude: 25.1 meters[0m
+[0;32mI (97121) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.09,3.37,2.31*01[0m
+[0;32mI (97121) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,17,03,73,249,30,04,19,189,32*73[0m
+[0;32mI (97131) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,33,19,27,313,28*7F[0m
+[0;32mI (97141) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,22,31,12,108,13,32,24,046,18*7B[0m
+[0;32mI (97151) General: Line: $GPGLL,5529.61061,N,00927.93525,E,192515.00,A,A*6D[0m
+[0;32mI (97161) General: Line: $GPRMC,192516.00,A,5529.61052,N,00927.93503,E,0.164,,180325,,,A*7D[0m
+[0;32mI (97171) General: Line: $GPVTG,,T,,M,0.164,N,0.303,K,A*20[0m
+[0;32mI (97171) General: Line: $GPGGA,192516.00,5529.61052,N,00927.935[0m
+[0;32mI (97181) General: UTC Time: 192516.00[0m
+[0;32mI (97191) General: No valid position fix obtained[0m
+[0;32mI (99191) General: Sent data:  44[0m
+[0;32mI (99191) General: Line: 03,E,1,05,3.37,25.2,M,43.8,M,,*67[0m
+[0;32mI (99191) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.09,3.37,2.31*01[0m
+[0;32mI (99191) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (99201) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (99211) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,18,03,73,249,30,04,19,189,32*7C[0m
+[0;32mI (99211) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,33,19,27,313,28*7F[0m
+[0;32mI (99221) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,23,31,12,108,11,32,24,046,18*78[0m
+[0;32mI (99231) General: Line: $GPGLL,5529.61052,N,00927.93503,E,192516.00,A,A*6A[0m
+[0;32mI (99241) General: Line: $GPRMC,192517.00,A,5529.61041,N,00927.93470,E,0.034,,180325,,,A*7F[0m
+[0;32mI (99251) General: Line: $GPVTG,,T,,M,0.034,N,0.063,K,A*21[0m
+[0;32mI (99261) General: Line: $GPGGA,192517.00,5529.61041,N,00927.93470,E,1,05,3.37,25.3,M,43.8,M,,*60[0m
+[0;32mI (99261) General: UTC Time: 192517.00[0m
+[0;32mI (99271) General: Raw coordinates: 5529.61041N, 00927.93470E[0m
+[0;32mI (99281) General: Decimal degrees: 55.493507, 9.465578 (Fix quality: 1)[0m
+[0;32mI (99281) General: Satellites in use: 05[0m
+[0;32mI (99291) General: Altitude: 25.3 meters[0m
+[0;32mI (99291) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.09,3.37,2.31*01[0m
+[0;32mI (99301) General: Line: $GPGSV,3,1,12,01,72,140,23,02,49,137,18,03,73,249,31,04,19,189,32*7C[0m
+[0;32mI (99311) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,34,19,27,313,28*78[0m
+[0;32mI (99321) General: Line: $GPGSV,3,3,12,22,10,276,24,28,21,083,23,31,12,108,11,32,24,046,17*76[0m
+[0;32mI (99331) General: Line: $GPGLL,5529.61041,N,00927.93470,E,192517.00,A,A*6C[0m
+[0;32mI (99331) General: Line: $GPRMC,192518.00,A,5529.61034,N,00927.93457,E,0.053,,180325,,,A*76[0m
+[0;32mI (99341) General: Line: $GPVTG,,T,,M,0.053,N,0.098,K,A*24[0m
+[0;32mI (99351) General: Line: $GPGGA,192518.00,5529.61034,N,00927.93457,E,1,05,3.37,25.4,M,43.8,M,,*6F[0m
+[0;32mI (99361) General: UTC Time: 192518.00[0m
+[0;32mI (99361) General: Raw coordinates: 5529.61034N, 00927.93457E[0m
+[0;32mI (99371) General: Decimal degrees: 55.493507, 9.465576 (Fix quality: 1)[0m
+[0;32mI (99381) General: Satellites in use: 05[0m
+[0;32mI (99381) General: Altitude: 25.4 meters[0m
+[0;32mI (99391) General: Line: $GPGSA,A,3,17,[0m
+[0;32mI (101391) General: Sent data:  45[0m
+[0;32mI (101391) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (101391) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (101401) General: Line: 22,03,04,19,,,,,,,,4.09,3.37,2.31*01[0m
+[0;32mI (101401) General: Line: $GPGSV,3,1,SV,3,3,12,22,10,276,24,28,21,083,23,31,12,108,11,32,24,046,18*79[0m
+[0;32mI (101411) General: Line: $GPGLL,5529.61034,N,00927.93457,E,192518.00,A,A*64[0m
+[0;32mI (101421) General: Line: $GPRMC,192519.00,A,5529.61026,N,00927.93437,E,0.073,,180325,,,A*70[0m
+[0;32mI (101431) General: Line: $GPVTG,,T,,M,0.073,N,0.135,K,A*20[0m
+[0;32mI (101431) General: Line: $GPGGA,192519.00,5529.61026,N,00927.93437,E,1,05,3.37,25.5,M,43.8,M,,*6A[0m
+[0;32mI (101441) General: UTC Time: 192519.00[0m
+[0;32mI (101451) General: Raw coordinates: 5529.61026N, 00927.93437E[0m
+[0;32mI (101451) General: Decimal degrees: 55.493507, 9.465573 (Fix quality: 1)[0m
+[0;32mI (101461) General: Satellites in use: 05[0m
+[0;32mI (101471) General: Altitude: 25.5 meters[0m
+[0;32mI (101471) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.09,3.37,2.31*01[0m
+[0;32mI (101481) General: Line: $GPGSV,3,1,12,01,72,140,23,02,49,137,20,03,73,249,31,04,19,189,32*77[0m
+[0;32mI (101491) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,20,17,46,282,34,19,27,313,28*7A[0m
+[0;32mI (101501) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,23,31,12,108,12,32,24,046,18*7B[0m
+[0;32mI (101511) General: Line: $GPGLL,5529.61026,N,00927.93437,E,192519.00,A,A*60[0m
+[0;32mI (101511) General: Line: $GPRMC,192520.00,A,5529.61017,N,00927.93415,E,0.153,,180325,,,A*7B[0m
+[0;32mI (101521) General: Line: $GPVTG,,T,,M,0.153,N,0.283,K,A*2D[0m
+[0;32mI (101531) General: Line: $GPGGA,192520.00,5529.61017,N,00927.93415,E,1,05,3.37,25.6,M,43.8,M,,*61[0m
+[0;32mI (101541) General: UTC Time: 192520.00[0m
+[0;32mI (101541) General: Raw coordinates: 5529.61017N, 00927.93415E[0m
+[0;32mI (101551) General: Decimal degrees: 55.493507, 9.465569 (Fix quality: 1)[0m
+[0;32mI (101561) General: Satellites in use: 05[0m
+[0;32mI (101561) General: Altitude: 25.6 meters[0m
+[0;32mI (101571) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.09,3.37,2.31*01[0m
+[0;32mI (101581) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,20,03,73,249,30,04,19,189,31*74[0m
+[0;32mI (101581) General: Line: $GPGSV,3,2,12,12,01,007,06,14,01,258,16,17,46,282,33,19,27,313,28*7E[0m
+[0;32mI (103591) General: Sent data:  46[0m
+[0;32mI (103591) General: Line: $GPGSV,3,3,12,22,10,276,23,28,21,083,22,31,12,108,11,32,24,046,17*70[0m
+[0;32mI (103591) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (103591) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (103601) General: Line: $GPGLL,5529.61017,N,00927.93415,E,192520.00,A,A*68[0m
+[0;32mI (103611) General: Line: $GPRMC,192521.00,A,5529.61008,N,00927.93389,E,0.024,,180325,,,A*77[0m
+[0;32mI (103621) General: Line: $GPVTG,,T,,M,0.024,N,0.045,K,A*24[0m
+[0;32mI (103621) General: Line: $GPGGA,192521.00,5529.61008,N,00927.93389,E,1,05,3.37,25.7,M,43.8,M,,*6D[0m
+[0;32mI (103631) General: UTC Time: 192521.00[0m
+[0;32mI (103641) General: Raw coordinates: 5529.61008N, 00927.93389E[0m
+[0;32mI (103641) General: Decimal degrees: 55.493496, 9.465565 (Fix quality: 1)[0m
+[0;32mI (103651) General: Satellites in use: 05[0m
+[0;32mI (103661) General: Altitude: 25.7 meters[0m
+[0;32mI (103661) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.09,3.37,2.31*01[0m
+[0;32mI (103671) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,19,03,73,249,30,04,19,189,31*7E[0m
+[0;32mI (103681) General: Line: $GPGSV,3,2,12,12,01,007,07,14,01,258,11,17,46,282,34,19,27,313,28*7F[0m
+[0;32mI (103691) General: Line: $GPGSV,3,3,12,22,10,276,23,28,21,083,22,31,12,108,09,32,24,046,17*79[0m
+[0;32mI (103701) General: Line: $GPGLL,5529.61008,N,00927.93389,E,192521.00,A,A*65[0m
+[0;32mI (103701) General: Line: $GPRMC,192522.00,A,5529.61009,N,00927.93389,E,0.038,,180325,,,A*78[0m
+[0;32mI (103711) General: Line: $GPVTG,,T,,M,0.038,N,0.070,K,A*2F[0m
+[0;32mI (103721) General: Line: $GPGGA,192522.00,5529.61009,N,00927.93389,E,1,05,3.38,25.6,M,43.8,M,,*61[0m
+[0;32mI (103731) General: UTC Time: 192522.00[0m
+[0;32mI (103731) General: Raw coordinates: 5529.61009N, 00927.93389E[0m
+[0;32mI (103741) General: Decimal degrees: 55.493496, 9.465565 (Fix quality: 1)[0m
+[0;32mI (103751) General: Satellites in use: 05[0m
+[0;32mI (103751) General: Altitude: 25.6 meters[0m
+[0;32mI (103761) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.09,3.38,2.31*0E[0m
+[0;32mI (103771) General: Line: $GPGSV,3,1,12,01,72,140,23,02,49,137,20,03,73,249,30,04,19,189,31*75[0m
+[0;32mI (103771) General: Line: $GPGSV,3,2,12,12,01,007,06,14,01,258,,17,46,282,34,19,27,313,28*7E[0m
+[0;32mI (103781) General: Line: $GPGSV,3,3,12,22,10,276,23,28,21,083,22,3[0m
+[0;32mI (105791) General: Sent data:  47[0m
+[0;32mI (105791) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (105791) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (105801) General: Line: 1,12,108,,32,24,046,17*70[0m
+[0;32mI (105801) General: Line: $GPGLL,5529.61009,N,00927.93389,E,192522.00,A,A*67[0m
+[0;32mI (105801) General: Line: $GPRMC,192523.00,A,5529.61006,N,00927.93381,E,0.138,,180325,,,A*7F[0m
+[0;32mI (105811) General: Line: $GPVTG,,T,,M,0.138,N,0.255,K,A*2B[0m
+[0;32mI (105821) General: Line: $GPGGA,192523.00,5529.61006,N,00927.93381,E,1,05,3.38,25.7,M,43.8,M,,*66[0m
+[0;32mI (105831) General: UTC Time: 192523.00[0m
+[0;32mI (105831) General: Raw coordinates: 5529.61006N, 00927.93381E[0m
+[0;32mI (105841) General: Decimal degrees: 55.493496, 9.465564 (Fix quality: 1)[0m
+[0;32mI (105851) General: Satellites in use: 05[0m
+[0;32mI (105851) General: Altitude: 25.7 meters[0m
+[0;32mI (105861) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.09,3.38,2.31*0E[0m
+[0;32mI (105871) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,20,03,73,249,30,04,19,189,32*77[0m
+[0;32mI (105871) General: Line: $GPGSV,3,2,12,12,01,007,06,14,01,258,,17,46,282,34,19,27,313,28*7E[0m
+[0;32mI (105881) General: Line: $GPGSV,3,3,12,22,10,276,23,28,21,083,22,31,12,108,,32,24,046,16*71[0m
+[0;32mI (105891) General: Line: $GPGLL,5529.61006,N,00927.93381,E,192523.00,A,A*61[0m
+[0;32mI (105901) General: Line: $GPRMC,192524.00,A,5529.61003,N,00927.93372,E,0.229,,180325,,,A*72[0m
+[0;32mI (105911) General: Line: $GPVTG,,T,,M,0.229,N,0.425,K,A*29[0m
+[0;32mI (105921) General: Line: $GPGGA,192524.00,5529.61003,N,00927.93372,E,1,05,3.38,25.7,M,43.8,M,,*68[0m
+[0;32mI (105931) General: UTC Time: 192524.00[0m
+[0;32mI (105931) General: Raw coordinates: 5529.61003N, 00927.93372E[0m
+[0;32mI (105941) General: Decimal degrees: 55.493496, 9.465562 (Fix quality: 1)[0m
+[0;32mI (105941) General: Satellites in use: 05[0m
+[0;32mI (105951) General: Altitude: 25.7 meters[0m
+[0;32mI (105951) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.09,3.38,2.31*0E[0m
+[0;32mI (105961) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,20,03,73,249,30,04,19,189,31*74[0m
+[0;32mI (105971) General: Line: $GPGSV,3,2,12,12,01,007,06,14,01,258,,17,46,282,34,19,27,313,29*7F[0m
+[0;32mI (105981) General: Line: $GPGSV,3,3,12,22,10,276,24,28,21,083,22,31,12,108,,32,24,046,16*76[0m
+[0;32mI (105991) General: Line: $GPGLL,5529.61003,N,00[0m
+[0;32mI (107991) General: Sent data:  48[0m
+[0;32mI (107991) General: Line: 927.93372,E,192524.00,A,A*6F[0m
+[0;32mI (107991) General: Line: $GPRMC,192525.00,A,5529.60999,N,00927.93368,E,0.200,,180325,,,A*78[0m
+[0;32mI (107991) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (108001) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (108011) General: Line: $GPVTG,,T,,M,0.200,N,0.370,K,A*25[0m
+[0;32mI (108011) General: Line: $GPGGA,192525.00,5529.60999,N,00927.93368,E,1,05,3.38,25.8,M,43.8,M,,*66[0m
+[0;32mI (108021) General: UTC Time: 192525.00[0m
+[0;32mI (108031) General: Raw coordinates: 5529.60999N, 00927.93368E[0m
+[0;32mI (108031) General: Decimal degrees: 55.493496, 9.465561 (Fix quality: 1)[0m
+[0;32mI (108041) General: Satellites in use: 05[0m
+[0;32mI (108051) General: Altitude: 25.8 meters[0m
+[0;32mI (108051) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.09,3.38,2.32*0D[0m
+[0;32mI (108061) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,19,03,73,249,29,04,19,189,31*76[0m
+[0;32mI (108071) General: Line: $GPGSV,3,2,12,12,01,007,06,14,01,258,,17,46,282,33,19,27,313,29*78[0m
+[0;32mI (108081) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,21,31,12,108,,32,24,046,17*75[0m
+[0;32mI (108091) General: Line: $GPGLL,5529.60999,N,00927.93368,E,192525.00,A,A*6E[0m
+[0;32mI (108091) General: Line: $GPRMC,192526.00,A,5529.60995,N,00927.93359,E,0.088,,180325,,,A*77[0m
+[0;32mI (108101) General: Line: $GPVTG,,T,,M,0.088,N,0.162,K,A*26[0m
+[0;32mI (108111) General: Line: $GPGGA,192526.00,5529.60995,N,00927.93359,E,1,05,3.38,25.8,M,43.8,M,,*6B[0m
+[0;32mI (108121) General: UTC Time: 192526.00[0m
+[0;32mI (108121) General: Raw coordinates: 5529.60995N, 00927.93359E[0m
+[0;32mI (108131) General: Decimal degrees: 55.493496, 9.465560 (Fix quality: 1)[0m
+[0;32mI (108141) General: Satellites in use: 05[0m
+[0;32mI (108141) General: Altitude: 25.8 meters[0m
+[0;32mI (108151) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.09,3.38,2.32*0D[0m
+[0;32mI (108151) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,20,03,73,249,28,04,19,189,30*7C[0m
+[0;32mI (108161) General: Line: $GPGSV,3,2,12,12,01,007,06,14,01,258,,17,46,282,33,19,27,313,29*78[0m
+[0;32mI (108171) General: Line: $GPGSV,3,3,12,22,10,276,24,28,21,083,21,31,12,108,,32,24,046,17*74[0m
+[0;32mI (108181) General: Line: $GPGLL,5529.60995,N,00927.93359,E,192526.00,A,A*63[0m
+[0;32mI (108191) General: Line: $GPRMC,192527.00,A,[0m
+[0;32mI (110191) General: Sent data:  49[0m
+[0;32mI (110191) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (110191) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (110201) General: Line: 5529.60989,N,00927.93333,E,0.001,,180325,,,A*76[0m
+[0;32mI (110201) General: Line: $GPVTG,,T,,M,0.001,N,0.002,K,A*20[0m
+[0;32mI (110211) General: Line: $GPGGA,192527.00,140,22,02,49,137,20,03,73,249,30,04,19,189,32*77[0m
+[0;32mI (110211) General: UTC Time: 192527.00[0m
+[0;32mI (110221) General: Raw coordinates: 1402, 024[0m
+[0;32mI (110221) General: Decimal degrees: 1.666667, 0.033333 (Fix quality: 137)[0m
+[0;32mI (110231) General: Satellites in use: 20[0m
+[0;32mI (110241) General: Altitude: 73 meters[0m
+[0;32mI (110241) General: Line: $GPGSV,3,2,12,12,01,007,06,14,01,258,,17,46,282,34,19,27,313,29*7F[0m
+[0;32mI (110251) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,21,31,12,108,,32,24,046,17*75[0m
+[0;32mI (110261) General: Line: $GPGLL,5529.60989,N,00927.93333,E,192527.00,A,A*63[0m
+[0;32mI (110271) General: Line: $GPRMC,192528.00,A,5529.60980,N,00927.93298,E,0.073,,180325,,,A*75[0m
+[0;32mI (110281) General: Line: $GPVTG,,T,,M,0.073,N,0.135,K,A*20[0m
+[0;32mI (110281) General: Line: $GPGGA,192528.00,5529.60980,N,00927.93298,E,1,05,3.38,25.7,M,43.8,M,,*62[0m
+[0;32mI (110291) General: UTC Time: 192528.00[0m
+[0;32mI (110301) General: Raw coordinates: 5529.60980N, 00927.93298E[0m
+[0;32mI (110301) General: Decimal degrees: 55.493496, 9.465549 (Fix quality: 1)[0m
+[0;32mI (110311) General: Satellites in use: 05[0m
+[0;32mI (110311) General: Altitude: 25.7 meters[0m
+[0;32mI (110321) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.10,3.38,2.32*05[0m
+[0;32mI (110331) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,20,03,73,249,29,04,19,189,31*7C[0m
+[0;32mI (110341) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,34,19,27,313,29*79[0m
+[0;32mI (110351) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,21,31,12,108,,32,24,046,17*75[0m
+[0;32mI (110351) General: Line: $GPGLL,5529.60980,N,00927.93298,E,192528.00,A,A*65[0m
+[0;32mI (110361) General: Line: $GPRMC,192529.00,A,5529.60975,N,00927.93286,E,0.033,,180325,,,A*75[0m
+[0;32mI (110371) General: Line: $GPVTG,,T,,M,0.033,N,0.061,K,A*24[0m
+[0;32mI (110381) General: Line: $GPGGA,192529.00,5529.60975,N,00927.93286,E,1,05,3.38,25.8,M,43.8,M,,*69[0m
+[0;32mI (110391) General: UTC Time: 192529.00[0m
+[0;32mI (110391) General: Raw coordinates: 5529.60975N, 00927.93286E[0m
+[0;32mI (110401) General: Decimal degrees: 55.493496, 9.465548 (Fix quality: 1)[0m
+[0;32mI (110411) General: Satellites in use: 05[0m
+[0;32mI (110411) General: Altitude: 25.8 meters[0m
+[0;32mI (110421) General: Line: $GPGSA,A,3,17,22,03,04[0m
+[0;32mI (112421) General: Sent data:  50[0m
+[0;32mI (112421) General: Line: ,19,,,,,,,,4.10,3.38,2.32*05[0m
+[0;32mI (112421) General: Line: $GPGSV,3,1,SV,3,3,12,22,10,276,24,28,21,083,20,31,12,108,,32,24,046,18*7A[0m
+[0;32mI (112421) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (112431) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (112441) General: Line: $GPGLL,5529.60975,N,00927.93286,E,192529.00,A,A*61[0m
+[0;32mI (112441) General: Line: $GPRMC,192530.00,A,5529.60968,N,00927.93263,E,0.084,,180325,,,A*76[0m
+[0;32mI (112451) General: Line: $GPVTG,,T,,M,0.084,N,0.156,K,A*2D[0m
+[0;32mI (112461) General: Line: $GPGGA,192530.00,5529.60968,N,00927.93263,E,1,05,3.38,25.9,M,43.8,M,,*67[0m
+[0;32mI (112471) General: UTC Time: 192530.00[0m
+[0;32mI (112471) General: Raw coordinates: 5529.60968N, 00927.93263E[0m
+[0;32mI (112481) General: Decimal degrees: 55.493496, 9.465544 (Fix quality: 1)[0m
+[0;32mI (112491) General: Satellites in use: 05[0m
+[0;32mI (112491) General: Altitude: 25.9 meters[0m
+[0;32mI (112501) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.10,3.38,2.32*05[0m
+[0;32mI (112511) General: Line: $GPGSV,3,1,12,01,72,140,21,02,49,137,19,03,73,249,29,04,19,189,31*75[0m
+[0;32mI (112511) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,34,19,27,313,29*79[0m
+[0;32mI (112521) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,20,31,12,108,,32,24,046,18*7B[0m
+[0;32mI (112531) General: Line: $GPGLL,5529.60968,N,00927.93263,E,192530.00,A,A*6E[0m
+[0;32mI (112541) General: Line: $GPRMC,192531.00,A,5529.60971,N,00927.93276,E,0.102,,180325,,,A*74[0m
+[0;32mI (112551) General: Line: $GPVTG,,T,,M,0.102,N,0.189,K,A*20[0m
+[0;32mI (112561) General: Line: $GPGGA,192531.00,5529.60971,N,00927.93276,E,1,05,3.38,25.8,M,43.8,M,,*6B[0m
+[0;32mI (112571) General: UTC Time: 192531.00[0m
+[0;32mI (112571) General: Raw coordinates: 5529.60971N, 00927.93276E[0m
+[0;32mI (112581) General: Decimal degrees: 55.493496, 9.465546 (Fix quality: 1)[0m
+[0;32mI (112581) General: Satellites in use: 05[0m
+[0;32mI (112591) General: Altitude: 25.8 meters[0m
+[0;32mI (112591) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.10,3.38,2.32*05[0m
+[0;32mI (112601) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,19,03,73,249,29,04,19,189,31*76[0m
+[0;32mI (112611) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,34,19,27,313,29*79[0m
+[0;32mI (112621) General: Line: $GPGSV,3,3,12,22[0m
+[0;32mI (114621) General: Sent data:  51[0m
+[0;32mI (114621) General: Line: ,10,276,25,28,21,083,19,31,12,108,,32,24,046,17*7E[0m
+[0;32mI (114621) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (114621) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (114631) General: Line: $GPGLL,5529.60971,N,00927.93276,E,192531.00,A,A*63[0m
+[0;32mI (114641) General: Line: $GPRMC,192532.00,A,5529.60974,N,00927.93287,E,0.010,,180325,,,A*7E[0m
+[0;32mI (114651) General: Line: $GPVTG,,T,,M,0.010,N,0.019,K,A*2A[0m
+[0;32mI (114651) General: Line: $GPGGA,192532.00,5529.60974,N,00927.93287,E,1,05,3.38,25.7,M,43.8,M,,*6C[0m
+[0;32mI (114661) General: UTC Time: 192532.00[0m
+[0;32mI (114671) General: Raw coordinates: 5529.60974N, 00927.93287E[0m
+[0;32mI (114671) General: Decimal degrees: 55.493496, 9.465548 (Fix quality: 1)[0m
+[0;32mI (114681) General: Satellites in use: 05[0m
+[0;32mI (114691) General: Altitude: 25.7 meters[0m
+[0;32mI (114691) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.10,3.38,2.32*05[0m
+[0;32mI (114701) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,19,03,73,249,29,04,19,189,31*76[0m
+[0;32mI (114711) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,34,19,27,313,29*79[0m
+[0;32mI (114721) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,19,31,12,108,,32,24,046,17*7E[0m
+[0;32mI (114721) General: Line: $GPGLL,5529.60974,N,00927.93287,E,192532.00,A,A*6B[0m
+[0;32mI (114731) General: Line: $GPRMC,192533.00,A,5529.60974,N,00927.93291,E,0.098,,180325,,,A*78[0m
+[0;32mI (114741) General: Line: $GPVTG,,T,,M,0.098,N,0.182,K,A*29[0m
+[0;32mI (114751) General: Line: $GPGGA,192533.00,5529.60974,N,00927.93291,E,1,05,3.38,25.7,M,43.8,M,,*6A[0m
+[0;32mI (114761) General: UTC Time: 192533.00[0m
+[0;32mI (114761) General: Raw coordinates: 5529.60974N, 00927.93291E[0m
+[0;32mI (114771) General: Decimal degrees: 55.493496, 9.465549 (Fix quality: 1)[0m
+[0;32mI (114781) General: Satellites in use: 05[0m
+[0;32mI (114781) General: Altitude: 25.7 meters[0m
+[0;32mI (114791) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.10,3.38,2.32*05[0m
+[0;32mI (114791) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,20,03,73,249,29,04,19,189,31*7C[0m
+[0;32mI (114801) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,34,19,27,313,29*79[0m
+[0;32mI (114811) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,18,31,12,108,18,32,24,046,17*76[0m
+[0;32mI (116821) General: Sent data:  52[0m
+[0;32mI (116821) General: Line: $GPGLL,5529.60974,N,00927.93291,E,192533.00,A,A*6D[0m
+[0;32mI (116821) General: Line: $GPRMC,192534.00,A,5529.60973,N,00927.93296,E,0.129,,180325,,,A*74[0m
+[0;32mI (116821) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (116831) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (116841) General: Line: $GPVTG,,T,,M,0.129,N,0.240,K,A*2F[0m
+[0;32mI (116841) General: Line: $GPGGA,192534.00,5529.60973,N,00927.93296,E,1,05,3.38,25.9,M,43.8,M,,*63[0m
+[0;32mI (116851) General: UTC Time: 192534.00[0m
+[0;32mI (116861) General: Raw coordinates: 5529.60973N, 00927.93296E[0m
+[0;32mI (116871) General: Decimal degrees: 55.493496, 9.465549 (Fix quality: 1)[0m
+[0;32mI (116871) General: Satellites in use: 05[0m
+[0;32mI (116881) General: Altitude: 25.9 meters[0m
+[0;32mI (116881) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.10,3.38,2.32*05[0m
+[0;32mI (116891) General: Line: $GPGSV,3,1,12,01,72,140,21,02,49,137,20,03,73,249,29,04,19,189,31*7F[0m
+[0;32mI (116901) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,34,19,27,313,29*79[0m
+[0;32mI (116911) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,17,31,12,108,18,32,24,046,17*79[0m
+[0;32mI (116921) General: Line: $GPGLL,5529.60973,N,00927.93296,E,192534.00,A,A*6A[0m
+[0;32mI (116931) General: Line: $GPRMC,192535.00,A,5529.60975,N,00927.93303,E,0.010,,180325,,,A*75[0m
+[0;32mI (116931) General: Line: $GPVTG,,T,,M,0.010,N,0.018,K,A*2B[0m
+[0;32mI (116941) General: Line: $GPGGA,192535.00,5529.60975,N,00927.93303,E,1,05,3.38,25.9,M,43.8,M,,*69[0m
+[0;32mI (116951) General: UTC Time: 192535.00[0m
+[0;32mI (116951) General: Raw coordinates: 5529.60975N, 00927.93303E[0m
+[0;32mI (116961) General: Decimal degrees: 55.493496, 9.465550 (Fix quality: 1)[0m
+[0;32mI (116971) General: Satellites in use: 05[0m
+[0;32mI (116971) General: Altitude: 25.9 meters[0m
+[0;32mI (116981) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.10,3.38,2.32*05[0m
+[0;32mI (116991) General: Line: $GPGSV,3,1,12,01,72,140,21,02,49,137,20,03,73,249,29,04,19,189,31*7F[0m
+[0;32mI (116991) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,34,19,27,313,29*79[0m
+[0;32mI (117001) General: Line: $GPGSV,3,3,12,22,10,276,25,28,21,083,16,31,12,108,18,32,24,046,17*78[0m
+[0;32mI (117011) General: Line: $GPGLL,5529.60975,N,00927.93303,E,192535.00,A,A*[0m
+[0;32mI (119021) General: Sent data:  53[0m
+[0;32mI (119021) General: Line: 60[0m
+[0;32mI (119021) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (119021) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (119031) General: Line: 5,N,00927.93335,E,1,05,3.38,25.8,M,43.8,M,,*61[0m
+[0;32mI (119031) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.10,3.38,2.32*05[0m
+[0;32mI (119041) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,20,03,73,249,29,04,19,189,32*7F[0m
+[0;32mI (119051) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,35,19,27,313,30*70[0m
+[0;32mI (119061) General: Line: $GPGSV,3,3,12,22,10,276,26,28,21,083,17,31,12,108,20,32,24,046,18*7E[0m
+[0;32mI (119071) General: Line: $GPGLL,5529.60985,N,00927.93335,E,192536.00,A,A*69[0m
+[0;32mI (119081) General: Line: $GPRMC,192537.00,A,5529.60991,N,00927.93363,E,0.177,,180325,,,A*7B[0m
+[0;32mI (119081) General: Line: $GPVTG,,T,,M,0.177,N,0.327,K,A*24[0m
+[0;32mI (119091) General: Line: $GPGGA,192537.00,5529.60991,N,00927.93363,E,1,05,3.38,25.8,M,43.8,M,,*66[0m
+[0;32mI (119101) General: UTC Time: 192537.00[0m
+[0;32mI (119101) General: Raw coordinates: 5529.60991N, 00927.93363E[0m
+[0;32mI (119111) General: Decimal degrees: 55.493496, 9.465561 (Fix quality: 1)[0m
+[0;32mI (119121) General: Satellites in use: 05[0m
+[0;32mI (119121) General: Altitude: 25.8 meters[0m
+[0;32mI (119131) General: Line: $GPGSA,A,3,17,22,03,04,19,,,,,,,,4.10,3.38,2.32*05[0m
+[0;32mI (119141) General: Line: $GPGSV,3,1,12,01,72,140,22,02,49,137,20,03,73,249,28,04,19,189,32*7E[0m
+[0;32mI (119151) General: Line: $GPGSV,3,2,12,12,01,007,,14,01,258,,17,46,282,34,19,27,313,29*79[0m
+[0;32mI (119151) General: Line: $GPGSV,3,3,12,22,10,276,26,28,21,083,16,31,12,108,20,32,24,046,17*70[0m
+[0;32mI (119161) General: Line: $GPGLL,5529.60991,N,00927.93363,E,192537.00,A,A*6E[0m
+[0;32mI (119171) General: Line: $GPRMC,192538.00,A,5529.60988,N,00927.93357,E,0.150,,180325,,,A*7E[0m
+[0;32mI (119181) General: Line: $GPVTG,,T,,M,0.150,N,0.279,K,A*2B[0m
+[0;32mI (119191) General: Line: $GPGGA,192538.00,5529.60988,N,00927.93357,E,1,05,3.38,26.0,M,43.8,M,,*6[0m
+[0;32mI (119201) General: UTC Time: 192538.00[0m
+[0;32mI (119201) General: Raw coordinates: 5529.60988N, 00927.93357E[0m
+[0;32mI (119211) General: Decimal degrees: 55.493496, 9.465560 (Fix quality: 1)[0m
+[0;32mI (119211) General: Satellites in use: 05[0m
+[0;32mI (119221) General: Altitude: 26.0 meters[0m

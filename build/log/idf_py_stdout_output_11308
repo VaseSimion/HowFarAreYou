@@ -1,0 +1,67 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\sular\OneDrive\Documents\Arduino\ESP32MoistureSensor\VariousStuff\build\bootloader\esp-idf\esptool_py && C:\Users\sular\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/sular/esp/v5.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5180 bytes. 0x2e80 bytes (36%) free.
+[2/8] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj
+C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/main/main.cpp:21:20: warning: 'TAG_FAIL' defined but not used [-Wunused-variable]
+   21 | static const char* TAG_FAIL = "FAIL_SEND";
+      |                    ^~~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable VariousStuff.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.8.dev4
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/build/VariousStuff.bin
+[7/8] cmd.exe /C "cd /D C:\Users\sular\OneDrive\Documents\Arduino\ESP32MoistureSensor\VariousStuff\build\esp-idf\esptool_py && C:\Users\sular\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/sular/esp/v5.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/build/partition_table/partition-table.bin C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/build/VariousStuff.bin"
+VariousStuff.bin binary size 0x53590 bytes. Smallest app partition is 0x1e0000 bytes. 0x18ca70 bytes (83%) free.
+[7/8] cmd.exe /C "cd /D C:\Users\sular\esp\v5.3\esp-idf\components\esptool_py && C:\Users\sular\.espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Users/sular/esp/v5.3/esp-idf -D SERIAL_TOOL=C:/Users/sular/.espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Users/sular/esp/v5.3/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/build -P C:/Users/suesptool.py --chip esp32c3 -p COM21 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x0 bootloader/bootloader.bin 0x20000 VariousStuff.bin 0x8000 partition_table/partition-table.bin 0x10000 ota_data_initial.bin
+esptool.py v4.8.dev4
+Serial port COM21
+Connecting...
+Chip is ESP32-C3 (QFN32) (revision v0.4)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 9c:9e:6e:10:9c:4c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00020000 to 0x00073fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00010000 to 0x00011fff...
+SHA digest in image updated
+Compressed 20864 bytes to 12759...
+Writing at 0x00000000... (100 %)
+Wrote 20864 bytes (12759 compressed) at 0x00000000 in 0.4 seconds (effective 384.4 kbit/s)...
+Hash of data verified.
+Compressed 341392 bytes to 179317...
+Writing at 0x00020000... (9 %)
+Writing at 0x0002caf4... (18 %)
+Writing at 0x000346b8... (27 %)
+Writing at 0x0003b1aa... (36 %)
+Writing at 0x00042382... (45 %)
+Writing at 0x000497a8... (54 %)
+Writing at 0x0005018b... (63 %)
+Writing at 0x00057388... (72 %)
+Writing at 0x0005e833... (81 %)
+Writing at 0x000651fc... (90 %)
+Writing at 0x0006d07a... (100 %)
+Wrote 341392 bytes (179317 compressed) at 0x00020000 in 2.4 seconds (effective 1123.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 141...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (141 compressed) at 0x00008000 in 0.0 seconds (effective 678.3 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x00010000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x00010000 in 0.1 seconds (effective 626.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+lar/esp/v5.3/esp-idf/components/esptool_py/run_serial_tool.cmake"

@@ -1,0 +1,385 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403833d0
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (88) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (95) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (107) esp_image: segment 0: paddr=00020020 vaddr=3c030020 size=0d748h ( 55112) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0002d770 vaddr=3fc8ca00 size=014b8h (  5304) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0002ec30 vaddr=40380000 size=013e8h (  5096) load[0m
+[0;32mI (133) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=286ach (165548) map[0m
+[0;32mI (166) esp_image: segment 4: paddr=000586d4 vaddr=403813e8 size=0b440h ( 46144) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Unicore app[0m
+[0;32mI (200) cpu_start: Pro cpu start user code[0m
+[0;32mI (200) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (200) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     VariousStuff[0m
+[0;32mI (208) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (214) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (220) app_init: ELF file SHA256:  fc6ec1681...[0m
+[0;32mI (225) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (230) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (235) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (240) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (245) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 3FC8F380 len 00030C80 (195 KiB): RAM[0m
+[0;32mI (258) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (265) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (272) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (279) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;32mI (287) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (293) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (301) main_task: Started on CPU0[0m
+[0;32mI (301) main_task: Calling app_main()[0m
+[0;32mI (551) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (551) gpio: GPIO[2]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (551) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (771) General: Internal temperature: 39.00[0m
+[0;32mI (771) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (771) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1081) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1081) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1081) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1091) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1091) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1101) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1111) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1111) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1121) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1131) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1141) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1141) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1151) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1161) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1171) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1171) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1181) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1191) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1191) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1201) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1211) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1221) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1221) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1231) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1241) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1241) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1251) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1261) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1271) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1271) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1281) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1291) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1301) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1301) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1311) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1321) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1321) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1331) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1341) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1351) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1351) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1361) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1371) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1371) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1381) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1391) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1401) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1401) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1511) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1511) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1511) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1521) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1521) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1531) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1541) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1541) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1551) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1561) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1571) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1571) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1581) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1591) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1601) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1601) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1611) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1621) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1621) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1631) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1641) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1651) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1651) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1661) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1671) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1671) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1681) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1691) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1701) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1701) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1711) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1721) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1721) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1731) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1741) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1751) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1751) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1761) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1771) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1781) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1781) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1791) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1801) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1801) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1811) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1821) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1821) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1831) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1841) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1851) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1851) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1861) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1871) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1881) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1881) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1891) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1901) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1901) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1911) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1921) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1931) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1931) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1941) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1951) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1951) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1961) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1971) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1981) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1981) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1991) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2001) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2011) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2011) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2021) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2031) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2031) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2041) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2051) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2061) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2061) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2071) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2081) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2081) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2091) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2101) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2111) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2111) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2121) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2131) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2141) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2141) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2151) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2161) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2161) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2171) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2181) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2191) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2191) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2201) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2211) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2211) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2221) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2231) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2241) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2241) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2251) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2261) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2271) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2271) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2281) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2291) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;32mI (2291) main_task: Returned from app_main()[0m
+[0;32mI (803) General: Internal temperature: 37.00[0m
+[0;32mI (803) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (803) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1113) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1113) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1113) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1123) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1123) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1133) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1143) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1143) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1153) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1163) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1173) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1173) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1183) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1193) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1203) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1203) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1213) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1223) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1223) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1233) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1243) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1253) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1253) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1263) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1273) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1273) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1283) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1293) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1303) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1303) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1313) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1323) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1333) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1333) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1343) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1353) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1353) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1363) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1373) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1383) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1383) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1393) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1403) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1403) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1413) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1423) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1433) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1433) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1543) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1543) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1543) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1553) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1553) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1563) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1573) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1573) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1583) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1593) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1603) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1603) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1613) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1623) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1633) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1633) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1643) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1653) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1653) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1663) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1673) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1683) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1683) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1693) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1703) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1703) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1713) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1723) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1733) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1733) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1743) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1753) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1753) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1763) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1773) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1783) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1783) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1793) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1803) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1813) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1813) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1823) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1833) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1833) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1843) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1853) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1853) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1863) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1873) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1883) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1883) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1893) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1903) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1913) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1913) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1923) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1933) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1933) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1943) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1953) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1963) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1963) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1973) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (1983) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (1983) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (1993) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2003) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2013) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2013) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2023) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2033) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2043) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2043) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2053) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2063) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2063) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2073) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2083) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2093) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2093) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2103) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2113) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2113) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2123) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2133) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2143) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2143) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2153) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2163) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2173) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2173) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2183) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2193) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2193) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2203) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2213) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2223) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2223) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2233) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2243) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2243) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2253) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2263) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2273) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2273) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2283) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2293) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2303) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (2303) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (2313) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (2323) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;32mI (2323) main_task: Returned from app_main()[0m

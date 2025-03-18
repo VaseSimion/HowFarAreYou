@@ -1,0 +1,141 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM9 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4004c0d8: uart_tx_one_char_uart.part.0 in ROM
+[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m.[0m[0;33m[0m
+[0;33mStack dump detected[0m
+[0;33m0x40380812: panic_abort at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/panic.c:463
+0x40385940: __ubsan_include at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m0x40380001: _vector_table at C:/Users/sular/esp/v5.3/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\sular\\OneDrive\\Documents\\Arduino\\ESP32MoistureSensor\\VariousStuff\\build\\VariousStuff.elf', '-ex', 'target remote | "C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\sular\\AppData\\Local\\Temp\\tmpeniakvip"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\sular\\AppData\\Local\\Temp\\tmpeniakvip': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x403807ca: esp_restart_noos at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c:110
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x40380812: panic_abort at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/panic.c:463
+0x40385940: __ubsan_include at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m0x40380001: _vector_table at C:/Users/sular/esp/v5.3/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\sular\\OneDrive\\Documents\\Arduino\\ESP32MoistureSensor\\VariousStuff\\build\\VariousStuff.elf', '-ex', 'target remote | "C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\sular\\AppData\\Local\\Temp\\tmpouj40gtd"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\sular\\AppData\\Local\\Temp\\tmpouj40gtd': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x403807ca: esp_restart_noos at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c:110
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x40380812: panic_abort at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/panic.c:463
+0x40385940: __ubsan_include at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m0x40380001: _vector_table at C:/Users/sular/esp/v5.3/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\sular\\OneDrive\\Documents\\Arduino\\ESP32MoistureSensor\\VariousStuff\\build\\VariousStuff.elf', '-ex', 'target remote | "C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\sular\\AppData\\Local\\Temp\\tmpoufu45_z"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\sular\\AppData\\Local\\Temp\\tmpoufu45_z': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x403807ca: esp_restart_noos at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c:110
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x40380812: panic_abort at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/panic.c:463
+0x40385940: __ubsan_include at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m0x40380001: _vector_table at C:/Users/sular/esp/v5.3/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\sular\\OneDrive\\Documents\\Arduino\\ESP32MoistureSensor\\VariousStuff\\build\\VariousStuff.elf', '-ex', 'target remote | "C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\sular\\AppData\\Local\\Temp\\tmpxogl5zcg"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\sular\\AppData\\Local\\Temp\\tmpxogl5zcg': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x403807ca: esp_restart_noos at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c:110
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x40380812: panic_abort at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/panic.c:463
+0x40385940: __ubsan_include at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m0x40380001: _vector_table at C:/Users/sular/esp/v5.3/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\sular\\OneDrive\\Documents\\Arduino\\ESP32MoistureSensor\\VariousStuff\\build\\VariousStuff.elf', '-ex', 'target remote | "C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\sular\\AppData\\Local\\Temp\\tmph9ldevae"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\sular\\AppData\\Local\\Temp\\tmph9ldevae': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x403807ca: esp_restart_noos at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c:110
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x40380812: panic_abort at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/panic.c:463
+0x40385940: __ubsan_include at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m0x40380001: _vector_table at C:/Users/sular/esp/v5.3/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\sular\\OneDrive\\Documents\\Arduino\\ESP32MoistureSensor\\VariousStuff\\build\\VariousStuff.elf', '-ex', 'target remote | "C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\sular\\AppData\\Local\\Temp\\tmpnnf7utf8"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\sular\\AppData\\Local\\Temp\\tmpnnf7utf8': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x403807ca: esp_restart_noos at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c:110
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x40380812: panic_abort at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/panic.c:463
+0x40385940: __ubsan_include at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m0x40380001: _vector_table at C:/Users/sular/esp/v5.3/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\sular\\OneDrive\\Documents\\Arduino\\ESP32MoistureSensor\\VariousStuff\\build\\VariousStuff.elf', '-ex', 'target remote | "C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\sular\\AppData\\Local\\Temp\\tmp7n3ud3oq"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\sular\\AppData\\Local\\Temp\\tmp7n3ud3oq': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x403807ca: esp_restart_noos at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c:110
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x40380812: panic_abort at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/panic.c:463
+0x40385940: __ubsan_include at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m0x40380001: _vector_table at C:/Users/sular/esp/v5.3/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\sular\\OneDrive\\Documents\\Arduino\\ESP32MoistureSensor\\VariousStuff\\build\\VariousStuff.elf', '-ex', 'target remote | "C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\sular\\AppData\\Local\\Temp\\tmp1jrwww9k"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\sular\\AppData\\Local\\Temp\\tmp1jrwww9k': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x40048b92: software_reset_cpu in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x40380812: panic_abort at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/panic.c:463
+0x40385940: __ubsan_include at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m0x40380001: _vector_table at C:/Users/sular/esp/v5.3/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\sular\\OneDrive\\Documents\\Arduino\\ESP32MoistureSensor\\VariousStuff\\build\\VariousStuff.elf', '-ex', 'target remote | "C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\sular\\AppData\\Local\\Temp\\tmpm0qqb5mc"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\sular\\AppData\\Local\\Temp\\tmpm0qqb5mc': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x403807ca: esp_restart_noos at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c:110
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x40380812: panic_abort at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/panic.c:463
+0x40385940: __ubsan_include at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m0x40380001: _vector_table at C:/Users/sular/esp/v5.3/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\sular\\OneDrive\\Documents\\Arduino\\ESP32MoistureSensor\\VariousStuff\\build\\VariousStuff.elf', '-ex', 'target remote | "C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\sular\\AppData\\Local\\Temp\\tmp9_xs9yms"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\sular\\AppData\\Local\\Temp\\tmp9_xs9yms': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x403807ca: esp_restart_noos at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c:110
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x40380812: panic_abort at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/panic.c:463
+0x40385940: __ubsan_include at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m0x40380001: _vector_table at C:/Users/sular/esp/v5.3/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\sular\\OneDrive\\Documents\\Arduino\\ESP32MoistureSensor\\VariousStuff\\build\\VariousStuff.elf', '-ex', 'target remote | "C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\sular\\AppData\\Local\\Temp\\tmphxdjp4a8"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\sular\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\sular\\AppData\\Local\\Temp\\tmphxdjp4a8': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x403807ca: esp_restart_noos at C:/Users/sular/esp/v5.3/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c:110
+[0m
+[0m

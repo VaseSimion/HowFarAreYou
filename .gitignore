@@ -1,0 +1,6 @@
+*.vscode/
+*.devcontainer/
+*/build/
+*/components/esl_littlefs
+*/components/u8g2
+*/sdkconfig.old

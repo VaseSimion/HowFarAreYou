@@ -1,0 +1,1288 @@
+ion informatioESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (88) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (95) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (107) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=23ae4h (146148) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00043b0c vaddr=3fc95600 size=02e50h ( 11856) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=00046964 vaddr=40380000 size=096b4h ( 38580) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=9bc2ch (637996) map[0m
+[0;32mI (252) esp_image: segment 4: paddr=000ebc54 vaddr=403896b4 size=0bde0h ( 48608) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (280) cpu_start: Unicore app[0m
+[0;32mI (288) cpu_start: Pro cpu start user code[0m
+[0;32mI (288) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (289) app_init: Application information:[0m
+[0;32mI (291) app_init: Project name:     VariousStuff[0m
+[0;32mI (297) app_init: App version:      FS1.0-13-gbbeeebf-dirty[0m
+[0;32mI (303) app_init: Compile time:     Mar 18 2025 19:27:32[0m
+[0;32mI (309) app_init: ELF file SHA256:  4fd69a2d5...[0m
+[0;32mI (314) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (319) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (324) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (329) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (333) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (341) heap_init: At 3FC9CA10 len 000235F0 (141 KiB): RAM[0m
+[0;32mI (347) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (354) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (361) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (368) spi_flash: detected chip: generic[0m
+[0;32mI (372) spi_flash: flash io: dio[0m
+[0;32mI (376) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (382) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (390) main_task: Started on CPU0[0m
+[0;32mI (390) main_task: Calling app_main()[0m
+[0;32mI (410) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (410) General: MAC address: 9C:9E:6E:02:E4:1C[0m
+[0;32mI (410) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (420) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2440) main: Does not recognize the module[0m
+[0;32mI (2440) pp: pp rom version: 9387209[0m
+[0;32mI (2440) net80211: net80211 rom version: 9387209[0m
+I (2450) wifi:wifi driver task: 3fca6034, prio:23, stack:6656, core=0
+I (2450) wifi:wifi firmware version: 0caa81945
+I (2450) wifi:wifi certification version: v7.0
+I (2450) wifi:config NVS flash: enabled
+I (2460) wifi:config nano formating: disabled
+I (2460) wifi:Init data frame dynamic rx buffer num: 32
+I (2470) wifi:Init static rx mgmt buffer num: 5
+I (2470) wifi:Init management short buffer num: 32
+I (2470) wifi:Init dynamic tx buffer num: 32
+I (2480) wifi:Init static tx FG buffer num: 2
+I (2480) wifi:Init static rx buffer size: 1600
+I (2490) wifi:Init static rx buffer num: 10
+I (2490) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2500) wifi_init: rx ba win: 6[0m
+[0;32mI (2500) wifi_init: accept mbox: 6[0m
+[0;32mI (2500) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2510) wifi_init: udp mbox: 6[0m
+[0;32mI (2510) wifi_init: tcp mbox: 6[0m
+[0;32mI (2510) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2520) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2520) wifi_init: tcp mss: 1440[0m
+[0;32mI (2530) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2530) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2540) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+[0;33mW (2580) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (2590) wifi:mode : sta (9c:9e:6e:02:e4:1c)
+I (2590) wifi:enable tsf
+I (2600) ESPNOW: espnow [version: 1.0] init
+[0;31mE (2600) General: Lora module not recognized[0m
+[0;32mI (2600) General: Sent data:   0[0m
+[0;32mI (2600) main_task: Returned from app_main()[0m
+[0;32mI (2600) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (2610) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (4620) General: Sent data:   1[0m
+[0;32mI (4620) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (4620) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (6640) General: Sent data:   2[0m
+[0;32mI (6640) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (6640) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (8660) General: Sent data:   3[0m
+[0;32mI (8660) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (8660) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (10680) General: Sent data:   4[0m
+[0;32mI (10680) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (10680) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (12700) General: Sent data:   5[0m
+[0;32mI (12700) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (12700) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (14720) General: Sent data:   6[0m
+[0;32mI (14720) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (14720) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (16740) General: Sent data:   7[0m
+[0;32mI (16740) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (16740) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (18760) General: Sent data:   8[0m
+[0;32mI (18760) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (18760) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (20780) General: Sent data:   9[0m
+[0;32mI (20780) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (20780) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (22800) General: Sent data:  10[0m
+[0;32mI (22800) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (22800) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (24820) General: Sent data:  11[0m
+[0;32mI (24820) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (24820) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (26840) General: Sent data:  12[0m
+[0;32mI (26840) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (26840) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (28860) General: Sent data:  13[0m
+[0;32mI (28860) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (28860) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (30880) General: Sent data:  14[0m
+[0;32mI (30880) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (30880) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (32900) General: Sent data:  15[0m
+[0;32mI (32910) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (32910) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (34920) General: Sent data:  16[0m
+[0;32mI (34920) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (34920) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (36940) General: Sent data:  17[0m
+[0;32mI (36940) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (36940) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (38960) General: Sent data:  18[0m
+[0;32mI (38960) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (38960) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (40980) General: Sent data:  19[0m
+[0;32mI (40980) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (40980) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (43000) General: Sent data:  20[0m
+[0;32mI (43000) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (43000) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (45020) General: Sent data:  21[0m
+[0;32mI (45020) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (45020) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (47040) General: Sent data:  22[0m
+[0;32mI (47040) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (47040) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (49060) General: Sent data:  23[0m
+[0;32mI (49060) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (49060) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (51080) General: Sent data:  24[0m
+[0;32mI (51080) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (51080) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (53100) General: Sent data:  25[0m
+[0;32mI (53100) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (53100) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (55120) General: Sent data:  26[0m
+[0;32mI (55120) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (55120) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (57140) General: Sent data:  27[0m
+[0;32mI (57140) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (57140) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (59160) General: Sent data:  28[0m
+[0;32mI (59160) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (59160) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (61180) General: Sent data:  29[0m
+[0;32mI (61180) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (61180) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (63200) General: Sent data:  30[0m
+[0;32mI (63200) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (63200) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (65220) General: Sent data:  31[0m
+[0;32mI (65220) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (65220) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (67240) General: Sent data:  32[0m
+[0;32mI (67240) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (67240) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (69260) General: Sent data:  33[0m
+[0;32mI (69260) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (69260) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (71280) General: Sent data:  34[0m
+[0;32mI (71280) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (71280) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (73300) General: Sent data:  35[0m
+[0;32mI (73300) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (73300) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (75320) General: Sent data:  36[0m
+[0;32mI (75320) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (75320) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (77340) General: Sent data:  37[0m
+[0;32mI (77340) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (77350) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (79360) General: Sent data:  38[0m
+[0;32mI (79360) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (79360) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (81380) General: Sent data:  39[0m
+[0;32mI (81380) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (81380) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (83400) General: Sent data:  40[0m
+[0;32mI (83400) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (83400) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (85420) General: Sent data:  41[0m
+[0;32mI (85420) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (85420) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (87440) General: Sent data:  42[0m
+[0;32mI (87440) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (87440) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (89460) General: Sent data:  43[0m
+[0;32mI (89460) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (89460) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (91480) General: Sent data:  44[0m
+[0;32mI (91480) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (91480) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (93500) General: Sent data:  45[0m
+[0;32mI (93500) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (93500) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (95520) General: Sent data:  46[0m
+[0;32mI (95520) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (95520) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (97540) General: Sent data:  47[0m
+[0;32mI (97540) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (97540) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (99560) General: Sent data:  48[0m
+[0;32mI (99560) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (99560) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (101580) General: Sent data:  49[0m
+[0;32mI (101580) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (101580) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (103600) General: Sent data:  50[0m
+[0;32mI (103600) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (103600) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (105620) General: Sent data:  51[0m
+[0;32mI (105620) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (105620) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (107640) General: Sent data:  52[0m
+[0;32mI (107640) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (107640) General: Last Packet Send Status: Delivery Success[0m
+Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x403899f6  RA      : 0x4038028c  SP      : 0x3fc98de0  GP      : 0x3fc95e00  
+TP      : 0x3fca00f0  T0      : 0x600c2194  T1      : 0x00060000  T2      : 0x00000002  
+S0/FP   : 0x00000008  S1      : 0x80000009  A0      : 0x861c0000  A1      : 0x00000000  
+A2      : 0x3fc9c734  A3      : 0xa5a5a5a5  A4      : 0x861c0000  A5      : 0x3fc9c000  
+A6      : 0x00000019  A7      : 0x00000002  S2      : 0x00001881  S3      : 0x00000001  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x3fc9c728  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x4038028c  S11     : 0x00001881  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001801  MTVEC   : 0x40380001  MCAUSE  : 0x00000005  MTVAL   : 0x861c0000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc98de0: 0x60023000 0x40386bb0 0x40386bbc 0x00000000 0x3fc98dec 0x00000000 0x00000000 0x00000000
+3fc98e00: 0x3fc98e04 0xffffffff 0x3fc98e04 0x3fc98e04 0x00000000 0x3fc98e18 0xffffffff 0x3fc98e18
+3fc98e20: 0x3fc98e18 0x00000001 0x00000001 0x00000000 0x0001ffff 0x00000000 0x00000000 0x00000000
+3fc98e40: 0x00000000 0x3fc98e40 0x00000000 0x00000000 0x00000000 0x3fc98e58 0xffffffff 0x3fc98e58
+3fc98e60: 0x3fc98e58 0x00000000 0x3fc98e6c 0xffffffff 0x3fc98e6c 0x3fc98e6c 0x00000001 0x00000001
+3fc98e80: 0x00000000 0x0001ffff 0x00000000 0x00000000 0x00000000 0x60023000 0x40386bb0 0x40386bbc
+3fc98ea0: 0x3fc9ce9c 0x3fc9cf60 0x3fc9d024 0x3fca11c4 0x3fca18a0 0x00000000 0x00000000 0x00000000
+3fc98ec0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc98ee0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc98f00: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc98f20: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc98f40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0xffffffff 0x0000ffff 0x00000000
+3fc98f60: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc98f80: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc98fa0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc98fc0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc98fe0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc99000: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc99020: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc99040: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc99060: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc99080: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc990a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc990c0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc990e0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc99100: 0x00000000 0x00000000 0x00000000 0x00000000 0x3fca0bc4 0x00000000 0x00000000 0x00000000
+3fc99120: 0x00000000 0x40384438 0x00000000 0x4038136e 0x00000000 0x40384346 0x00000000 0x40381a06
+3fc99140: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x4038300a 0x3fc9c82c 0x00000000
+3fc99160: 0x00000000 0x4038983e 0x3fc98de0 0x4201894e 0x00000000 0x40383ef2 0x3fca1464 0x420079c2
+3fc99180: 0x3fcaca50 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc991a0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc991c0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+
+
+
+ELF file SHA256: 4fd69a2d5
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807d2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=23ae4h (146148) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00043b0c vaddr=3fc95600 size=02e50h ( 11856) load[0m
+[0;32mI (140) esp_image: segment 2: paddr=00046964 vaddr=40380000 size=096b4h ( 38580) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=9bc2ch (637996) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=000ebc54 vaddr=403896b4 size=0bde0h ( 48608) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (279) cpu_start: Unicore app[0m
+[0;32mI (288) cpu_start: Pro cpu start user code[0m
+[0;32mI (288) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (288) app_init: Application information:[0m
+[0;32mI (291) app_init: Project name:     VariousStuff[0m
+[0;32mI (296) app_init: App version:      FS1.0-13-gbbeeebf-dirty[0m
+[0;32mI (302) app_init: Compile time:     Mar 18 2025 19:27:32[0m
+[0;32mI (308) app_init: ELF file SHA256:  4fd69a2d5...[0m
+[0;32mI (314) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (318) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (323) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (328) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (333) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (340) heap_init: At 3FC9CA10 len 000235F0 (141 KiB): RAM[0m
+[0;32mI (346) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (353) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (360) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (367) spi_flash: detected chip: generic[0m
+[0;32mI (371) spi_flash: flash io: dio[0m
+[0;32mI (376) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (382) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (389) main_task: Started on CPU0[0m
+[0;32mI (389) main_task: Calling app_main()[0m
+[0;32mI (409) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (409) General: MAC address: 9C:9E:6E:02:E4:1C[0m
+[0;32mI (409) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (419) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2439) main: Does not recognize the module[0m
+[0;32mI (2439) pp: pp rom version: 9387209[0m
+[0;32mI (2439) net80211: net80211 rom version: 9387209[0m
+I (2449) wifi:wifi driver task: 3fca6034, prio:23, stack:6656, core=0
+I (2449) wifi:wifi firmware version: 0caa81945
+I (2449) wifi:wifi certification version: v7.0
+I (2449) wifi:config NVS flash: enabled
+I (2459) wifi:config nano formating: disabled
+I (2459) wifi:Init data frame dynamic rx buffer num: 32
+I (2469) wifi:Init static rx mgmt buffer num: 5
+I (2469) wifi:Init management short buffer num: 32
+I (2469) wifi:Init dynamic tx buffer num: 32
+I (2479) wifi:Init static tx FG buffer num: 2
+I (2479) wifi:Init static rx buffer size: 1600
+I (2489) wifi:Init static rx buffer num: 10
+I (2489) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2499) wifi_init: rx ba win: 6[0m
+[0;32mI (2499) wifi_init: accept mbox: 6[0m
+[0;32mI (2499) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2509) wifi_init: udp mbox: 6[0m
+[0;32mI (2509) wifi_init: tcp mbox: 6[0m
+[0;32mI (2509) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2519) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2519) wifi_init: tcp mss: 1440[0m
+[0;32mI (2529) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2529) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2539) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+I (2589) wifi:mode : sta (9c:9e:6e:02:e4:1c)
+I (2589) wifi:enable tsf
+I (2589) ESPNOW: espnow [version: 1.0] init
+[0;31mE (2589) General: Lora module not recognized[0m
+[0;32mI (2589) General: Sent data:   0[0m
+[0;32mI (2599) main_task: Returned from app_main()[0m
+[0;32mI (2599) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (2609) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (4619) General: Sent data:   1[0m
+Guru Meditation Error: Core  0 panic'ed (Store access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x4038991c  RA      : 0x40389ece  SP      : 0x3fcae630  GP      : 0x3fc95e00  
+TP      : 0x3fcae740  T0      : 0x39392c39  T1      : 0x2c2c2c2c  T2      : 0x392e3939  
+S0/FP   : 0x00000002  S1      : 0x00000001  A0      : 0x3fcae758  A1      : 0x00000001  
+A2      : 0x00000000  A3      : 0x2c39392e  A4      : 0x39392c2c  A5      : 0x39392c39  
+A6      : 0x00000001  A7      : 0x2a4e2c56  S2      : 0x000001a7  S3      : 0x00000001  
+S4      : 0x3fcae6ac  S5      : 0x3fcae6cc  S6      : 0x00000000  S7      : 0x000002df  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x2c2c4c4c  T4      : 0x47504724  T5      : 0x0a0d3033  T6      : 0x2a39392e  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x39392c34  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fcae630: 0x00000000 0x3fcaccd4 0x00000002 0x4038a99a 0x00000000 0x3fcaccd4 0x00000000 0x40387962
+3fcae650: 0x3c0a5428 0x3c0a531c 0x3c0a531c 0x00000002 0x00000000 0x00000000 0x00000000 0x000001a7
+3fcae670: 0x00000000 0x00000000 0x00000000 0x00000000 0x3fcae6f8 0x00000002 0x00000120 0x000002df
+3fcae690: 0x3fc9c7b0 0x3fcacd48 0x00000001 0x40387e2e 0x00000000 0x000003e7 0x3fc9c000 0x40387ea8
+3fcae6b0: 0x00000000 0x3fcacd48 0x00000001 0x42009472 0x3fc9939c 0x3fce0000 0x3fc9c7dc 0x00000120
+3fcae6d0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x000003e7 0x3fc9c000 0x4200b3bc
+3fcae6f0: 0x00000000 0x00000000 0x52504724 0x2c2c434d 0x2c2c2c56 0x2c2c2c2c 0x4e2c2c2c 0x0d33352a
+3fcae710: 0x5047240a 0x2c475456 0x2c2c2c2c 0x2c2c2c2c 0x30332a4e 0x47240a0d 0x41474750 0x2c2c2c2c
+3fcae730: 0x2c302c2c 0x392c3030 0x39392e39 0x2c2c2c2c 0x342a2c2c 0x240a0d38 0x53475047 0x2c412c41
+3fcae750: 0x2c2c2c31 0x2c2c2c2c 0x2c2c2c2c 0x39392c2c 0x2c39392e 0x392e3939 0x39392c39 0x2a39392e
+3fcae770: 0x3fcacd2c 0x3fcacd2c 0x2c2c4c4c 0x3fcacd24 0x2a4e2c56 0x0a0d3436 0x52504724 0x2c2c434d
+3fcae790: 0x2c2c2c56 0x2c2c2c2c 0x4e2c2c2c 0x0d33352a 0x5047240a 0x2c475456 0x2c2c2c2c 0x2c2c2c2c
+3fcae7b0: 0x30332a4e 0x47240a0d 0x41474750 0x2c2c2c2c 0x2c302c2c 0x392c3030 0x39392e39 0x2c2c2c2c
+3fcae7d0: 0x342a2c2c 0x240a0d38 0x53475047 0x2c412c41 0x2c2c2c31 0x2c2c2c2c 0x2c2c2c2c 0x39392c2c
+3fcae7f0: 0x2c39392e 0x392e3939 0x39392c39 0x2a39392e 0x0a0d3033 0x47504724 0x2c2c4c4c 0x2c2c2c2c
+3fcae810: 0x2a4e2c56 0x0a0d3436 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae830: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae850: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae870: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae890: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00011755 0x3fc9ca24 0x3fc9ca24
+3fcae8b0: 0x3fcae8d8 0x00000001 0x3fcae908 0x00160018 0x00010000 0x00000000 0x00000000 0x00000000
+3fcae8d0: 0x00000000 0x3fcae8e4 0xc002e050 0x3fcae92c 0x00000000 0x00006412 0x00000007 0x00000000
+3fcae8f0: 0x023a7f00 0x01040000 0x00000080 0x0027a481 0x3fc96584 0x00010000 0x00000000 0x00000000
+3fcae910: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x000000d0
+3fcae930: 0xffffffff 0x9e9cffff 0x1ce4026e 0xffffffff 0x0000ffff 0x34fe187f 0x0024b680 0xfe1808dd
+3fcae950: 0x20010434 0x1bfd3020 0x3fcae8a0 0x0001169f 0x3fc9ca24 0x3fc9ca24 0xf3d971fd 0x2f923289
+3fcae970: 0xbadb4bef 0x5461ea9a 0xc0198923 0x35d13d77 0x45eac062 0x30af9171 0x8b3b46e7 0x42d393d4
+3fcae990: 0x81de3c79 0x40383f4e 0xeac23d50 0x69bab27f 0xf32088b2 0x6e009929 0xace6dca1 0xec11e500
+3fcae9b0: 0x8e5fffe6 0xc9bd2d62 0xc0500021 0x1e3f0b7b 0x3500d933 0x13b7ca49 0xff8b5814 0xd2338a48
+3fcae9d0: 0x931dbcae 0x8c0d7dfb 0x7ef85044 0x1fa076c5 0x190ce4c4 0x72228a2f 0x3546e46f 0x29c9496e
+3fcae9f0: 0x4b0eb033 0x14b0fbf6 0x216a22e1 0xab80b7ac 0x74068a41 0xe21c601a 0x6ffefed9 0x949ec17a
+3fcaea10: 0xdffaee6c 0xc4852ba0 0x8092015d 0x9ab672e8 0xd33b077b 0x4cc24a22 0x93efb697 0xe57c6aea
+
+
+
+ELF file SHA256: 4fd69a2d5
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807d2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=23ae4h (146148) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00043b0c vaddr=3fc95600 size=02e50h ( 11856) load[0m
+[0;32mI (140) esp_image: segment 2: paddr=00046964 vaddr=40380000 size=096b4h ( 38580) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=9bc2ch (637996) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=000ebc54 vaddr=403896b4 size=0bde0h ( 48608) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (279) cpu_start: Unicore app[0m
+[0;32mI (288) cpu_start: Pro cpu start user code[0m
+[0;32mI (288) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (288) app_init: Application information:[0m
+[0;32mI (291) app_init: Project name:     VariousStuff[0m
+[0;32mI (296) app_init: App version:      FS1.0-13-gbbeeebf-dirty[0m
+[0;32mI (302) app_init: Compile time:     Mar 18 2025 19:27:32[0m
+[0;32mI (308) app_init: ELF file SHA256:  4fd69a2d5...[0m
+[0;32mI (314) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (318) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (323) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (328) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (333) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (340) heap_init: At 3FC9CA10 len 000235F0 (141 KiB): RAM[0m
+[0;32mI (346) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (353) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (360) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (367) spi_flash: detected chip: generic[0m
+[0;32mI (371) spi_flash: flash io: dio[0m
+[0;32mI (376) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (382) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (389) main_task: Started on CPU0[0m
+[0;32mI (389) main_task: Calling app_main()[0m
+[0;32mI (409) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (409) General: MAC address: 9C:9E:6E:02:E4:1C[0m
+[0;32mI (409) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (419) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2439) main: Does not recognize the module[0m
+[0;32mI (2439) pp: pp rom version: 9387209[0m
+[0;32mI (2439) net80211: net80211 rom version: 9387209[0m
+I (2449) wifi:wifi driver task: 3fca6034, prio:23, stack:6656, core=0
+I (2449) wifi:wifi firmware version: 0caa81945
+I (2449) wifi:wifi certification version: v7.0
+I (2449) wifi:config NVS flash: enabled
+I (2459) wifi:config nano formating: disabled
+I (2459) wifi:Init data frame dynamic rx buffer num: 32
+I (2469) wifi:Init static rx mgmt buffer num: 5
+I (2469) wifi:Init management short buffer num: 32
+I (2469) wifi:Init dynamic tx buffer num: 32
+I (2479) wifi:Init static tx FG buffer num: 2
+I (2479) wifi:Init static rx buffer size: 1600
+I (2489) wifi:Init static rx buffer num: 10
+I (2489) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2499) wifi_init: rx ba win: 6[0m
+[0;32mI (2499) wifi_init: accept mbox: 6[0m
+[0;32mI (2499) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2509) wifi_init: udp mbox: 6[0m
+[0;32mI (2509) wifi_init: tcp mbox: 6[0m
+[0;32mI (2509) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2519) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2519) wifi_init: tcp mss: 1440[0m
+[0;32mI (2529) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2529) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2539) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+I (2579) wifi:mode : sta (9c:9e:6e:02:e4:1c)
+I (2579) wifi:enable tsf
+I (2589) ESPNOW: espnow [version: 1.0] init
+[0;31mE (2589) General: Lora module not recognized[0m
+[0;32mI (2589) General: Sent data:   0[0m
+[0;32mI (2589) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (2599) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (2599) main_task: Returned from app_main()[0m
+[0;32mI (4619) General: Sent data:   1[0m
+Guru Meditation Error: Core  0 panic'ed (Store access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x4038991c  RA      : 0x40389ece  SP      : 0x3fcae630  GP      : 0x3fc95e00  
+TP      : 0x3fcae740  T0      : 0x39392c39  T1      : 0x2c2c2c2c  T2      : 0x392e3939  
+S0/FP   : 0x00000002  S1      : 0x00000001  A0      : 0x3fcae758  A1      : 0x00000001  
+A2      : 0x00000000  A3      : 0x2c39392e  A4      : 0x39392c2c  A5      : 0x39392c39  
+A6      : 0x00000001  A7      : 0x2a4e2c56  S2      : 0x000001a7  S3      : 0x00000001  
+S4      : 0x3fcae6ac  S5      : 0x3fcae6cc  S6      : 0x00000000  S7      : 0x000002df  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x2c2c4c4c  T4      : 0x47504724  T5      : 0x0a0d3033  T6      : 0x2a39392e  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x39392c34  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fcae630: 0x00000000 0x3fcaccd4 0x00000002 0x4038a99a 0x00000000 0x3fcaccd4 0x00000000 0x40387962
+3fcae650: 0x3c0a5428 0x3c0a531c 0x3c0a531c 0x00000002 0x00000000 0x00000000 0x00000000 0x000001a7
+3fcae670: 0x00000000 0x00000000 0x00000000 0x00000000 0x3fcae6f8 0x00000002 0x00000120 0x000002df
+3fcae690: 0x3fc9c7b0 0x3fcacd48 0x00000001 0x40387e2e 0x00000000 0x000003e7 0x3fc9c000 0x40387ea8
+3fcae6b0: 0x00000000 0x3fcacd48 0x00000001 0x42009472 0x3fc9939c 0x3fce0000 0x3fc9c7dc 0x00000120
+3fcae6d0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x000003e7 0x3fc9c000 0x4200b3bc
+3fcae6f0: 0x00000000 0x00000000 0x52504724 0x2c2c434d 0x2c2c2c56 0x2c2c2c2c 0x4e2c2c2c 0x0d33352a
+3fcae710: 0x5047240a 0x2c475456 0x2c2c2c2c 0x2c2c2c2c 0x30332a4e 0x47240a0d 0x41474750 0x2c2c2c2c
+3fcae730: 0x2c302c2c 0x392c3030 0x39392e39 0x2c2c2c2c 0x342a2c2c 0x240a0d38 0x53475047 0x2c412c41
+3fcae750: 0x2c2c2c31 0x2c2c2c2c 0x2c2c2c2c 0x39392c2c 0x2c39392e 0x392e3939 0x39392c39 0x2a39392e
+3fcae770: 0x3fcacd2c 0x3fcacd2c 0x2c2c4c4c 0x3fcacd24 0x2a4e2c56 0x0a0d3436 0x52504724 0x2c2c434d
+3fcae790: 0x2c2c2c56 0x2c2c2c2c 0x4e2c2c2c 0x0d33352a 0x5047240a 0x2c475456 0x2c2c2c2c 0x2c2c2c2c
+3fcae7b0: 0x30332a4e 0x47240a0d 0x41474750 0x2c2c2c2c 0x2c302c2c 0x392c3030 0x39392e39 0x2c2c2c2c
+3fcae7d0: 0x342a2c2c 0x240a0d38 0x53475047 0x2c412c41 0x2c2c2c31 0x2c2c2c2c 0x2c2c2c2c 0x39392c2c
+3fcae7f0: 0x2c39392e 0x392e3939 0x39392c39 0x2a39392e 0x0a0d3033 0x47504724 0x2c2c4c4c 0x2c2c2c2c
+3fcae810: 0x2a4e2c56 0x0a0d3436 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae830: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae850: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae870: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae890: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00011755 0x3fc9ca24 0x3fc9ca24
+3fcae8b0: 0x3fcae8d8 0x00000001 0x3fcae908 0x00160018 0x00010000 0x00000000 0x00000000 0x00000000
+3fcae8d0: 0x00000000 0x3fcae8e4 0xc002e050 0x3fcae92c 0x00000000 0x00006412 0x00000007 0x00000000
+3fcae8f0: 0x023a7f00 0x01040000 0x00000080 0x002793bf 0x3fc96584 0x00010000 0x00000000 0x00000000
+3fcae910: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x000000d0
+3fcae930: 0xffffffff 0x9e9cffff 0x1ce4026e 0xffffffff 0x0000ffff 0x34fe187f 0xbf3e4cbd 0xfe1808dd
+3fcae950: 0x20010434 0x1bfd3020 0x3fcae8a0 0x0001169f 0x3fc9ca24 0x3fc9ca24 0xf3d971fd 0x2f923289
+3fcae970: 0xbadb4bef 0x5461ea9a 0xc0198923 0x35d13d77 0x45eac062 0x30af9171 0x8b3b46e7 0x42d393d4
+3fcae990: 0x81de3c79 0x40383f4e 0xeac23d50 0x69bab27f 0xf32088b2 0x6e009929 0xace6dca1 0xec11e500
+3fcae9b0: 0x8e5fffe6 0xc9bd2d62 0xc0500021 0x1e3f0b7b 0x3500d933 0x13b7ca49 0xff8b5814 0xd2338a48
+3fcae9d0: 0x931dbcae 0x8c0d7dfb 0x7ef85044 0x1fa076c5 0x190ce4c4 0x72228a2f 0x3546e46f 0x29c9496e
+3fcae9f0: 0x4b0eb033 0x14b0fbf6 0x216a22e1 0xab80b7ac 0x74068a41 0xe21c601a 0x6ffefed9 0x949ec17a
+3fcaea10: 0xdffaee6c 0xc4852ba0 0x8092015d 0x9ab672e8 0xd33b077b 0x4cc24a22 0x93efb697 0xe57c6aea
+
+
+
+ELF file SHA256: 4fd69a2d5
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807d2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=23ae4h (146148) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00043b0c vaddr=3fc95600 size=02e50h ( 11856) load[0m
+[0;32mI (140) esp_image: segment 2: paddr=00046964 vaddr=40380000 size=096b4h ( 38580) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=9bc2ch (637996) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=000ebc54 vaddr=403896b4 size=0bde0h ( 48608) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (279) cpu_start: Unicore app[0m
+[0;32mI (288) cpu_start: Pro cpu start user code[0m
+[0;32mI (288) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (288) app_init: Application information:[0m
+[0;32mI (291) app_init: Project name:     VariousStuff[0m
+[0;32mI (296) app_init: App version:      FS1.0-13-gbbeeebf-dirty[0m
+[0;32mI (302) app_init: Compile time:     Mar 18 2025 19:27:32[0m
+[0;32mI (308) app_init: ELF file SHA256:  4fd69a2d5...[0m
+[0;32mI (314) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (318) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (323) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (328) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (333) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (340) heap_init: At 3FC9CA10 len 000235F0 (141 KiB): RAM[0m
+[0;32mI (346) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (353) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (360) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (367) spi_flash: detected chip: generic[0m
+[0;32mI (371) spi_flash: flash io: dio[0m
+[0;32mI (376) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (382) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (389) main_task: Started on CPU0[0m
+[0;32mI (389) main_task: Calling app_main()[0m
+[0;32mI (409) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (409) General: MAC address: 9C:9E:6E:02:E4:1C[0m
+[0;32mI (409) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (419) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2439) main: Does not recognize the module[0m
+[0;32mI (2439) pp: pp rom version: 9387209[0m
+[0;32mI (2439) net80211: net80211 rom version: 9387209[0m
+I (2449) wifi:wifi driver task: 3fca6034, prio:23, stack:6656, core=0
+I (2449) wifi:wifi firmware version: 0caa81945
+I (2449) wifi:wifi certification version: v7.0
+I (2449) wifi:config NVS flash: enabled
+I (2459) wifi:config nano formating: disabled
+I (2459) wifi:Init data frame dynamic rx buffer num: 32
+I (2469) wifi:Init static rx mgmt buffer num: 5
+I (2469) wifi:Init management short buffer num: 32
+I (2469) wifi:Init dynamic tx buffer num: 32
+I (2479) wifi:Init static tx FG buffer num: 2
+I (2479) wifi:Init static rx buffer size: 1600
+I (2489) wifi:Init static rx buffer num: 10
+I (2489) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2499) wifi_init: rx ba win: 6[0m
+[0;32mI (2499) wifi_init: accept mbox: 6[0m
+[0;32mI (2499) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2509) wifi_init: udp mbox: 6[0m
+[0;32mI (2509) wifi_init: tcp mbox: 6[0m
+[0;32mI (2509) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2519) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2519) wifi_init: tcp mss: 1440[0m
+[0;32mI (2529) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2529) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2539) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+[0;33mW (2579) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (2659) wifi:mode : sta (9c:9e:6e:02:e4:1c)
+I (2659) wifi:enable tsf
+I (2669) ESPNOW: espnow [version: 1.0] init
+[0;31mE (2669) General: Lora module not recognized[0m
+[0;32mI (2669) General: Sent data:   0[0m
+[0;32mI (2669) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (2679) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (2679) main_task: Returned from app_main()[0m
+[0;32mI (4699) General: Sent data:   1[0m
+Guru Meditation Error: Core  0 panic'ed (Store access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x4038991c  RA      : 0x40389ece  SP      : 0x3fcae630  GP      : 0x3fc95e00  
+TP      : 0x3fcae740  T0      : 0x39392c39  T1      : 0x2c2c2c2c  T2      : 0x392e3939  
+S0/FP   : 0x00000002  S1      : 0x00000001  A0      : 0x3fcae754  A1      : 0x00000001  
+A2      : 0x00000000  A3      : 0x39392c2c  A4      : 0x2c2c2c2c  A5      : 0x392e3939  
+A6      : 0x00000001  A7      : 0x2a4e2c56  S2      : 0x000001af  S3      : 0x00000001  
+S4      : 0x3fcae6ac  S5      : 0x3fcae6cc  S6      : 0x00000000  S7      : 0x000002df  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x2c2c4c4c  T4      : 0x47504724  T5      : 0x0a0d3033  T6      : 0x2a39392e  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x2c2c2c34  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fcae630: 0x00000000 0x3fcaca50 0x00000002 0x4038a99a 0x00000000 0x3fcaca50 0x00000000 0x40387962
+3fcae650: 0x3c0a5428 0x3c0a531c 0x3c0a531c 0x00000002 0x00000000 0x00000000 0x00000000 0x000001af
+3fcae670: 0x00000000 0x00000000 0x00000000 0x00000000 0x3fcae6f8 0x00000002 0x00000120 0x000002df
+3fcae690: 0x3fc9c7b0 0x3fcacd64 0x00000001 0x40387e2e 0x00000000 0x000003e7 0x3fc9c000 0x40387ea8
+3fcae6b0: 0x00000000 0x3fcacd64 0x00000001 0x42009472 0x3fc9939c 0x3fce0000 0x3fc9c7dc 0x00000120
+3fcae6d0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x000003e7 0x3fc9c000 0x4200b3bc
+3fcae6f0: 0x00000000 0x00000000 0x52504724 0x2c2c434d 0x2c2c2c56 0x2c2c2c2c 0x4e2c2c2c 0x0d33352a
+3fcae710: 0x5047240a 0x2c475456 0x2c2c2c2c 0x2c2c2c2c 0x30332a4e 0x47240a0d 0x41474750 0x2c2c2c2c
+3fcae730: 0x2c302c2c 0x392c3030 0x39392e39 0x2c2c2c2c 0x342a2c2c 0x240a0d38 0x53475047 0x2c412c41
+3fcae750: 0x2c2c2c31 0x2c2c2c2c 0x2c2c2c2c 0x39392c2c 0x2c39392e 0x392e3939 0x39392c39 0x3fcacaa8
+3fcae770: 0x3fcacaa8 0x47504724 0x3fcacaa0 0x2c2c2c2c 0x2a4e2c56 0x0a0d3436 0x52504724 0x2c2c434d
+3fcae790: 0x2c2c2c56 0x2c2c2c2c 0x4e2c2c2c 0x0d33352a 0x5047240a 0x2c475456 0x2c2c2c2c 0x2c2c2c2c
+3fcae7b0: 0x30332a4e 0x47240a0d 0x41474750 0x2c2c2c2c 0x2c302c2c 0x392c3030 0x39392e39 0x2c2c2c2c
+3fcae7d0: 0x342a2c2c 0x240a0d38 0x53475047 0x2c412c41 0x2c2c2c31 0x2c2c2c2c 0x2c2c2c2c 0x39392c2c
+3fcae7f0: 0x2c39392e 0x392e3939 0x39392c39 0x2a39392e 0x0a0d3033 0x47504724 0x2c2c4c4c 0x2c2c2c2c
+3fcae810: 0x2a4e2c56 0x0a0d3436 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae830: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae850: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae870: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae890: 0x00000000 0x00000000 0x00000000 0x00000000 0x00011759 0x3fc9ca24 0x3fc9ca24 0x3fcae89c
+3fcae8b0: 0x0001174b 0x3fc9ca24 0x3fc9ca24 0x00010000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae8d0: 0x3fcae8e0 0xc002e050 0x3fcae928 0x00000000 0x00006412 0x00000007 0x00000000 0x023a7f00
+3fcae8f0: 0x01040000 0x00000080 0x0028cbac 0x3fc96584 0x00010000 0x00000000 0x00000000 0x00000000
+3fcae910: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x000000d0 0xffffffff
+3fcae930: 0x9e9cffff 0x1ce4026e 0xffffffff 0x0000ffff 0x34fe187f 0xebf4064b 0xfe1808dd 0x20010434
+3fcae950: 0x20013020 0x3fcae89c 0x000116a3 0x3fc9ca24 0x3fc9ca24 0x3fc9ca24 0xf3d971fd 0x2f923289
+3fcae970: 0xbadb4bef 0x5461ea9a 0xc0198923 0x35d13d77 0x45eac062 0x30af9171 0x8b3b46e7 0x42d393d4
+3fcae990: 0x81de3c79 0x40383f4e 0xeac23d50 0x69bab27f 0xf32088b2 0x6e009929 0xace6dca1 0xec11e500
+3fcae9b0: 0x8e5fffe6 0xc9bd2d62 0xc0500021 0x1e3f0b7b 0x3500d933 0x13b7ca49 0xff8b5814 0xd2338a48
+3fcae9d0: 0x931dbcae 0x8c0d7dfb 0x7ef85044 0x1fa076c5 0x190ce4c4 0x72228a2f 0x3546e46f 0x29c9496e
+3fcae9f0: 0x4b0eb033 0x14b0fbf6 0x216a22e1 0xab80b7ac 0x74068a41 0xe21c601a 0x6ffefed9 0x949ec17a
+3fcaea10: 0xdffaee6c 0xc4852ba0 0x8092015d 0x9ab672e8 0xd33b077b 0x4cc24a22 0x93efb697 0xe57c6aea
+
+
+
+ELF file SHA256: 4fd69a2d5
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807d2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=23ae4h (146148) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00043b0c vaddr=3fc95600 size=02e50h ( 11856) load[0m
+[0;32mI (140) esp_image: segment 2: paddr=00046964 vaddr=40380000 size=096b4h ( 38580) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=9bc2ch (637996) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=000ebc54 vaddr=403896b4 size=0bde0h ( 48608) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (279) cpu_start: Unicore app[0m
+[0;32mI (288) cpu_start: Pro cpu start user code[0m
+[0;32mI (288) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (288) app_init: Application information:[0m
+[0;32mI (291) app_init: Project name:     VariousStuff[0m
+[0;32mI (296) app_init: App version:      FS1.0-13-gbbeeebf-dirty[0m
+[0;32mI (302) app_init: Compile time:     Mar 18 2025 19:27:32[0m
+[0;32mI (308) app_init: ELF file SHA256:  4fd69a2d5...[0m
+[0;32mI (314) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (318) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (323) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (328) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (333) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (340) heap_init: At 3FC9CA10 len 000235F0 (141 KiB): RAM[0m
+[0;32mI (346) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (353) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (360) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (367) spi_flash: detected chip: generic[0m
+[0;32mI (371) spi_flash: flash io: dio[0m
+[0;32mI (376) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (382) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (389) main_task: Started on CPU0[0m
+[0;32mI (389) main_task: Calling app_main()[0m
+[0;32mI (409) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (409) General: MAC address: 9C:9E:6E:02:E4:1C[0m
+[0;32mI (409) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (419) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2439) main: Does not recognize the module[0m
+[0;32mI (2439) pp: pp rom version: 9387209[0m
+[0;32mI (2439) net80211: net80211 rom version: 9387209[0m
+I (2449) wifi:wifi driver task: 3fca6034, prio:23, stack:6656, core=0
+I (2449) wifi:wifi firmware version: 0caa81945
+I (2449) wifi:wifi certification version: v7.0
+I (2449) wifi:config NVS flash: enabled
+I (2459) wifi:config nano formating: disabled
+I (2459) wifi:Init data frame dynamic rx buffer num: 32
+I (2469) wifi:Init static rx mgmt buffer num: 5
+I (2469) wifi:Init management short buffer num: 32
+I (2469) wifi:Init dynamic tx buffer num: 32
+I (2479) wifi:Init static tx FG buffer num: 2
+I (2479) wifi:Init static rx buffer size: 1600
+I (2489) wifi:Init static rx buffer num: 10
+I (2489) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2499) wifi_init: rx ba win: 6[0m
+[0;32mI (2499) wifi_init: accept mbox: 6[0m
+[0;32mI (2499) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2509) wifi_init: udp mbox: 6[0m
+[0;32mI (2509) wifi_init: tcp mbox: 6[0m
+[0;32mI (2509) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2519) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2519) wifi_init: tcp mss: 1440[0m
+[0;32mI (2529) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2529) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2539) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+[0;33mW (2579) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (2589) wifi:mode : sta (9c:9e:6e:02:e4:1c)
+I (2589) wifi:enable tsf
+I (2599) ESPNOW: espnow [version: 1.0] init
+[0;31mE (2599) General: Lora module not recognized[0m
+[0;32mI (2599) General: Sent data:   0[0m
+[0;32mI (2599) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (2609) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (2609) main_task: Returned from app_main()[0m
+[0;32mI (4629) General: Sent data:   1[0m
+Guru Meditation Error: Core  0 panic'ed (Store access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x4038991c  RA      : 0x40389ece  SP      : 0x3fcae630  GP      : 0x3fc95e00  
+TP      : 0x3fcae740  T0      : 0x39392c39  T1      : 0x302c312c  T2      : 0x392e3939  
+S0/FP   : 0x00000002  S1      : 0x00000001  A0      : 0x3fcae758  A1      : 0x00000001  
+A2      : 0x00000000  A3      : 0x2c39392e  A4      : 0x39392c2c  A5      : 0x39392c39  
+A6      : 0x00000001  A7      : 0x32322c31  S2      : 0x000001a8  S3      : 0x00000001  
+S4      : 0x3fcae6ac  S5      : 0x3fcae6cc  S6      : 0x00000000  S7      : 0x000002c5  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x312c5653  T4      : 0x47504724  T5      : 0x0a0d3033  T6      : 0x2a39392e  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x39392c34  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fcae630: 0x00000000 0x3fcaccd4 0x00000002 0x4038a99a 0x00000000 0x3fcaccd4 0x00000000 0x40387962
+3fcae650: 0x3c0a5428 0x3c0a531c 0x3c0a531c 0x00000002 0x00000000 0x00000000 0x00000000 0x000001a8
+3fcae670: 0x00000000 0x00000000 0x00000000 0x00000000 0x3fcae6f8 0x00000002 0x0000013a 0x000002c5
+3fcae690: 0x3fc9c7b0 0x3fcacd48 0x00000001 0x40387e2e 0x00000000 0x000003e7 0x3fc9c000 0x40387ea8
+3fcae6b0: 0x00000000 0x3fcacd48 0x00000001 0x42009472 0x3fc9939c 0x3fce0000 0x3fc9c7dc 0x0000013a
+3fcae6d0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x000003e7 0x3fc9c000 0x4200b3bc
+3fcae6f0: 0x00000000 0x00000000 0x52504724 0x2c2c434d 0x2c2c2c56 0x2c2c2c2c 0x4e2c2c2c 0x0d33352a
+3fcae710: 0x5047240a 0x2c475456 0x2c2c2c2c 0x2c2c2c2c 0x30332a4e 0x47240a0d 0x41474750 0x2c2c2c2c
+3fcae730: 0x2c302c2c 0x392c3030 0x39392e39 0x2c2c2c2c 0x342a2c2c 0x240a0d38 0x53475047 0x2c412c41
+3fcae750: 0x2c2c2c31 0x2c2c2c2c 0x2c2c2c2c 0x39392c2c 0x2c39392e 0x392e3939 0x39392c39 0x2a39392e
+3fcae770: 0x3fcacd2c 0x3fcacd2c 0x2c2c4c4c 0x3fcacd24 0x2a4e2c56 0x0a0d3436 0x52504724 0x2c2c434d
+3fcae790: 0x2c2c2c56 0x2c2c2c2c 0x4e2c2c2c 0x0d33352a 0x5047240a 0x2c475456 0x2c2c2c2c 0x2c2c2c2c
+3fcae7b0: 0x30332a4e 0x47240a0d 0x41474750 0x2c2c2c2c 0x2c302c2c 0x392c3030 0x39392e39 0x2c2c2c2c
+3fcae7d0: 0x342a2c2c 0x240a0d38 0x53475047 0x2c412c41 0x2c2c2c31 0x2c2c2c2c 0x2c2c2c2c 0x39392c2c
+3fcae7f0: 0x2c39392e 0x392e3939 0x39392c39 0x2a39392e 0x0a0d3033 0x47504724 0x312c5653 0x302c312c
+3fcae810: 0x32322c31 0x322c2c2c 0x32372a38 0x47240a0d 0x4c4c4750 0x2c2c2c2c 0x2c562c2c 0x34362a4e
+3fcae830: 0x00000a0d 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae850: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae870: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae890: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00011755 0x3fc9ca24 0x3fc9ca24
+3fcae8b0: 0x3fcae8d8 0x00000001 0x3fcae908 0x00160018 0x00010000 0x00000000 0x00000000 0x00000000
+3fcae8d0: 0x00000000 0x3fcae8e4 0xc002e050 0x3fcae92c 0x00000000 0x00006412 0x00000007 0x00000000
+3fcae8f0: 0x023a7f00 0x01040000 0x00000080 0x0027ba21 0x3fc96584 0x00010000 0x00000000 0x00000000
+3fcae910: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x000000d0
+3fcae930: 0xffffffff 0x9e9cffff 0x1ce4026e 0xffffffff 0x0000ffff 0x34fe187f 0x2f273ab3 0xfe1808dd
+3fcae950: 0x20010434 0x3fca3020 0x3fcae8a0 0x0001169f 0x3fc9ca24 0x3fc9ca24 0xf3d971fd 0x2f923289
+3fcae970: 0xbadb4bef 0x5461ea9a 0xc0198923 0x35d13d77 0x45eac062 0x30af9171 0x8b3b46e7 0x42d393d4
+3fcae990: 0x81de3c79 0x40383f4e 0xeac23d50 0x69bab27f 0xf32088b2 0x6e009929 0xace6dca1 0xec11e500
+3fcae9b0: 0x8e5fffe6 0xc9bd2d62 0xc0500021 0x1e3f0b7b 0x3500d933 0x13b7ca49 0xff8b5814 0xd2338a48
+3fcae9d0: 0x931dbcae 0x8c0d7dfb 0x7ef85044 0x1fa076c5 0x190ce4c4 0x72228a2f 0x3546e46f 0x29c9496e
+3fcae9f0: 0x4b0eb033 0x14b0fbf6 0x216a22e1 0xab80b7ac 0x74068a41 0xe21c601a 0x6ffefed9 0x949ec17a
+3fcaea10: 0xdffaee6c 0xc4852ba0 0x8092015d 0x9ab672e8 0xd33b077b 0x4cc24a22 0x93efb697 0xe57c6aea
+
+
+
+ELF file SHA256: 4fd69a2d5
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807d2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=23ae4h (146148) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00043b0c vaddr=3fc95600 size=02e50h ( 11856) load[0m
+[0;32mI (140) esp_image: segment 2: paddr=00046964 vaddr=40380000 size=096b4h ( 38580) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=9bc2ch (637996) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=000ebc54 vaddr=403896b4 size=0bde0h ( 48608) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (279) cpu_start: Unicore app[0m
+[0;32mI (288) cpu_start: Pro cpu start user code[0m
+[0;32mI (288) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (288) app_init: Application information:[0m
+[0;32mI (291) app_init: Project name:     VariousStuff[0m
+[0;32mI (296) app_init: App version:      FS1.0-13-gbbeeebf-dirty[0m
+[0;32mI (302) app_init: Compile time:     Mar 18 2025 19:27:32[0m
+[0;32mI (308) app_init: ELF file SHA256:  4fd69a2d5...[0m
+[0;32mI (314) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (318) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (323) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (328) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (333) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (340) heap_init: At 3FC9CA10 len 000235F0 (141 KiB): RAM[0m
+[0;32mI (346) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (353) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (360) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (367) spi_flash: detected chip: generic[0m
+[0;32mI (371) spi_flash: flash io: dio[0m
+[0;32mI (376) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (382) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (389) main_task: Started on CPU0[0m
+[0;32mI (389) main_task: Calling app_main()[0m
+[0;32mI (409) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (409) General: MAC address: 9C:9E:6E:02:E4:1C[0m
+[0;32mI (409) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (419) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2439) main: Does not recognize the module[0m
+[0;32mI (2439) pp: pp rom version: 9387209[0m
+[0;32mI (2439) net80211: net80211 rom version: 9387209[0m
+I (2449) wifi:wifi driver task: 3fca6034, prio:23, stack:6656, core=0
+I (2449) wifi:wifi firmware version: 0caa81945
+I (2449) wifi:wifi certification version: v7.0
+I (2449) wifi:config NVS flash: enabled
+I (2459) wifi:config nano formating: disabled
+I (2459) wifi:Init data frame dynamic rx buffer num: 32
+I (2469) wifi:Init static rx mgmt buffer num: 5
+I (2469) wifi:Init management short buffer num: 32
+I (2469) wifi:Init dynamic tx buffer num: 32
+I (2479) wifi:Init static tx FG buffer num: 2
+I (2479) wifi:Init static rx buffer size: 1600
+I (2489) wifi:Init static rx buffer num: 10
+I (2489) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2499) wifi_init: rx ba win: 6[0m
+[0;32mI (2499) wifi_init: accept mbox: 6[0m
+[0;32mI (2499) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2509) wifi_init: udp mbox: 6[0m
+[0;32mI (2509) wifi_init: tcp mbox: 6[0m
+[0;32mI (2509) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2519) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2519) wifi_init: tcp mss: 1440[0m
+[0;32mI (2529) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2529) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2539) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+[0;33mW (2579) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (2659) wifi:mode : sta (9c:9e:6e:02:e4:1c)
+I (2659) wifi:enable tsf
+I (2669) ESPNOW: espnow [version: 1.0] init
+[0;31mE (2669) General: Lora module not recognized[0m
+[0;32mI (2669) General: Sent data:   0[0m
+[0;32mI (2669) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (2679) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (2679) main_task: Returned from app_main()[0m
+[0;32mI (4699) General: Sent data:   1[0m
+[0;32mI (4699) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (4699) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (6719) General: Sent data:   2[0m
+[0;32mI (6719) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (6719) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (8739) General: Sent data:   3[0m
+[0;32mI (8739) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (8739) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (10759) General: Sent data:   4[0m
+[0;32mI (10759) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (10759) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (12779) General: Sent data:   5[0m
+[0;32mI (12779) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (12779) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (14799) General: Sent data:   6[0m
+[0;32mI (14799) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (14799) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (16819) General: Sent data:   7[0m
+[0;32mI (16819) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (16819) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (18839) General: Sent data:   8[0m
+[0;32mI (18839) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (18839) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (264) esp_image: segment 4: paddr=000ebc54 vaddr=403896[0;31mE (2478) main: Does not recognize the module[0m
+[0;32mI (2478) pp: pp rom version: 9387209[0m
+[0;32mI (2478) net80211: net80211 rom version: 9387209[0m
+I (2488) wifi:wifi driver task: 3fca6034, prio:23, stack:6656, core=0
+I (2488) wifi:wifi firmware version: 0caa81945
+I (2488) wifi:wifi certification version: v7.0
+I (2488) wifi:config NVS flash: enabled
+I (2498) wifi:config nano formating: disabled
+I (2498) wifi:Init data frame dynamic rx buffer num: 32
+I (2508) wifi:Init static rx mgmt buffer num: 5
+I (2508) wifi:Init management short buffer num: 32
+I (2508) wifi:Init dynamic tx buffer num: 32
+I (2518) wifi:Init static tx FG buffer num: 2
+I (2518) wifi:Init static rx buffer size: 1600
+I (2528) wifi:Init static rx buffer num: 10
+I (2528) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2538) wifi_init: rx ba win: 6[0m
+[0;32mI (2538) wifi_init: accept mbox: 6[0m
+[0;32mI (2538) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2548) wifi_init: udp mbox: 6[0m
+[0;32mI (2548) wifi_init: tcp mbox: 6[0m
+[0;32mI (2548) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2558) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2558) wifi_init: tcp mss: 1440[0m
+[0;32mI (2568) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2568) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2578) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+I (2618) wifi:mode : sta (9c:9e:6e:02:e4:1c)
+I (2618) wifi:enable tsf
+I (2618) ESPNOW: espnow [version: 1.0] init
+[0;31mE (2618) General: Lora module not recognized[0m
+[0;32mI (2628) General: Sent data:   0[0m
+[0;32mI (2628) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (2628) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (2638) main_task: Returned from app_main()[0m
+[0;32mI (4658) General: Sent data:   1[0m
+[0;32mI (4658) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (4658) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (6678) General: Sent data:   2[0m
+Guru Meditation Error: Core  0 panic'ed (Store access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x4038991c  RA      : 0x40389ece  SP      : 0x3fcae630  GP      : 0x3fc95e00  
+TP      : 0x3fcae740  T0      : 0x39392c39  T1      : 0x2c2c2c2c  T2      : 0x392e3939  
+S0/FP   : 0x00000002  S1      : 0x00000001  A0      : 0x3fcae758  A1      : 0x00000001  
+A2      : 0x00000000  A3      : 0x2c39392e  A4      : 0x39392c2c  A5      : 0x39392c39  
+A6      : 0x00000001  A7      : 0x2a4e2c56  S2      : 0x00000273  S3      : 0x00000001  
+S4      : 0x3fcae6ac  S5      : 0x3fcae6cc  S6      : 0x00000000  S7      : 0x0000036f  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x2c2c4c4c  T4      : 0x47504724  T5      : 0x0a0d3033  T6      : 0x2a39392e  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x39392c34  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fcae630: 0x00000000 0x3fcaccd4 0x00000002 0x4038a99a 0x00000000 0x3fcaccd4 0x00000000 0x40387962
+3fcae650: 0x3c0a5428 0x3c0a531c 0x3c0a531c 0x00000002 0x00000000 0x00000000 0x00000000 0x00000273
+3fcae670: 0x00000000 0x00000000 0x00000000 0x00000000 0x3fcae6f8 0x00000002 0x00000090 0x0000036f
+3fcae690: 0x3fc9c7b0 0x3fcacd48 0x00000001 0x40387e2e 0x00000000 0x000003e7 0x3fc9c000 0x40387ea8
+3fcae6b0: 0x00000000 0x3fcacd48 0x00000001 0x42009472 0x3fc9939c 0x3fce0000 0x3fc9c7dc 0x00000090
+3fcae6d0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x000003e7 0x3fc9c000 0x4200b3bc
+3fcae6f0: 0x00000000 0x00000000 0x52504724 0x2c2c434d 0x2c2c2c56 0x2c2c2c2c 0x4e2c2c2c 0x0d33352a
+3fcae710: 0x5047240a 0x2c475456 0x2c2c2c2c 0x2c2c2c2c 0x30332a4e 0x47240a0d 0x41474750 0x2c2c2c2c
+3fcae730: 0x2c302c2c 0x392c3030 0x39392e39 0x2c2c2c2c 0x342a2c2c 0x240a0d38 0x53475047 0x2c412c41
+3fcae750: 0x2c2c2c31 0x2c2c2c2c 0x2c2c2c2c 0x39392c2c 0x2c39392e 0x392e3939 0x39392c39 0x2a39392e
+3fcae770: 0x3fcacd2c 0x3fcacd2c 0x2c2c4c4c 0x3fcacd24 0x2a4e2c56 0x0a0d3436 0x4e505345 0x745f574f
+3fcae790: 0x006b7361 0x00000000 0x3fcae740 0x00000005 0x00000001 0x00000000 0x00000000 0x00000000
+3fcae7b0: 0x3fc9d1fc 0x3fc9d264 0x3fc9d2cc 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000
+3fcae7d0: 0x00000000 0x4200504e 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae7f0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae810: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae830: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae850: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae870: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcae890: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00011755 0x3fc9ca24 0x3fc9ca24
+3fcae8b0: 0x3fcae8d8 0x00000001 0x3fcae908 0x00160018 0x00010000 0x00000000 0x00000000 0x00000000
+3fcae8d0: 0x00000000 0x3fcae8e4 0xc002e050 0x3fcae92c 0x00000000 0x00006412 0x00000007 0x00000000
+3fcae8f0: 0x023a7f00 0x01040000 0x00000080 0x00281add 0x3fc96584 0x00010000 0x00000000 0x00000000
+3fcae910: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x000000d0
+3fcae930: 0xffffffff 0x9e9cffff 0x1ce4026e 0xffffffff 0x0000ffff 0x34fe187f 0xd9880f23 0xfe1808dd
+3fcae950: 0x20010434 0x1b7d3020 0x3fcae8a0 0x0001169f 0x3fc9ca24 0x3fc9ca24 0xf7d971fd 0x2f9232c9
+3fcae970: 0xbadb4aeb 0x5461eb9a 0xc1198923 0x35d13d77 0xc5ebc022 0x71af9171 0xbb3346e7 0x02d393d4
+3fcae990: 0xc19e3c79 0x48383b4e 0xeac23950 0x2db8b27f 0xf32088b2 0x6e20b929 0xacf6dca1 0xe851e510
+3fcae9b0: 0x8e5fff66 0xc9bd0d76 0x805000a1 0x5ebf8b7b 0x3580d931 0x13b7ca49 0xff8b5914 0xc2338a4c
+3fcae9d0: 0x931dbcae 0x8e0d7dfb 0x7efa5004 0x17a077c5 0x182c60c4 0x72228a27 0x75e6f46f 0x09c94966
+3fcae9f0: 0x4b0eb031 0x14f0fbfc 0x216822e1 0xab80b72e 0x76068a41 0xe214681a 0x6ffcfed9 0x869ec15a
+3fcaea10: 0xdff2e6e8 0xc4852ba0 0x8092015d 0x9ab672e8 0xd33b077b 0x4cc24a22 0x938fbe87 0xe76c6a6a
+
+
+
+ELF file SHA256: 4fd69a2d5
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807d2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=23ae4h (146148) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00043b0c vaddr=3fc95600 size=02e50h ( 11856) load[0m
+[0;32mI (140) esp_image: segment 2: paddr=00046964 vaddr=40380000 size=096b4h ( 38580) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=9bc2ch (637996) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=000ebc54 vaddr=403896b4 size=0bde0h ( 48608) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (279) cpu_start: Unicore app[0m
+[0;32mI (288) cpu_start: Pro cpu start user code[0m
+[0;32mI (288) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (288) app_init: Application information:[0m
+[0;32mI (291) app_init: Project name:     VariousStuff[0m
+[0;32mI (296) app_init: App version:      FS1.0-13-gbbeeebf-dirty[0m
+[0;32mI (302) app_init: Compile time:     Mar 18 2025 19:27:32[0m
+[0;32mI (308) app_init: ELF file SHA256:  4fd69a2d5...[0m
+[0;32mI (314) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (318) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (323) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (328) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (333) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (340) heap_init: At 3FC9CA10 len 000235F0 (141 KiB): RAM[0m
+[0;32mI (346) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (353) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (360) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (367) spi_flash: detected chip: generic[0m
+[0;32mI (371) spi_flash: flash io: dio[0m
+[0;32mI (376) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (382) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (389) main_task: Started on CPU0[0m
+[0;32mI (389) main_task: Calling app_main()[0m
+[0;32mI (409) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (409) General: MAC address: 9C:9E:6E:02:E4:1C[0m
+[0;32mI (409) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (419) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2439) main: Does not recognize the module[0m
+[0;32mI (2439) pp: pp rom version: 9387209[0m
+[0;32mI (2439) net80211: net80211 rom version: 9387209[0m
+I (2449) wifi:wifi driver task: 3fca6034, prio:23, stack:6656, core=0
+I (2449) wifi:wifi firmware version: 0caa81945
+I (2449) wifi:wifi certification version: v7.0
+I (2449) wifi:config NVS flash: enabled
+I (2459) wifi:config nano formating: disabled
+I (2459) wifi:Init data frame dynamic rx buffer num: 32
+I (2469) wifi:Init static rx mgmt buffer num: 5
+I (2469) wifi:Init management short buffer num: 32
+I (2469) wifi:Init dynamic tx buffer num: 32
+I (2479) wifi:Init static tx FG buffer num: 2
+I (2479) wifi:Init static rx buffer size: 1600
+I (2489) wifi:Init static rx buffer num: 10
+I (2489) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2499) wifi_init: rx ba win: 6[0m
+[0;32mI (2499) wifi_init: accept mbox: 6[0m
+[0;32mI (2499) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2509) wifi_init: udp mbox: 6[0m
+[0;32mI (2509) wifi_init: tcp mbox: 6[0m
+[0;32mI (2509) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2519) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2519) wifi_init: tcp mss: 1440[0m
+[0;32mI (2529) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2529) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2539) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+[0;33mW (2579) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (2639) wifi:mode : sta (9c:9e:6e:02:e4:1c)
+I (2639) wifi:enable tsf
+I (2639) ESPNOW: espnow [version: 1.0] init
+[0;31mE (2639) General: Lora module not recognized[0m
+[0;32mI (2639) General: Sent data:   0[0m
+[0;32mI (2649) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (2649) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (2659) main_task: Returned from app_main()[0m
+[0;32mI (4679) General: Sent data:   1[0m
+[0;32mI (4679) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (4679) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (6699) General: Sent data:   2[0m
+[0;32mI (6699) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (6699) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (264) esp_image: segment 4: paddr=000ebc54 vaddr=403896[0;31mE (2478) main: Does not recognize the module[0m
+[0;32mI (2478) pp: pp rom version: 9387209[0m
+[0;32mI (2478) net80211: net80211 rom version: 9387209[0m
+I (2488) wifi:wifi driver task: 3fca6034, prio:23, stack:6656, core=0
+I (2488) wifi:wifi firmware version: 0caa81945
+I (2488) wifi:wifi certification version: v7.0
+I (2488) wifi:config NVS flash: enabled
+I (2498) wifi:config nano formating: disabled
+I (2498) wifi:Init data frame dynamic rx buffer num: 32
+I (2508) wifi:Init static rx mgmt buffer num: 5
+I (2508) wifi:Init management short buffer num: 32
+I (2508) wifi:Init dynamic tx buffer num: 32
+I (2518) wifi:Init static tx FG buffer num: 2
+I (2518) wifi:Init static rx buffer size: 1600
+I (2528) wifi:Init static rx buffer num: 10
+I (2528) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2538) wifi_init: rx ba win: 6[0m
+[0;32mI (2538) wifi_init: accept mbox: 6[0m
+[0;32mI (2538) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2548) wifi_init: udp mbox: 6[0m
+[0;32mI (2548) wifi_init: tcp mbox: 6[0m
+[0;32mI (2548) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2558) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2558) wifi_init: tcp mss: 1440[0m
+[0;32mI (2568) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2568) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2578) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+I (2618) wifi:mode : sta (9c:9e:6e:02:e4:1c)
+I (2618) wifi:enable tsf
+I (2618) ESPNOW: espnow [version: 1.0] init
+[0;31mE (2628) General: Lora module not recognized[0m
+[0;32mI (2628) General: Sent data:   0[0m
+[0;32mI (2628) main_task: Returned from app_main()[0m
+[0;32mI (2628) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (2638) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (4648) General: Sent data:   1[0m
+[0;32mI (4648) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (4648) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (6668) General: Sent data:   2[0m
+[0;32mI (6668) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (6668) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (8688) General: Sent data:   3[0m
+[0;32mI (8688) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (8688) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (10708) General: Sent data:   4[0m
+[0;32mI (10708) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (10708) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (12728) General: Sent data:   5[0m
+[0;32mI (12728) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (12728) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (14748) General: Sent data:   6[0m
+[0;32mI (14748) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (14748) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (16768) General: Sent data:   7[0m
+[0;32mI (16768) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (16768) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (18788) General: Sent data:   8[0m
+[0;32mI (18788) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (18788) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (20808) General: Sent data:   9[0m
+[0;32mI (20808) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (20808) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (22828) General: Sent data:  10[0m
+[0;32mI (22828) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (22828) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (24848) General: Sent data:  11[0m
+[0;32mI (24848) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (24848) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (26868) General: Sent data:  12[0m
+[0;32mI (26868) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (26868) General: Last Packet Send Status: Delivery Success[0m

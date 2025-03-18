@@ -1,0 +1,1978 @@
+[0;32mI (95) boot:  5 storage          Unknown data     01 82 0onfigure to isESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (88) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (95) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (107) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107c0h ( 67520) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=000307e8 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031de0 vaddr=40380000 size=0e238h ( 57912) load[0m
+[0;32mI (143) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=3320ch (209420) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073234 vaddr=4038e238 size=00360h (   864) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (208) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  5fda75747...[0m
+[0;32mI (231) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (245) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (250) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (293) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (299) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) main: Frequency is 433MHz[0m
+[0;32mI (346) main: coding_rate=1[0m
+[0;32mI (346) main: bandwidth=7[0m
+[0;32mI (346) main: spreading_factor=9[0m
+[0;32mI (1346) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1556) General: Internal temperature: 28.00[0m
+[0;32mI (1556) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1556) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1996) main_task: Returned from app_main()[0m
+[0;32mI (2236) lora_task: 31 byte packet sent...[0m
+[0;32mI (3976) display_task: Received packet length: 31[0m
+[0;32mI (3976) display_task: 3 byte packet received:[ 24][0m
+[0;32mI (4496) lora_task: 31 byte packet sent...[0m
+[0;32mI (5986) display_task: Received packet length: 31[0m
+[0;32mI (5986) display_task: 3 byte packet received:[ 25][0m
+
+assert failed: spi_device_transmit spi_master.c:1266 (ret_trans == trans_desc)
+Core  0 register dump:
+MEPC    : 0x40380812  RA      : 0x40385940  SP      : 0x3fc96d70  GP      : 0x3fc8ee00  
+TP      : 0x3fc97360  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000079  S1      : 0x00000001  A0      : 0x3fc96dac  A1      : 0x3fc8f42d  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc91000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fc96ece  
+S4      : 0x3fc8f42c  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc96d70: 0x00000008 0x00000000 0x3c04e720 0x4038cec2 0x3fc8f0d4 0x3c04e720 0x3fc8f0e4 0x3c0490ba
+3fc96d90: 0x3fc8f0e8 0x3fc96da4 0x3fc8f0ec 0x3c04986c 0x3fc8f42c 0x36363231 0x00000000 0x65737361
+3fc96db0: 0x66207472 0x656c6961 0x73203a64 0x645f6970 0x63697665 0x72745f65 0x6d736e61 0x73207469
+3fc96dd0: 0x6d5f6970 0x65747361 0x3a632e72 0x36363231 0x65722820 0x72745f74 0x20736e61 0x74203d3d
+3fc96df0: 0x736e6172 0x7365645f 0x00002963 0x600c2000 0x00000000 0x00000010 0x3fc96ec0 0xffffffff
+3fc96e10: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x40386522
+3fc96e30: 0x00000000 0x3fc957e8 0x00000000 0xffffffff 0x00000000 0x3fc95afc 0x00000000 0x42017e6a
+3fc96e50: 0x3fc96ec0 0x3fc95afc 0x00000000 0x00000000 0x00000000 0x00000001 0x3fc96eac 0x4201bc90
+3fc96e70: 0x3fc96eec 0x00000000 0x00000000 0x3f000000 0x3fc97d6c 0x3fc97d68 0x00000000 0x00000000
+3fc96e90: 0x00000000 0x3fc96ec0 0x3fc95afc 0x4201bcec 0x3fc96f2c 0x0000001f 0x3fc975d0 0x3fc97d40
+3fc96eb0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b314 0x00000000 0x00000000 0x00000000 0x00000000
+3fc96ed0: 0x00000010 0x00000010 0x00000000 0x3fc96eec 0x3fc96ee8 0x00000000 0x00001f69 0x00001fa2
+3fc96ef0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b804 0x00000000 0x000003e7 0x3fc91000 0x420094a8
+3fc96f10: 0xa5a5a5a5 0x0000001f 0x00322020 0xa5a5a5a5 0x60402bab 0xec495d42 0x5be95acc 0xcd7d1311
+3fc96f30: 0xa5d260e9 0x6c6898fe 0xae909723 0xa5cecde0 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fb0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96ff0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97010: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97030: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97050: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97070: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97090: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970d0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970f0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97110: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97130: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97150: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: 5fda75747
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807ca
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107c0h ( 67520) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000307e8 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031de0 vaddr=40380000 size=0e238h ( 57912) load[0m
+[0;32mI (142) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=3320ch (209420) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073234 vaddr=4038e238 size=00360h (   864) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (207) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  5fda75747...[0m
+[0;32mI (230) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (245) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (298) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) main: Frequency is 433MHz[0m
+[0;32mI (346) main: coding_rate=1[0m
+[0;32mI (346) main: bandwidth=7[0m
+[0;32mI (346) main: spreading_factor=9[0m
+[0;32mI (1346) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1756) General: Internal temperature: 28.00[0m
+[0;32mI (1756) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1756) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2196) main_task: Returned from app_main()[0m
+[0;32mI (2436) lora_task: 31 byte packet sent...[0m
+[0;32mI (3676) display_task: Received packet length: 31[0m
+[0;32mI (3676) display_task: 3 byte packet received:[ 27][0m
+[0;32mI (4696) lora_task: 31 byte packet sent...[0m
+[0;32mI (6186) display_task: Received packet length: 31[0m
+[0;32mI (6186) display_task: 3 byte packet received:[ 28][0m
+
+assert failed: spi_device_transmit spi_master.c:1266 (ret_trans == trans_desc)
+Core  0 register dump:
+MEPC    : 0x40380812  RA      : 0x40385940  SP      : 0x3fc96d70  GP      : 0x3fc8ee00  
+TP      : 0x3fc97360  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000079  S1      : 0x00000001  A0      : 0x3fc96dac  A1      : 0x3fc8f42d  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc91000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fc96ece  
+S4      : 0x3fc8f42c  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc96d70: 0x00000008 0x00000000 0x3c04e720 0x4038cec2 0x3fc8f0d4 0x3c04e720 0x3fc8f0e4 0x3c0490ba
+3fc96d90: 0x3fc8f0e8 0x3fc96da4 0x3fc8f0ec 0x3c04986c 0x3fc8f42c 0x36363231 0x00000000 0x65737361
+3fc96db0: 0x66207472 0x656c6961 0x73203a64 0x645f6970 0x63697665 0x72745f65 0x6d736e61 0x73207469
+3fc96dd0: 0x6d5f6970 0x65747361 0x3a632e72 0x36363231 0x65722820 0x72745f74 0x20736e61 0x74203d3d
+3fc96df0: 0x736e6172 0x7365645f 0x00002963 0x600c2000 0x00000000 0x00000010 0x3fc96ec0 0xffffffff
+3fc96e10: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x40386522
+3fc96e30: 0x00000000 0x3fc957e8 0x00000000 0xffffffff 0x00000000 0x3fc95afc 0x00000000 0x42017e6a
+3fc96e50: 0x3fc96ec0 0x3fc95afc 0x00000000 0x00000000 0x00000000 0x00000001 0x3fc96eac 0x4201bc90
+3fc96e70: 0x3fc96eec 0x00000000 0x00000000 0x3f000000 0x3fc97d6c 0x3fc97d68 0x00000000 0x00000000
+3fc96e90: 0x00000000 0x3fc96ec0 0x3fc95afc 0x4201bcec 0x3fc96f2c 0x0000001f 0x3fc975d0 0x3fc97d40
+3fc96eb0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b314 0x00000000 0x00000000 0x00000000 0x00000000
+3fc96ed0: 0x00000010 0x00000010 0x00000000 0x3fc96eec 0x3fc96ee8 0x00000000 0x00001f69 0x00001fa2
+3fc96ef0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b804 0x00000000 0x000003e7 0x3fc91000 0x420094a8
+3fc96f10: 0xa5a5a5a5 0x0000001f 0x00322020 0xa5a5a5a5 0x7b029cec 0x2cd734f5 0x93d5d5f0 0x639e6bfb
+3fc96f30: 0x7e7f3d45 0x771bffa8 0x820add09 0xa58b7861 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fb0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96ff0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97010: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97030: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97050: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97070: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97090: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970d0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970f0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97110: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97130: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97150: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: 5fda75747
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807ca
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107c0h ( 67520) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000307e8 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031de0 vaddr=40380000 size=0e238h ( 57912) load[0m
+[0;32mI (142) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=3320ch (209420) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073234 vaddr=4038e238 size=00360h (   864) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (207) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  5fda75747...[0m
+[0;32mI (230) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (245) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (298) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) main: Frequency is 433MHz[0m
+[0;32mI (346) main: coding_rate=1[0m
+[0;32mI (346) main: bandwidth=7[0m
+[0;32mI (346) main: spreading_factor=9[0m
+[0;32mI (1346) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1556) General: Internal temperature: 28.00[0m
+[0;32mI (1556) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1556) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1996) main_task: Returned from app_main()[0m
+[0;32mI (2236) lora_task: 31 byte packet sent...[0m
+[0;32mI (3476) display_task: Received packet length: 31[0m
+[0;32mI (3476) display_task: 3 byte packet received:[ 30][0m
+[0;32mI (4496) lora_task: 31 byte packet sent...[0m
+[0;32mI (5486) display_task: Received packet length: 31[0m
+[0;32mI (5486) display_task: 3 byte packet received:[ 31][0m
+
+assert failed: spi_device_transmit spi_master.c:1266 (ret_trans == trans_desc)
+Core  0 register dump:
+MEPC    : 0x40380812  RA      : 0x40385940  SP      : 0x3fc96d70  GP      : 0x3fc8ee00  
+TP      : 0x3fc97360  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000079  S1      : 0x00000001  A0      : 0x3fc96dac  A1      : 0x3fc8f42d  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc91000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fc96ece  
+S4      : 0x3fc8f42c  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc96d70: 0x00000008 0x00000000 0x3c04e720 0x4038cec2 0x3fc8f0d4 0x3c04e720 0x3fc8f0e4 0x3c0490ba
+3fc96d90: 0x3fc8f0e8 0x3fc96da4 0x3fc8f0ec 0x3c04986c 0x3fc8f42c 0x36363231 0x00000000 0x65737361
+3fc96db0: 0x66207472 0x656c6961 0x73203a64 0x645f6970 0x63697665 0x72745f65 0x6d736e61 0x73207469
+3fc96dd0: 0x6d5f6970 0x65747361 0x3a632e72 0x36363231 0x65722820 0x72745f74 0x20736e61 0x74203d3d
+3fc96df0: 0x736e6172 0x7365645f 0x00002963 0x600c2000 0x00000000 0x00000010 0x3fc96ec0 0xffffffff
+3fc96e10: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x40386522
+3fc96e30: 0x00000000 0x3fc957e8 0x00000000 0xffffffff 0x00000000 0x3fc95afc 0x00000000 0x42017e6a
+3fc96e50: 0x3fc96ec0 0x3fc95afc 0x00000000 0x00000000 0x00000000 0x00000001 0x3fc96eac 0x4201bc90
+3fc96e70: 0x3fc96eec 0x00000000 0x00000000 0x3f000000 0x3fc97d6c 0x3fc97d68 0x00000000 0x00000000
+3fc96e90: 0x00000000 0x3fc96ec0 0x3fc95afc 0x4201bcec 0x3fc96f2c 0x0000001f 0x3fc975d0 0x3fc97d40
+3fc96eb0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b314 0x00000000 0x00000000 0x00000000 0x00000000
+3fc96ed0: 0x00000010 0x00000010 0x00000000 0x3fc96eec 0x3fc96ee8 0x00000000 0x00001f69 0x00001fa2
+3fc96ef0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b804 0x00000000 0x000003e7 0x3fc91000 0x420094a8
+3fc96f10: 0xa5a5a5a5 0x0000001f 0x00322020 0xa5a5a5a5 0xdca16556 0x09cd6ba8 0x0e465823 0x1fb5223d
+3fc96f30: 0x6c31d5c3 0x53e8e9d5 0xcbee8509 0xa5290529 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fb0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96ff0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97010: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97030: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97050: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97070: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97090: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970d0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970f0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97110: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97130: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97150: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: 5fda75747
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807ca
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107c0h ( 67520) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000307e8 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031de0 vaddr=40380000 size=0e238h ( 57912) load[0m
+[0;32mI (142) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=3320ch (209420) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073234 vaddr=4038e238 size=00360h (   864) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (207) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  5fda75747...[0m
+[0;32mI (230) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (245) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (298) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) main: Frequency is 433MHz[0m
+[0;32mI (346) main: coding_rate=1[0m
+[0;32mI (346) main: bandwidth=7[0m
+[0;32mI (346) main: spreading_factor=9[0m
+[0;32mI (1346) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1556) General: Internal temperature: 28.00[0m
+[0;32mI (1556) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1556) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1996) main_task: Returned from app_main()[0m
+[0;32mI (2236) lora_task: 31 byte packet sent...[0m
+[0;32mI (3476) display_task: Received packet length: 31[0m
+[0;32mI (3476) display_task: 3 byte packet received:[ 33][0m
+[0;32mI (4496) lora_task: 31 byte packet sent...[0m
+[0;32mI (5486) display_task: Received packet length: 31[0m
+[0;32mI (5486) display_task: 3 byte packet received:[ 34][0m
+
+assert failed: spi_device_transmit spi_master.c:1266 (ret_trans == trans_desc)
+Core  0 register dump:
+MEPC    : 0x40380812  RA      : 0x40385940  SP      : 0x3fc96d70  GP      : 0x3fc8ee00  
+TP      : 0x3fc97360  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000079  S1      : 0x00000001  A0      : 0x3fc96dac  A1      : 0x3fc8f42d  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc91000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fc96ece  
+S4      : 0x3fc8f42c  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc96d70: 0x00000008 0x00000000 0x3c04e720 0x4038cec2 0x3fc8f0d4 0x3c04e720 0x3fc8f0e4 0x3c0490ba
+3fc96d90: 0x3fc8f0e8 0x3fc96da4 0x3fc8f0ec 0x3c04986c 0x3fc8f42c 0x36363231 0x00000000 0x65737361
+3fc96db0: 0x66207472 0x656c6961 0x73203a64 0x645f6970 0x63697665 0x72745f65 0x6d736e61 0x73207469
+3fc96dd0: 0x6d5f6970 0x65747361 0x3a632e72 0x36363231 0x65722820 0x72745f74 0x20736e61 0x74203d3d
+3fc96df0: 0x736e6172 0x7365645f 0x00002963 0x600c2000 0x00000000 0x00000010 0x3fc96ec0 0xffffffff
+3fc96e10: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x40386522
+3fc96e30: 0x00000000 0x3fc957e8 0x00000000 0xffffffff 0x00000000 0x3fc95afc 0x00000000 0x42017e6a
+3fc96e50: 0x3fc96ec0 0x3fc95afc 0x00000000 0x00000000 0x00000000 0x00000001 0x3fc96eac 0x4201bc90
+3fc96e70: 0x3fc96eec 0x00000000 0x00000000 0x3f000000 0x3fc97d6c 0x3fc97d68 0x00000000 0x00000000
+3fc96e90: 0x00000000 0x3fc96ec0 0x3fc95afc 0x4201bcec 0x3fc96f2c 0x0000001f 0x3fc975d0 0x3fc97d40
+3fc96eb0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b314 0x00000000 0x00000000 0x00000000 0x00000000
+3fc96ed0: 0x00000010 0x00000010 0x00000000 0x3fc96eec 0x3fc96ee8 0x00000000 0x00001f69 0x00001fa2
+3fc96ef0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b804 0x00000000 0x000003e7 0x3fc91000 0x420094a8
+3fc96f10: 0xa5a5a5a5 0x0000001f 0x00322020 0xa5a5a5a5 0x345ca200 0x3b0fda19 0x0002dff3 0x326c6981
+3fc96f30: 0x60aff1bb 0xca02fd1d 0xc8bb643a 0xa5c5654d 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fb0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96ff0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97010: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97030: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97050: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97070: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97090: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970d0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970f0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97110: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97130: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97150: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: 5fda75747
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807ca
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107c0h ( 67520) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000307e8 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031de0 vaddr=40380000 size=0e238h ( 57912) load[0m
+[0;32mI (142) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=3320ch (209420) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073234 vaddr=4038e238 size=00360h (   864) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (207) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  5fda75747...[0m
+[0;32mI (230) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (245) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (298) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) main: Frequency is 433MHz[0m
+[0;32mI (346) main: coding_rate=1[0m
+[0;32mI (346) main: bandwidth=7[0m
+[0;32mI (346) main: spreading_factor=9[0m
+[0;32mI (1346) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1556) General: Internal temperature: 28.00[0m
+[0;32mI (1556) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1556) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1996) main_task: Returned from app_main()[0m
+[0;32mI (2236) lora_task: 31 byte packet sent...[0m
+[0;32mI (3476) display_task: Received packet length: 31[0m
+[0;32mI (3476) display_task: 3 byte packet received:[ 36][0m
+[0;32mI (4496) lora_task: 31 byte packet sent...[0m
+[0;32mI (5486) display_task: Received packet length: 31[0m
+[0;32mI (5486) display_task: 3 byte packet received:[ 37][0m
+
+assert failed: spi_device_transmit spi_master.c:1266 (ret_trans == trans_desc)
+Core  0 register dump:
+MEPC    : 0x40380812  RA      : 0x40385940  SP      : 0x3fc96d70  GP      : 0x3fc8ee00  
+TP      : 0x3fc97360  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000079  S1      : 0x00000001  A0      : 0x3fc96dac  A1      : 0x3fc8f42d  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc91000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fc96ece  
+S4      : 0x3fc8f42c  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc96d70: 0x00000008 0x00000000 0x3c04e720 0x4038cec2 0x3fc8f0d4 0x3c04e720 0x3fc8f0e4 0x3c0490ba
+3fc96d90: 0x3fc8f0e8 0x3fc96da4 0x3fc8f0ec 0x3c04986c 0x3fc8f42c 0x36363231 0x00000000 0x65737361
+3fc96db0: 0x66207472 0x656c6961 0x73203a64 0x645f6970 0x63697665 0x72745f65 0x6d736e61 0x73207469
+3fc96dd0: 0x6d5f6970 0x65747361 0x3a632e72 0x36363231 0x65722820 0x72745f74 0x20736e61 0x74203d3d
+3fc96df0: 0x736e6172 0x7365645f 0x00002963 0x600c2000 0x00000000 0x00000010 0x3fc96ec0 0xffffffff
+3fc96e10: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x40386522
+3fc96e30: 0x00000000 0x3fc957e8 0x00000000 0xffffffff 0x00000000 0x3fc95afc 0x00000000 0x42017e6a
+3fc96e50: 0x3fc96ec0 0x3fc95afc 0x00000000 0x00000000 0x00000000 0x00000001 0x3fc96eac 0x4201bc90
+3fc96e70: 0x3fc96eec 0x00000000 0x00000000 0x3f000000 0x3fc97d6c 0x3fc97d68 0x00000000 0x00000000
+3fc96e90: 0x00000000 0x3fc96ec0 0x3fc95afc 0x4201bcec 0x3fc96f2c 0x0000001f 0x3fc975d0 0x3fc97d40
+3fc96eb0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b314 0x00000000 0x00000000 0x00000000 0x00000000
+3fc96ed0: 0x00000010 0x00000010 0x00000000 0x3fc96eec 0x3fc96ee8 0x00000000 0x00001f69 0x00001fa2
+3fc96ef0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b804 0x00000000 0x000003e7 0x3fc91000 0x420094a8
+3fc96f10: 0xa5a5a5a5 0x0000001f 0x00322020 0xa5a5a5a5 0x2876dbc8 0x7dbcbe3b 0xdf5698df 0x03ae4a32
+3fc96f30: 0x89058607 0x2d269a0a 0x54b51be1 0xa53962c4 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fb0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96ff0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97010: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97030: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97050: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97070: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97090: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970d0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970f0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97110: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97130: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97150: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: 5fda75747
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807ca
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107c0h ( 67520) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000307e8 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031de0 vaddr=40380000 size=0e238h ( 57912) load[0m
+[0;32mI (142) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=3320ch (209420) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073234 vaddr=4038e238 size=00360h (   864) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (207) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  5fda75747...[0m
+[0;32mI (230) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (245) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (298) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) main: Frequency is 433MHz[0m
+[0;32mI (346) main: coding_rate=1[0m
+[0;32mI (346) main: bandwidth=7[0m
+[0;32mI (346) main: spreading_factor=9[0m
+[0;32mI (1346) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1556) General: Internal temperature: 28.00[0m
+[0;32mI (1556) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1556) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1996) main_task: Returned from app_main()[0m
+[0;32mI (2236) lora_task: 31 byte packet sent...[0m
+[0;32mI (3476) display_task: Received packet length: 31[0m
+[0;32mI (3476) display_task: 3 byte packet received:[ 39][0m
+[0;32mI (4496) lora_task: 31 byte packet sent...[0m
+[0;32mI (5486) display_task: Received packet length: 31[0m
+[0;32mI (5486) display_task: 3 byte packet received:[ 40][0m
+
+assert failed: spi_device_transmit spi_master.c:1266 (ret_trans == trans_desc)
+Core  0 register dump:
+MEPC    : 0x40380812  RA      : 0x40385940  SP      : 0x3fc96d70  GP      : 0x3fc8ee00  
+TP      : 0x3fc97360  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000079  S1      : 0x00000001  A0      : 0x3fc96dac  A1      : 0x3fc8f42d  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc91000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fc96ece  
+S4      : 0x3fc8f42c  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc96d70: 0x00000008 0x00000000 0x3c04e720 0x4038cec2 0x3fc8f0d4 0x3c04e720 0x3fc8f0e4 0x3c0490ba
+3fc96d90: 0x3fc8f0e8 0x3fc96da4 0x3fc8f0ec 0x3c04986c 0x3fc8f42c 0x36363231 0x00000000 0x65737361
+3fc96db0: 0x66207472 0x656c6961 0x73203a64 0x645f6970 0x63697665 0x72745f65 0x6d736e61 0x73207469
+3fc96dd0: 0x6d5f6970 0x65747361 0x3a632e72 0x36363231 0x65722820 0x72745f74 0x20736e61 0x74203d3d
+3fc96df0: 0x736e6172 0x7365645f 0x00002963 0x600c2000 0x00000000 0x00000010 0x3fc96ec0 0xffffffff
+3fc96e10: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x40386522
+3fc96e30: 0x00000000 0x3fc957e8 0x00000000 0xffffffff 0x00000000 0x3fc95afc 0x00000000 0x42017e6a
+3fc96e50: 0x3fc96ec0 0x3fc95afc 0x00000000 0x00000000 0x00000000 0x00000001 0x3fc96eac 0x4201bc90
+3fc96e70: 0x3fc96eec 0x00000000 0x00000000 0x3f000000 0x3fc97d6c 0x3fc97d68 0x00000000 0x00000000
+3fc96e90: 0x00000000 0x3fc96ec0 0x3fc95afc 0x4201bcec 0x3fc96f2c 0x0000001f 0x3fc975d0 0x3fc97d40
+3fc96eb0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b314 0x00000000 0x00000000 0x00000000 0x00000000
+3fc96ed0: 0x00000010 0x00000010 0x00000000 0x3fc96eec 0x3fc96ee8 0x00000000 0x00001f69 0x00001fa2
+3fc96ef0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b804 0x00000000 0x000003e7 0x3fc91000 0x420094a8
+3fc96f10: 0xa5a5a5a5 0x0000001f 0x00322020 0xa5a5a5a5 0xe0c9e407 0x9b582c53 0xb6f8d408 0xe2b00624
+3fc96f30: 0x26fd94bc 0x2d1aedbb 0x1a028c5f 0xa50d4e76 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fb0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96ff0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97010: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97030: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97050: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97070: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97090: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970d0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970f0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97110: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97130: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97150: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: 5fda75747
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807ca
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107c0h ( 67520) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000307e8 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031de0 vaddr=40380000 size=0e238h ( 57912) load[0m
+[0;32mI (142) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=3320ch (209420) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073234 vaddr=4038e238 size=00360h (   864) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (207) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  5fda75747...[0m
+[0;32mI (230) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (244) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (298) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) main: Frequency is 433MHz[0m
+[0;32mI (346) main: coding_rate=1[0m
+[0;32mI (346) main: bandwidth=7[0m
+[0;32mI (346) main: spreading_factor=9[0m
+[0;32mI (1346) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1556) General: Internal temperature: 28.00[0m
+[0;32mI (1556) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1556) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1996) main_task: Returned from app_main()[0m
+[0;32mI (2236) lora_task: 31 byte packet sent...[0m
+[0;32mI (3476) display_task: Received packet length: 31[0m
+[0;32mI (3476) display_task: 3 byte packet received:[ 42][0m
+[0;32mI (4496) lora_task: 31 byte packet sent...[0m
+[0;32mI (5486) display_task: Received packet length: 31[0m
+[0;32mI (5486) display_task: 3 byte packet received:[ 43][0m
+
+assert failed: spi_device_transmit spi_master.c:1266 (ret_trans == trans_desc)
+Core  0 register dump:
+MEPC    : 0x40380812  RA      : 0x40385940  SP      : 0x3fc96d70  GP      : 0x3fc8ee00  
+TP      : 0x3fc97360  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000079  S1      : 0x00000001  A0      : 0x3fc96dac  A1      : 0x3fc8f42d  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc91000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fc96ece  
+S4      : 0x3fc8f42c  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc96d70: 0x00000008 0x00000000 0x3c04e720 0x4038cec2 0x3fc8f0d4 0x3c04e720 0x3fc8f0e4 0x3c0490ba
+3fc96d90: 0x3fc8f0e8 0x3fc96da4 0x3fc8f0ec 0x3c04986c 0x3fc8f42c 0x36363231 0x00000000 0x65737361
+3fc96db0: 0x66207472 0x656c6961 0x73203a64 0x645f6970 0x63697665 0x72745f65 0x6d736e61 0x73207469
+3fc96dd0: 0x6d5f6970 0x65747361 0x3a632e72 0x36363231 0x65722820 0x72745f74 0x20736e61 0x74203d3d
+3fc96df0: 0x736e6172 0x7365645f 0x00002963 0x600c2000 0x00000000 0x00000010 0x3fc96ec0 0xffffffff
+3fc96e10: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x40386522
+3fc96e30: 0x00000000 0x3fc957e8 0x00000000 0xffffffff 0x00000000 0x3fc95afc 0x00000000 0x42017e6a
+3fc96e50: 0x3fc96ec0 0x3fc95afc 0x00000000 0x00000000 0x00000000 0x00000001 0x3fc96eac 0x4201bc90
+3fc96e70: 0x3fc96eec 0x00000000 0x00000000 0x3f000000 0x3fc97d6c 0x3fc97d68 0x00000000 0x00000000
+3fc96e90: 0x00000000 0x3fc96ec0 0x3fc95afc 0x4201bcec 0x3fc96f2c 0x0000001f 0x3fc975d0 0x3fc97d40
+3fc96eb0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b314 0x00000000 0x00000000 0x00000000 0x00000000
+3fc96ed0: 0x00000010 0x00000010 0x00000000 0x3fc96eec 0x3fc96ee8 0x00000000 0x00001f69 0x00001fa2
+3fc96ef0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b804 0x00000000 0x000003e7 0x3fc91000 0x420094a8
+3fc96f10: 0xa5a5a5a5 0x0000001f 0x00322020 0xa5a5a5a5 0x7e9ea944 0x76e28ebb 0x77261c96 0xb9531549
+3fc96f30: 0x1e835cca 0xf0323087 0x53fbec2c 0xa5444a4c 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fb0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96ff0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97010: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97030: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97050: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97070: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97090: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970d0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970f0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97110: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97130: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97150: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: 5fda75747
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807ca
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107c0h ( 67520) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000307e8 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031de0 vaddr=40380000 size=0e238h ( 57912) load[0m
+[0;32mI (142) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=3320ch (209420) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073234 vaddr=4038e238 size=00360h (   864) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (207) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  5fda75747...[0m
+[0;32mI (230) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (244) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (298) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) main: Frequency is 433MHz[0m
+[0;32mI (346) main: coding_rate=1[0m
+[0;32mI (346) main: bandwidth=7[0m
+[0;32mI (346) main: spreading_factor=9[0m
+[0;32mI (1346) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1556) General: Internal temperature: 28.00[0m
+[0;32mI (1556) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1556) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1996) main_task: Returned from app_main()[0m
+[0;32mI (2236) lora_task: 31 byte packet sent...[0m
+[0;32mI (2976) display_task: Received packet length: 31[0m
+[0;32mI (2976) display_task: 3 byte packet received:[ 45][0m
+[0;32mI (4496) lora_task: 31 byte packet sent...[0m
+[0;32mI (5486) display_task: Received packet length: 31[0m
+[0;32mI (5486) display_task: 3 byte packet received:[ 46][0m
+
+assert failed: spi_device_transmit spi_master.c:1266 (ret_trans == trans_desc)
+Core  0 register dump:
+MEPC    : 0x40380812  RA      : 0x40385940  SP      : 0x3fc96d70  GP      : 0x3fc8ee00  
+TP      : 0x3fc97360  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000079  S1      : 0x00000001  A0      : 0x3fc96dac  A1      : 0x3fc8f42d  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc91000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fc96ece  
+S4      : 0x3fc8f42c  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc96d70: 0x00000008 0x00000000 0x3c04e720 0x4038cec2 0x3fc8f0d4 0x3c04e720 0x3fc8f0e4 0x3c0490ba
+3fc96d90: 0x3fc8f0e8 0x3fc96da4 0x3fc8f0ec 0x3c04986c 0x3fc8f42c 0x36363231 0x00000000 0x65737361
+3fc96db0: 0x66207472 0x656c6961 0x73203a64 0x645f6970 0x63697665 0x72745f65 0x6d736e61 0x73207469
+3fc96dd0: 0x6d5f6970 0x65747361 0x3a632e72 0x36363231 0x65722820 0x72745f74 0x20736e61 0x74203d3d
+3fc96df0: 0x736e6172 0x7365645f 0x00002963 0x600c2000 0x00000000 0x00000010 0x3fc96ec0 0xffffffff
+3fc96e10: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x40386522
+3fc96e30: 0x00000000 0x3fc957e8 0x00000000 0xffffffff 0x00000000 0x3fc95afc 0x00000000 0x42017e6a
+3fc96e50: 0x3fc96ec0 0x3fc95afc 0x00000000 0x00000000 0x00000000 0x00000001 0x3fc96eac 0x4201bc90
+3fc96e70: 0x3fc96eec 0x00000000 0x00000000 0x3f000000 0x3fc97d6c 0x3fc97d68 0x00000000 0x00000000
+3fc96e90: 0x00000000 0x3fc96ec0 0x3fc95afc 0x4201bcec 0x3fc96f2c 0x0000001f 0x3fc975d0 0x3fc97d40
+3fc96eb0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b314 0x00000000 0x00000000 0x00000000 0x00000000
+3fc96ed0: 0x00000010 0x00000010 0x00000000 0x3fc96eec 0x3fc96ee8 0x00000000 0x00001f69 0x00001fa2
+3fc96ef0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b804 0x00000000 0x000003e7 0x3fc91000 0x420094a8
+3fc96f10: 0xa5a5a5a5 0x0000001f 0x00322020 0xa5a5a5a5 0x485d0ef5 0xe394963e 0x2aadeec9 0xbc606304
+3fc96f30: 0x77056972 0x05d03578 0x94dfc04a 0xa54519c5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fb0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96ff0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97010: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97030: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97050: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97070: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97090: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970d0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970f0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97110: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97130: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97150: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: 5fda75747
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807ca
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107c0h ( 67520) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000307e8 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031de0 vaddr=40380000 size=0e238h ( 57912) load[0m
+[0;32mI (142) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=3320ch (209420) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073234 vaddr=4038e238 size=00360h (   864) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (207) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  5fda75747...[0m
+[0;32mI (230) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (245) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (298) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) main: Frequency is 433MHz[0m
+[0;32mI (346) main: coding_rate=1[0m
+[0;32mI (346) main: bandwidth=7[0m
+[0;32mI (346) main: spreading_factor=9[0m
+[0;32mI (1346) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1556) General: Internal temperature: 28.00[0m
+[0;32mI (1556) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1556) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1996) main_task: Returned from app_main()[0m
+[0;32mI (2236) lora_task: 31 byte packet sent...[0m
+[0;32mI (2976) display_task: Received packet length: 31[0m
+[0;32mI (2976) display_task: 3 byte packet received:[ 48][0m
+[0;32mI (4496) lora_task: 31 byte packet sent...[0m
+[0;32mI (5486) display_task: Received packet length: 31[0m
+[0;32mI (5486) display_task: 3 byte packet received:[ 49][0m
+
+assert failed: spi_device_transmit spi_master.c:1266 (ret_trans == trans_desc)
+Core  0 register dump:
+MEPC    : 0x40380812  RA      : 0x40385940  SP      : 0x3fc96d70  GP      : 0x3fc8ee00  
+TP      : 0x3fc97360  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000079  S1      : 0x00000001  A0      : 0x3fc96dac  A1      : 0x3fc8f42d  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc91000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fc96ece  
+S4      : 0x3fc8f42c  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc96d70: 0x00000008 0x00000000 0x3c04e720 0x4038cec2 0x3fc8f0d4 0x3c04e720 0x3fc8f0e4 0x3c0490ba
+3fc96d90: 0x3fc8f0e8 0x3fc96da4 0x3fc8f0ec 0x3c04986c 0x3fc8f42c 0x36363231 0x00000000 0x65737361
+3fc96db0: 0x66207472 0x656c6961 0x73203a64 0x645f6970 0x63697665 0x72745f65 0x6d736e61 0x73207469
+3fc96dd0: 0x6d5f6970 0x65747361 0x3a632e72 0x36363231 0x65722820 0x72745f74 0x20736e61 0x74203d3d
+3fc96df0: 0x736e6172 0x7365645f 0x00002963 0x600c2000 0x00000000 0x00000010 0x3fc96ec0 0xffffffff
+3fc96e10: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x40386522
+3fc96e30: 0x00000000 0x3fc957e8 0x00000000 0xffffffff 0x00000000 0x3fc95afc 0x00000000 0x42017e6a
+3fc96e50: 0x3fc96ec0 0x3fc95afc 0x00000000 0x00000000 0x00000000 0x00000001 0x3fc96eac 0x4201bc90
+3fc96e70: 0x3fc96eec 0x00000000 0x00000000 0x3f000000 0x3fc97d6c 0x3fc97d68 0x00000000 0x00000000
+3fc96e90: 0x00000000 0x3fc96ec0 0x3fc95afc 0x4201bcec 0x3fc96f2c 0x0000001f 0x3fc975d0 0x3fc97d40
+3fc96eb0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b314 0x00000000 0x00000000 0x00000000 0x00000000
+3fc96ed0: 0x00000010 0x00000010 0x00000000 0x3fc96eec 0x3fc96ee8 0x00000000 0x00001f69 0x00001fa2
+3fc96ef0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b804 0x00000000 0x000003e7 0x3fc91000 0x420094a8
+3fc96f10: 0xa5a5a5a5 0x0000001f 0x00322020 0xa5a5a5a5 0x002dfccd 0x738d17b9 0x75311503 0xd42696d2
+3fc96f30: 0x43e695f1 0x1d93fcff 0x4856702e 0xa5699d50 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fb0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96ff0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97010: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97030: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97050: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97070: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97090: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970d0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970f0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97110: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97130: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97150: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: 5fda75747
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807ca
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107c0h ( 67520) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000307e8 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031de0 vaddr=40380000 size=0e238h ( 57912) load[0m
+[0;32mI (142) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=3320ch (209420) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073234 vaddr=4038e238 size=00360h (   864) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (207) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  5fda75747...[0m
+[0;32mI (230) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (245) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (298) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) main: Frequency is 433MHz[0m
+[0;32mI (346) main: coding_rate=1[0m
+[0;32mI (346) main: bandwidth=7[0m
+[0;32mI (346) main: spreading_factor=9[0m
+[0;32mI (1346) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1556) General: Internal temperature: 28.00[0m
+[0;32mI (1556) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1556) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1996) main_task: Returned from app_main()[0m
+[0;32mI (2236) lora_task: 31 byte packet sent...[0m
+[0;32mI (2976) display_task: Received packet length: 31[0m
+[0;32mI (2976) display_task: 3 byte packet received:[ 51][0m
+[0;32mI (4496) lora_task: 31 byte packet sent...[0m
+[0;32mI (5486) display_task: Received packet length: 31[0m
+[0;32mI (5486) display_task: 3 byte packet received:[ 52][0m
+
+assert failed: spi_device_transmit spi_master.c:1266 (ret_trans == trans_desc)
+Core  0 register dump:
+MEPC    : 0x40380812  RA      : 0x40385940  SP      : 0x3fc96d70  GP      : 0x3fc8ee00  
+TP      : 0x3fc97360  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000079  S1      : 0x00000001  A0      : 0x3fc96dac  A1      : 0x3fc8f42d  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc91000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fc96ece  
+S4      : 0x3fc8f42c  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc96d70: 0x00000008 0x00000000 0x3c04e720 0x4038cec2 0x3fc8f0d4 0x3c04e720 0x3fc8f0e4 0x3c0490ba
+3fc96d90: 0x3fc8f0e8 0x3fc96da4 0x3fc8f0ec 0x3c04986c 0x3fc8f42c 0x36363231 0x00000000 0x65737361
+3fc96db0: 0x66207472 0x656c6961 0x73203a64 0x645f6970 0x63697665 0x72745f65 0x6d736e61 0x73207469
+3fc96dd0: 0x6d5f6970 0x65747361 0x3a632e72 0x36363231 0x65722820 0x72745f74 0x20736e61 0x74203d3d
+3fc96df0: 0x736e6172 0x7365645f 0x00002963 0x600c2000 0x00000000 0x00000010 0x3fc96ec0 0xffffffff
+3fc96e10: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x40386522
+3fc96e30: 0x00000000 0x3fc957e8 0x00000000 0xffffffff 0x00000000 0x3fc95afc 0x00000000 0x42017e6a
+3fc96e50: 0x3fc96ec0 0x3fc95afc 0x00000000 0x00000000 0x00000000 0x00000001 0x3fc96eac 0x4201bc90
+3fc96e70: 0x3fc96eec 0x00000000 0x00000000 0x3f000000 0x3fc97d6c 0x3fc97d68 0x00000000 0x00000000
+3fc96e90: 0x00000000 0x3fc96ec0 0x3fc95afc 0x4201bcec 0x3fc96f2c 0x0000001f 0x3fc975d0 0x3fc97d40
+3fc96eb0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b314 0x00000000 0x00000000 0x00000000 0x00000000
+3fc96ed0: 0x00000010 0x00000010 0x00000000 0x3fc96eec 0x3fc96ee8 0x00000000 0x00001f69 0x00001fa2
+3fc96ef0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b804 0x00000000 0x000003e7 0x3fc91000 0x420094a8
+3fc96f10: 0xa5a5a5a5 0x0000001f 0x00322020 0xa5a5a5a5 0xec813982 0x415a8774 0xf5497c86 0xc0bdff41
+3fc96f30: 0xde9667f6 0x47510ed8 0xdecc6a5a 0xa5706215 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fb0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96ff0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97010: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97030: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97050: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97070: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97090: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970d0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970f0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97110: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97130: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97150: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: 5fda75747
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807ca
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107c0h ( 67520) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000307e8 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031de0 vaddr=40380000 size=0e238h ( 57912) load[0m
+[0;32mI (142) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=3320ch (209420) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073234 vaddr=4038e238 size=00360h (   864) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (207) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  5fda75747...[0m
+[0;32mI (230) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (245) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (298) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) main: Frequency is 433MHz[0m
+[0;32mI (346) main: coding_rate=1[0m
+[0;32mI (346) main: bandwidth=7[0m
+[0;32mI (346) main: spreading_factor=9[0m
+[0;32mI (1346) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1556) General: Internal temperature: 28.00[0m
+[0;32mI (1556) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1556) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1996) main_task: Returned from app_main()[0m
+[0;32mI (2236) lora_task: 31 byte packet sent...[0m
+[0;32mI (2976) display_task: Received packet length: 31[0m
+[0;32mI (2976) display_task: 3 byte packet received:[ 54][0m
+[0;32mI (4496) lora_task: 31 byte packet sent...[0m
+[0;32mI (5486) display_task: Received packet length: 31[0m
+[0;32mI (5486) display_task: 3 byte packet received:[ 55][0m
+
+assert failed: spi_device_transmit spi_master.c:1266 (ret_trans == trans_desc)
+Core  0 register dump:
+MEPC    : 0x40380812  RA      : 0x40385940  SP      : 0x3fc96d70  GP      : 0x3fc8ee00  
+TP      : 0x3fc97360  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000079  S1      : 0x00000001  A0      : 0x3fc96dac  A1      : 0x3fc8f42d  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc91000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fc96ece  
+S4      : 0x3fc8f42c  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc96d70: 0x00000008 0x00000000 0x3c04e720 0x4038cec2 0x3fc8f0d4 0x3c04e720 0x3fc8f0e4 0x3c0490ba
+3fc96d90: 0x3fc8f0e8 0x3fc96da4 0x3fc8f0ec 0x3c04986c 0x3fc8f42c 0x36363231 0x00000000 0x65737361
+3fc96db0: 0x66207472 0x656c6961 0x73203a64 0x645f6970 0x63697665 0x72745f65 0x6d736e61 0x73207469
+3fc96dd0: 0x6d5f6970 0x65747361 0x3a632e72 0x36363231 0x65722820 0x72745f74 0x20736e61 0x74203d3d
+3fc96df0: 0x736e6172 0x7365645f 0x00002963 0x600c2000 0x00000000 0x00000010 0x3fc96ec0 0xffffffff
+3fc96e10: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x40386522
+3fc96e30: 0x00000000 0x3fc957e8 0x00000000 0xffffffff 0x00000000 0x3fc95afc 0x00000000 0x42017e6a
+3fc96e50: 0x3fc96ec0 0x3fc95afc 0x00000000 0x00000000 0x00000000 0x00000001 0x3fc96eac 0x4201bc90
+3fc96e70: 0x3fc96eec 0x00000000 0x00000000 0x3f000000 0x3fc97d6c 0x3fc97d68 0x00000000 0x00000000
+3fc96e90: 0x00000000 0x3fc96ec0 0x3fc95afc 0x4201bcec 0x3fc96f2c 0x0000001f 0x3fc975d0 0x3fc97d40
+3fc96eb0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b314 0x00000000 0x00000000 0x00000000 0x00000000
+3fc96ed0: 0x00000010 0x00000010 0x00000000 0x3fc96eec 0x3fc96ee8 0x00000000 0x00001f69 0x00001fa2
+3fc96ef0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b804 0x00000000 0x000003e7 0x3fc91000 0x420094a8
+3fc96f10: 0xa5a5a5a5 0x0000001f 0x00322020 0xa5a5a5a5 0x7c6df895 0x0f8a7564 0x8152eb51 0xc1b4a424
+3fc96f30: 0xeb043d72 0x025012d6 0xd30c6523 0xa507dda4 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fb0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96ff0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97010: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97030: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97050: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97070: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97090: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970d0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970f0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97110: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97130: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97150: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: 5fda75747
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807ca
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107c0h ( 67520) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000307e8 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031de0 vaddr=40380000 size=0e238h ( 57912) load[0m
+[0;32mI (142) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=3320ch (209420) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073234 vaddr=4038e238 size=00360h (   864) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (207) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  5fda75747...[0m
+[0;32mI (230) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (244) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (298) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) main: Frequency is 433MHz[0m
+[0;32mI (346) main: coding_rate=1[0m
+[0;32mI (346) main: bandwidth=7[0m
+[0;32mI (346) main: spreading_factor=9[0m
+[0;32mI (1346) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1556) General: Internal temperature: 28.00[0m
+[0;32mI (1556) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1556) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1996) main_task: Returned from app_main()[0m
+[0;32mI (2236) lora_task: 31 byte packet sent...[0m
+[0;32mI (2976) display_task: Received packet length: 31[0m
+[0;32mI (2976) display_task: 3 byte packet received:[ 57][0m
+[0;32mI (4496) lora_task: 31 byte packet sent...[0m
+[0;32mI (4986) display_task: Received packet length: 31[0m
+[0;32mI (4986) display_task: 3 byte packet received:[ 58][0m
+
+assert failed: spi_device_transmit spi_master.c:1266 (ret_trans == trans_desc)
+Core  0 register dump:
+MEPC    : 0x40380812  RA      : 0x40385940  SP      : 0x3fc96d70  GP      : 0x3fc8ee00  
+TP      : 0x3fc97360  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000079  S1      : 0x00000001  A0      : 0x3fc96dac  A1      : 0x3fc8f42d  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc91000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fc96ece  
+S4      : 0x3fc8f42c  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc96d70: 0x00000008 0x00000000 0x3c04e720 0x4038cec2 0x3fc8f0d4 0x3c04e720 0x3fc8f0e4 0x3c0490ba
+3fc96d90: 0x3fc8f0e8 0x3fc96da4 0x3fc8f0ec 0x3c04986c 0x3fc8f42c 0x36363231 0x00000000 0x65737361
+3fc96db0: 0x66207472 0x656c6961 0x73203a64 0x645f6970 0x63697665 0x72745f65 0x6d736e61 0x73207469
+3fc96dd0: 0x6d5f6970 0x65747361 0x3a632e72 0x36363231 0x65722820 0x72745f74 0x20736e61 0x74203d3d
+3fc96df0: 0x736e6172 0x7365645f 0x00002963 0x600c2000 0x00000000 0x00000010 0x3fc96ec0 0xffffffff
+3fc96e10: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x40386522
+3fc96e30: 0x00000000 0x3fc957e8 0x00000000 0xffffffff 0x00000000 0x3fc95afc 0x00000000 0x42017e6a
+3fc96e50: 0x3fc96ec0 0x3fc95afc 0x00000000 0x00000000 0x00000000 0x00000001 0x3fc96eac 0x4201bc90
+3fc96e70: 0x3fc96eec 0x00000000 0x00000000 0x3f000000 0x3fc97d6c 0x3fc97d68 0x00000000 0x00000000
+3fc96e90: 0x00000000 0x3fc96ec0 0x3fc95afc 0x4201bcec 0x3fc96f2c 0x0000001f 0x3fc975d0 0x3fc97d40
+3fc96eb0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b314 0x00000000 0x00000000 0x00000000 0x00000000
+3fc96ed0: 0x00000010 0x00000010 0x00000000 0x3fc96eec 0x3fc96ee8 0x00000000 0x00001f69 0x00001fa2
+3fc96ef0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b804 0x00000000 0x000003e7 0x3fc91000 0x420094a8
+3fc96f10: 0xa5a5a5a5 0x0000001f 0x00322020 0xa5a5a5a5 0xb36c50ba 0x5cd9770e 0xb7c3cb3a 0x902b56c7
+3fc96f30: 0xb20ec9e8 0xd2fd52d4 0x3b866d04 0xa5704ec3 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fb0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96ff0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97010: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97030: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97050: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97070: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97090: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970d0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970f0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97110: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97130: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97150: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: 5fda75747
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807ca
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107c0h ( 67520) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000307e8 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031de0 vaddr=40380000 size=0e238h ( 57912) load[0m
+[0;32mI (142) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=3320ch (209420) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073234 vaddr=4038e238 size=00360h (   864) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (207) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  5fda75747...[0m
+[0;32mI (230) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (245) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (298) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) main: Frequency is 433MHz[0m
+[0;32mI (346) main: coding_rate=1[0m
+[0;32mI (346) main: bandwidth=7[0m
+[0;32mI (346) main: spreading_factor=9[0m
+[0;32mI (1346) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1556) General: Internal temperature: 28.00[0m
+[0;32mI (1556) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1556) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1996) main_task: Returned from app_main()[0m
+[0;32mI (2236) lora_task: 31 byte packet sent...[0m
+[0;32mI (2976) display_task: Received packet length: 31[0m
+[0;32mI (2976) display_task: 3 byte packet received:[ 60][0m
+[0;32mI (4496) lora_task: 31 byte packet sent...[0m
+[0;32mI (4986) display_task: Received packet length: 31[0m
+[0;32mI (4986) display_task: 3 byte packet received:[ 61][0m
+
+assert failed: spi_device_transmit spi_master.c:1266 (ret_trans == trans_desc)
+Core  0 register dump:
+MEPC    : 0x40380812  RA      : 0x40385940  SP      : 0x3fc96d70  GP      : 0x3fc8ee00  
+TP      : 0x3fc97360  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000079  S1      : 0x00000001  A0      : 0x3fc96dac  A1      : 0x3fc8f42d  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc91000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fc96ece  
+S4      : 0x3fc8f42c  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc96d70: 0x00000008 0x00000000 0x3c04e720 0x4038cec2 0x3fc8f0d4 0x3c04e720 0x3fc8f0e4 0x3c0490ba
+3fc96d90: 0x3fc8f0e8 0x3fc96da4 0x3fc8f0ec 0x3c04986c 0x3fc8f42c 0x36363231 0x00000000 0x65737361
+3fc96db0: 0x66207472 0x656c6961 0x73203a64 0x645f6970 0x63697665 0x72745f65 0x6d736e61 0x73207469
+3fc96dd0: 0x6d5f6970 0x65747361 0x3a632e72 0x36363231 0x65722820 0x72745f74 0x20736e61 0x74203d3d
+3fc96df0: 0x736e6172 0x7365645f 0x00002963 0x600c2000 0x00000000 0x00000010 0x3fc96ec0 0xffffffff
+3fc96e10: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x40386522
+3fc96e30: 0x00000000 0x3fc957e8 0x00000000 0xffffffff 0x00000000 0x3fc95afc 0x00000000 0x42017e6a
+3fc96e50: 0x3fc96ec0 0x3fc95afc 0x00000000 0x00000000 0x00000000 0x00000001 0x3fc96eac 0x4201bc90
+3fc96e70: 0x3fc96eec 0x00000000 0x00000000 0x3f000000 0x3fc97d6c 0x3fc97d68 0x00000000 0x00000000
+3fc96e90: 0x00000000 0x3fc96ec0 0x3fc95afc 0x4201bcec 0x3fc96f2c 0x0000001f 0x3fc975d0 0x3fc97d40
+3fc96eb0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b314 0x00000000 0x00000000 0x00000000 0x00000000
+3fc96ed0: 0x00000010 0x00000010 0x00000000 0x3fc96eec 0x3fc96ee8 0x00000000 0x00001f69 0x00001fa2
+3fc96ef0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b804 0x00000000 0x000003e7 0x3fc91000 0x420094a8
+3fc96f10: 0xa5a5a5a5 0x0000001f 0x00322020 0xa5a5a5a5 0x6e209f85 0xa0b7e2c8 0x4e4a11cf 0x6a455abb
+3fc96f30: 0xee467ce9 0xb36d3812 0x3a816715 0xa5260380 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fb0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96ff0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97010: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97030: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97050: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97070: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97090: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970d0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970f0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97110: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97130: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97150: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: 5fda75747
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807ca
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107c0h ( 67520) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000307e8 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031de0 vaddr=40380000 size=0e238h ( 57912) load[0m
+[0;32mI (142) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=3320ch (209420) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073234 vaddr=4038e238 size=00360h (   864) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (207) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  5fda75747...[0m
+[0;32mI (230) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (245) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (298) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) main: Frequency is 433MHz[0m
+[0;32mI (346) main: coding_rate=1[0m
+[0;32mI (346) main: bandwidth=7[0m
+[0;32mI (346) main: spreading_factor=9[0m
+[0;32mI (1346) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1556) General: Internal temperature: 28.00[0m
+[0;32mI (1556) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1556) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1996) main_task: Returned from app_main()[0m
+[0;32mI (2236) lora_task: 31 byte packet sent...[0m
+[0;32mI (2976) display_task: Received packet length: 31[0m
+[0;32mI (2976) display_task: 3 byte packet received:[ 63][0m
+[0;32mI (4496) lora_task: 31 byte packet sent...[0m
+[0;32mI (4986) display_task: Received packet length: 31[0m
+[0;32mI (4986) display_task: 3 byte packet received:[ 64][0m
+
+assert failed: spi_device_transmit spi_master.c:1266 (ret_trans == trans_desc)
+Core  0 register dump:
+MEPC    : 0x40380812  RA      : 0x40385940  SP      : 0x3fc96d70  GP      : 0x3fc8ee00  
+TP      : 0x3fc97360  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000079  S1      : 0x00000001  A0      : 0x3fc96dac  A1      : 0x3fc8f42d  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc91000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fc96ece  
+S4      : 0x3fc8f42c  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc96d70: 0x00000008 0x00000000 0x3c04e720 0x4038cec2 0x3fc8f0d4 0x3c04e720 0x3fc8f0e4 0x3c0490ba
+3fc96d90: 0x3fc8f0e8 0x3fc96da4 0x3fc8f0ec 0x3c04986c 0x3fc8f42c 0x36363231 0x00000000 0x65737361
+3fc96db0: 0x66207472 0x656c6961 0x73203a64 0x645f6970 0x63697665 0x72745f65 0x6d736e61 0x73207469
+3fc96dd0: 0x6d5f6970 0x65747361 0x3a632e72 0x36363231 0x65722820 0x72745f74 0x20736e61 0x74203d3d
+3fc96df0: 0x736e6172 0x7365645f 0x00002963 0x600c2000 0x00000000 0x00000010 0x3fc96ec0 0xffffffff
+3fc96e10: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x40386522
+3fc96e30: 0x00000000 0x3fc957e8 0x00000000 0xffffffff 0x00000000 0x3fc95afc 0x00000000 0x42017e6a
+3fc96e50: 0x3fc96ec0 0x3fc95afc 0x00000000 0x00000000 0x00000000 0x00000001 0x3fc96eac 0x4201bc90
+3fc96e70: 0x3fc96eec 0x00000000 0x00000000 0x3f000000 0x3fc97d6c 0x3fc97d68 0x00000000 0x00000000
+3fc96e90: 0x00000000 0x3fc96ec0 0x3fc95afc 0x4201bcec 0x3fc96f2c 0x0000001f 0x3fc975d0 0x3fc97d40
+3fc96eb0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b314 0x00000000 0x00000000 0x00000000 0x00000000
+3fc96ed0: 0x00000010 0x00000010 0x00000000 0x3fc96eec 0x3fc96ee8 0x00000000 0x00001f69 0x00001fa2
+3fc96ef0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b804 0x00000000 0x000003e7 0x3fc91000 0x420094a8
+3fc96f10: 0xa5a5a5a5 0x0000001f 0x00322020 0xa5a5a5a5 0xde34dc82 0x580c705f 0x58d1659f 0x1af16173
+3fc96f30: 0x5e7b20f8 0x15913f59 0x5c9e4ed6 0xa589a307 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fb0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96ff0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97010: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97030: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97050: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97070: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97090: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970d0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970f0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97110: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97130: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97150: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: 5fda75747
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807ca
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107c0h ( 67520) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000307e8 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031de0 vaddr=40380000 size=0e238h ( 57912) load[0m
+[0;32mI (142) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=3320ch (209420) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073234 vaddr=4038e238 size=00360h (   864) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (207) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  5fda75747...[0m
+[0;32mI (230) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (245) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (298) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) main: Frequency is 433MHz[0m
+[0;32mI (346) main: coding_rate=1[0m
+[0;32mI (346) main: bandwidth=7[0m
+[0;32mI (346) main: spreading_factor=9[0m
+[0;32mI (1346) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1556) General: Internal temperature: 28.00[0m
+[0;32mI (1556) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1556) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1996) main_task: Returned from app_main()[0m
+[0;32mI (2236) lora_task: 31 byte packet sent...[0m
+[0;32mI (2976) display_task: Received packet length: 31[0m
+[0;32mI (2976) display_task: 3 byte packet received:[ 66][0m
+[0;32mI (4496) lora_task: 31 byte packet sent...[0m
+[0;32mI (4986) display_task: Received packet length: 31[0m
+[0;32mI (4986) display_task: 3 byte packet received:[ 67][0m
+
+assert failed: spi_device_transmit spi_master.c:1266 (ret_trans == trans_desc)
+Core  0 register dump:
+MEPC    : 0x40380812  RA      : 0x40385940  SP      : 0x3fc96d70  GP      : 0x3fc8ee00  
+TP      : 0x3fc97360  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000079  S1      : 0x00000001  A0      : 0x3fc96dac  A1      : 0x3fc8f42d  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc91000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fc96ece  
+S4      : 0x3fc8f42c  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc96d70: 0x00000008 0x00000000 0x3c04e720 0x4038cec2 0x3fc8f0d4 0x3c04e720 0x3fc8f0e4 0x3c0490ba
+3fc96d90: 0x3fc8f0e8 0x3fc96da4 0x3fc8f0ec 0x3c04986c 0x3fc8f42c 0x36363231 0x00000000 0x65737361
+3fc96db0: 0x66207472 0x656c6961 0x73203a64 0x645f6970 0x63697665 0x72745f65 0x6d736e61 0x73207469
+3fc96dd0: 0x6d5f6970 0x65747361 0x3a632e72 0x36363231 0x65722820 0x72745f74 0x20736e61 0x74203d3d
+3fc96df0: 0x736e6172 0x7365645f 0x00002963 0x600c2000 0x00000000 0x00000010 0x3fc96ec0 0xffffffff
+3fc96e10: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x40386522
+3fc96e30: 0x00000000 0x3fc957e8 0x00000000 0xffffffff 0x00000000 0x3fc95afc 0x00000000 0x42017e6a
+3fc96e50: 0x3fc96ec0 0x3fc95afc 0x00000000 0x00000000 0x00000000 0x00000001 0x3fc96eac 0x4201bc90
+3fc96e70: 0x3fc96eec 0x00000000 0x00000000 0x3f000000 0x3fc97d6c 0x3fc97d68 0x00000000 0x00000000
+3fc96e90: 0x00000000 0x3fc96ec0 0x3fc95afc 0x4201bcec 0x3fc96f2c 0x0000001f 0x3fc975d0 0x3fc97d40
+3fc96eb0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b314 0x00000000 0x00000000 0x00000000 0x00000000
+3fc96ed0: 0x00000010 0x00000010 0x00000000 0x3fc96eec 0x3fc96ee8 0x00000000 0x00001f69 0x00001fa2
+3fc96ef0: 0x00000000 0x3fc96f20 0x0000001f 0x4200b804 0x00000000 0x000003e7 0x3fc91000 0x420094a8
+3fc96f10: 0xa5a5a5a5 0x0000001f 0x00322020 0xa5a5a5a5 0x510f3b29 0x02e1327c 0x287d45f6 0x1e920c0f
+3fc96f30: 0xde84591a 0x78173c5d 0x69f5bea2 0xa59b1473 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f50: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f70: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96f90: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fb0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96fd0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc96ff0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97010: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97030: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97050: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97070: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97090: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970b0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970d0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc970f0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97110: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97130: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc97150: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: 5fda75747
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403807ca
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (87) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (94) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107c0h ( 67520) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000307e8 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031de0 vaddr=40380000 size=0e238h ( 57912) load[0m
+[0;32mI (142) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=3320ch (209420) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073234 vaddr=4038e238 size=00360h (   864) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (207) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  5fda75747...[0m
+[0;32mI (230) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (245) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (298) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) main: Frequency is 433MHz[0m
+[0;32mI (346) main: coding_rate=1[0m
+[0;32mI (346) main: bandwidth=7[0m
+[0;32mI (346) main: spreading_factor=9[0m
+[0;32mI (1346) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1656) General: Internal temperature: 29.00[0m
+[0;32mI (1656) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1656) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2096) main_task: Returned from app_main()[0m
+[0;32mI (2336) lora_task: 31 byte packet sent...[0m
+[0;32mI (4596) lora_task: 31 byte packet sent...[0m
+[0;32mI (6856) lora_task: 31 byte packet sent...[0m
+[0;32mI (9116) lora_task: 31 byte packet sent...[0m
+[0;32mI (11376) lora_task: 31 byte packet sent...[0m

@@ -1,0 +1,9 @@
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32c3
+Processing 1 dependencies:
+[1/1] idf (5.3.0)
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/build/CMakeFiles/CMakeOutput.log".
+[0/1] Re-running CMake...
+FAILED: build.ninja 
+C:\Users\sular\.espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SC:\Users\sular\OneDrive\Documents\Arduino\ESP32MoistureSensor\VariousStuff -BC:\Users\sular\OneDrive\Documents\Arduino\ESP32MoistureSensor\VariousStuff\build

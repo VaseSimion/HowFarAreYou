@@ -1,0 +1,249 @@
+[0;32mI (95) boot:  5 storage          Unknown data     01 82 0ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400462e2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (88) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (95) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (107) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=23e14h (146964) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00043e3c vaddr=3fc94800 size=02e50h ( 11856) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=00046c94 vaddr=40380000 size=09384h ( 37764) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=9d174h (643444) map[0m
+[0;32mI (253) esp_image: segment 4: paddr=000ed19c vaddr=40389384 size=0b3a8h ( 45992) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (269) boot: Disabling RNG early entropy source...[0m
+[0;32mI (280) cpu_start: Unicore app[0m
+[0;32mI (289) cpu_start: Pro cpu start user code[0m
+[0;32mI (289) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (289) app_init: Application information:[0m
+[0;32mI (292) app_init: Project name:     VariousStuff[0m
+[0;32mI (297) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (303) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (309) app_init: ELF file SHA256:  68517827a...[0m
+[0;32mI (314) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (319) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (324) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (329) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (334) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (341) heap_init: At 3FC9BE50 len 000241B0 (144 KiB): RAM[0m
+[0;32mI (347) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (354) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (361) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (368) spi_flash: detected chip: generic[0m
+[0;32mI (372) spi_flash: flash io: dio[0m
+[0;32mI (377) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (383) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (390) main_task: Started on CPU0[0m
+[0;32mI (390) main_task: Calling app_main()[0m
+[0;32mI (400) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (400) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (410) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (830) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (830) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2850) main: Does not recognize the module[0m
+[0;32mI (2850) pp: pp rom version: 9387209[0m
+[0;32mI (2850) net80211: net80211 rom version: 9387209[0m
+I (2860) wifi:wifi driver task: 3fca57d4, prio:23, stack:6656, core=0
+I (2860) wifi:wifi firmware version: 0caa81945
+I (2860) wifi:wifi certification version: v7.0
+I (2860) wifi:config NVS flash: enabled
+I (2870) wifi:config nano formating: disabled
+I (2870) wifi:Init data frame dynamic rx buffer num: 32
+I (2880) wifi:Init static rx mgmt buffer num: 5
+I (2880) wifi:Init management short buffer num: 32
+I (2880) wifi:Init dynamic tx buffer num: 32
+I (2890) wifi:Init static tx FG buffer num: 2
+I (2890) wifi:Init static rx buffer size: 1600
+I (2900) wifi:Init static rx buffer num: 10
+I (2900) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2910) wifi_init: rx ba win: 6[0m
+[0;32mI (2910) wifi_init: accept mbox: 6[0m
+[0;32mI (2910) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2920) wifi_init: udp mbox: 6[0m
+[0;32mI (2920) wifi_init: tcp mbox: 6[0m
+[0;32mI (2920) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2930) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2930) wifi_init: tcp mss: 1440[0m
+[0;32mI (2940) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2940) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2950) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+I (2990) wifi:mode : sta (9c:9e:6e:10:9c:54)
+I (2990) wifi:enable tsf
+I (3000) ESPNOW: espnow [version: 1.0] init
+[0;31mE (3000) General: Lora module not recognized[0m
+[0;32mI (3000) General: Sent data:   0[0m
+[0;32mI (3000) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (3010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (3030) main_task: Returned from app_main()[0m
+[0;32mI (5010) General: Sent data:   1[0m
+[0;32mI (5010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (5010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (7010) General: Sent data:   2[0m
+[0;32mI (7010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (7010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (9010) General: Sent data:   3[0m
+[0;32mI (9010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (9010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (11010) General: Sent data:   4[0m
+[0;32mI (11010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (11010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (13010) General: Sent data:   5[0m
+[0;32mI (13010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (13010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (15010) General: Sent data:   6[0m
+[0;32mI (15010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (15010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (17010) General: Sent data:   7[0m
+[0;32mI (17010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (17010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (19010) General: Sent data:   8[0m
+[0;32mI (19010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (19010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (21010) General: Sent data:   9[0m
+[0;32mI (21010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (21010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (23010) General: Sent data:  10[0m
+[0;32mI (23010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (23010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (25010) General: Sent data:  11[0m
+[0;32mI (25010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (25010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (27010) General: Sent data:  12[0m
+[0;32mI (27010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (27010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (29010) General: Sent data:  13[0m
+[0;32mI (29010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (29010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (31010) General: Sent data:  14[0m
+[0;32mI (31010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (31010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (33010) General: Sent data:  15[0m
+[0;32mI (33010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (33010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (35010) General: Sent data:  16[0m
+[0;32mI (35010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (35010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (37010) General: Sent data:  17[0m
+[0;32mI (37010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (37010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (39010) General: Sent data:  18[0m
+[0;32mI (39010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (39010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (41010) General: Sent data:  19[0m
+[0;32mI (41010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (41010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (43010) General: Sent data:  20[0m
+[0;32mI (43010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (43010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (45010) General: Sent data:  21[0m
+[0;32mI (45010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (45010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (47010) General: Sent data:  22[0m
+[0;32mI (47010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (47010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (49010) General: Sent data:  23[0m
+[0;32mI (49010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (49010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (51010) General: Sent data:  24[0m
+[0;32mI (51010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (51010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (53010) General: Sent data:  25[0m
+[0;32mI (53010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (53010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (55010) General: Sent data:  26[0m
+[0;32mI (55010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (55010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (57010) General: Sent data:  27[0m
+[0;32mI (57010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (57010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (59010) General: Sent data:  28[0m
+[0;32mI (59010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (59010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (61010) General: Sent data:  29[0m
+[0;32mI (61010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (61010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (63010) General: Sent data:  30[0m
+[0;32mI (63010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (63010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (65010) General: Sent data:  31[0m
+[0;32mI (65010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (65010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (67010) General: Sent data:  32[0m
+[0;32mI (67010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (67010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (69010) General: Sent data:  33[0m
+[0;32mI (69010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (69010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (71010) General: Sent data:  34[0m
+[0;32mI (71010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (71010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (73010) General: Sent data:  35[0m
+[0;32mI (73010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (73010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (75010) General: Sent data:  36[0m
+[0;32mI (75010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (75010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (77010) General: Sent data:  37[0m
+[0;32mI (77010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (77010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (79010) General: Sent data:  38[0m
+[0;32mI (79010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (79010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (81010) General: Sent data:  39[0m
+[0;32mI (81010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (81010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (83010) General: Sent data:  40[0m
+[0;32mI (83010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (83010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (85010) General: Sent data:  41[0m
+[0;32mI (85010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (85010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (87010) General: Sent data:  42[0m
+[0;32mI (87010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (87010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (89010) General: Sent data:  43[0m
+[0;32mI (89010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (89010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (91010) General: Sent data:  44[0m
+[0;32mI (91010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (91010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (93010) General: Sent data:  45[0m
+[0;32mI (93010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (93010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (95010) General: Sent data:  46[0m
+[0;32mI (95010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (95010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (97010) General: Sent data:  47[0m
+[0;32mI (97010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (97010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (99010) General: Sent data:  48[0m
+[0;32mI (99010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (99010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (101010) General: Sent data:  49[0m
+[0;32mI (101010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (101010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (103010) General: Sent data:  50[0m
+[0;32mI (103010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (103010) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (105010) General: Sent data:  51[0m
+[0;32mI (105010) General: Sent to MAC Address: 00:00:00:00:00:00[0m
+[0;32mI (105010) General: Last Packet Send Status: Delivery Success[0m

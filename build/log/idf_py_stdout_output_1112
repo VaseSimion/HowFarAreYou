@@ -1,0 +1,617 @@
+[0;32mI (95) boot:  5 storage          Unknown data     01 82 0ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400462e0
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (88) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (95) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (107) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=23d2ch (146732) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00043d54 vaddr=3fc95600 size=02e50h ( 11856) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=00046bac vaddr=40380000 size=0946ch ( 37996) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=9d76ch (644972) map[0m
+[0;32mI (253) esp_image: segment 4: paddr=000ed794 vaddr=4038946c size=0c028h ( 49192) load[0m
+[0;32mI (269) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (270) boot: Disabling RNG early entropy source...[0m
+[0;32mI (281) cpu_start: Unicore app[0m
+[0;32mI (290) cpu_start: Pro cpu start user code[0m
+[0;32mI (290) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (290) app_init: Application information:[0m
+[0;32mI (293) app_init: Project name:     VariousStuff[0m
+[0;32mI (298) app_init: App version:      FS1.0-13-gbbeeebf-dirty[0m
+[0;32mI (304) app_init: Compile time:     Mar 18 2025 19:27:32[0m
+[0;32mI (310) app_init: ELF file SHA256:  46e0341e7...[0m
+[0;32mI (315) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (320) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (325) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (330) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (335) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (342) heap_init: At 3FC9CA20 len 000235E0 (141 KiB): RAM[0m
+[0;32mI (348) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (355) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (362) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (369) spi_flash: detected chip: generic[0m
+[0;32mI (373) spi_flash: flash io: dio[0m
+[0;32mI (378) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (384) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (391) main_task: Started on CPU0[0m
+[0;32mI (391) main_task: Calling app_main()[0m
+[0;32mI (411) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (411) General: MAC address: 9C:9E:6E:02:E4:1C[0m
+[0;32mI (411) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (421) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2441) main: Does not recognize the module[0m
+[0;32mI (2441) pp: pp rom version: 9387209[0m
+[0;32mI (2441) net80211: net80211 rom version: 9387209[0m
+I (2451) wifi:wifi driver task: 3fca6044, prio:23, stack:6656, core=0
+I (2451) wifi:wifi firmware version: 0caa81945
+I (2451) wifi:wifi certification version: v7.0
+I (2451) wifi:config NVS flash: enabled
+I (2461) wifi:config nano formating: disabled
+I (2461) wifi:Init data frame dynamic rx buffer num: 32
+I (2471) wifi:Init static rx mgmt buffer num: 5
+I (2471) wifi:Init management short buffer num: 32
+I (2471) wifi:Init dynamic tx buffer num: 32
+I (2481) wifi:Init static tx FG buffer num: 2
+I (2481) wifi:Init static rx buffer size: 1600
+I (2491) wifi:Init static rx buffer num: 10
+I (2491) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2501) wifi_init: rx ba win: 6[0m
+[0;32mI (2501) wifi_init: accept mbox: 6[0m
+[0;32mI (2501) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2511) wifi_init: udp mbox: 6[0m
+[0;32mI (2511) wifi_init: tcp mbox: 6[0m
+[0;32mI (2511) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2521) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2521) wifi_init: tcp mss: 1440[0m
+[0;32mI (2531) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2531) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2541) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+I (2591) wifi:mode : sta (9c:9e:6e:02:e4:1c)
+I (2591) wifi:enable tsf
+I (2591) ESPNOW: espnow [version: 1.0] init
+[0;31mE (2591) General: Lora module not recognized[0m
+[0;32mI (2591) General: Sent data:   0[0m
+[0;32mI (2591) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (2601) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (2611) main_task: Returned from app_main()[0m
+[0;32mI (4631) General: Sent data:   1[0m
+[0;32mI (4631) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (4631) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (4651) General: UTC Time: 193417.00[0m
+[0;32mI (4651) General: Raw coordinates: 5529.61276N, 00927.94555E[0m
+[0;32mI (4651) General: Decimal degrees: 55.493546, 9.465759 (Fix quality: 1)[0m
+[0;32mI (4651) General: Satellites in use: 05[0m
+[0;32mI (4661) General: Altitude: 14.7 meters[0m
+[0;32mI (4661) General: UTC Time: 193418.00[0m
+[0;32mI (4671) General: Raw coordinates: 5529.61257N, 00927.94498E[0m
+[0;32mI (4671) General: Decimal degrees: 55.493546, 9.465750 (Fix quality: 1)[0m
+[0;32mI (4681) General: Satellites in use: 05[0m
+[0;32mI (4681) General: Altitude: 14.8 meters[0m
+[0;32mI (6691) General: Sent data:   2[0m
+[0;32mI (6701) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (6701) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (6711) General: UTC Time: 193419.00[0m
+[0;32mI (6711) General: Raw coordinates: 5529.61311N, 00927.94677E[0m
+[0;32mI (6711) General: Decimal degrees: 55.493553, 9.465779 (Fix quality: 1)[0m
+[0;32mI (6721) General: Satellites in use: 05[0m
+[0;32mI (6721) General: Altitude: 14.8 meters[0m
+[0;32mI (6731) General: UTC Time: 193420.00[0m
+[0;32mI (6731) General: Raw coordinates: 5529.61332N, 00927.94755E[0m
+[0;32mI (6741) General: Decimal degrees: 55.493553, 9.465793 (Fix quality: 1)[0m
+[0;32mI (6741) General: Satellites in use: 05[0m
+[0;32mI (6751) General: Altitude: 14.9 meters[0m
+[0;32mI (8751) General: Sent data:   3[0m
+[0;32mI (8751) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (8751) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (8771) General: UTC Time: 193421.00[0m
+[0;32mI (8771) General: Raw coordinates: 5529.61319N, 00927.94726E[0m
+[0;32mI (8771) General: Decimal degrees: 55.493553, 9.465788 (Fix quality: 1)[0m
+[0;32mI (8771) General: Satellites in use: 05[0m
+[0;32mI (8781) General: Altitude: 15.1 meters[0m
+[0;32mI (8781) General: UTC Time: 193422.00[0m
+[0;32mI (8791) General: Raw coordinates: 5529.61292N, 00927.94678E[0m
+[0;32mI (8791) General: Decimal degrees: 55.493546, 9.465779 (Fix quality: 1)[0m
+[0;32mI (8801) General: Satellites in use: 05[0m
+[0;32mI (8801) General: Altitude: 15.4 meters[0m
+[0;32mI (10811) General: Sent data:   4[0m
+[0;32mI (10811) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (10811) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (10831) General: UTC Time: 193423.00[0m
+[0;32mI (10831) General: Raw coordinates: 5529.61313N, 00927.94744E[0m
+[0;32mI (10831) General: Decimal degrees: 55.493553, 9.465791 (Fix quality: 1)[0m
+[0;32mI (10831) General: Satellites in use: 05[0m
+[0;32mI (10841) General: Altitude: 15.5 meters[0m
+[0;32mI (10841) General: UTC Time: 193424.00[0m
+[0;32mI (10851) General: Raw coordinates: 5529.61233N, 00927.94515E[0m
+[0;32mI (10851) General: Decimal degrees: 55.493538, 9.465753 (Fix quality: 1)[0m
+[0;32mI (10861) General: Satellites in use: 05[0m
+[0;32mI (10861) General: Altitude: 15.6 meters[0m
+[0;32mI (12871) General: Sent data:   5[0m
+[0;32mI (12871) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (12871) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (12891) General: UTC Time: 193425.00[0m
+[0;32mI (12891) General: Raw coordinates: 5529.61242N, 00927.94582E[0m
+[0;32mI (12891) General: Decimal degrees: 55.493538, 9.465763 (Fix quality: 1)[0m
+[0;32mI (12891) General: Satellites in use: 05[0m
+[0;32mI (12901) General: Altitude: 15.9 meters[0m
+[0;32mI (12901) General: UTC Time: 193426.00[0m
+[0;32mI (12911) General: Raw coordinates: 5529.61229N, 00927.94536E[0m
+[0;32mI (12911) General: Decimal degrees: 55.493538, 9.465756 (Fix quality: 1)[0m
+[0;32mI (12921) General: Satellites in use: 05[0m
+[0;32mI (12921) General: Altitude: 16.0 meters[0m
+[0;32mI (14931) General: Sent data:   6[0m
+[0;32mI (14931) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (14931) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (14951) General: UTC Time: 193427.00[0m
+[0;32mI (14951) General: Raw coordinates: 5529.61206N, 00927.94468E[0m
+[0;32mI (14951) General: Decimal degrees: 55.493530, 9.465745 (Fix quality: 1)[0m
+[0;32mI (14951) General: Satellites in use: 05[0m
+[0;32mI (14961) General: Altitude: 16.3 meters[0m
+[0;32mI (14961) General: UTC Time: 193428.00[0m
+[0;32mI (14971) General: Raw coordinates: 5529.61198N, 00927.94452E[0m
+[0;32mI (14971) General: Decimal degrees: 55.493530, 9.465742 (Fix quality: 1)[0m
+[0;32mI (14981) General: Satellites in use: 05[0m
+[0;32mI (14981) General: Altitude: 16.7 meters[0m
+[0;32mI (16991) General: Sent data:   7[0m
+[0;32mI (16991) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (16991) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (17011) General: UTC Time: 193429.00[0m
+[0;32mI (17011) General: Raw coordinates: 5529.61164N, 00927.94349E[0m
+[0;32mI (17011) General: Decimal degrees: 55.493530, 9.465725 (Fix quality: 1)[0m
+[0;32mI (17011) General: Satellites in use: 05[0m
+[0;32mI (17021) General: Altitude: 17.0 meters[0m
+[0;32mI (17021) General: UTC Time: 193430.00[0m
+[0;32mI (17031) General: Raw coordinates: 5529.61169N, 00927.94350E[0m
+[0;32mI (17031) General: Decimal degrees: 55.493530, 9.465725 (Fix quality: 1)[0m
+[0;32mI (17041) General: Satellites in use: 05[0m
+[0;32mI (17041) General: Altitude: 17.1 meters[0m
+[0;32mI (19051) General: Sent data:   8[0m
+[0;32mI (19051) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (19051) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (19061) General: UTC Time: 193431.00[0m
+[0;32mI (19061) General: Raw coordinates: 5529.61157N, 00927.94317E[0m
+[0;32mI (19061) General: Decimal degrees: 55.493523, 9.465719 (Fix quality: 1)[0m
+[0;32mI (19071) General: Satellites in use: 05[0m
+[0;32mI (19071) General: Altitude: 17.5 meters[0m
+[0;32mI (19081) General: UTC Time: 193432.00[0m
+[0;32mI (19081) General: Raw coordinates: 5529.61176N, 00927.94377E[0m
+[0;32mI (19091) General: Decimal degrees: 55.493530, 9.465730 (Fix quality: 1)[0m
+[0;32mI (19101) General: Satellites in use: 05[0m
+[0;32mI (19101) General: Altitude: 17.6 meters[0m
+[0;32mI (21111) General: Sent data:   9[0m
+[0;32mI (21111) General: UTC Time: 193433.00[0m
+[0;32mI (21111) General: Raw coordinates: 5529.61192N, 00927.94426E[0m
+[0;32mI (21111) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (21121) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (21121) General: Decimal degrees: 55.493530, 9.465738 (Fix quality: 1)[0m
+[0;32mI (21131) General: Satellites in use: 05[0m
+[0;32mI (21131) General: Altitude: 17.8 meters[0m
+[0;32mI (21141) General: UTC Time: 193434.00[0m
+[0;32mI (21141) General: Raw coordinates: 5529.61158N, 00927.94333E[0m
+[0;32mI (21151) General: Decimal degrees: 55.493530, 9.465723 (Fix quality: 1)[0m
+[0;32mI (21161) General: Satellites in use: 05[0m
+[0;32mI (21161) General: Altitude: 18.3 meters[0m
+[0;32mI (23171) General: Sent data:  10[0m
+[0;32mI (23171) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (23171) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (23181) General: UTC Time: 193436.00[0m
+[0;32mI (23181) General: Raw coordinates: 5529.61201N, 00927.94452E[0m
+[0;32mI (23181) General: Decimal degrees: 55.493530, 9.465742 (Fix quality: 1)[0m
+[0;32mI (23191) General: Satellites in use: 05[0m
+[0;32mI (23201) General: Altitude: 18.2 meters[0m
+[0;32mI (23201) General: UTC Time: 193437.00[0m
+[0;32mI (23211) General: Raw coordinates: 5529.61207N, 00927.94454E[0m
+[0;32mI (23211) General: Decimal degrees: 55.493538, 9.465742 (Fix quality: 1)[0m
+[0;32mI (23221) General: Satellites in use: 05[0m
+[0;32mI (23221) General: Altitude: 18 meters[0m
+[0;32mI (25231) General: Sent data:  11[0m
+[0;32mI (25231) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (25231) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (25231) General: UTC Time: 193438.00[0m
+[0;32mI (25241) General: Raw coordinates: 5529.61273N, 00927.94642E[0m
+[0;32mI (25241) General: Decimal degrees: 55.493546, 9.465774 (Fix quality: 1)[0m
+[0;32mI (25251) General: Satellites in use: 05[0m
+[0;32mI (25251) General: Altitude: 17.9 meters[0m
+[0;32mI (25261) General: UTC Time: 193439.00[0m
+[0;32mI (25261) General: Raw coordinates: 5529.61304N, 00927.94732E[0m
+[0;32mI (25271) General: Decimal degrees: 55.493553, 9.465789 (Fix quality: 1)[0m
+[0;32mI (25281) General: Satellites in use: 05[0m
+[0;32mI (25281) General: Altitude: 17.8 meters[0m
+[0;32mI (27291) General: Sent data:  12[0m
+[0;32mI (27291) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (27291) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (27311) General: UTC Time: 193440.00[0m
+[0;32mI (27311) General: Raw coordinates: 5529.61333N, 00927.94816E[0m
+[0;32mI (27311) General: Decimal degrees: 55.493553, 9.465803 (Fix quality: 1)[0m
+[0;32mI (27311) General: Satellites in use: 05[0m
+[0;32mI (27321) General: Altitude: 17.8 meters[0m
+[0;32mI (27321) General: UTC Time: 193441.00[0m
+[0;32mI (27331) General: Raw coordinates: 5529.61401N, 00927.95031E[0m
+[0;32mI (27331) General: Decimal degrees: 55.493565, 9.465838 (Fix quality: 1)[0m
+[0;32mI (27341) General: Satellites in use: 05[0m
+[0;32mI (27341) General: Altitude: 17.6 meters[0m
+[0;32mI (29351) General: Sent data:  13[0m
+[0;32mI (29351) General: UTC Time: 193442.00[0m
+[0;32mI (29351) General: Raw coordinates: 5529.61463N, 00927.95182E[0m
+[0;32mI (29351) General: Decimal degrees: 55.493580, 9.465864 (Fix quality: 1)[0m
+[0;32mI (29351) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (29361) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (29371) General: Satellites in use: 05[0m
+[0;32mI (29371) General: Altitude: 17.0 meters[0m
+[0;32mI (29381) General: UTC Time: 193443.00[0m
+[0;32mI (29381) General: Raw coordinates: 5529.61421N, 00927.95024E[0m
+[0;32mI (29391) General: Decimal degrees: 55.493572, 9.465837 (Fix quality: 1)[0m
+[0;32mI (29401) General: Satellites in use: 05[0m
+[0;32mI (29401) General: Altitude: 16.6 meters[0m
+[0;32mI (31411) General: Sent data:  14[0m
+[0;32mI (31411) General: UTC Time: 193444.00[0m
+[0;32mI (31411) General: Raw coordinates: 5529.61469N, 00927.95125E[0m
+[0;32mI (31411) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (31421) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (31421) General: Decimal degrees: 55.493580, 9.465854 (Fix quality: 1)[0m
+[0;32mI (31431) General: Satellites in use: 05[0m
+[0;32mI (31431) General: Altitude: 15.9 meters[0m
+[0;32mI (31441) General: UTC Time: 193445.00[0m
+[0;32mI (31441) General: Raw coordinates: 5529.61483N, 00927.95150E[0m
+[0;32mI (31451) General: Decimal degrees: 55.493580, 9.465858 (Fix quality: 1)[0m
+[0;32mI (31461) General: Satellites in use: 05[0m
+[0;32mI (31461) General: Altitude: 15.8 meters[0m
+[0;32mI (33471) General: Sent data:  15[0m
+[0;32mI (33471) General: UTC Time: 193446.00[0m
+[0;32mI (33471) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (33471) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (33481) General: Raw coordinates: 5529.61500N, 00927.95197E[0m
+[0;32mI (33481) General: Decimal degrees: 55.493587, 9.465866 (Fix quality: 1)[0m
+[0;32mI (33491) General: Satellites in use: 05[0m
+[0;32mI (33491) General: Altitude: 15.7 meters[0m
+[0;32mI (33501) General: UTC Time: 193447.00[0m
+[0;32mI (33501) General: Raw coordinates: 5529.61529N, 00927.95277E[0m
+[0;32mI (33511) General: Decimal degrees: 55.493587, 9.465879 (Fix quality: 1)[0m
+[0;32mI (33521) General: Satellites in use: 05[0m
+[0;32mI (33521) General: Altitude: 15.6 meters[0m
+[0;32mI (35531) General: Sent data:  16[0m
+[0;32mI (35531) General: UTC Time: 193448.00[0m
+[0;32mI (35531) General: Raw coordinates: 5529.61591N, 00927.95464E[0m
+[0;32mI (35531) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (35541) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (35541) General: Decimal degrees: 55.493595, 9.465911 (Fix quality: 1)[0m
+[0;32mI (35551) General: Satellites in use: 05[0m
+[0;32mI (35551) General: Altitude: 15.3 meters[0m
+[0;32mI (35561) General: UTC Time: 193449.00[0m
+[0;32mI (35561) General: Raw coordinates: 5529.61612N, 00927.95510E[0m
+[0;32mI (35571) General: Decimal degrees: 55.493603, 9.465918 (Fix quality: 1)[0m
+[0;32mI (35581) General: Satellites in use: 05[0m
+[0;32mI (35581) General: Altitude: 15.0 meters[0m
+[0;32mI (37591) General: Sent data:  17[0m
+[0;32mI (37591) General: UTC Time: 193450.00[0m
+[0;32mI (37591) General: Raw coordinates: 5529.61569N, 00927.95338E[0m
+[0;32mI (37591) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (37601) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (37601) General: Decimal degrees: 55.493595, 9.465890 (Fix quality: 1)[0m
+[0;32mI (37611) General: Satellites in use: 05[0m
+[0;32mI (37611) General: Altitude: 14.5 meters[0m
+[0;32mI (37621) General: UTC Time: 193451.00[0m
+[0;32mI (37621) General: Raw coordinates: 5529.61619N, 00927.95483E[0m
+[0;32mI (37631) General: Decimal degrees: 55.493603, 9.465914 (Fix quality: 1)[0m
+[0;32mI (37641) General: Satellites in use: 05[0m
+[0;32mI (37641) General: Altitude: 14.3 meters[0m
+[0;32mI (39651) General: Sent data:  18[0m
+[0;32mI (39651) General: UTC Time: 193452.00[0m
+[0;32mI (39651) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (39651) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (39661) General: Raw coordinates: 5529.61654N, 00927.95577E[0m
+[0;32mI (39661) General: Decimal degrees: 55.493610, 9.465929 (Fix quality: 1)[0m
+[0;32mI (39671) General: Satellites in use: 05[0m
+[0;32mI (39671) General: Altitude: 13.9 meters[0m
+[0;32mI (39681) General: UTC Time: 193453.00[0m
+[0;32mI (39681) General: Raw coordinates: 5529.61628N, 00927.95468E[0m
+[0;32mI (39691) General: Decimal degrees: 55.493603, 9.465911 (Fix quality: 1)[0m
+[0;32mI (39701) General: Satellites in use: 05[0m
+[0;32mI (39701) General: Altitude: 13.5 meters[0m
+[0;32mI (41711) General: Sent data:  19[0m
+[0;32mI (41711) General: UTC Time: 193454.00[0m
+[0;32mI (41711) General: Raw coordinates: 5529.61626N, 00927.95439E[0m
+[0;32mI (41711) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (41721) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (41721) General: Decimal degrees: 55.493603, 9.465907 (Fix quality: 1)[0m
+[0;32mI (41731) General: Satellites in use: 05[0m
+[0;32mI (41731) General: Altitude: 13.2 meters[0m
+[0;32mI (41741) General: UTC Time: 193455.00[0m
+[0;32mI (41741) General: Raw coordinates: 5529.61616N, 00927.95396E[0m
+[0;32mI (41751) General: Decimal degrees: 55.493603, 9.465899 (Fix quality: 1)[0m
+[0;32mI (41761) General: Satellites in use: 05[0m
+[0;32mI (41761) General: Altitude: 13.0 meters[0m
+[0;32mI (43771) General: Sent data:  20[0m
+[0;32mI (43771) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (43771) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (43791) General: UTC Time: 193456.00[0m
+[0;32mI (43791) General: Raw coordinates: 5529.61587N, 00927.95292E[0m
+[0;32mI (43791) General: Decimal degrees: 55.493595, 9.465882 (Fix quality: 1)[0m
+[0;32mI (43791) General: Satellites in use: 05[0m
+[0;32mI (43801) General: Altitude: 12.8 meters[0m
+[0;32mI (43801) General: UTC Time: 193457.00[0m
+[0;32mI (43811) General: Raw coordinates: 5529.61587N, 00927.95276E[0m
+[0;32mI (43811) General: Decimal degrees: 55.493595, 9.465879 (Fix quality: 1)[0m
+[0;32mI (43821) General: Satellites in use: 05[0m
+[0;32mI (43821) General: Altitude: 12.4 meters[0m
+[0;32mI (45831) General: Sent data:  21[0m
+[0;32mI (45831) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (45831) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (45851) General: UTC Time: 193458.00[0m
+[0;32mI (45851) General: Raw coordinates: 5529.61528N, 00927.95080E[0m
+[0;32mI (45851) General: Decimal degrees: 55.493587, 9.465847 (Fix quality: 1)[0m
+[0;32mI (45851) General: Satellites in use: 05[0m
+[0;32mI (45861) General: Altitude: 12.2 meters[0m
+[0;32mI (45861) General: UTC Time: 193459.00[0m
+[0;32mI (45871) General: Raw coordinates: 5529.61537N, 00927.95120E[0m
+[0;32mI (45871) General: Decimal degrees: 55.493587, 9.465853 (Fix quality: 1)[0m
+[0;32mI (45881) General: Satellites in use: 05[0m
+[0;32mI (45881) General: Altitude: 12.3 meters[0m
+[0;32mI (47891) General: Sent data:  22[0m
+[0;32mI (47891) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (47891) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (47911) General: UTC Time: 193500.00[0m
+[0;32mI (47911) General: Raw coordinates: 5529.61512N, 00927.95042E[0m
+[0;32mI (47911) General: Decimal degrees: 55.493587, 9.465840 (Fix quality: 1)[0m
+[0;32mI (47911) General: Satellites in use: 05[0m
+[0;32mI (47921) General: Altitude: 12.3 meters[0m
+[0;32mI (47921) General: UTC Time: 193501.00[0m
+[0;32mI (47931) General: Raw coordinates: 5529.61549N, 00927.95148E[0m
+[0;32mI (47931) General: Decimal degrees: 55.493595, 9.465858 (Fix quality: 1)[0m
+[0;32mI (47941) General: Satellites in use: 05[0m
+[0;32mI (47941) General: Altitude: 12.1 meters[0m
+[0;32mI (49951) General: Sent data:  23[0m
+[0;32mI (49951) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (49951) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (49971) General: UTC Time: 193502.00[0m
+[0;32mI (49971) General: Raw coordinates: 5529.61673N, 00927.95506E[0m
+[0;32mI (49971) General: Decimal degrees: 55.493610, 9.465918 (Fix quality: 1)[0m
+[0;32mI (49971) General: Satellites in use: 05[0m
+[0;32mI (49981) General: Altitude: 11.5 meters[0m
+[0;32mI (49981) General: UTC Time: 193503.00[0m
+[0;32mI (49991) General: Raw coordinates: 5529.61827N, 00927.95889E[0m
+[0;32mI (49991) General: Decimal degrees: 55.493637, 9.465981 (Fix quality: 1)[0m
+[0;32mI (50001) General: Satellites in use: 05[0m
+[0;32mI (50001) General: Altitude: 9.8 meters[0m
+[0;32mI (52011) General: Sent data:  24[0m
+[0;32mI (52011) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (52011) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (52031) General: UTC Time: 193504.00[0m
+[0;32mI (52031) General: Raw coordinates: 5529.61975N, 00927.96240E[0m
+[0;32mI (52031) General: Decimal degrees: 55.493660, 9.466040 (Fix quality: 1)[0m
+[0;32mI (52031) General: Satellites in use: 05[0m
+[0;32mI (52041) General: Altitude: 8.3 meters[0m
+[0;32mI (52041) General: UTC Time: 193505.00[0m
+[0;32mI (52051) General: Raw coordinates: 5529.62126N, 00927.96652E[0m
+[0;32mI (52051) General: Decimal degrees: 55.493687, 9.466108 (Fix quality: 1)[0m
+[0;32mI (52061) General: Satellites in use: 05[0m
+[0;32mI (52061) General: Altitude: 6.8 meters[0m
+[0;32mI (54071) General: Sent data:  25[0m
+[0;32mI (54071) General: UTC Time: 193506.00[0m
+[0;32mI (54071) General: Raw coordinates: 5529.62118N, 00927.96594E[0m
+[0;32mI (54071) General: Decimal degrees: 55.493687, 9.466099 (Fix quality: 1)[0m
+[0;32mI (54071) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (54081) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (54091) General: Satellites in use: 05[0m
+[0;32mI (54091) General: Altitude: 6.4 meters[0m
+[0;32mI (54101) General: UTC Time: 193507.00[0m
+[0;32mI (54101) General: Raw coordinates: 5529.62108N, 00927.96527E[0m
+[0;32mI (54111) General: Decimal degrees: 55.493687, 9.466088 (Fix quality: 1)[0m
+[0;32mI (54121) General: Satellites in use: 04[0m
+[0;32mI (54121) General: Altitude: 5.9 meters[0m
+[0;32mI (56131) General: Sent data:  26[0m
+[0;32mI (56131) General: UTC Time: 193508.00[0m
+[0;32mI (56131) General: Raw coordinates: 5529.62093N, 00927.96462E[0m
+[0;32mI (56131) General: Decimal degrees: 55.493687, 9.466077 (Fix quality: 1)[0m
+[0;32mI (56131) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (56141) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (56151) General: Satellites in use: 04[0m
+[0;32mI (56151) General: Altitude: 5.7 meters[0m
+[0;32mI (56161) General: UTC Time: 193509.00[0m
+[0;32mI (56161) General: Raw coordinates: 5529.62076N, 00927.96390E[0m
+[0;32mI (56171) General: Decimal degrees: 55.493675, 9.466065 (Fix quality: 1)[0m
+[0;32mI (56181) General: Satellites in use: 04[0m
+[0;32mI (56181) General: Altitude: 5.5 meters[0m
+[0;32mI (58191) General: Sent data:  27[0m
+[0;32mI (58191) General: UTC Time: 193510.00[0m
+[0;32mI (58191) General: Raw coordinates: 5529.62017N, 00927.96189E[0m
+[0;32mI (58191) General: Decimal degrees: 55.493668, 9.466032 (Fix quality: 1)[0m
+[0;32mI (58191) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (58201) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (58211) General: Satellites in use: 04[0m
+[0;32mI (58211) General: Altitude: 5.2 meters[0m
+[0;32mI (58221) General: UTC Time: 193511.00[0m
+[0;32mI (58221) General: Raw coordinates: 5529.61998N, 00927.96113E[0m
+[0;32mI (58231) General: Decimal degrees: 55.493668, 9.466019 (Fix quality: 1)[0m
+[0;32mI (58241) General: Satellites in use: 04[0m
+[0;32mI (58241) General: Altitude: 5.0 meters[0m
+[0;32mI (58251) General: UTC Time: 193512.00[0m
+[0;32mI (58251) General: No valid position fix obtained[0m
+[0;32mI (60261) General: Sent data:  28[0m
+[0;32mI (60261) General: UTC Time: 193513.00[0m
+[0;32mI (60261) General: Raw coordinates: 5529.61914N, 00927.95832E[0m
+[0;32mI (60261) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (60271) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (60271) General: Decimal degrees: 55.493652, 9.465972 (Fix quality: 1)[0m
+[0;32mI (60281) General: Satellites in use: 05[0m
+[0;32mI (60281) General: Altitude: 4.5 meters[0m
+[0;32mI (60291) General: UTC Time: 193514.00[0m
+[0;32mI (60291) General: Raw coordinates: 5529.61919N, 00927.95838E[0m
+[0;32mI (60301) General: Decimal degrees: 55.493652, 9.465973 (Fix quality: 1)[0m
+[0;32mI (60311) General: Satellites in use: 05[0m
+[0;32mI (60311) General: Altitude: 4.2 meters[0m
+[0;32mI (62321) General: Sent data:  29[0m
+[0;32mI (62321) General: UTC Time: 193515.00[0m
+[0;32mI (62321) General: Raw coordinates: 5529.61922N, 00927.95837E[0m
+[0;32mI (62321) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (62331) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (62331) General: Decimal degrees: 55.493652, 9.465973 (Fix quality: 1)[0m
+[0;32mI (62341) General: Satellites in use: 05[0m
+[0;32mI (62341) General: Altitude: 3.9 meters[0m
+[0;32mI (62351) General: UTC Time: 193516.00[0m
+[0;32mI (62351) General: Raw coordinates: 5529.61872N, 00927.95686E[0m
+[0;32mI (62361) General: Decimal degrees: 55.493645, 9.465947 (Fix quality: 1)[0m
+[0;32mI (62371) General: Satellites in use: 05[0m
+[0;32mI (62371) General: Altitude: 3.9 meters[0m
+[0;32mI (64381) General: Sent data:  30[0m
+[0;32mI (64381) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (64381) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (64381) General: UTC Time: 193517.00[0m
+[0;32mI (64391) General: Raw coordinates: 5529.61822N, 00927.95515E[0m
+[0;32mI (64391) General: Decimal degrees: 55.493637, 9.465919 (Fix quality: 1)[0m
+[0;32mI (64401) General: Satellites in use: 05[0m
+[0;32mI (64401) General: Altitude: 3.8 meters[0m
+[0;32mI (64411) General: UTC Time: 193518.00[0m
+[0;32mI (64411) General: Raw coordinates: 5529.61825N, 00927.95505E[0m
+[0;32mI (64421) General: Decimal degrees: 55.493637, 9.465918 (Fix quality: 1)[0m
+[0;32mI (64431) General: Satellites in use: 05[0m
+[0;32mI (64431) General: Altitude: 3.5 meters[0m
+[0;32mI (66441) General: Sent data:  31[0m
+[0;32mI (66441) General: UTC Time: 193519.00[0m
+[0;32mI (66441) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (66441) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (66451) General: Raw coordinates: 5529.61848N, 00927.95569E[0m
+[0;32mI (66451) General: Decimal degrees: 55.493645, 9.465928 (Fix quality: 1)[0m
+[0;32mI (66461) General: Satellites in use: 05[0m
+[0;32mI (66461) General: Altitude: 3.3 meters[0m
+[0;32mI (66471) General: UTC Time: 193520.00[0m
+[0;32mI (66471) General: Raw coordinates: 5529.61850N, 00927.95539E[0m
+[0;32mI (66481) General: Decimal degrees: 55.493645, 9.465923 (Fix quality: 1)[0m
+[0;32mI (66491) General: Satellites in use: 05[0m
+[0;32mI (66491) General: Altitude: 2.7 meters[0m
+[0;32mI (68501) General: Sent data:  32[0m
+[0;32mI (68501) General: UTC Time: 193521.00[0m
+[0;32mI (68501) General: Raw coordinates: 5529.61845N, 00927.95523E[0m
+[0;32mI (68501) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (68511) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (68511) General: Decimal degrees: 55.493645, 9.465920 (Fix quality: 1)[0m
+[0;32mI (68521) General: Satellites in use: 04[0m
+[0;32mI (68521) General: Altitude: 2.7 meters[0m
+[0;32mI (68531) General: UTC Time: 193522.00[0m
+[0;32mI (68531) General: Raw coordinates: 5529.61822N, 00927.95435E[0m
+[0;32mI (68541) General: Decimal degrees: 55.493637, 9.465906 (Fix quality: 1)[0m
+[0;32mI (68551) General: Satellites in use: 04[0m
+[0;32mI (68551) General: Altitude: 2.5 meters[0m
+[0;32mI (70561) General: Sent data:  33[0m
+[0;32mI (70561) General: UTC Time: 193523.00[0m
+[0;32mI (70561) General: Raw coordinates: 5529.61815N, 00927.95402E[0m
+[0;32mI (70561) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (70571) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (70571) General: Decimal degrees: 55.493637, 9.465900 (Fix quality: 1)[0m
+[0;32mI (70581) General: Satellites in use: 04[0m
+[0;32mI (70581) General: Altitude: 2.5 meters[0m
+[0;32mI (70591) General: UTC Time: 193524.00[0m
+[0;32mI (70591) General: Raw coordinates: 5529.61810N, 00927.95380E[0m
+[0;32mI (70601) General: Decimal degrees: 55.493637, 9.465897 (Fix quality: 1)[0m
+[0;32mI (70611) General: Satellites in use: 04[0m
+[0;32mI (70611) General: Altitude: 2.5 meters[0m
+[0;32mI (72621) General: Sent data:  34[0m
+[0;32mI (72621) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (72621) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (72641) General: UTC Time: 193525.00[0m
+[0;32mI (72641) General: Raw coordinates: 5529.61797N, 00927.95325E[0m
+[0;32mI (72641) General: Decimal degrees: 55.493637, 9.465887 (Fix quality: 1)[0m
+[0;32mI (72641) General: Satellites in use: 04[0m
+[0;32mI (72651) General: Altitude: 2.4 meters[0m
+[0;32mI (72651) General: UTC Time: 193526.00[0m
+[0;32mI (72661) General: Raw coordinates: 5529.61805N, 00927.95324E[0m
+[0;32mI (72661) General: Decimal degrees: 55.493637, 9.465887 (Fix quality: 1)[0m
+[0;32mI (72671) General: Satellites in use: 05[0m
+[0;32mI (72671) General: Altitude: 2.0 meters[0m
+[0;32mI (74681) General: Sent data:  35[0m
+[0;32mI (74681) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (74681) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (74701) General: UTC Time: 193527.00[0m
+[0;32mI (74701) General: Raw coordinates: 5529.61813N, 00927.95341E[0m
+[0;32mI (74701) General: Decimal degrees: 55.493637, 9.465891 (Fix quality: 1)[0m
+[0;32mI (74701) General: Satellites in use: 05[0m
+[0;32mI (74711) General: Altitude: 1.9 meters[0m
+[0;32mI (74711) General: UTC Time: 193528.00[0m
+[0;32mI (74721) General: Raw coordinates: 5529.61799N, 00927.95297E[0m
+[0;32mI (74721) General: Decimal degrees: 55.493637, 9.465882 (Fix quality: 1)[0m
+[0;32mI (74731) General: Satellites in use: 05[0m
+[0;32mI (74731) General: Altitude: 2.0 meters[0m
+[0;32mI (76741) General: Sent data:  36[0m
+[0;32mI (76741) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (76741) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (76761) General: UTC Time: 193529.00[0m
+[0;32mI (76761) General: Raw coordinates: 5529.61785N, 00927.95263E[0m
+[0;32mI (76761) General: Decimal degrees: 55.493629, 9.465878 (Fix quality: 1)[0m
+[0;32mI (76761) General: Satellites in use: 05[0m
+[0;32mI (76771) General: Altitude: 2.2 meters[0m
+[0;32mI (76771) General: UTC Time: 193530.00[0m
+[0;32mI (76781) General: Raw coordinates: 5529.61769N, 00927.95227E[0m
+[0;32mI (76781) General: Decimal degrees: 55.493629, 9.465871 (Fix quality: 1)[0m
+[0;32mI (76791) General: Satellites in use: 05[0m
+[0;32mI (76791) General: Altitude: 2.4 meters[0m
+[0;32mI (78801) General: Sent data:  37[0m
+[0;32mI (78801) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (78801) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (78821) General: UTC Time: 193531.00[0m
+[0;32mI (78821) General: Raw coordinates: 5529.61766N, 00927.95243E[0m
+[0;32mI (78821) General: Decimal degrees: 55.493629, 9.465875 (Fix quality: 1)[0m
+[0;32mI (78821) General: Satellites in use: 04[0m
+[0;32mI (78831) General: Altitude: 2.8 meters[0m
+[0;32mI (78831) General: UTC Time: 193532.00[0m
+[0;32mI (78841) General: Raw coordinates: 5529.61761N, 00927.95249E[0m
+[0;32mI (78841) General: Decimal degrees: 55.493629, 9.465876 (Fix quality: 1)[0m
+[0;32mI (78851) General: Satellites in use: 05[0m
+[0;32mI (78851) General: Altitude: 3.1 meters[0m
+[0;32mI (80861) General: Sent data:  38[0m
+[0;32mI (80861) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (80861) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (80881) General: UTC Time: 193533.00[0m
+[0;32mI (80881) General: Raw coordinates: 5529.61759N, 00927.95262E[0m
+[0;32mI (80881) General: Decimal degrees: 55.493629, 9.465878 (Fix quality: 1)[0m
+[0;32mI (80881) General: Satellites in use: 05[0m
+[0;32mI (80891) General: Altitude: 3.4 meters[0m
+[0;32mI (80891) General: UTC Time: 193534.00[0m
+[0;32mI (80901) General: Raw coordinates: 5529.61752N, 00927.95249E[0m
+[0;32mI (80901) General: Decimal degrees: 55.493629, 9.465876 (Fix quality: 1)[0m
+[0;32mI (80911) General: Satellites in use: 04[0m
+[0;32mI (80911) General: Altitude: 3.7 meters[0m
+[0;32mI (82921) General: Sent data:  39[0m
+[0;32mI (82931) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (82931) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (82941) General: UTC Time: 193535.00[0m
+[0;32mI (82941) General: Raw coordinates: 5529.61742N, 00927.95224E[0m
+[0;32mI (82951) General: Decimal degrees: 55.493618, 9.465871 (Fix quality: 1)[0m
+[0;32mI (82951) General: Satellites in use: 05[0m
+[0;32mI (82961) General: Altitude: 3.8 meters[0m
+[0;32mI (82961) General: UTC Time: 193536.00[0m
+[0;32mI (82971) General: Raw coordinates: 5529.61733N, 00927.95213E[0m
+[0;32mI (82971) General: Decimal degrees: 55.493618, 9.465869 (Fix quality: 1)[0m
+[0;32mI (82981) General: Satellites in use: 05[0m
+[0;32mI (82981) General: Altitude: 4.1 meters[0m
+[0;32mI (84991) General: Sent data:  40[0m
+[0;32mI (84991) General: Sent to MAC Address: FF:FF:FF:FF:FF:FF[0m
+[0;32mI (84991) General: Last Packet Send Status: Delivery Success[0m
+[0;32mI (85011) General: UTC Time: 193537.00[0m
+[0;32mI (85011) General: Raw coordinates: 5529.61690N, 00927.95106E[0m
+[0;32mI (85011) General: Decimal degrees: 55.493610, 9.465851 (Fix quality: 1)[0m
+[0;32mI (85011) General: Satellites in use: 05[0m
+[0;32mI (85021) General: Altitude: 4.6 meters[0m
+[0;32mI (85021) General: UTC Time: 193538.00[0m
+[0;32mI (85031) General: Raw coordinates: 5529.61679N, 00927.95088E[0m
+[0;32mI (85031) General: Decimal degrees: 55.493610, 9.465848 (Fix quality: 1)[0m
+[0;32mI (85041) General: Satellites in use: 05[0m
+[0;32mI (85041) General: Altitude: 4.9 meters[0m

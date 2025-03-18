@@ -1,0 +1,197 @@
+[0;32mI (95) boot:  5 storage          Unknown data     01 82 0e all GPIO pins ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (88) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (95) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (107) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107f8h ( 67576) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=00030820 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031e18 vaddr=40380000 size=0e200h ( 57856) load[0m
+[0;32mI (143) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=33250h (209488) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073278 vaddr=4038e200 size=00398h (   920) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (208) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  abcbd9da2...[0m
+[0;32mI (231) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (245) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (250) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (293) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (299) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (746) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (746) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2766) main: Does not recognize the module[0m
+[0;31mE (2766) General: Lora module not recognized[0m
+[0;32mI (2776) main_task: Returned from app_main()[0m
+[0;32mI (1784) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1994) General: Internal temperature: 28.00[0m
+[0;32mI (2004) main_task: Returned from app_main()[0m
+[0;32mI (2254) lora_task: 31 byte packet sent...[0m
+[0;32mI (3494) display_task: Received packet length: 31[0m
+[0;32mI (3494) display_task: 3 byte packet received:[374][0m
+[0;32mI (4514) lora_task: 31 byte packet sent...[0m
+[0;32mI (6004) display_task: Received packet length: 31[0m
+[0;32mI (6004) display_task: 3 byte packet received:[375][0m
+[0;32mI (6774) lora_task: 31 byte packet sent...[0m
+[0;32mI (8014) display_task: Received packet length: 31[0m
+[0;32mI (8014) display_task: 3 byte packet received:[376][0m
+[0;32mI (9034) lora_task: 31 byte packet sent...[0m
+[0;32mI (10524) display_task: Received packet length: 31[0m
+[0;32mI (10524) display_task: 3 byte packet received:[377][0m
+[0;32mI (11294) lora_task: 31 byte packet sent...[0m
+[0;32mI (12534) display_task: Received packet length: 31[0m
+[0;32mI (12534) display_task: 3 byte packet received:[378][0m
+[0;32mI (13554) lora_task: 31 byte packet sent...[0m
+[0;32mI (15044) display_task: Received packet length: 31[0m
+[0;32mI (15044) display_task: 3 byte packet received:[379][0m
+[0;32mI (15814) lora_task: 31 byte packet sent...[0m
+[0;32mI (17054) display_task: Received packet length: 31[0m
+[0;32mI (17054) display_task: 3 byte packet received:[380][0m
+[0;32mI (18074) lora_task: 31 byte packet sent...[0m
+[0;32mI (19564) display_task: Received packet length: 31[0m
+[0;32mI (19564) display_task: 3 byte packet received:[381][0m
+[0;32mI (20334) lora_task: 31 byte packet sent...[0m
+[0;32mI (21574) display_task: Received packet length: 31[0m
+[0;32mI (21574) display_task: 3 byte packet received:[382][0m
+[0;32mI (22594) lora_task: 31 byte packet sent...[0m
+[0;32mI (24084) display_task: Received packet length: 31[0m
+[0;32mI (24084) display_task: 3 byte packet received:[383][0m
+[0;32mI (24854) lora_task: 31 byte packet sent...[0m
+[0;32mI (26094) display_task: Received packet length: 31[0m
+[0;32mI (26094) display_task: 3 byte packet received:[384][0m
+[0;32mI (27114) lora_task: 31 byte packet sent...[0m
+[0;32mI (28604) display_task: Received packet length: 31[0m
+[0;32mI (28604) display_task: 3 byte packet received:[385][0m
+[0;32mI (29374) lora_task: 31 byte packet sent...[0m
+[0;32mI (30614) display_task: Received packet length: 31[0m
+[0;32mI (30614) display_task: 3 byte packet received:[386][0m
+[0;32mI (31634) lora_task: 31 byte packet sent...[0m
+[0;32mI (33124) display_task: Received packet length: 31[0m
+[0;32mI (33124) display_task: 3 byte packet received:[387][0m
+[0;32mI (33894) lora_task: 31 byte packet sent...[0m
+[0;32mI (35134) display_task: Received packet length: 31[0m
+[0;32mI (35134) display_task: 3 byte packet received:[388][0m
+[0;32mI (36154) lora_task: 31 byte packet sent...[0m
+[0;32mI (37644) display_task: Received packet length: 31[0m
+[0;32mI (37644) display_task: 3 byte packet received:[389][0m
+[0;32mI (38414) lora_task: 31 byte packet sent...[0m
+[0;32mI (39654) display_task: Received packet length: 31[0m
+[0;32mI (39654) display_task: 3 byte packet received:[390][0m
+[0;32mI (40674) lora_task: 31 byte packet sent...[0m
+[0;32mI (42164) display_task: Received packet length: 31[0m
+[0;32mI (42164) display_task: 3 byte packet received:[391][0m
+[0;32mI (42934) lora_task: 31 byte packet sent...[0m
+[0;32mI (44674) display_task: Received packet length: 31[0m
+[0;32mI (44674) display_task: 3 byte packet received:[392][0m
+[0;32mI (45194) lora_task: 31 byte packet sent...[0m
+[0;32mI (46684) display_task: Received packet length: 31[0m
+[0;32mI (46684) display_task: 3 byte packet received:[393][0m
+[0;32mI (47454) lora_task: 31 byte packet sent...[0m
+[0;32mI (49194) display_task: Received packet length: 31[0m
+[0;32mI (49194) display_task: 3 byte packet received:[394][0m
+[0;32mI (49714) lora_task: 31 byte packet sent...[0m
+[0;32mI (51204) display_task: Received packet length: 31[0m
+[0;32mI (51204) display_task: 3 byte packet received:[395][0m
+[0;32mI (51974) lora_task: 31 byte packet sent...[0m
+[0;32mI (53714) display_task: Received packet length: 31[0m
+[0;32mI (53714) display_task: 3 byte packet received:[396][0m
+[0;32mI (54234) lora_task: 31 byte packet sent...[0m
+[0;32mI (55724) display_task: Received packet length: 31[0m
+[0;32mI (55724) display_task: 3 byte packet received:[397][0m
+[0;32mI (56494) lora_task: 31 byte packet sent...[0m
+[0;32mI (58234) display_task: Received packet length: 31[0m
+[0;32mI (58234) display_task: 3 byte packet received:[398][0m
+[0;32mI (58754) lora_task: 31 byte packet sent...[0m
+[0;32mI (60244) display_task: Received packet length: 31[0m
+[0;32mI (60244) display_task: 3 byte packet received:[399][0m
+[0;32mI (61014) lora_task: 31 byte packet sent...[0m
+[0;32mI (62754) display_task: Received packet length: 31[0m
+[0;32mI (62754) display_task: 3 byte packet received:[400][0m
+[0;32mI (63274) lora_task: 31 byte packet sent...[0m
+[0;32mI (64764) display_task: Received packet length: 31[0m
+[0;32mI (64764) display_task: 3 byte packet received:[401][0m
+[0;32mI (65534) lora_task: 31 byte packet sent...[0m
+[0;32mI (67274) display_task: Received packet length: 31[0m
+[0;32mI (67274) display_task: 3 byte packet received:[402][0m
+[0;32mI (67794) lora_task: 31 byte packet sent...[0m
+[0;32mI (69284) display_task: Received packet length: 31[0m
+[0;32mI (69284) display_task: 3 byte packet received:[403][0m
+[0;32mI (70054) lora_task: 31 byte packet sent...[0m
+[0;32mI (71794) display_task: Received packet length: 31[0m
+[0;32mI (71794) display_task: 3 byte packet received:[404][0m
+[0;32mI (72314) lora_task: 31 byte packet sent...[0m
+[0;32mI (73804) display_task: Received packet length: 31[0m
+[0;32mI (73804) display_task: 3 byte packet received:[405][0m
+[0;32mI (74574) lora_task: 31 byte packet sent...[0m
+[0;32mI (76314) display_task: Received packet length: 31[0m
+[0;32mI (76314) display_task: 3 byte packet received:[406][0m
+[0;32mI (76834) lora_task: 31 byte packet sent...[0m
+[0;32mI (78324) display_task: Received packet length: 31[0m
+[0;32mI (78324) display_task: 3 byte packet received:[407][0m
+[0;32mI (79094) lora_task: 31 byte packet sent...[0m
+[0;32mI (80834) display_task: Received packet length: 31[0m
+[0;32mI (80834) display_task: 3 byte packet received:[408][0m
+[0;32mI (81354) lora_task: 31 byte packet sent...[0m
+[0;32mI (82844) display_task: Received packet length: 31[0m
+[0;32mI (82844) display_task: 3 byte packet received:[409][0m
+[0;32mI (83614) lora_task: 31 byte packet sent...[0m
+[0;32mI (85354) display_task: Received packet length: 31[0m
+[0;32mI (85354) display_task: 3 byte packet received:[410][0m
+[0;32mI (85874) lora_task: 31 byte packet sent...[0m
+[0;32mI (87364) display_task: Received packet length: 31[0m
+[0;32mI (87364) display_task: 3 byte packet received:[411][0m
+[0;32mI (88134) lora_task: 31 byte packet sent...[0m
+[0;32mI (89874) display_task: Received packet length: 31[0m
+[0;32mI (89874) display_task: 3 byte packet received:[412][0m
+[0;32mI (90394) lora_task: 31 byte packet sent...[0m
+[0;32mI (91884) display_task: Received packet length: 31[0m
+[0;32mI (91884) display_task: 3 byte packet received:[413][0m
+[0;32mI (92654) lora_task: 31 byte packet sent...[0m
+[0;32mI (94394) display_task: Received packet length: 31[0m
+[0;32mI (94394) display_task: 3 byte packet received:[414][0m
+[0;32mI (94914) lora_task: 31 byte packet sent...[0m
+[0;32mI (96404) display_task: Received packet length: 31[0m
+[0;32mI (96404) display_task: 3 byte packet received:[415][0m
+[0;32mI (97174) lora_task: 31 byte packet sent...[0m
+[0;32mI (98914) display_task: Received packet length: 31[0m
+[0;32mI (98914) display_task: 3 byte packet received:[416][0m
+[0;32mI (99434) lora_task: 31 byte packet sent...[0m

@@ -1,0 +1,127 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x420061b0
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (88) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (95) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (107) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107b0h ( 67504) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=000307d8 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031dd0 vaddr=40380000 size=0e248h ( 57928) load[0m
+[0;32mI (143) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=331e0h (209376) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073208 vaddr=4038e248 size=00350h (   848) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (208) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  37a7fcd0c...[0m
+[0;32mI (231) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (245) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (250) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (293) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (299) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) main: Frequency is 433MHz[0m
+[0;32mI (346) main: coding_rate=1[0m
+[0;32mI (346) main: bandwidth=7[0m
+[0;32mI (346) main: spreading_factor=9[0m
+[0;32mI (1346) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1756) General: Internal temperature: 27.50[0m
+[0;32mI (1756) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1756) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2176) lora_task: Received packet length: 31[0m
+[0;32mI (2176) lora_task: 3 byte packet received:[ 76][0m
+[0;32mI (2216) main_task: Returned from app_main()[0m
+[0;32mI (2456) lora_task: 31 byte packet sent...[0m
+[0;32mI (4456) lora_task: Received packet length: 31[0m
+[0;32mI (4456) lora_task: 3 byte packet received:[ 77][0m
+[0;32mI (4726) lora_task: 31 byte packet sent...[0m
+[0;32mI (6726) lora_task: Received packet length: 31[0m
+[0;32mI (6726) lora_task: 3 byte packet received:[ 78][0m
+[0;32mI (6996) lora_task: 31 byte packet sent...[0m
+[0;32mI (8996) lora_task: Received packet length: 31[0m
+[0;32mI (8996) lora_task: 3 byte packet received:[ 79][0m
+[0;32mI (9266) lora_task: 31 byte packet sent...[0m
+[0;32mI (11266) lora_task: Received packet length: 31[0m
+[0;32mI (11266) lora_task: 3 byte packet received:[ 80][0m
+[0;32mI (11536) lora_task: 31 byte packet sent...[0m
+[0;32mI (13536) lora_task: Received packet length: 31[0m
+[0;32mI (13536) lora_task: 3 byte packet received:[ 81][0m
+[0;32mI (13806) lora_task: 31 byte packet sent...[0m
+[0;32mI (15806) lora_task: Received packet length: 31[0m
+[0;32mI (15806) lora_task: 3 byte packet received:[ 82][0m
+[0;32mI (16076) lora_task: 31 byte packet sent...[0m
+[0;32mI (18076) lora_task: Received packet length: 31[0m
+[0;32mI (18076) lora_task: 3 byte packet received:[ 83][0m
+[0;32mI (18346) lora_task: 31 byte packet sent...[0m
+[0;32mI (20346) lora_task: Received packet length: 31[0m
+[0;32mI (20346) lora_task: 3 byte packet received:[ 84][0m
+[0;32mI (323) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (333) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (333) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (353) main: Frequency is 433MHz[0m
+[0;32mI (353) main: coding_rate=1[0m
+[0;32mI (353) main: bandwidth=7[0m
+[0;32mI (353) main: spreading_factor=9[0m
+[0;32mI (1353) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1563) General: Internal temperature: 27.50[0m
+[0;32mI (1563) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1563) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1983) lora_task: Received packet length: 31[0m
+[0;32mI (1983) lora_task: 3 byte packet received:[ 85][0m
+[0;32mI (2023) main_task: Returned from app_main()[0m
+[0;32mI (2263) lora_task: 31 byte packet sent...[0m
+[0;32mI (4263) lora_task: Received packet length: 31[0m
+[0;32mI (4263) lora_task: 3 byte packet received:[ 86][0m
+[0;32mI (4533) lora_task: 31 byte packet sent...[0m
+[0;32mI (6533) lora_task: Received packet length: 31[0m
+[0;32mI (6533) lora_task: 3 byte packet received:[ 87][0m
+[0;32mI (6803) lora_task: 31 byte packet sent...[0m
+[0;32mI (8803) lora_task: Received packet length: 31[0m
+[0;32mI (8803) lora_task: 3 byte packet received:[ 88][0m
+[0;32mI (9073) lora_task: 31 byte packet sent...[0m
+[0;32mI (11073) lora_task: Received packet length: 31[0m
+[0;32mI (11073) lora_task: 3 byte packet received:[ 89][0m
+[0;32mI (11343) lora_task: 31 byte packet sent...[0m
+[0;32mI (13343) lora_task: Received packet length: 31[0m
+[0;32mI (13343) lora_task: 3 byte packet received:[ 90][0m
+[0;32mI (13613) lora_task: 31 byte packet sent...[0m
+[0;32mI (15613) lora_task: Received packet length: 31[0m
+[0;32mI (15613) lora_task: 3 byte packet received:[ 91][0m
+[0;32mI (15883) lora_task: 31 byte packet sent...[0m

@@ -1,0 +1,279 @@
+[0;32mI (ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0dc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (88) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (95) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (107) esp_image: segment 0: paddr=00020020 vaddr=3c040020 size=107b0h ( 67504) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=000307d8 vaddr=3fc8e600 size=015f0h (  5616) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00031dd0 vaddr=40380000 size=0e248h ( 57928) load[0m
+[0;32mI (143) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=331f0h (209392) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=00073218 vaddr=4038e248 size=00350h (   848) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (208) app_init: Project name:     VariousStuff[0m
+[0;32mI (213) app_init: App version:      FS1.0-10-ge94c2ea-dirty[0m
+[0;32mI (219) app_init: Compile time:     Mar  2 2025 23:15:03[0m
+[0;32mI (225) app_init: ELF file SHA256:  c7b18edef...[0m
+[0;32mI (231) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (235) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (240) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (245) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (250) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FC910F0 len 0002EF10 (187 KiB): RAM[0m
+[0;32mI (263) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (270) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (277) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (293) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (299) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (306) main_task: Calling app_main()[0m
+[0;32mI (316) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (316) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (346) main: Frequency is 433MHz[0m
+[0;32mI (346) main: coding_rate=1[0m
+[0;32mI (346) main: bandwidth=7[0m
+[0;32mI (346) main: spreading_factor=9[0m
+[0;32mI (1346) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1556) General: Internal temperature: 28.00[0m
+[0;32mI (1556) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1556) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1996) main_task: Returned from app_main()[0m
+[0;32mI (2236) lora_task: 31 byte packet sent...[0m
+[0;32mI (4496) lora_task: 31 byte packet sent...[0m
+[0;32mI (6756) lora_task: 31 byte packet sent...[0m
+[0;32mI (8756) lora_task: Received packet length: 68[0m
+[0;32mI (8756) lora_task: 40 byte packet received:[9C9E6EF03E84-00-0833-0183-0147-3979][0m
+[0;32mI (9026) lora_task: 31 byte packet sent...[0m
+[0;32mI (11286) lora_task: 31 byte packet sent...[0m
+[0;32mI (13546) lora_task: 31 byte packet sent...[0m
+[0;32mI (15806) lora_task: 31 byte packet sent...[0m
+[0;32mI (18066) lora_task: 31 byte packet sent...[0m
+[0;32mI (342) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (342) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (362) main: Frequency is 433MHz[0m
+[0;32mI (362) main: coding_rate=1[0m
+[0;32mI (362) main: bandwidth=7[0m
+[0;32mI (362) main: spreading_factor=9[0m
+[0;32mI (1372) temperature_sensor: Range [-30°C ~ 50°C], error < 2°C[0m
+[0;32mI (1582) General: Internal temperature: 28.00[0m
+[0;32mI (1582) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1582) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2022) main_task: Returned from app_main()[0m
+[0;32mI (2262) lora_task: 31 byte packet sent...[0m
+[0;32mI (4262) lora_task: Received packet length: 31[0m
+[0;32mI (4262) lora_task: 3 byte packet received:[  1][0m
+[0;32mI (4532) lora_task: 31 byte packet sent...[0m
+[0;32mI (6532) lora_task: Received packet length: 31[0m
+[0;32mI (6532) lora_task: 3 byte packet received:[  2][0m
+[0;32mI (6802) lora_task: 31 byte packet sent...[0m
+[0;32mI (8802) lora_task: Received packet length: 31[0m
+[0;32mI (8802) lora_task: 3 byte packet received:[  3][0m
+[0;32mI (9072) lora_task: 31 byte packet sent...[0m
+[0;32mI (11072) lora_task: Received packet length: 31[0m
+[0;32mI (11072) lora_task: 3 byte packet received:[  4][0m
+[0;32mI (11342) lora_task: 31 byte packet sent...[0m
+[0;32mI (13342) lora_task: Received packet length: 31[0m
+[0;32mI (13342) lora_task: 3 byte packet received:[  5][0m
+[0;32mI (13612) lora_task: 31 byte packet sent...[0m
+[0;32mI (15612) lora_task: Received packet length: 31[0m
+[0;32mI (15612) lora_task: 3 byte packet received:[  6][0m
+[0;32mI (15882) lora_task: 31 byte packet sent...[0m
+[0;32mI (17882) lora_task: Received packet length: 31[0m
+[0;32mI (17882) lora_task: 3 byte packet received:[  7][0m
+[0;32mI (18152) lora_task: 31 byte packet sent...[0m
+[0;32mI (20152) lora_task: Received packet length: 31[0m
+[0;32mI (20152) lora_task: 3 byte packet received:[  8][0m
+[0;32mI (20422) lora_task: 31 byte packet sent...[0m
+[0;32mI (22422) lora_task: Received packet length: 31[0m
+[0;32mI (22422) lora_task: 3 byte packet received:[  9][0m
+[0;32mI (22692) lora_task: 31 byte packet sent...[0m
+[0;32mI (24692) lora_task: Received packet length: 31[0m
+[0;32mI (24692) lora_task: 3 byte packet received:[ 10][0m
+[0;32mI (24962) lora_task: 31 byte packet sent...[0m
+[0;32mI (26962) lora_task: Received packet length: 31[0m
+[0;32mI (26962) lora_task: 3 byte packet received:[ 11][0m
+[0;32mI (27232) lora_task: 31 byte packet sent...[0m
+[0;32mI (29232) lora_task: Received packet length: 31[0m
+[0;32mI (29232) lora_task: 3 byte packet received:[ 12][0m
+[0;32mI (29502) lora_task: 31 byte packet sent...[0m
+[0;32mI (31502) lora_task: Received packet length: 31[0m
+[0;32mI (31502) lora_task: 3 byte packet received:[ 13][0m
+[0;32mI (31772) lora_task: 31 byte packet sent...[0m
+[0;32mI (33772) lora_task: Received packet length: 31[0m
+[0;32mI (33772) lora_task: 3 byte packet received:[ 14][0m
+[0;32mI (34042) lora_task: 31 byte packet sent...[0m
+[0;32mI (36042) lora_task: Received packet length: 31[0m
+[0;32mI (36042) lora_task: 3 byte packet received:[ 15][0m
+[0;32mI (36312) lora_task: 31 byte packet sent...[0m
+[0;32mI (38312) lora_task: Received packet length: 31[0m
+[0;32mI (38312) lora_task: 3 byte packet received:[ 16][0m
+[0;32mI (38582) lora_task: 31 byte packet sent...[0m
+[0;32mI (40582) lora_task: Received packet length: 31[0m
+[0;32mI (40582) lora_task: 3 byte packet received:[ 17][0m
+[0;32mI (40852) lora_task: 31 byte packet sent...[0m
+[0;32mI (42852) lora_task: Received packet length: 31[0m
+[0;32mI (42852) lora_task: 3 byte packet received:[ 18][0m
+[0;32mI (43122) lora_task: 31 byte packet sent...[0m
+[0;32mI (45122) lora_task: Received packet length: 31[0m
+[0;32mI (45122) lora_task: 3 byte packet received:[ 19][0m
+[0;32mI (45392) lora_task: 31 byte packet sent...[0m
+[0;32mI (47392) lora_task: Received packet length: 31[0m
+[0;32mI (47392) lora_task: 3 byte packet received:[ 20][0m
+[0;32mI (47662) lora_task: 31 byte packet sent...[0m
+[0;32mI (49662) lora_task: Received packet length: 31[0m
+[0;32mI (49662) lora_task: 3 byte packet received:[ 21][0m
+[0;32mI (49932) lora_task: 31 byte packet sent...[0m
+[0;32mI (51932) lora_task: Received packet length: 31[0m
+[0;32mI (51932) lora_task: 3 byte packet received:[ 22][0m
+[0;32mI (52202) lora_task: 31 byte packet sent...[0m
+[0;32mI (54202) lora_task: Received packet length: 31[0m
+[0;32mI (54202) lora_task: 3 byte packet received:[ 23][0m
+[0;32mI (54472) lora_task: 31 byte packet sent...[0m
+[0;32mI (56472) lora_task: Received packet length: 31[0m
+[0;32mI (56472) lora_task: 3 byte packet received:[ 24][0m
+[0;32mI (56742) lora_task: 31 byte packet sent...[0m
+[0;32mI (58742) lora_task: Received packet length: 31[0m
+[0;32mI (58742) lora_task: 3 byte packet received:[ 25][0m
+[0;32mI (59012) lora_task: 31 byte packet sent...[0m
+[0;32mI (61012) lora_task: Received packet length: 31[0m
+[0;32mI (61012) lora_task: 3 byte packet received:[ 26][0m
+[0;32mI (61282) lora_task: 31 byte packet sent...[0m
+[0;32mI (63282) lora_task: Received packet length: 31[0m
+[0;32mI (63282) lora_task: 3 byte packet received:[ 27][0m
+[0;32mI (63552) lora_task: 31 byte packet sent...[0m
+[0;32mI (65552) lora_task: Received packet length: 31[0m
+[0;32mI (65552) lora_task: 3 byte packet received:[ 28][0m
+[0;32mI (65822) lora_task: 31 byte packet sent...[0m
+[0;32mI (67822) lora_task: Received packet length: 31[0m
+[0;32mI (67822) lora_task: 3 byte packet received:[ 29][0m
+[0;32mI (68092) lora_task: 31 byte packet sent...[0m
+[0;32mI (70092) lora_task: Received packet length: 31[0m
+[0;32mI (70092) lora_task: 3 byte packet received:[ 30][0m
+[0;32mI (70362) lora_task: 31 byte packet sent...[0m
+[0;32mI (72362) lora_task: Received packet length: 31[0m
+[0;32mI (72362) lora_task: 3 byte packet received:[ 31][0m
+[0;32mI (72632) lora_task: 31 byte packet sent...[0m
+[0;32mI (74632) lora_task: Received packet length: 31[0m
+[0;32mI (74632) lora_task: 3 byte packet received:[ 32][0m
+[0;32mI (74902) lora_task: 31 byte packet sent...[0m
+[0;32mI (76902) lora_task: Received packet length: 31[0m
+[0;32mI (76902) lora_task: 3 byte packet received:[ 33][0m
+[0;32mI (77172) lora_task: 31 byte packet sent...[0m
+[0;32mI (79172) lora_task: Received packet length: 31[0m
+[0;32mI (79172) lora_task: 3 byte packet received:[ 34][0m
+[0;32mI (79442) lora_task: 31 byte packet sent...[0m
+[0;32mI (81442) lora_task: Received packet length: 31[0m
+[0;32mI (81442) lora_task: 3 byte packet received:[ 35][0m
+[0;32mI (81712) lora_task: 31 byte packet sent...[0m
+[0;32mI (83712) lora_task: Received packet length: 31[0m
+[0;32mI (83712) lora_task: 3 byte packet received:[ 36][0m
+[0;32mI (83982) lora_task: 31 byte packet sent...[0m
+[0;32mI (85982) lora_task: Received packet length: 31[0m
+[0;32mI (85982) lora_task: 3 byte packet received:[ 37][0m
+[0;32mI (86252) lora_task: 31 byte packet sent...[0m
+[0;32mI (88252) lora_task: Received packet length: 31[0m
+[0;32mI (88252) lora_task: 3 byte packet received:[ 38][0m
+[0;32mI (88522) lora_task: 31 byte packet sent...[0m
+[0;32mI (90522) lora_task: Received packet length: 31[0m
+[0;32mI (90522) lora_task: 3 byte packet received:[ 39][0m
+[0;32mI (90792) lora_task: 31 byte packet sent...[0m
+[0;32mI (92792) lora_task: Received packet length: 31[0m
+[0;32mI (92792) lora_task: 3 byte packet received:[ 40][0m
+[0;32mI (93062) lora_task: 31 byte packet sent...[0m
+[0;32mI (95062) lora_task: Received packet length: 31[0m
+[0;32mI (95062) lora_task: 3 byte packet received:[ 41][0m
+[0;32mI (95332) lora_task: 31 byte packet sent...[0m
+[0;32mI (97332) lora_task: Received packet length: 31[0m
+[0;32mI (97332) lora_task: 3 byte packet received:[ 42][0m
+[0;32mI (97602) lora_task: 31 byte packet sent...[0m
+[0;32mI (99602) lora_task: Received packet length: 31[0m
+[0;32mI (99602) lora_task: 3 byte packet received:[ 43][0m
+[0;32mI (99872) lora_task: 31 byte packet sent...[0m
+[0;32mI (101872) lora_task: Received packet length: 31[0m
+[0;32mI (101872) lora_task: 3 byte packet received:[ 44][0m
+[0;32mI (102142) lora_task: 31 byte packet sent...[0m
+[0;32mI (104142) lora_task: Received packet length: 31[0m
+[0;32mI (104142) lora_task: 3 byte packet received:[ 45][0m
+[0;32mI (104412) lora_task: 31 byte packet sent...[0m
+[0;32mI (106412) lora_task: Received packet length: 31[0m
+[0;32mI (106412) lora_task: 3 byte packet received:[ 46][0m
+[0;32mI (106682) lora_task: 31 byte packet sent...[0m
+[0;32mI (108682) lora_task: Received packet length: 31[0m
+[0;32mI (108682) lora_task: 3 byte packet received:[ 47][0m
+[0;32mI (108952) lora_task: 31 byte packet sent...[0m
+[0;32mI (110952) lora_task: Received packet length: 31[0m
+[0;32mI (110952) lora_task: 3 byte packet received:[ 48][0m
+[0;32mI (111222) lora_task: 31 byte packet sent...[0m
+[0;32mI (113222) lora_task: Received packet length: 31[0m
+[0;32mI (113222) lora_task: 3 byte packet received:[ 49][0m
+[0;32mI (113492) lora_task: 31 byte packet sent...[0m
+[0;32mI (115492) lora_task: Received packet length: 31[0m
+[0;32mI (115492) lora_task: 3 byte packet received:[ 50][0m
+[0;32mI (115762) lora_task: 31 byte packet sent...[0m
+[0;32mI (117762) lora_task: Received packet length: 31[0m
+[0;32mI (117762) lora_task: 3 byte packet received:[ 51][0m
+[0;32mI (118032) lora_task: 31 byte packet sent...[0m
+[0;32mI (120032) lora_task: Received packet length: 31[0m
+[0;32mI (120032) lora_task: 3 byte packet received:[ 52][0m
+[0;32mI (120302) lora_task: 31 byte packet sent...[0m
+[0;32mI (122302) lora_task: Received packet length: 31[0m
+[0;32mI (122302) lora_task: 3 byte packet received:[ 53][0m
+[0;32mI (122572) lora_task: 31 byte packet sent...[0m
+[0;32mI (124572) lora_task: Received packet length: 31[0m
+[0;32mI (124572) lora_task: 3 byte packet received:[ 54][0m
+[0;32mI (124842) lora_task: 31 byte packet sent...[0m
+[0;32mI (126842) lora_task: Received packet length: 31[0m
+[0;32mI (126842) lora_task: 3 byte packet received:[ 55][0m
+[0;32mI (127112) lora_task: 31 byte packet sent...[0m
+[0;32mI (129112) lora_task: Received packet length: 31[0m
+[0;32mI (129112) lora_task: 3 byte packet received:[ 56][0m
+[0;32mI (129382) lora_task: 31 byte packet sent...[0m
+[0;32mI (131382) lora_task: Received packet length: 31[0m
+[0;32mI (131382) lora_task: 3 byte packet received:[ 57][0m
+[0;32mI (131652) lora_task: 31 byte packet sent...[0m
+[0;32mI (133652) lora_task: Received packet length: 31[0m
+[0;32mI (133652) lora_task: 3 byte packet received:[ 58][0m
+[0;32mI (133922) lora_task: 31 byte packet sent...[0m
+[0;32mI (135922) lora_task: Received packet length: 31[0m
+[0;32mI (135922) lora_task: 3 byte packet received:[ 59][0m
+[0;32mI (136192) lora_task: 31 byte packet sent...[0m
+[0;32mI (138192) lora_task: Received packet length: 31[0m
+[0;32mI (138192) lora_task: 3 byte packet received:[ 60][0m
+[0;32mI (138462) lora_task: 31 byte packet sent...[0m
+[0;32mI (140462) lora_task: Received packet length: 31[0m
+[0;32mI (140462) lora_task: 3 byte packet received:[ 61][0m
+[0;32mI (140732) lora_task: 31 byte packet sent...[0m
+[0;32mI (142732) lora_task: Received packet length: 31[0m
+[0;32mI (142732) lora_task: 3 byte packet received:[ 62][0m
+[0;32mI (143002) lora_task: 31 byte packet sent...[0m
+[0;32mI (145002) lora_task: Received packet length: 31[0m
+[0;32mI (145002) lora_task: 3 byte packet received:[ 63][0m
+[0;32mI (145272) lora_task: 31 byte packet sent...[0m

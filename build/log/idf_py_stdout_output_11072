@@ -1,0 +1,79 @@
+[0;32mI (95) boot:  5 storage          Unknown data     01 82 0ip rev:     v0.ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  2 2025 23:15:11[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (80) boot:  3 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (88) boot:  4 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (95) boot:  5 storage          Unknown data     01 82 003e0000 00020000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (107) esp_image: segment 0: paddr=00020020 vaddr=3c0a0020 size=23f34h (147252) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00043f5c vaddr=3fc94800 size=02e50h ( 11856) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=00046db4 vaddr=40380000 size=09264h ( 37476) load[0m
+[0;32mI (151) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=9d3e4h (644068) map[0m
+[0;32mI (253) esp_image: segment 4: paddr=000ed40c vaddr=40389264 size=0b53ch ( 46396) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (269) boot: Disabling RNG early entropy source...[0m
+[0;32mI (280) cpu_start: Unicore app[0m
+[0;32mI (289) cpu_start: Pro cpu start user code[0m
+[0;32mI (289) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (289) app_init: Application information:[0m
+[0;32mI (292) app_init: Project name:     VariousStuff[0m
+[0;32mI (297) app_init: App version:      FS1.0-13-gbbeeebf-dirty[0m
+[0;32mI (303) app_init: Compile time:     Mar 18 2025 19:27:32[0m
+[0;32mI (309) app_init: ELF file SHA256:  336b27958...[0m
+[0;32mI (315) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (319) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (324) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (329) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (334) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (341) heap_init: At 3FC9BE50 len 000241B0 (144 KiB): RAM[0m
+[0;32mI (347) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (354) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (361) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (368) spi_flash: detected chip: generic[0m
+[0;32mI (372) spi_flash: flash io: dio[0m
+[0;32mI (377) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (383) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (390) main_task: Started on CPU0[0m
+[0;32mI (390) main_task: Calling app_main()[0m
+[0;32mI (410) FILESYSTEM: Partition size: total: 131072, used: 8192[0m
+[0;32mI (410) gpio: GPIO[2]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (420) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (730) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (730) i2c.master: s_i2c_synchronous_transaction(870): I2C transaction failed[0m
+[0;31mE (730) i2c.master: i2c_master_transmit(1072): I2C transaction failed[0m
+[0;31mE (5740) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (5740) task_wdt:  - IDLE (CPU 0)[0m
+[0;31mE (5740) task_wdt: Tasks currently running:[0m
+[0;31mE (5740) task_wdt: CPU 0: main[0m
+[0;31mE (5740) task_wdt: Print CPU 0 (current core) backtrace[0m
+Print CPU 0 (current core) registers
+Core  0 register dump:
+MEPC    : 0x4201f272  RA      : 0x4201fdb6  SP      : 0x3fc9ebd0  GP      : 0x3fc95000  
+TP      : 0x3fc9ede0  T0      : 0x00000000  T1      : 0x00000000  T2      : 0x00003000  
+S0/FP   : 0x00000007  S1      : 0x3fca09f4  A0      : 0x3fca09f4  A1      : 0x3fc9ebd8  
+A2      : 0x00000000  A3      : 0x00000800  A4      : 0x60013000  A5      : 0x00000013  
+A6      : 0x00001000  A7      : 0x00000003  S2      : 0x3fca06c8  S3      : 0x3fca0a04  
+S4      : 0x00000000  S5      : 0x3fca0a04  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x3fc98178  T4      : 0x00000900  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00000000  MTVEC   : 0x00000000  MCAUSE  : 0x0000001b  MTVAL   : 0x00000031  
+MHARTID : 0x00000017  

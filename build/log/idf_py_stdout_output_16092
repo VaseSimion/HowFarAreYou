@@ -1,0 +1,75 @@
+[1/5] cmd.exe /C "cd /D C:\Users\sular\OneDrive\Documents\Arduino\ESP32MoistureSensor\VariousStuff\build\esp-idf\esptool_py && C:\Users\sular\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/sular/esp/v5.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/build/partition_table/partition-table.bin C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/build/VariousStuff.bin"
+VariousStuff.bin binary size 0xdbb60 bytes. Smallest app partition is 0x1e0000 bytes. 0x1044a0 bytes (54%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\sular\OneDrive\Documents\Arduino\ESP32MoistureSensor\VariousStuff\build\bootloader\esp-idf\esptool_py && C:\Users\sular\.espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/sular/esp/v5.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5180 bytes. 0x2e80 bytes (36%) free.
+[2/3] cmd.exe /C "cd /D C:\Users\sular\esp\v5.3\esp-idf\components\esptool_py && C:\Users\sular\.espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Users/sular/esp/v5.3/esp-idf -D SERIAL_TOOL=C:/Users/sular/.espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;C:/Users/sular/esp/v5.3/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32esptool.py --chip esp32c3 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x0 bootloader/bootloader.bin 0x20000 VariousStuff.bin 0x8000 partition_table/partition-table.bin 0x10000 ota_data_initial.bin
+esptool.py v4.8.dev4
+Serial port COM3
+Connecting...
+Chip is ESP32-C3 (QFN32) (revision v0.4)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 9c:9e:6e:02:e4:1c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00020000 to 0x000fbfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00010000 to 0x00011fff...
+SHA digest in image updated
+Compressed 20864 bytes to 12759...
+Writing at 0x00000000... (100 %)
+Wrote 20864 bytes (12759 compressed) at 0x00000000 in 0.5 seconds (effective 358.8 kbit/s)...
+Hash of data verified.
+Compressed 899936 bytes to 522914...
+Writing at 0x00020000... (3 %)
+Writing at 0x0002d65c... (6 %)
+Writing at 0x000366a5... (9 %)
+Writing at 0x0003b23d... (12 %)
+Writing at 0x00043475... (15 %)
+Writing at 0x0004b350... (18 %)
+Writing at 0x00051c29... (21 %)
+Writing at 0x000589e8... (25 %)
+Writing at 0x000603b7... (28 %)
+Writing at 0x00066e5f... (31 %)
+Writing at 0x0006e16d... (34 %)
+Writing at 0x00074e1e... (37 %)
+Writing at 0x0007b0a0... (40 %)
+Writing at 0x0008178e... (43 %)
+Writing at 0x00088761... (46 %)
+Writing at 0x0008ee6e... (50 %)
+Writing at 0x00094c8b... (53 %)
+Writing at 0x0009ac2e... (56 %)
+Writing at 0x000a0bc1... (59 %)
+Writing at 0x000a6adc... (62 %)
+Writing at 0x000ad085... (65 %)
+Writing at 0x000b3dbe... (68 %)
+Writing at 0x000bad3c... (71 %)
+Writing at 0x000c1e0b... (75 %)
+Writing at 0x000c7fda... (78 %)
+Writing at 0x000ce2bc... (81 %)
+Writing at 0x000d48cc... (84 %)
+Writing at 0x000da952... (87 %)
+Writing at 0x000e0736... (90 %)
+Writing at 0x000e82ad... (93 %)
+Writing at 0x000eed24... (96 %)
+Writing at 0x000f6337... (100 %)
+Wrote 899936 bytes (522914 compressed) at 0x00020000 in 5.9 seconds (effective 1215.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 141...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (141 compressed) at 0x00008000 in 0.1 seconds (effective 351.1 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x00010000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x00010000 in 0.1 seconds (effective 474.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+c3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/sular/OneDrive/Documents/Arduino/ESP32MoistureSensor/VariousStuff/build -P C:/Users/sular/esp/v5.3/esp-idf/components/esptool_py/run_serial_tool.cmake"
