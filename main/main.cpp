@@ -33,6 +33,7 @@ float temperature = 255.0;
 TaskHandle_t LoraTaskHandle = NULL;
 TaskHandle_t DisplayTaskHandle = NULL;
 TaskHandle_t EspNowTaskHandle = NULL;
+TaskHandle_t GpsTaskHandle = NULL;
 
 //ESP-NOW variables
 unsigned char mac_base[MAC_SIZE] = {0};
@@ -46,12 +47,15 @@ int i=0;
 char number_str[10];
 
 //Variables for positioning;
-float own_latitude_decimal = 0; 
-float own_longitude_decimal = 0;
+long own_latitude_decimal = 54493400; 
+long own_longitude_decimal = 8465178;
+long received_latitude_decimal = 0; 
+long received_longitude_decimal = 0;
 
 // Function to calculate distance between two points using Haversine formula
 double calculate_distance(double lat1, double lon1, double lat2, double lon2) {
     // Convert degrees to radians
+    ESP_LOGI(TAG, "lat1: %f, lon1: %f, lat2: %f, lon2: %f", lat1, lon1, lat2, lon2);
     lat1 = lat1 * M_PI / 180.0;
     lon1 = lon1 * M_PI / 180.0;
     lat2 = lat2 * M_PI / 180.0;
@@ -111,7 +115,7 @@ void parse_gga(char *gga_str) {
     token = strtok_r(NULL, ",", &saveptr);
     if (token != NULL) 
     {
-        ESP_LOGI(TAG, "UTC Time: %s", token);
+        //ESP_LOGI(TAG, "UTC Time: %s", token);
     }
     
     // Latitude
@@ -145,27 +149,22 @@ void parse_gga(char *gga_str) {
     // Output the parsed values
     if (fix_quality > 0) 
     {
-        own_latitude_decimal = nmea_to_decimal_degrees(latitude, ns_indicator);
-        own_longitude_decimal = nmea_to_decimal_degrees(longitude, ew_indicator);
+        own_latitude_decimal = 1000000 * nmea_to_decimal_degrees(latitude, ns_indicator);
+        own_longitude_decimal = 1000000 * nmea_to_decimal_degrees(longitude, ew_indicator);
         
-        float origin_lat = 55.4906829;
-        float origin_lng = 9.4664621;
-        double distance = calculate_distance_meters(origin_lat, origin_lng, own_latitude_decimal, own_longitude_decimal);
-        ESP_LOGI(TAG, "Distance from origin: %.2f meters", distance);
-
         //ESP_LOGI(TAG, "Raw coordinates: %s%c, %s%c", latitude, ns_indicator, longitude, ew_indicator);
-        ESP_LOGI(TAG, "Decimal degrees: %.6f, %.6f (Fix quality: %d)", own_latitude_decimal, own_longitude_decimal, fix_quality);
+        //ESP_LOGI(TAG, "Decimal degrees: %ld, %ld (Fix quality: %d)", own_latitude_decimal, own_longitude_decimal, fix_quality);
     } 
     else 
     {
-        ESP_LOGI(TAG, "No valid position fix obtained");
+        //ESP_LOGI(TAG, "No valid position fix obtained");
     }
 
     // Satellites in use
     token = strtok_r(NULL, ",", &saveptr);
     if (token != NULL) 
     {
-        ESP_LOGI(TAG, "Satellites in use: %s", token);
+        //ESP_LOGI(TAG, "Satellites in use: %s", token);
     }
     
     // HDOP
@@ -175,10 +174,9 @@ void parse_gga(char *gga_str) {
     token = strtok_r(NULL, ",", &saveptr);
     if (token != NULL) 
     {
-        ESP_LOGI(TAG, "Altitude: %s meters", token);
+        //ESP_LOGI(TAG, "Altitude: %s meters", token);
     }
 }
-
 
 void process_gps_data(char *buffer, int len) {
     // Null-terminate the buffer to treat it as a string
@@ -208,12 +206,21 @@ void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status) {
 void OnDataRecv(const esp_now_recv_info_t *esp_now_info, const uint8_t *incomingData, int len) {
     ESP_LOGI(TAG, "Received from: %02X:%02X:%02X:%02X:%02X:%02X", esp_now_info->src_addr[0], esp_now_info->src_addr[1], esp_now_info->src_addr[2], esp_now_info->src_addr[3], esp_now_info->src_addr[4], esp_now_info->src_addr[5]);
     ESP_LOGI(TAG, "Received message: %s", incomingData);
+    char *token = strtok((char*)incomingData, ";");
+    if (token != NULL) {
+        received_latitude_decimal = atol(token);
+        token = strtok(NULL, ";");
+        if (token != NULL) {
+            received_longitude_decimal = atol(token);
+        }
+    }
+    double distance = calculate_distance_meters(own_latitude_decimal/1000000.0, own_longitude_decimal/1000000.0, received_latitude_decimal/1000000.0, received_longitude_decimal/1000000.0);
+    ESP_LOGI(pcTaskGetName(NULL), "Distance from received coordinates: %ld meters", lround(distance));
     u8g2_ClearBuffer(&u8g2);      // Clear the internal buffer
     u8g2_DrawStr(&u8g2, 0, 15, "EspNow");
     u8g2_SetFont(&u8g2, u8g2_font_8x13B_tr);
-    char print_data[4];
-    memccpy(print_data, incomingData, 3, 3);
-    print_data[3] = '\0';
+    char print_data[10];
+    snprintf(print_data, sizeof(print_data), "%ld", lround(distance));
     u8g2_DrawStr(&u8g2, 50, 22, print_data);
     u8g2_SendBuffer(&u8g2);    
 }
@@ -226,25 +233,16 @@ void init_esp_now() {
 
 static void espnow_task(void *pvParameters)
 {
-    static int i=0;
     while (1) {
-        char data[5];
-        sprintf(data, "%3d", i%999);
-        i++; if(i>999) i=0;
-        esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *)data, 3);
+        char data[20];
+        snprintf(data,sizeof(data), "%ld;%ld", own_latitude_decimal, own_longitude_decimal);
+        ESP_LOGI(TAG, "Sending data: %s", data);
+        esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *)data, 20);
         if (result == ESP_OK) {
             ESP_LOGI(TAG, "Sent data: %s", data);
         } else {
             ESP_LOGE(TAG_FAIL, "Failed to send data: %s", data);
         }
-
-        char ldata[LORA_BUF_SIZE];
-        int len = uart_read_bytes(UART_NUM, ldata, (LORA_BUF_SIZE - 1), 20 / portTICK_PERIOD_MS);
-        
-        if (len > 0) {
-            process_gps_data((char *)ldata, len);
-        }
-
         vTaskDelay(2000 / portTICK_PERIOD_MS); // Small delay to prevent tight looping
     }
 }
@@ -253,16 +251,20 @@ static void lora_task(void *pvParameters)
 {
     static int i=0;
     while (1) {
-        char data[5];
-        sprintf(data, "%3d", i%999);
-        i++; if(i>999) i=0;
+        char data[20];
+        snprintf(data, sizeof(data), "%ld;%ld", own_latitude_decimal, own_longitude_decimal);
+        data[19] = '\0';
+        ESP_LOGI(TAG, "Sending data: %s", data);
         //IF Lora is used
-        uint8_t encrypted_data[LORA_BUF_SIZE];
+        uint8_t encrypted_data[LORA_BUF_SIZE] = {0};
         size_t encrypted_len;
         if (!lora_received())
         {
-            lora_encryption.encrypt((uint8_t*)&data[0], 3, associated_data, associated_data_len, encrypted_data, LORA_BUF_SIZE, &encrypted_len);
+            lora_encryption.encrypt((uint8_t*)data, sizeof(data), associated_data, associated_data_len, encrypted_data, LORA_BUF_SIZE, &encrypted_len);
             if (encrypted_len > 0) {
+                // Log the encrypted data as hex bytes instead
+                // ESP_LOG_BUFFER_HEXDUMP(TAG, encrypted_data, encrypted_len, ESP_LOG_INFO);
+                
                 lora_send_packet(encrypted_data, encrypted_len);
                 ESP_LOGI(pcTaskGetName(NULL), "%d byte packet sent...", encrypted_len);
                 int lost = lora_packet_lost();
@@ -280,6 +282,20 @@ static void lora_task(void *pvParameters)
     }
 }
 
+static void gps_task(void *pvParameters)
+{
+    while (1) {
+
+        char ldata[LORA_BUF_SIZE];
+        int len = uart_read_bytes(UART_NUM, ldata, (LORA_BUF_SIZE - 1), 20 / portTICK_PERIOD_MS);
+        
+        if (len > 0) {
+            process_gps_data((char *)ldata, len);
+        }
+
+        vTaskDelay(1000 / portTICK_PERIOD_MS); // Small delay to prevent tight looping
+    }
+}
 
 static void display_lora_task(void *pvParameters)
 {
@@ -299,13 +315,22 @@ static void display_lora_task(void *pvParameters)
                 ESP_LOGE(pcTaskGetName(NULL), "Decryption error: %d", decryption_error);
             }
             else if(decrypted_len > 0) {
-                ESP_LOGI(pcTaskGetName(NULL), "%d byte packet received:[%.*s]", decrypted_len, decrypted_len, decrypted_data);
+                ESP_LOGI(pcTaskGetName(NULL), "%d byte packet received:[%s]", decrypted_len, decrypted_data);
+                char *token = strtok((char*)decrypted_data, ";");
+                if (token != NULL) {
+                    received_latitude_decimal = atol(token);
+                    token = strtok(NULL, ";");
+                    if (token != NULL) {
+                        received_longitude_decimal = atol(token);
+                    }
+                }
+                double distance = calculate_distance_meters(own_latitude_decimal/1000000.0, own_longitude_decimal/1000000.0, received_latitude_decimal/1000000.0, received_longitude_decimal/1000000.0);
+                ESP_LOGI(pcTaskGetName(NULL), "Distance from received coordinates: %ld meters", lround(distance));
                 u8g2_ClearBuffer(&u8g2);      // Clear the internal buffer
                 u8g2_DrawStr(&u8g2, 0, 15, "Lora");
                 u8g2_SetFont(&u8g2, u8g2_font_8x13B_tr);
-                char print_data[4];
-                memccpy(print_data, decrypted_data, 3, 3);
-                print_data[3] = '\0';
+                char print_data[10];
+                snprintf(print_data, sizeof(print_data), "%ld", lround(distance));
                 u8g2_DrawStr(&u8g2, 50, 22, print_data);
                 u8g2_SendBuffer(&u8g2);                
             }
@@ -319,9 +344,9 @@ extern "C" void app_main(void)
 {
     init_nvs();
     init_littlefs();
-    
-    //ESP_ERROR_CHECK(i2c_local_master_init());
-    //u8g2_display_init(&u8g2);
+    uart_init();
+    ESP_ERROR_CHECK(i2c_local_master_init());
+    u8g2_display_init(&u8g2);
 
     esp_efuse_mac_get_default(mac_base);
     ESP_LOGI(TAG, "MAC address: %02X:%02X:%02X:%02X:%02X:%02X", mac_base[0], mac_base[1], mac_base[2], mac_base[3], mac_base[4], mac_base[5]);
@@ -354,12 +379,12 @@ extern "C" void app_main(void)
 
         xTaskCreate(lora_task, "lora_task", 4096, NULL, 3, &LoraTaskHandle);
         xTaskCreate(display_lora_task, "display_task", 4096, NULL, 4, &DisplayTaskHandle);
+        xTaskCreate(gps_task, "dgps_task", 4096, NULL, 5, &GpsTaskHandle);
     }
     else
     {
         wifi_init();
         init_esp_now();
-        uart_init();
         memcpy(peerInfo.peer_addr, broadcastAddress, 6);
         peerInfo.channel = 0;
         peerInfo.encrypt = false;
@@ -370,7 +395,7 @@ extern "C" void app_main(void)
 
         ESP_LOGE(TAG, "Lora module not recognized");
         xTaskCreate(espnow_task, "ESPNOW_task", 4096, NULL, 5, &EspNowTaskHandle);
-        
+        xTaskCreate(gps_task, "dgps_task", 4096, NULL, 6, &GpsTaskHandle);
     }
     //u8g2_ClearBuffer(&u8g2);
     //u8g2_SetFont(&u8g2, u8g2_font_8x13B_tr);
