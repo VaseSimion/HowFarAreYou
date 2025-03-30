@@ -45,6 +45,7 @@ esp_now_peer_info_t peerInfo;
 u8g2_t u8g2; // a structure which will contain all the data for one display
 int i=0;
 char number_str[10];
+int counter = 0;
 
 //Variables for positioning;
 long own_latitude_decimal = 54493400; 
@@ -216,8 +217,13 @@ void OnDataRecv(const esp_now_recv_info_t *esp_now_info, const uint8_t *incoming
     }
     double distance = calculate_distance_meters(own_latitude_decimal/1000000.0, own_longitude_decimal/1000000.0, received_latitude_decimal/1000000.0, received_longitude_decimal/1000000.0);
     ESP_LOGI(pcTaskGetName(NULL), "Distance from received coordinates: %ld meters", lround(distance));
+    counter++;
+    if(counter > 1000) counter = 0; 
     u8g2_ClearBuffer(&u8g2);      // Clear the internal buffer
     u8g2_DrawStr(&u8g2, 0, 15, "EspNow");
+    char counter_str[5];
+    snprintf(counter_str, sizeof(counter_str), "%d", counter%1000);
+    u8g2_DrawStr(&u8g2, 108, 15, counter_str);
     u8g2_SetFont(&u8g2, u8g2_font_8x13B_tr);
     char print_data[10];
     snprintf(print_data, sizeof(print_data), "%ld", lround(distance));
@@ -326,8 +332,13 @@ static void display_lora_task(void *pvParameters)
                 }
                 double distance = calculate_distance_meters(own_latitude_decimal/1000000.0, own_longitude_decimal/1000000.0, received_latitude_decimal/1000000.0, received_longitude_decimal/1000000.0);
                 ESP_LOGI(pcTaskGetName(NULL), "Distance from received coordinates: %ld meters", lround(distance));
+                counter++;
+                if(counter > 1000) counter = 0; 
                 u8g2_ClearBuffer(&u8g2);      // Clear the internal buffer
                 u8g2_DrawStr(&u8g2, 0, 15, "Lora");
+                char counter_str[5];
+                snprintf(counter_str, sizeof(counter_str), "%d", counter%1000);
+                u8g2_DrawStr(&u8g2, 108, 15, counter_str);
                 u8g2_SetFont(&u8g2, u8g2_font_8x13B_tr);
                 char print_data[10];
                 snprintf(print_data, sizeof(print_data), "%ld", lround(distance));
