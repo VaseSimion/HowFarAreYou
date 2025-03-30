@@ -7,16 +7,12 @@
 #include "esp_now.h"
 #include "esp_littlefs.h"
 #include "esp_sleep.h"
-#include "GenericFunctions.h"
-#include "Config.h"
-#include "RelaySpecific.h"
-#include "lora.h"
-#include "LoraEncryption.h"
 #include "esp_mac.h"
 #include "u8g2.h" 
 #include "SupportScreen.h"
 #include "esp_mac.h"
 #include <math.h>
+#include "lora.h"
 
 //Logging tags
 static const char* TAG = "General";
@@ -24,10 +20,6 @@ static const char* TAG_FAIL = "FAIL_SEND";
 
 // Earth radius in kilometers
 #define EARTH_RADIUS_KM 6371.0
-
-//Temperature sensor variables
-temperature_sensor_handle_t temp_handle = NULL;
-float temperature = 255.0;
 
 // Task handles
 TaskHandle_t LoraTaskHandle = NULL;
@@ -262,25 +254,16 @@ static void lora_task(void *pvParameters)
         data[19] = '\0';
         ESP_LOGI(TAG, "Sending data: %s", data);
         //IF Lora is used
-        uint8_t encrypted_data[LORA_BUF_SIZE] = {0};
-        size_t encrypted_len;
         if (!lora_received())
-        {
-            lora_encryption.encrypt((uint8_t*)data, sizeof(data), associated_data, associated_data_len, encrypted_data, LORA_BUF_SIZE, &encrypted_len);
-            if (encrypted_len > 0) {
-                // Log the encrypted data as hex bytes instead
-                // ESP_LOG_BUFFER_HEXDUMP(TAG, encrypted_data, encrypted_len, ESP_LOG_INFO);
-                
-                lora_send_packet(encrypted_data, encrypted_len);
-                ESP_LOGI(pcTaskGetName(NULL), "%d byte packet sent...", encrypted_len);
+            {
+                lora_send_packet((uint8_t*)data, sizeof(data));
                 int lost = lora_packet_lost();
                 if (lost != 0) {
-                ESP_LOGW(pcTaskGetName(NULL), "%d packets lost", lost);
-                }  
+                    ESP_LOGW(pcTaskGetName(NULL), "%d packets lost", lost);
+                }
+                lora_receive(); // put into receive mode, needs to be done after each receive    
+                vTaskDelay(2000 / portTICK_PERIOD_MS); // Small delay to prevent tight looping    
             }
-            lora_receive(); // put into receive mode, needs to be done after each receive
-            vTaskDelay(2000 / portTICK_PERIOD_MS); // Small delay to prevent tight looping    
-        }
         else
         {
             vTaskDelay(100 / portTICK_PERIOD_MS); // Small delay to prevent tight looping    
@@ -308,43 +291,32 @@ static void display_lora_task(void *pvParameters)
     static int i=0;
     while (1) {
         if (lora_received()) {
-
-            uint8_t encrypted_data[LORA_BUF_SIZE];
-            uint8_t decrypted_data[LORA_BUF_SIZE];
-            int rxLen = lora_receive_packet(encrypted_data, sizeof(encrypted_data));
+            uint8_t data[LORA_BUF_SIZE];
+            int rxLen = lora_receive_packet(data, sizeof(data));
             ESP_LOGI(pcTaskGetName(NULL), "Received packet length: %d", rxLen);
-
-            size_t decrypted_len;
-            esp_err_t decryption_error = lora_encryption.decrypt(encrypted_data, rxLen, associated_data, associated_data_len, 
-                                                                 decrypted_data, LORA_BUF_SIZE, &decrypted_len);
-            if (decryption_error != ESP_OK) {
-                ESP_LOGE(pcTaskGetName(NULL), "Decryption error: %d", decryption_error);
-            }
-            else if(decrypted_len > 0) {
-                ESP_LOGI(pcTaskGetName(NULL), "%d byte packet received:[%s]", decrypted_len, decrypted_data);
-                char *token = strtok((char*)decrypted_data, ";");
+            ESP_LOGI(pcTaskGetName(NULL), "%d byte packet received:[%s]", sizeof(data), data);
+            char *token = strtok((char*)data, ";");
+            if (token != NULL) {
+                received_latitude_decimal = atol(token);
+                token = strtok(NULL, ";");
                 if (token != NULL) {
-                    received_latitude_decimal = atol(token);
-                    token = strtok(NULL, ";");
-                    if (token != NULL) {
-                        received_longitude_decimal = atol(token);
-                    }
+                    received_longitude_decimal = atol(token);
                 }
-                double distance = calculate_distance_meters(own_latitude_decimal/1000000.0, own_longitude_decimal/1000000.0, received_latitude_decimal/1000000.0, received_longitude_decimal/1000000.0);
-                ESP_LOGI(pcTaskGetName(NULL), "Distance from received coordinates: %ld meters", lround(distance));
-                counter++;
-                if(counter > 1000) counter = 0; 
-                u8g2_ClearBuffer(&u8g2);      // Clear the internal buffer
-                u8g2_DrawStr(&u8g2, 0, 15, "Lora");
-                char counter_str[5];
-                snprintf(counter_str, sizeof(counter_str), "%d", counter%1000);
-                u8g2_DrawStr(&u8g2, 108, 15, counter_str);
-                u8g2_SetFont(&u8g2, u8g2_font_8x13B_tr);
-                char print_data[10];
-                snprintf(print_data, sizeof(print_data), "%ld", lround(distance));
-                u8g2_DrawStr(&u8g2, 50, 22, print_data);
-                u8g2_SendBuffer(&u8g2);                
             }
+            double distance = calculate_distance_meters(own_latitude_decimal/1000000.0, own_longitude_decimal/1000000.0, received_latitude_decimal/1000000.0, received_longitude_decimal/1000000.0);
+            ESP_LOGI(pcTaskGetName(NULL), "Distance from received coordinates: %ld meters", lround(distance));
+            counter++;
+            if(counter > 1000) counter = 0; 
+            u8g2_ClearBuffer(&u8g2);      // Clear the internal buffer
+            u8g2_DrawStr(&u8g2, 0, 15, "Lora");
+            char counter_str[5];
+            snprintf(counter_str, sizeof(counter_str), "%d", counter%1000);
+            u8g2_DrawStr(&u8g2, 108, 15, counter_str);
+            u8g2_SetFont(&u8g2, u8g2_font_8x13B_tr);
+            char print_data[10];
+            snprintf(print_data, sizeof(print_data), "%ld", lround(distance));
+            u8g2_DrawStr(&u8g2, 50, 22, print_data);
+            u8g2_SendBuffer(&u8g2);                
         }
         lora_receive(); // put into receive mode, needs to be done after each receive
         vTaskDelay(500 / portTICK_PERIOD_MS); // Small delay to prevent tight looping    
@@ -354,7 +326,6 @@ static void display_lora_task(void *pvParameters)
 extern "C" void app_main(void)
 {
     init_nvs();
-    init_littlefs();
     uart_init();
     ESP_ERROR_CHECK(i2c_local_master_init());
     u8g2_display_init(&u8g2);
@@ -382,11 +353,6 @@ extern "C" void app_main(void)
     {
         vTaskDelay(1000 / portTICK_PERIOD_MS); // Small delay to prevent tight looping
         lora_receive(); // put into receive mode, needs to be done after each receive
-
-        init_temp_sens(&temp_handle);
-        temperature = get_temperature(&temp_handle);
-        ESP_LOGI(TAG, "Internal temperature: %.02f", temperature);
-
 
         xTaskCreate(lora_task, "lora_task", 4096, NULL, 3, &LoraTaskHandle);
         xTaskCreate(display_lora_task, "display_task", 4096, NULL, 4, &DisplayTaskHandle);
